@@ -1,38 +1,92 @@
 {
-  "app-info": {
-    "privateMind": "Private Mind",
-    "anAppBroughtToYou": "Eine App von Software Mansion zum lokalen Ausführen von KI-Modellen auf Ihrem Gerät.",
-    "wantToLearnMore": "Möchten Sie mehr erfahren?",
-    "checkOurOtherLibrariesRelated": "Entdecken Sie unsere anderen KI-bezogenen Bibliotheken.",
-    "successfullyCopiedVersionToClipboard": "Version erfolgreich in die Zwischenablage kopiert",
-    "appVersion": "App-Version:",
-    "appInfo": "App-Info"
+  "layout": {
+    "benchmark": "Benchmark",
+    "manageModels": "Modelle verwalten",
+    "settings": "Einstellungen"
   },
-  "chat-speech-input": {
-    "progresspercentage": "({progressPercentage}%)",
-    "noSpeechWasHeard": "Keine Rede wurde gehört.",
-    "couldNotStartLiveTranscript": "Ich konnte die Live-Transkription nicht starten",
-    "stillLoadingSpeechRecognitionOne": "Ich lasse die Spracherkennung noch laden.",
-    "startTalkingToSeeThe": "Beginnen Sie zu sprechen, um die Live-Transkription zu sehen.",
-    "processing": "In Bearbeitung...",
-    "downloadingTheDictationModel": "Herunterladen des Diktionsmodells ({progressPercentage}%)",
-    "loading": "Die Ladung... {value}"
+  "custom-system-prompt": {
+    "howWouldYouLikePrivate": "Wie soll Private Mind antworten?",
+    "preferencesSaved": "Einstellungen gespeichert",
+    "thesePreferencesShapeEveryConversation": "Diese Einstellungen prägen jedes Gespräch.",
+    "eGBeConciseAndExplain": "z. B. Fasse dich kurz und erkläre deine Gedankengänge. Vermeide Fachjargon.",
+    "customInstructions": "Benutzerdefinierte Anweisungen"
   },
-  "model-update-banner": {
-    "math": "{Math}%"
+  "downloads": {
+    "onThisDeviceLength_one": "Auf diesem Gerät · {length}",
+    "onThisDeviceLength_two": "Auf diesem Gerät · {length}",
+    "onThisDeviceLength_few": "Auf diesem Gerät · {length}",
+    "onThisDeviceLength_many": "Auf diesem Gerät · {length}",
+    "onThisDeviceLength_other": "Auf diesem Gerät · {length}",
+    "noModelsOnThisDevice": "Bisher keine Modelle auf diesem Gerät.",
+    "downloads": "Downloads",
+    "downloadingLength": "Wird heruntergeladen · {length}",
+    "downloadingLength_zero": "Wird heruntergeladen · {length}",
+    "downloadingLength_one": "Wird heruntergeladen · {length}",
+    "downloadingLength_two": "Wird heruntergeladen · {length}",
+    "downloadingLength_few": "Wird heruntergeladen · {length}",
+    "downloadingLength_many": "Wird heruntergeladen · {length}",
+    "downloadingLength_other": "Wird heruntergeladen · {length}",
+    "onThisDeviceLength": "Auf diesem Gerät · {length}",
+    "onThisDeviceLength_zero": "Auf diesem Gerät · {length}"
   },
-  "family-card": {
-    "hiddenlabelcount": "+{hiddenLabelCount}",
-    "variantsDownloadedcountDownloaded": "{variants} · {downloadedCount} heruntergeladen",
-    "downloadedcountDownloaded": "{downloadedCount} heruntergeladen",
-    "downloadingcountDownloading": "{downloadingCount} herunterladen"
+  "model-id": {
+    "missingFields": "Fehlende Felder",
+    "pleaseSelectAllNecessaryFiles": "Bitte wählen Sie alle erforderlichen Dateien aus.",
+    "modelFile": "Modelldatei",
+    "tokenizerFile": "Tokenizer-Datei",
+    "tokenizerConfigFile": "Tokenizer-Konfigurationsdatei",
+    "missingFields_2": "Fehlende Felder",
+    "pleaseSelectAllNecessaryFiles_2": "Bitte wählen Sie alle erforderlichen Dateien aus.",
+    "modelUrl": "Modell-URL",
+    "enterExternalModelUrl": "Externe Modell-URL eingeben",
+    "tokenizerUrl": "Tokenizer-URL",
+    "enterExternalTokenizerUrl": "Externe Tokenizer-URL eingeben",
+    "tokenizerConfigUrl": "Tokenizer-Konfigurations-URL",
+    "enterExternalConfigUrl": "Externe Konfigurations-URL eingeben",
+    "modelnameHasBeenSuccessfullyUpdated": "{modelName} wurde erfolgreich aktualisiert",
+    "modelName": "Modellname",
+    "editLocalModel": "Lokales Modell bearbeiten",
+    "modelnameHasBeenSuccessfullyUpdated_2": "{modelName} wurde erfolgreich aktualisiert",
+    "modelName_2": "Modellname",
+    "editRemoteModel": "Remotemodell bearbeiten"
   },
-  "model-picker-row": {
-    "math": "{Math}%",
-    "updateModelname": "Aktualisierung {modelName}"
+  "model-select-sheet": {
+    "searchModels": "Modelle durchsuchen",
+    "manageModels": "Modelle verwalten",
+    "selectAModel": "Modell auswählen",
+    "noModelsMatch": "Keine Modelle stimmen mit „{search}“ überein",
+    "youHaveNoAvailableModels": "Sie haben noch keine verfügbaren Modelle",
+    "toUsePrivateMindYou": "Um Private Mind zu nutzen, müssen Sie mindestens ein Modell heruntergeladen haben"
+  },
+  "chat-menu-popover": {
+    "chat": "Chat",
+    "chatOptions": "Chat-Optionen",
+    "renameChat": "Chat umbenennen",
+    "chatName": "Chat-Name",
+    "save": "Speichern",
+    "share": "Teilen",
+    "deleteChat": "Chat löschen"
+  },
+  "drawer-footer": {
+    "settings": "Einstellungen",
+    "newChat": "Neuer Chat",
+    "newChat_2": "Neuer Chat"
+  },
+  "drawer-nav-section": {
+    "manageModels": "Modelle verwalten"
   },
   "question-language": {
+    "hindi": "Hindi",
+    "bengali": "Bengali",
+    "hangul": "Hangul",
     "english": "English",
+    "whoWhatWhichIsAre": "wer was welcher ist sind die wie wo wann warum heute morgen jetzt wird aktuell neueste Nachrichten Wetter Preis Kosten von und in für zu mein mich es kann tun macht viel viele Zeit Jahr am besten nah offen pro über schreiben Geschichte erzählen erklären beschreiben zusammenfassen dies das diese jene du dein wir sie haben hat würde könnte sollte mit von",
+    "ktoKimKomuKogoCo": "wer was welcher ist sind die wie wo wann warum heute morgen jetzt wird aktuell neueste Nachrichten Wetter Preis Kosten von und in für zu mein mich es kann tun macht viel viele Zeit Jahr am besten nah offen pro über schreiben Geschichte erzählen erklären beschreiben zusammenfassen dies das diese jene du dein wir sie haben hat würde könnte sollte mit von",
+    "quiénQuienQuéCuálCual": "quién quien qué cuál cual es son cómo como dónde donde cuándo cuanto hoy mañana ahora noticias tiempo precio cuánto cuanto el los las del para mi yo hacer sacar",
+    "quemQueQualÉSão": "wer was welcher ist sind wie wo wann warum heute morgen jetzt nachrichten wetter preis wie viel kostet kosten die von für mein ich tun machen bekommen nächster mindestlohn steuer der die das in im am eine hat",
+    "cineCeCareEsteSunt": "wer was welcher ist sind wie wo wann warum heute morgen jetzt nachrichten wetter preis wie viel kostet für mein ich tun wie man erhält",
+    "kimNeHangiNedirNasıl": "wer was welcher ist sind wie wo wann warum heute morgen jetzt nachrichten wetter preis wie viel für mein ich wie erhalten kurs gebühr",
+    "nàoThếĐâuKhiTại": "welcher so wo wenn warum heute jetzt nachrichten wetter wie viel ich tun neu nicht",
     "polish": "Polnisch",
     "german": "Deutsch",
     "dutch": "Niederländisch",
@@ -46,8 +100,6 @@
     "vietnamese": "Vietnamesisch",
     "russian": "Russisch",
     "ukrainian": "Ukrainisch",
-    "hindi": "Hindi",
-    "bengali": "Bengali",
     "urdu": "Urdu",
     "arabic": "Arabisch",
     "persian": "Persisch",
@@ -68,13 +120,524 @@
     "greekScript": "Griechische Schrift",
     "thaiScript": "Thailändische Schrift",
     "chineseCharacters": "Chinesische Schriftzeichen",
-    "japaneseScript": "Japanische Schrift",
-    "hangul": "Hangul"
+    "japaneseScript": "Japanische Schrift"
   },
-  "layout": {
-    "manageModels": "Modelle verwalten",
-    "settings": "Einstellungen",
-    "benchmark": "Benchmark"
+  "topic-language": {
+    "italian": "Italienisch",
+    "german": "Deutsch",
+    "french": "Französisch",
+    "spanish": "Spanisch",
+    "portuguese": "Portugiesisch",
+    "dutch": "Niederländisch",
+    "polish": "Polnisch",
+    "czech": "Tschechisch",
+    "greek": "Griechisch",
+    "turkish": "Türkisch",
+    "russian": "Russisch",
+    "ukrainian": "Ukrainisch",
+    "japanese": "Japanisch",
+    "chinese": "Chinesisch",
+    "korean": "Koreanisch",
+    "swedish": "Schwedisch",
+    "norwegian": "Norwegisch",
+    "danish": "Dänisch",
+    "finnish": "Finnisch"
+  },
+  "app-info": {
+    "privateMind": "Private Mind",
+    "anAppBroughtToYou": "Eine App von Software Mansion zum lokalen Ausführen von KI-Modellen auf Ihrem Gerät.",
+    "wantToLearnMore": "Möchten Sie mehr erfahren?",
+    "checkOurOtherLibrariesRelated": "Entdecken Sie unsere anderen KI-bezogenen Bibliotheken.",
+    "successfullyCopiedVersionToClipboard": "Version erfolgreich in die Zwischenablage kopiert",
+    "appVersion": "App-Version:",
+    "appInfo": "App-Info"
+  },
+  "chat-speech-input": {
+    "progresspercentage": "({progressPercentage}%)",
+    "noSpeechWasHeard": "Es wurde keine Sprache erkannt.",
+    "couldNotStartLiveTranscript": "Live-Transkription konnte nicht gestartet werden",
+    "stillLoadingSpeechRecognitionOne": "Spracherkennung wird noch geladen, einen Moment Geduld.",
+    "startTalkingToSeeThe": "Beginnen Sie zu sprechen, um das Live-Transkript zu sehen...",
+    "processing": "Wird verarbeitet...",
+    "downloadingTheDictationModel": "Diktatmodell wird heruntergeladen ({progressPercentage} %)",
+    "loading": "Wird geladen...{value}"
+  },
+  "model-update-banner": {
+    "math": "{Math}%"
+  },
+  "family-card": {
+    "hiddenlabelcount": "+{hiddenLabelCount}",
+    "variantsDownloadedcountDownloaded": "{variants} · {downloadedCount, plural, one {# heruntergeladen} other {# heruntergeladen}}",
+    "downloadedcountDownloaded": "{downloadedCount, plural, one {# heruntergeladen} other {# heruntergeladen}}",
+    "downloadingcountDownloading": "{downloadingCount, plural, one {# wird heruntergeladen} other {# werden heruntergeladen}}"
+  },
+  "model-picker-row": {
+    "math": "{Math}%",
+    "updateModelname": "{modelName} aktualisieren"
+  },
+  "family": {
+    "downloadedcountDownloadedDownloadedgbGb": "{downloadedCount} heruntergeladen · {downloadedGB} GB",
+    "noneDownloaded": "Keine heruntergeladen",
+    "noVariantsAvailable": "Keine Varianten verfügbar.",
+    "variantsLength": "Varianten · {length}",
+    "variantsLength_zero": "Varianten · {length}",
+    "variantsLength_one": "Varianten · {length}",
+    "variantsLength_two": "Varianten · {length}",
+    "variantsLength_few": "Varianten · {length}",
+    "variantsLength_many": "Varianten · {length}",
+    "variantsLength_other": "Varianten · {length}"
+  },
+  "select-starting-model": {
+    "modelsCannotBeDownloadedWithout": "Modelle können nicht ohne Internetverbindung heruntergeladen werden.",
+    "downloadingDownloadpercent": "Wird heruntergeladen… {downloadPercent}",
+    "startingDownload": "Download wird gestartet…",
+    "startChatting": "Chat starten",
+    "chooseAStartingModel": "Wählen Sie ein Startmodell",
+    "downloadYourFirstModelTo": "Laden Sie Ihr erstes Modell herunter, um mit Private Mind zu beginnen.",
+    "chatModels": "Chat-Modelle",
+    "noSuggestedModelFitsThis": "Keines der vorgeschlagenen Modelle passt in den Speicher dieses Geräts.",
+    "optionalYouCanStillGet": "Optional. Sie können diese später jederzeit herunterladen."
+  },
+  "app-toast": {
+    "openSettings": "Einstellungen öffnen",
+    "retry": "Wiederholen",
+    "dismiss": "Verwerfen"
+  },
+  "no-model-welcome": {
+    "chooseAModelToGet": "Wählen Sie ein Modell aus, um mit Private Mind zu beginnen"
+  },
+  "upload-input": {
+    "selectAFile": "Datei auswählen"
+  },
+  "whats-new-badge": {
+    "whatsNewInVersionInstalledversion": "Neu in Version {installedVersion}: {title}",
+    "new": "Neu"
+  },
+  "benchmark-history": {
+    "thereAreNoBenchmarksTo": "Es sind noch keine Benchmarks vorhanden"
+  },
+  "benchmark-item": {
+    "modelnameTokenspersecondTokensPerSecond": "{modelName}, {tokensPerSecond} Tokens pro Sekunde",
+    "tokensS": "Tokens/s"
+  },
+  "benchmark-modal": {
+    "runningABenchmark": "Benchmark wird ausgeführt",
+    "itMayTakeAround13": "Dies kann etwa 1–3 Minuten dauern…",
+    "yourBenchmarkIsReady": "Dein Benchmark ist bereit!"
+  },
+  "benchmark-stats-card": {
+    "speed": "Geschwindigkeit",
+    "firstToken": "Erstes Token",
+    "totalTime": "Gesamtzeit",
+    "peakMemory": "Speicherspitze"
+  },
+  "model-selector": {
+    "changeModelCurrentModelname": "Modell wechseln, aktuell {modelName}",
+    "selectAModel": "Modell auswählen",
+    "selectAModel_2": "Modell auswählen",
+    "change": "Ändern",
+    "choose": "Auswählen"
+  },
+  "add-model-sheet": {
+    "addModel": "Modell hinzufügen"
+  },
+  "benchmark-result-sheet": {
+    "var0Gb": "{var0} GB",
+    "benchmarkResults": "Benchmark-Ergebnisse",
+    "deleteResult": "Ergebnis löschen"
+  },
+  "model-management-sheet": {
+    "startAChat": "Chat starten",
+    "runBenchmark": "Benchmark ausführen",
+    "editModel": "Modell bearbeiten",
+    "deleteDownloadedFiles": "Heruntergeladene Dateien löschen",
+    "removeFromTheApp": "Aus App entfernen",
+    "removeModelFromTheApp": "Modell aus der App entfernen?",
+    "modelnameWillBeRemovedFrom": "{modelName} wird aus der App entfernt. Die Originaldateien auf Ihrem Gerät bleiben unberührt.",
+    "modelnameAndItsStoredExternal": "{modelName} und die dazugehörigen gespeicherten externen URLs werden entfernt. Sie können das Modell später manuell wieder hinzufügen.",
+    "remove": "Entfernen",
+    "modelnameHasBeenSuccessfullyDeleted": "{modelName} wurde erfolgreich gelöscht"
+  },
+  "model-update-sheet": {
+    "var0Gb": "{var0} GB"
+  },
+  "web-scrape-sheet": {
+    "privateMindIsBrowsingFor": "Private Mind sucht für Sie im Web",
+    "confirmYouReHumanToContinue": "Bestätigen Sie, dass Sie ein Mensch sind, um fortzufahren",
+    "skipSearch": "Suche überspringen",
+    "done": "Fertig"
+  },
+  "whats-new-sheet": {
+    "whatsNew": "Neuigkeiten"
+  },
+  "animated-chat-loading": {
+    "generating": "Wird generiert…"
+  },
+  "attachment-thumbnail": {
+    "document": "Dokument"
+  },
+  "branch-marker": {
+    "openSourceConversationSourcechattitle": "Quellkonversation öffnen: {sourceChatTitle}",
+    "branchedFrom": "Abgezweigt von: <text>{markerSourceChatTitle}</text>",
+    "sourceConversation": "Quellkonversation"
+  },
+  "chat-bar": {
+    "thisModelDoesNotSupport": "Dieses Modell unterstützt keine Bilder",
+    "canceled": "abgebrochen",
+    "waitForTheResponseTo": "Warte, bis die Antwort abgeschlossen ist, oder stoppe sie zuerst.",
+    "thisModelDoesNotSupport_2": "Dieses Modell unterstützt keine Bilder",
+    "unsupportedClipboardContent": "Nicht unterstützter Inhalt in der Zwischenablage",
+    "errorProcessingPastedContent": "Fehler beim Verarbeiten des eingefügten Inhalts",
+    "waitForTheAttachmentTo": "Warten Sie, bis der Anhang vollständig geladen ist.",
+    "index": "Index",
+    "askAnything": "Fragen Sie mich alles"
+  },
+  "chat-bar-actions": {
+    "waitForTheDocumentTo": "Warten Sie, bis das Dokument verarbeitet wurde.",
+    "think": "Nachdenken",
+    "webSearch": "Websuche"
+  },
+  "chat-title": {
+    "showntitleChatOptions": "{shownTitle}. Chat-Optionen"
+  },
+  "composer-model-badge": {
+    "modelModelnameLoading": "Modell: {modelName}. Wird geladen",
+    "modelModelname": "Modell: {modelName}",
+    "modelModelnameChangeModel": "Modell: {modelName}. Modell ändern"
+  },
+  "dominant-source-badge": {
+    "source": "Quelle: {sourceName}"
+  },
+  "markdown-component": {
+    "menlo": "Menlo"
+  },
+  "memory-stall-card": {
+    "thisIsTakingLongerThan": "Dies dauert länger als gewöhnlich"
+  },
+  "message-item": {
+    "copy": "Kopieren",
+    "fork": "Verzweigen",
+    "sources": "Quellen",
+    "sources_2": "Quellen",
+    "generating": "Generiere…",
+    "refining": "Verfeinere…"
+  },
+  "messages": {
+    "retryResponseGeneration": "Antwortgenerierung wiederholen",
+    "retry": "Wiederholen"
+  },
+  "model-unavailable-card": {
+    "messageChooseAModel": "{message}. Wähle ein Modell"
+  },
+  "scroll-to-latest-button": {
+    "scrollToLatestMessage": "Zum neuesten Nachricht scrollen"
+  },
+  "sources-sheet": {
+    "sources": "Quellen"
+  },
+  "stopped-marker": {
+    "retryThisResponse": "Diese Antwort wiederholen",
+    "retry": "Wiederholen"
+  },
+  "thinking-block": {
+    "thinking": "Denkt nach..."
+  },
+  "user-message-action-menu": {
+    "copy": "Kopieren"
+  },
+  "web-search-trace-row": {
+    "tapToConfirmYouReNot": "Tippe, um zu bestätigen, dass du kein Robot bist",
+    "theSiteWantsToCheck": "Die Website möchte überprüfen, ob du kein Roboter bist – tippe, um fortzufahren"
+  },
+  "attachment-menu": {
+    "camera": "Kamera",
+    "photos": "Fotos",
+    "files": "Dateien"
+  },
+  "attachment-overlay": {
+    "front": "Vorderseite",
+    "back": "Rückseite",
+    "off": "Aus",
+    "closeAttachmentMenu": "Anhangsmenü schließen"
+  },
+  "camera-bar": {
+    "takePhoto": "Foto aufnehmen",
+    "turnFlashOn": "Blitz einschalten",
+    "turnFlashOff": "Blitz ausschalten",
+    "flipCamera": "Kamera wechseln",
+    "hideCameraOptions": "Kameraoptionen ausblenden",
+    "cameraOptions": "Kameraoptionen"
+  },
+  "camera-sheet": {
+    "cameraAccessIsOffTurn": "Kamerazugriff ist deaktiviert. Aktiviere ihn in den Einstellungen, um hier ein Foto aufzunehmen.",
+    "waitingForCameraAccess": "Warten auf Kamerazugriff…"
+  },
+  "photo-grid": {
+    "loadingPhotos": "Fotos werden geladen…",
+    "noPhotosOnThisDevice": "Keine Fotos auf diesem Gerät.",
+    "photoAccessIsOffTurn": "Fotozugriff ist deaktiviert. Aktiviere ihn in den Einstellungen, um hier Fotos auszuwählen."
+  },
+  "photo-grid-bar": {
+    "add1Photo": "1 Foto hinzufügen",
+    "addCountPhotos": "{count, plural, one {# Foto hinzufügen} other {# Fotos hinzufügen}}",
+    "addCountPhotos_zero": "{count, plural, one {# Foto hinzufügen} other {# Fotos hinzufügen}}",
+    "addCountPhotos_one": "{count, plural, one {# Foto hinzufügen} other {# Fotos hinzufügen}}",
+    "addCountPhotos_two": "{count, plural, one {# Foto hinzufügen} other {# Fotos hinzufügen}}",
+    "addCountPhotos_few": "{count, plural, one {# Foto hinzufügen} other {# Fotos hinzufügen}}",
+    "addCountPhotos_many": "{count, plural, one {# Foto hinzufügen} other {# Fotos hinzufügen}}",
+    "addCountPhotos_other": "{count, plural, one {# Foto hinzufügen} other {# Fotos hinzufügen}}",
+    "allPhotos": "Alle Fotos",
+    "allPhotos_2": "Alle Fotos",
+    "allPhotos_3": "Alle Fotos"
+  },
+  "sheet-bar": {
+    "backToMenu": "Zurück zum Menü"
+  },
+  "sheet-placeholder": {
+    "openSettings": "Einstellungen öffnen"
+  },
+  "use-chat-screen-actions": {
+    "thinkingCannotBeEnabledFor": "Für dieses Modell kann der Denkprozess nicht aktiviert werden.",
+    "thisModelCannotUseWeb": "Dieses Modell kann Web-Ergebnisse nicht zuverlässig nutzen – wählen Sie ein größeres."
+  },
+  "use-send-chat-message": {
+    "failedToSaveImageAttachment": "Das Bild-Anhängsel konnte nicht gespeichert werden.",
+    "couldnTFindAnythingUsefulOnline": "Es wurde nichts Nützliches im Internet gefunden – es wird ohne das Web geantwortet."
+  },
+  "web-search-trace": {
+    "noInternetAnsweredWithout": "Kein Internet – Antwort ohne Web",
+    "searchTookTooLong": "Suche dauerte zu lange – frühzeitig abgebrochen",
+    "noSearchNeededAnswered": "Keine Suche erforderlich — direkt beantwortet",
+    "aLargeModelTakesLonger": "Ein großes Modell benötigt auf diesem Smartphone länger",
+    "done": "Fertig",
+    "didnTFindMuchThe": "Nicht viel gefunden — die Antwort ist möglicherweise unvollständig",
+    "readingThePages": "Seiten werden gelesen",
+    "nothingFound": "Nichts gefunden",
+    "decidingWhatToSearchFor": "Es wird entschieden, wonach gesucht werden soll",
+    "nothingFound_2": "Nichts gefunden"
+  },
+  "drawer-empty-state": {
+    "noChatsMatch": "Keine Chats stimmen mit „{query}“ überein",
+    "startNewChat": "Neuen Chat starten"
+  },
+  "drawer-top-bar": {
+    "searchChats": "Chats durchsuchen",
+    "searchChats_2": "Chats durchsuchen",
+    "closeSearch": "Suche schließen"
+  },
+  "download-percent": {
+    "startingDownload": "Download wird gestartet"
+  },
+  "download-progress-details": {
+    "ofGb": "{modelSize} von {modelSize2} GB"
+  },
+  "downloaded-badge": {
+    "downloaded": "Heruntergeladen"
+  },
+  "downloads-header-button": {
+    "downloadsCountInProgress": "Downloads, {count, plural, one {# wird heruntergeladen} other {# werden heruntergeladen}}",
+    "downloadsCountInProgress_zero": "Downloads, {count, plural, one {# wird heruntergeladen} other {# werden heruntergeladen}}",
+    "downloadsCountInProgress_one": "Downloads, {count, plural, one {# wird heruntergeladen} other {# werden heruntergeladen}}",
+    "downloadsCountInProgress_two": "Downloads, {count, plural, one {# wird heruntergeladen} other {# werden heruntergeladen}}",
+    "downloadsCountInProgress_few": "Downloads, {count, plural, one {# wird heruntergeladen} other {# werden heruntergeladen}}",
+    "downloadsCountInProgress_many": "Downloads, {count, plural, one {# wird heruntergeladen} other {# werden heruntergeladen}}",
+    "downloadsCountInProgress_other": "Downloads, {count, plural, one {# wird heruntergeladen} other {# werden heruntergeladen}}",
+    "downloads": "Downloads"
+  },
+  "family-provider-row": {
+    "madeByProvider": "Erstellt von {provider}",
+    "madeBy": "Erstellt von"
+  },
+  "model-capability-badges": {
+    "custom": "Benutzerdefiniert"
+  },
+  "model-download-row": {
+    "download": "Herunterladen",
+    "cancelDownload": "Download abbrechen",
+    "deleteModelFiles": "Modelldateien löschen",
+    "updateModelname": "{modelName} aktualisieren",
+    "modelnameDownloadProgress": "Downloadfortschritt für {modelName}"
+  },
+  "model-hub-tabs": {
+    "recommended": "Empfohlen",
+    "experimental": "Experimentell",
+    "mine": "Meine",
+    "modelLists": "Modelllisten"
+  },
+  "swm-attribution-card": {
+    "originalModelByProvider": "Originalmodell von {provider}"
+  },
+  "app-notices": {
+    "dismiss": "Ausblenden"
+  },
+  "onboarding-carousel": {
+    "skipOnboarding": "Einführung überspringen",
+    "skip": "Überspringen"
+  },
+  "onboarding-intro-panel": {
+    "yourPrivateAiMind": "Dein privater KI-Verstand.",
+    "inYourPocket": "Immer griffbereit."
+  },
+  "onboarding-pagination": {
+    "goToSlideVar0Of": "Zu Folie {var0} von {count} wechseln",
+    "goToSlideVar0Of_zero": "Zu Folie {var0} von {count} wechseln",
+    "goToSlideVar0Of_one": "Zu Folie {var0} von {count} wechseln",
+    "goToSlideVar0Of_two": "Zu Folie {var0} von {count} wechseln",
+    "goToSlideVar0Of_few": "Zu Folie {var0} von {count} wechseln",
+    "goToSlideVar0Of_many": "Zu Folie {var0} von {count} wechseln",
+    "goToSlideVar0Of_other": "Zu Folie {var0} von {count} wechseln"
+  },
+  "starting-feature-list": {
+    "cancelNameDownload": "Download von {name} abbrechen",
+    "nameDownloadProgress": "Download-Fortschritt von {name}",
+    "sectionTitleDownloadProgress": "Download-Fortschritt von {SECTION_TITLE}",
+    "downloadAllSectionTitle": "Alle {SECTION_TITLE} herunterladen"
+  },
+  "particle-swarm": {
+    "webgpu": "WebGPU"
+  },
+  "db": {
+    "youAreAKnowledgeableAnd": "Sie sind ein sachkundiger und hilfsbereiter Assistent. Geben Sie klare, präzise und gut strukturierte Antworten. Wenn Ihnen Kontext aus Dokumenten zur Verfügung steht, nutzen Sie diese Informationen, um umfassende Antworten zu geben, während Sie prägnant und relevant bleiben."
+  },
+  "use-attachment": {
+    "thisDocumentIsLarge": "Dieses Dokument ist groß – nur der erste Teil wurde für die Suche indexiert.",
+    "errorReadingDocument": "Fehler beim Lesen des Dokuments.",
+    "couldNotReadThisPage": "Diese Seite konnte nicht gelesen werden.",
+    "thisPageIsLarge": "Diese Seite ist groß – nur der erste Teil wurde für die Suche indexiert.",
+    "errorReadingLink": "Fehler beim Lesen des Links.",
+    "documentStorageIsStillStarting": "Der Dokumentenspeicher wird noch gestartet. Versuchen Sie es gleich noch einmal.",
+    "failedToDownloadTheDocument": "Das Dokumentenmodell konnte nicht heruntergeladen werden.",
+    "onlyImagesCanBePasted": "Es können nur Bilder eingefügt werden. Verwenden Sie die +-Schaltfläche für Dokumente."
+  },
+  "llm-store": {
+    "nieUdałoMiSięOdpowiedzieć": "Basierend auf den gefundenen Quellen konnte ich diese Frage nicht beantworten.",
+    "replyInOneWord": "Antworte in einem Wort.",
+    "iCouldNotAnswerThis": "Ich konnte diese Frage anhand der gefundenen Quellen nicht beantworten.",
+    "modelCannotBeLoadedWithout": "Das Modell kann nicht ohne Internetverbindung geladen werden.",
+    "danglingListAnswerContinuationNudge": "Unvollständige Listenantwort, Fortsetzung anfordern"
+  },
+  "build-search-query": {
+    "casualGreeting": "lockerer Gruß",
+    "recapOfThisConversation": "Zusammenfassung dieses Gesprächs",
+    "aboutAPreviousAnswer": "zu einer vorherigen Antwort",
+    "currentTokyoWeather": "aktuelles Wetter in Tokio",
+    "currentBitcoinPrice": "aktueller Bitcoin-Preis",
+    "compareBitcoinAndEthereumPrices": "Bitcoin- und Ethereum-Kurse vergleichen",
+    "youTurnTheUsersLatest_5": "Sie verwandeln die neueste Nachricht des Benutzers in einen Websuchplan. Geben Sie AUSSCHLIESSLICH ein JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (Geldbetrag), specs (technische Daten), comparison (benannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false bei Begrüßungen, Smalltalk, Meinungen, Ratschlägen, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitlosem Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer aktuell eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, spezifische Personen, Orte oder Organisationen. Unsicher bei einer spezifischen, überprüfbaren Frage? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste, veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN unter 12 Wörtern, keinem Satz, in DERSELBEN Sprache und Schrift wie die Nachricht des Benutzers – niemals übersetzt; nur dann auf Englisch, wenn der Benutzer auf Englisch geschrieben hat. Behalten Sie die vom Benutzer angegebenen Namen, Orte und Zahlen genau so bei; tauschen Sie diese niemals gegen verwandte aus. Verwenden Sie nur die neueste Nachricht und worauf sie sich bezieht; lösen Sie es/sie/ihn aus dem Gespräch auf. Wandeln Sie relative Zeitwörter (heute, späteste, jetzt, aktuell, dieses Jahr, diese Saison, bisher) in ein konkretes Datum, Jahr oder eine konkrete Saison um – heute ist {today}; für eine \"meiste/beste/Top-X\"-Frage zu einem kürzlichen Zeitraum fügen Sie dieses Jahr oder diese Saison in die Abfrage selbst ein, damit sich die Ergebnisse auf diesen Zeitraum beziehen und kein Allzeit-Ranking darstellen. Geben Sie im Normalfall 1 Abfrage aus, nur bei einem klaren Vergleich von 2 oder 3 benannten Dingen eine pro Element (max. 3 Abfragen).\nEine formlose Nachricht hüllt den Gegenstand, um den es geht, in Begleitumstände ein – für wen es ist, warum es gewollt ist, wie es verwendet wird, \"solche Dinge\", \"etwas in der Art\". Behalten Sie den konkreten Gegenstand und das, wonach dazu gefragt wird, bei; lassen Sie die Umstände weg. Die Suche nach dem Anlass statt nach dem Objekt",
+    "youTurnTheUsersLatest_6": "Sie verwandeln die neueste Nachricht des Benutzers in einen Websuchplan. Geben Sie AUSSCHLIESSLICH ein JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (Geldbetrag), specs (technische Daten), comparison (benannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false bei Begrüßungen, Smalltalk, Meinungen, Ratschlägen, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitlosem Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer aktuell eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, spezifische Personen, Orte oder Organisationen. Unsicher bei einer spezifischen, überprüfbaren Frage? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste, veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN unter 12 Wörtern, keinem Satz, in DERSELBEN Sprache und Schrift wie die Nachricht des Benutzers – niemals übersetzt; nur dann auf Englisch, wenn der Benutzer auf Englisch geschrieben hat. Behalten Sie die vom Benutzer angegebenen Namen, Orte und Zahlen genau so bei; tauschen Sie diese niemals gegen verwandte aus. Verwenden Sie nur die neueste Nachricht und worauf sie sich bezieht; lösen Sie es/sie/ihn aus dem Gespräch auf. Wandeln Sie relative Zeitwörter (heute, späteste, jetzt, aktuell, dieses Jahr, diese Saison, bisher) in ein konkretes Datum, Jahr oder eine konkrete Saison um – heute ist {today}; für eine \"meiste/beste/Top-X\"-Frage zu einem kürzlichen Zeitraum fügen Sie dieses Jahr oder diese Saison in die Abfrage selbst ein, damit sich die Ergebnisse auf diesen Zeitraum beziehen und kein Allzeit-Ranking darstellen. Geben Sie im Normalfall 1 Abfrage aus, nur bei einem klaren Vergleich von 2 oder 3 benannten Dingen eine pro Element (max. 3 Abfragen).\nEine formlose Nachricht hüllt den Gegenstand, um den es geht, in Begleitumstände ein – für wen es ist, warum es gewollt ist, wie es verwendet wird, \"solche Dinge\", \"etwas in der Art\". Behalten Sie den konkreten Gegenstand und das, wonach dazu gefragt wird, bei",
+    "youTurnTheUsersLatest_7": "Sie verwandeln die neueste Nachricht des Benutzers in einen Websuchplan. Geben Sie AUSSCHLIESSLICH ein JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (Geldbetrag), specs (technische Daten), comparison (benannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false bei Begrüßungen, Smalltalk, Meinungen, Ratschlägen, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitlosem Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer aktuell eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, spezifische Personen, Orte oder Organisationen. Unsicher bei einer spezifischen, überprüfbaren Frage? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste, veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN unter 12 Wörtern, keinem Satz, in DERSELBEN Sprache und Schrift wie die Nachricht des Benutzers – niemals übersetzt; nur dann auf Englisch, wenn der Benutzer auf Englisch geschrieben hat. Behalten Sie die vom Benutzer angegebenen Namen, Orte und Zahlen genau so bei; tauschen Sie diese niemals gegen verwandte aus. Verwenden Sie nur die neueste Nachricht und worauf sie sich bezieht; lösen Sie es/sie/ihn aus dem Gespräch auf. Wandeln Sie relative Zeitwörter (heute, späteste, jetzt, aktuell, dieses Jahr, diese Saison, bisher) in ein konkretes Datum, Jahr oder eine konkrete Saison um – heute ist {today}; für eine \"meiste/beste/Top-X\"-Frage zu einem kürzlichen Zeitraum fügen Sie dieses Jahr oder diese Saison in die Abfrage selbst ein, damit sich die Ergebnisse auf diesen Zeitraum beziehen und kein Allzeit-Ranking darstellen. Geben Sie im Normalfall 1 Abfrage aus, nur bei einem klaren Vergleich von 2 oder 3 benannten Dingen eine pro Element (max. 3 Abfragen).\nEine formlose Nachricht hüllt den Gegenstand, um den es geht, in Begleitumstände ein – für wen es ist, warum es gewollt ist, wie es verwendet wird, \"solche Dinge\",",
+    "youTurnTheUsersLatest_8": "Sie verwandeln die neueste Nachricht des Benutzers in einen Websuchplan. Geben Sie AUSSCHLIESSLICH ein JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (Geldbetrag), specs (technische Daten), comparison (benannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false bei Begrüßungen, Smalltalk, Meinungen, Ratschlägen, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitlosem Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer aktuell eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, spezifische Personen, Orte oder Organisationen. Unsicher bei einer spezifischen, überprüfbaren Frage? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste, veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN unter 12 Wörtern, keinem Satz, in DERSELBEN Sprache und Schrift wie die Nachricht des Benutzers – niemals übersetzt; nur dann auf Englisch, wenn der Benutzer auf Englisch geschrieben hat. Behalten Sie die vom Benutzer angegebenen Namen, Orte und Zahlen genau so bei; tauschen Sie diese niemals gegen verwandte aus. Verwenden Sie nur die neueste Nachricht und worauf sie sich bezieht; lösen Sie es/sie/ihn aus dem Gespräch auf. Wandeln Sie relative Zeitwörter (heute, späteste, jetzt, aktuell, dieses Jahr, diese Saison, bisher) in ein konkretes Datum, Jahr oder eine konkrete Saison um – heute ist {today}; für eine \"meiste/beste/Top-X\"-Frage zu einem kürzlichen Zeitraum fügen Sie dieses Jahr oder diese Saison in die Abfrage selbst ein, damit sich die Ergebnisse auf diesen Zeitraum beziehen und kein Allzeit-Ranking darstellen. Geben Sie im Normalfall 1 Abfrage aus, nur bei einem klaren Vergleich von 2 oder 3 benannten Dingen eine pro Element (max. 3 Abfragen).\nEine formlose Nachricht hüllt den Gegenstand, um den es geht, in Begleitumstände ein –",
+    "youTurnTheUsersLatest_9": "Sie verwandeln die neueste Nachricht des Benutzers in einen Websuchplan. Geben Sie AUSSCHLIESSLICH ein JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (Geldbetrag), specs (technische Daten), comparison (benannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false bei Begrüßungen, Smalltalk, Meinungen, Ratschlägen, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitlosem Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer aktuell eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, spezifische Personen, Orte oder Organisationen. Unsicher bei einer spezifischen, überprüfbaren Frage? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste, veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN unter 12 Wörtern, keinem Satz, in DERSELBEN Sprache und Schrift wie die Nachricht des Benutzers – niemals übersetzt; nur dann auf Englisch, wenn der Benutzer auf Englisch geschrieben hat. Behalten Sie die vom Benutzer angegebenen Namen, Orte und Zahlen genau so bei; tauschen Sie diese niemals gegen verwandte aus. Verwenden Sie nur die neueste Nachricht und worauf sie sich bezieht; lösen Sie es/sie/ihn aus dem Gespräch auf. Wandeln Sie relative Zeitwörter (heute, späteste, jetzt, aktuell, dieses Jahr, diese Saison, bisher) in ein konkretes Datum, Jahr oder eine konkrete Saison um – heute ist {today}; für eine \"meiste/beste/Top-X\"-Frage zu einem kürzlichen Zeitraum fügen Sie dieses Jahr oder diese Saison in die Abfrage selbst ein, damit sich die Ergebnisse auf diesen Zeitraum beziehen und kein Allzeit-Ranking darstellen. Geben Sie im Normalfall 1 Abfrage aus, nur bei einem klaren Vergleich von 2 oder 3 benannten Dingen eine pro Element (max. 3 Abfragen).",
+    "youTurnTheUsersLatest_10": "Sie verwandeln die neueste Nachricht des Benutzers in einen Websuchplan. Geben Sie AUSSCHLIESSLICH ein JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (Geldbetrag), specs (technische Daten), comparison (benannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false bei Begrüßungen, Smalltalk, Meinungen, Ratschlägen, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitlosem Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer aktuell eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, spezifische Personen, Orte oder Organisationen. Unsicher bei einer spezifischen, überprüfbaren Frage? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste, veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN unter 12 Wörtern, keinem Satz, in DERSELBEN Sprache und Schrift wie die Nachricht des Benutzers – niemals übersetzt; nur dann auf Englisch, wenn der Benutzer auf Englisch geschrieben hat. Behalten Sie die vom Benutzer angegebenen Namen, Orte und Zahlen genau so bei; tauschen Sie diese niemals gegen verwandte aus. Verwenden Sie nur die neueste Nachricht und worauf sie sich bezieht; lösen Sie es/sie/ihn aus dem Gespräch auf. Wandeln Sie relative Zeitwörter (heute, späteste, jetzt, aktuell, dieses Jahr, diese Saison, bisher) in ein konkretes Datum, Jahr oder eine konkrete Saison um – heute ist {today}; für eine \"meiste/beste/Top-X\"-Frage zu einem kürzlichen Zeitraum fügen Sie dieses Jahr oder diese Saison in die Abfrage selbst ein, damit sich die Ergebnisse auf diesen Zeitraum beziehen und kein Allzeit-Ranking darstellen. Geben Sie im Normalfall 1 Abfrage aus, nur bei einem klaren Vergleich von 2 oder",
+    "youTurnTheUsersLatest_11": "Sie verwandeln die neueste Nachricht des Benutzers in einen Websuchplan. Geben Sie AUSSCHLIESSLICH ein JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (Geldbetrag), specs (technische Daten), comparison (benannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false bei Begrüßungen, Smalltalk, Meinungen, Ratschlägen, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitlosem Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer aktuell eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, spezifische Personen, Orte oder Organisationen. Unsicher bei einer spezifischen, überprüfbaren Frage? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste, veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN unter 12 Wörtern, keinem Satz, in DERSELBEN Sprache und Schrift wie die Nachricht des Benutzers – niemals übersetzt; nur dann auf Englisch, wenn der Benutzer auf Englisch geschrieben hat. Behalten Sie die vom Benutzer angegebenen Namen, Orte und Zahlen genau so bei; tauschen Sie diese niemals gegen verwandte aus. Verwenden Sie nur die neueste Nachricht und worauf sie sich bezieht; lösen Sie es/sie/ihn aus dem Gespräch auf. Wandeln Sie relative Zeitwörter (heute, späteste, jetzt, aktuell, dieses Jahr, diese Saison, bisher) in ein konkretes Datum, Jahr oder eine konkrete Saison um – heute ist {today}; für eine \"meiste/beste/Top-X\"-Frage zu einem kürzlichen Zeitraum fügen Sie dieses Jahr oder diese Saison in die Abfrage selbst ein, damit sich die Ergebnisse auf diesen Zeitraum beziehen und kein Allzeit-Ranking darstellen.",
+    "youTurnTheUsersLatest_12": "Sie verwandeln die neueste Nachricht des Benutzers in einen Websuchplan. Geben Sie AUSSCHLIESSLICH ein JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (Geldbetrag), specs (technische Daten), comparison (benannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false bei Begrüßungen, Smalltalk, Meinungen, Ratschlägen, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitlosem Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer aktuell eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, spezifische Personen, Orte oder Organisationen. Unsicher bei einer spezifischen, überprüfbaren Frage? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste, veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN unter 12 Wörtern, keinem Satz, in DERSELBEN Sprache und Schrift wie die Nachricht des Benutzers – niemals übersetzt; nur dann auf Englisch, wenn der Benutzer auf Englisch geschrieben hat. Behalten Sie die vom Benutzer angegebenen Namen, Orte und Zahlen genau so bei; tauschen Sie diese niemals gegen verwandte aus. Verwenden Sie nur die neueste Nachricht und worauf sie sich bezieht; lösen Sie es/sie/ihn aus dem Gespräch auf. Wandeln Sie relative Zeitwörter (heute, späteste, jetzt, aktuell, dieses Jahr, diese Saison, bisher) in ein konkretes Datum, Jahr oder eine konkrete Saison um – heute ist {today}; für eine \"meiste/beste/Top-X\"-Frage zu einem kürzlichen Zeitraum fügen Sie dieses Jahr oder diese Saison in die Abfrage selbst ein, damit sich",
+    "youTurnTheUsersLatest_13": "Sie verwandeln die neueste Nachricht des Benutzers in einen Websuchplan. Geben Sie AUSSCHLIESSLICH ein JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (Geldbetrag), specs (technische Daten), comparison (benannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false bei Begrüßungen, Smalltalk, Meinungen, Ratschlägen, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitlosem Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer aktuell eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, spezifische Personen, Orte oder Organisationen. Unsicher bei einer spezifischen, überprüfbaren Frage? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste, veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN unter 12 Wörtern, keinem Satz, in DERSELBEN Sprache und Schrift wie die Nachricht des Benutzers – niemals übersetzt; nur dann auf Englisch, wenn der Benutzer auf Englisch geschrieben hat. Behalten Sie die vom Benutzer angegebenen Namen, Orte und Zahlen genau so bei; tauschen Sie diese niemals gegen verwandte aus. Verwenden Sie nur die neueste Nachricht und worauf sie sich bezieht; lösen Sie es/sie/ihn aus dem Gespräch auf. Wandeln Sie relative Zeitwörter (heute, späteste, jetzt, aktuell, dieses Jahr, diese Saison, bisher) in ein konkretes Datum, Jahr oder eine konkrete Saison um – heute ist {today}; für eine \"meiste/beste/Top-X\"-Frage zu",
+    "youTurnTheUsersLatest_14": "Sie verwandeln die neueste Nachricht des Benutzers in einen Websuchplan. Geben Sie AUSSCHLIESSLICH ein JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (Geldbetrag), specs (technische Daten), comparison (benannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false bei Begrüßungen, Smalltalk, Meinungen, Ratschlägen, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitlosem Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer aktuell eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, spezifische Personen, Orte oder Organisationen. Unsicher bei einer spezifischen, überprüfbaren Frage? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste, veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN unter 12 Wörtern, keinem Satz, in DERSELBEN Sprache und Schrift wie die Nachricht des Benutzers – niemals übersetzt; nur dann auf Englisch, wenn der Benutzer auf Englisch geschrieben hat. Behalten Sie die vom Benutzer angegebenen Namen, Orte und Zahlen genau so bei; tauschen Sie diese niemals gegen verwandte aus. Verwenden Sie nur die neueste Nachricht und worauf sie sich bezieht; lösen Sie es/sie/ihn aus dem Gespräch auf. Wandeln Sie relative Zeitwörter (heute, späteste, jetzt, aktuell, dieses Jahr, diese Saison, bisher) in ein konkretes Datum, Jahr oder",
+    "youTurnTheUsersLatest_15": "Sie verwandeln die neueste Nachricht des Benutzers in einen Websuchplan. Geben Sie AUSSCHLIESSLICH ein JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (Geldbetrag), specs (technische Daten), comparison (benannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false bei Begrüßungen, Smalltalk, Meinungen, Ratschlägen, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitlosem Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer aktuell eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, spezifische Personen, Orte oder Organisationen. Unsicher bei einer spezifischen, überprüfbaren Frage? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste, veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN unter 12 Wörtern, keinem Satz, in DERSELBEN Sprache und Schrift wie die Nachricht des Benutzers – niemals übersetzt; nur dann auf Englisch, wenn der Benutzer auf Englisch geschrieben hat. Behalten Sie die vom Benutzer angegebenen Namen, Orte und Zahlen genau so bei; tauschen Sie diese niemals gegen verwandte aus. Verwenden Sie nur die neueste Nachricht und worauf sie sich bezieht; lösen Sie es/sie/ihn aus dem Gespräch auf. Wandeln Sie relative Zeitwörter (heute, späteste, jetzt,",
+    "youTurnTheUsersLatest_16": "Sie verwandeln die neueste Nachricht des Benutzers in einen Websuchplan. Geben Sie AUSSCHLIESSLICH ein JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (Geldbetrag), specs (technische Daten), comparison (benannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false bei Begrüßungen, Smalltalk, Meinungen, Ratschlägen, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitlosem Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer aktuell eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, spezifische Personen, Orte oder Organisationen. Unsicher bei einer spezifischen, überprüfbaren Frage? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste, veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN unter 12 Wörtern, keinem Satz, in DERSELBEN Sprache und Schrift wie die Nachricht des Benutzers – niemals übersetzt; nur dann auf Englisch, wenn der Benutzer auf Englisch geschrieben hat. Behalten Sie die vom Benutzer angegebenen Namen, Orte und Zahlen genau so bei; tauschen Sie diese niemals gegen verwandte aus. Verwenden Sie nur die neueste Nachricht und worauf sie sich bezieht; lösen Sie es/sie/ihn",
+    "youTurnTheUsersLatest_22": "Sie verwandeln die neueste Nachricht des Benutzers in einen Websuchplan. Geben Sie AUSSCHLIESSLICH ein JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (Geldbetrag), specs (technische Daten), comparison (benannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false bei Begrüßungen, Smalltalk, Meinungen, Ratschlägen, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitlosem Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer aktuell eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, spezifische Personen, Orte oder Organisationen. Unsicher bei einer spezifischen, überprüfbaren Frage? Wählen Sie true – eine Suche ist",
+    "youTurnTheUsersLatest_23": "Sie verwandeln die neueste Nachricht des Benutzers in einen Websuchplan. Geben Sie AUSSCHLIESSLICH ein JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (Geldbetrag), specs (technische Daten), comparison (benannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false bei Begrüßungen, Smalltalk, Meinungen, Ratschlägen, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitlosem Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer aktuell eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, spezifische Personen, Orte oder Organisationen.",
+    "youTurnTheUsersLatest_24": "Sie verwandeln die neueste Nachricht des Benutzers in einen Websuchplan. Geben Sie AUSSCHLIESSLICH ein JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (Geldbetrag), specs (technische Daten), comparison (benannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false bei Begrüßungen, Smalltalk, Meinungen, Ratschlägen, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitlosem Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer aktuell eine Position innehat, die aktuelle Version von etwas,",
+    "youTurnTheUsersLatest_25": "Sie verwandeln die letzte Nachricht des Nutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Nutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (ein geplantes Ereignis: wo und wann), place (eine Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder wer eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false für Begrüßungen, Smalltalk, Meinungen, Ratschläge, Mathematik, Programmierung, Übersetzung, Umformulierung, Fragen zu dieser Konversation und zeitloses Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, Technische Daten, einen Produkt- oder Modellcode,",
+    "youTurnTheUsersLatest_26": "Sie verwandeln die letzte Nachricht des Nutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Nutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (ein geplantes Ereignis: wo und wann), place (eine Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder wer eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false für Begrüßungen, Smalltalk, Meinungen, Ratschläge, Mathematik, Programmierung, Übersetzung, Umformulierung, Fragen zu dieser Konversation und zeitloses Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise,",
+    "youTurnTheUsersLatest_27": "Sie verwandeln die letzte Nachricht des Nutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Nutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (ein geplantes Ereignis: wo und wann), place (eine Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder wer eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false für Begrüßungen, Smalltalk, Meinungen, Ratschläge, Mathematik, Programmierung, Übersetzung, Umformulierung, Fragen zu dieser Konversation und zeitloses Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die",
+    "youTurnTheUsersLatest_28": "Sie verwandeln die letzte Nachricht des Nutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Nutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (ein geplantes Ereignis: wo und wann), place (eine Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder wer eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false für Begrüßungen, Smalltalk, Meinungen, Ratschläge, Mathematik, Programmierung, Übersetzung, Umformulierung, Fragen zu dieser Konversation und",
+    "youTurnTheUsersLatest_29": "Sie verwandeln die letzte Nachricht des Nutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Nutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (ein geplantes Ereignis: wo und wann), place (eine Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder wer eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false für Begrüßungen, Smalltalk, Meinungen, Ratschläge, Mathematik,",
+    "youTurnTheUsersLatest_30": "Sie verwandeln die letzte Nachricht des Nutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Nutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (ein geplantes Ereignis: wo und wann), place (eine Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder wer eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).",
+    "youTurnTheUsersLatest_31": "Sie verwandeln die letzte Nachricht des Nutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Nutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (ein geplantes Ereignis: wo und wann), place (eine Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder wer eine",
+    "youTurnTheUsersLatest_32": "Sie verwandeln die letzte Nachricht des Nutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Nutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (ein geplantes Ereignis: wo und wann), place (ein",
+    "youTurnTheUsersLatest_33": "Sie verwandeln die letzte Nachricht des Nutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Nutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im direkten Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist",
+    "youTurnTheUsersLatest_34": "Sie verwandeln die letzte Nachricht des Nutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Nutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im direkten Vergleich), recommendation (welches man",
+    "youTurnTheUsersLatest_35": "Sie verwandeln die letzte Nachricht des Nutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Nutzers; [] wenn needs_search false ist.\n\"kind\": eines von price (ein Geldbetrag), specs (technische Daten),",
+    "youTurnTheUsersLatest_36": "Sie verwandeln die letzte Nachricht des Nutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Nutzers; [] wenn needs_search false ist.",
+    "youTurnTheUsersLatest_37": "Sie verwandeln die letzte Nachricht des Nutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Nutzers; [] wenn needs_search",
+    "youTurnTheUsersLatest_38": "Sie verwandeln die letzte Nachricht des Nutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine",
+    "youTurnTheUsersLatest_39": "Sie verwandeln die letzte Nachricht des Nutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}",
+    "youTurnTheUsersLatest_41": "Sie verwandeln die letzte Nachricht des Nutzers in einen Websuchplan.",
+    "outputOnlyOneJsonObject": "Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:",
+    "expectsThe14ThingsA": "\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit",
+    "itsUnitADateA": "dessen Einheit, ein Datum, ein Name) in der Sprache des Nutzers; [] wenn needs_search",
+    "isFalse": "falsch ist.",
+    "kindOneOfPriceAn": "\"kind\": eines von price (Geldbetrag), specs (technische Kennzahlen),",
+    "comparisonNamedThingsSideBy": "comparison (benannte Dinge im direkten Vergleich), recommendation (welches man",
+    "chooseNewsRecentEventsDate": "auswählen soll), news (aktuelle Ereignisse), date (wann etwas passiert oder",
+    "happenedEventAScheduledHappening": "passiert ist), event (eine geplante Veranstaltung: wo und wann), place (eine",
+    "addressOpeningHoursContactPerson": "Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder wer eine",
+    "positionFactOneCheckableFact": "Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).",
+    "needsSearchIsFalseForGreetings": "needs_search ist falsch bei Begrüßungen, Smalltalk, Meinungen, Ratschlägen, Mathematik,",
+    "codingTranslationRewritingQuestionsAbout": "Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und",
+    "timelessGeneralKnowledgeThen": "zeitlosem Allgemeinwissen – dann \"queries\": []. Es ist wahr, wenn die",
+    "bestAnswerNeedsFreshLocal": "beste Antwort aktuelle, lokale oder überprüfbare Fakten benötigt: Nachrichten, Preise,",
+    "weatherScoresSchedulesReleasesSpecs": "Wetter, Spielstände, Zeitpläne, Veröffentlichungen, Technische Daten, ein Produkt- oder Modellcode,",
+    "whoCurrentlyHoldsAPosition": "wer derzeit eine Position innehat, die aktuelle Version von etwas,",
+    "openingHoursOrAnAddress": "Öffnungszeiten oder eine Adresse, bestimmte Personen, Orte oder Organisationen.",
+    "unsureAboutASpecificCheckable": "Unsicher bei einer konkreten, überprüfbaren Frage? Wähle „true“ – eine Suche ist",
+    "cheapAConfidentStaleAnswer": "günstig, eine selbstbewusste veraltete Antwort hingegen nicht.",
+    "eachQueryIsSearchKeywords": "Jede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN mit weniger als 12 Wörtern, keinem Satz, in der",
+    "sameLanguageAndScriptAs": "GLEICHEN Sprache und Schrift wie die Nachricht des Nutzers – niemals übersetzt;",
+    "englishOnlyWhenTheUser": "Nur dann auf Englisch, wenn der Nutzer auf Englisch geschrieben hat. Behalte Namen, Orte und",
+    "numbersTheUserGaveExactly": "Zahlen bei, die der Nutzer genannt hat, exakt wie angegeben; ersetze sie nie durch ähnliche.",
+    "useOnlyTheLatestMessage": "Verwende nur die neueste Nachricht und worauf sie sich bezieht; löse es/das/sie",
+    "fromTheConversationTurnRelative": "aus dem Gespräch auf. Wandle relative Zeitwörter (heute, aktuell, jetzt,",
+    "currentThisYearThisSeason": "laufend, dieses Jahr, diese Saison, bisher) in ein konkretes Datum, Jahr oder",
+    "seasonTodayIsToday": "eine Saison um – heute ist {today}; bei einer Frage nach „am meisten/besten/Top-X“ für einen",
+    "recentPeriodPutThatYear": "jüngsten Zeitraum nenne dieses Jahr oder diese Saison direkt in der Abfrage, damit die Ergebnisse",
+    "areAboutThatPeriodAnd": "sich auf diesen Zeitraum beziehen und kein Allzeit-Ranking sind.",
+    "give1QueryNormallyOne": "Geben Sie standardmäßig 1 Suchanfrage an, eine pro Element NUR für einen klaren Vergleich von 2 oder",
+    "3NamedThingsMax3": "3 benannten Dingen (max. 3 Suchanfragen).",
+    "aCasuallyWordedMessageWraps": "Eine formlose Nachricht verpackt den Gegenstand, um den es geht, in Begleitumstände –",
+    "whoItIsForWhy": "für wen er ist, warum er gewünscht wird, wie er verwendet wird, \"solche Dinge\",",
+    "somethingLikeThatKeepThe": "\"etwas in der Art\". Behalten Sie die konkrete Sache und wonach gefragt wird,",
+    "itDropTheCircumstanceSearching": "lassen Sie die Umstände weg. Nach dem Anlass statt nach dem Objekt zu suchen,",
+    "returnsTheWrongShopsAnd": "liefert die falschen Shops und die falschen Seiten.",
+    "thoseAreOnlyFormatExamples": "Dies sind nur Formatbeispiele – richten Sie sich nach der tatsächlichen Nutzernachricht unten",
+    "andNeverCopyTheirWords": "und kopieren Sie niemals deren Wörter oder Themen.",
+    "recapOfThisConversation_2": "Zusammenfassung dieses Gesprächs",
+    "eReaderRecommendation": "E-Reader-Empfehlung",
+    "mostStreamedSongThisYear": "meistgestreamter Song dieses Jahr",
+    "currentKrakowWeather": "aktuelles Wetter in Krakau",
+    "currentDelhiWeather": "aktuelles Wetter in Delhi",
+    "cenaWędki": "Angelrute Preis",
+    "youTurnTheUsersLatest_17": "Sie verwandeln die letzte Nachricht des Benutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines aus price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (eine Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false für Begrüßungen, Smalltalk, Meinungen, Ratschläge, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitloses Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer derzeit eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, bestimmte Personen, Orte oder Organisationen. Sind Sie sich bei einer bestimmten, überprüfbaren Frage unsicher? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN mit weniger als 12 Wörtern, keinem Satz, in derselben Sprache und Schrift wie die Nachricht des Benutzers – niemals übersetzt; nur dann auf Englisch, wenn der Benutzer auf Englisch geschrieben hat. Behalten Sie die vom Benutzer angegebenen Namen, Orte und Zahlen genau so bei; tauschen Sie niemals gegen ähnliche aus.",
+    "youTurnTheUsersLatest_18": "Sie verwandeln die letzte Nachricht des Benutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines aus price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (eine Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false für Begrüßungen, Smalltalk, Meinungen, Ratschläge, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitloses Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer derzeit eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, bestimmte Personen, Orte oder Organisationen. Sind Sie sich bei einer bestimmten, überprüfbaren Frage unsicher? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN mit weniger als 12 Wörtern, keinem Satz, in derselben Sprache und Schrift wie die Nachricht des Benutzers – niemals übersetzt; nur dann auf Englisch, wenn der Benutzer auf Englisch geschrieben hat. Behalten Sie die Namen, Orte und",
+    "youTurnTheUsersLatest_19": "Sie verwandeln die letzte Nachricht des Benutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines aus price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (eine Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false für Begrüßungen, Smalltalk, Meinungen, Ratschläge, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitloses Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer derzeit eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, bestimmte Personen, Orte oder Organisationen. Sind Sie sich bei einer bestimmten, überprüfbaren Frage unsicher? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN mit weniger als 12 Wörtern, keinem Satz, in derselben Sprache und Schrift wie die Nachricht des Benutzers – niemals übersetzt;",
+    "youTurnTheUsersLatest_20": "Sie verwandeln die letzte Nachricht des Benutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines aus price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (eine Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false für Begrüßungen, Smalltalk, Meinungen, Ratschläge, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitloses Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer derzeit eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, bestimmte Personen, Orte oder Organisationen. Sind Sie sich bei einer bestimmten, überprüfbaren Frage unsicher? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN mit weniger als 12 Wörtern, keinem Satz, in der",
+    "youTurnTheUsersLatest_21": "Sie verwandeln die letzte Nachricht des Benutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines aus price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (eine Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false für Begrüßungen, Smalltalk, Meinungen, Ratschläge, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitloses Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer derzeit eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, bestimmte Personen, Orte oder Organisationen. Sind Sie sich bei einer bestimmten, überprüfbaren Frage unsicher? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste veraltete Antwort nicht.",
+    "youTurnTheUsersLatest_40": "Du verwandelst die neueste Nachricht des Nutzers in einen Websuchplan. Gib NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:"
+  },
+  "fetch-failure": {
+    "blockedTheReader": "hat den Lesemodus blockiert",
+    "pageIsGone": "Seite ist nicht mehr vorhanden",
+    "siteIsDown": "Website ist offline",
+    "tookTooLong": "hat zu lange gedauert",
+    "notReadableText": "kein lesbarer Text",
+    "pageTooBig": "Seite zu groß",
+    "noReadableText": "kein lesbarer Text",
+    "couldNotBeReached": "konnte nicht erreicht werden"
+  },
+  "currency-quote": {
+    "frankfurterEuropeanCentralBank": "Frankfurter — Referenzkurse der Europäischen Zentralbank"
+  },
+  "run-web-search": {
+    "incorrect": "inkorrekt",
+    "correct": "korrekt"
+  },
+  "charset": {
+    "untitled": "€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ",
+    "untitled_2": "€‚„…†‡‰Š‹ŚŤŽŹ‘’“”•–—™š›śťžź ˇ˘Ł¤Ą¦§¨©Ş«¬­®Ż°±˛ł´µ¶·¸ąş»Ľ˝ľżŔÁÂĂÄĹĆÇČÉĘËĚÍÎĎĐŃŇÓÔŐÖ×ŘŮÚŰÜÝŢßŕáâăäĺćçčéęëěíîďđńňóôőö÷řůúűüýţ˙"
+  },
+  "extract-article": {
+    "inStock": "auf Lager",
+    "outOfStock": "nicht auf Lager",
+    "limitedAvailability": "eingeschränkte Verfügbarkeit",
+    "soldOut": "ausverkauft",
+    "backOrder": "nachbestellt",
+    "onlineOnly": "nur online",
+    "availableInStore": "im Geschäft erhältlich"
+  },
+  "_meta": {
+    "dir": "ltr",
+    "language": "de"
   },
   "benchmark": {
     "model": "Modell",
@@ -140,388 +703,6 @@
     "enterExternalConfigUrl": "Externe Konfigurations-URL eingeben",
     "addExternalModel": "Externes Modell hinzufügen"
   },
-  "custom-system-prompt": {
-    "preferencesSaved": "Einstellungen gespeichert",
-    "howWouldYouLikePrivate": "Wie soll Private Mind antworten?",
-    "thesePreferencesShapeEveryConversation": "Diese Einstellungen prägen jedes Gespräch.",
-    "eGBeConciseAndExplain": "z. B. Fasse dich kurz und erkläre deine Gedankengänge. Vermeide Fachjargon.",
-    "customInstructions": "Benutzerdefinierte Anweisungen"
-  },
-  "downloads": {
-    "downloadingLength": "Wird heruntergeladen · {length}",
-    "downloadingLength_zero": "Wird heruntergeladen · {length}",
-    "downloadingLength_one": "Wird heruntergeladen · {length}",
-    "downloadingLength_two": "Wird heruntergeladen · {length}",
-    "downloadingLength_few": "Wird heruntergeladen · {length}",
-    "downloadingLength_many": "Wird heruntergeladen · {length}",
-    "downloadingLength_other": "Wird heruntergeladen · {length}",
-    "onThisDeviceLength": "Auf diesem Gerät · {length}",
-    "onThisDeviceLength_zero": "Auf diesem Gerät · {length}",
-    "onThisDeviceLength_one": "Auf diesem Gerät · {length}",
-    "onThisDeviceLength_two": "Auf diesem Gerät · {length}",
-    "onThisDeviceLength_few": "Auf diesem Gerät · {length}",
-    "onThisDeviceLength_many": "Auf diesem Gerät · {length}",
-    "onThisDeviceLength_other": "Auf diesem Gerät · {length}",
-    "noModelsOnThisDevice": "Noch keine Modelle auf diesem Gerät.",
-    "downloads": "Herunterladen"
-  },
-  "model-id": {
-    "missingFields": "Vermisste Felder",
-    "pleaseSelectAllNecessaryFiles": "Bitte wählen Sie alle notwendigen Dateien aus.",
-    "modelnameHasBeenSuccessfullyUpdated": "{modelName} wurde erfolgreich aktualisiert",
-    "modelName": "Modellname",
-    "modelFile": "Modelldatei",
-    "tokenizerFile": "Tokenizer-Datei",
-    "tokenizerConfigFile": "Tokenizer Konfigurationsdatei",
-    "editLocalModel": "Bearbeiten Sie das lokale Modell",
-    "missingFields_2": "Vermisste Felder",
-    "pleaseSelectAllNecessaryFiles_2": "Bitte wählen Sie alle notwendigen Dateien aus.",
-    "modelnameHasBeenSuccessfullyUpdated_2": "{modelName} wurde erfolgreich aktualisiert",
-    "modelName_2": "Modellname",
-    "modelUrl": "Modell-URL",
-    "enterExternalModelUrl": "Geben Sie die URL des externen Modells ein",
-    "tokenizerUrl": "URL des Tokenizers",
-    "enterExternalTokenizerUrl": "Geben Sie einen externen Tokenizer-URL ein",
-    "tokenizerConfigUrl": "Tokenizer Konfigurieren Sie die URL",
-    "enterExternalConfigUrl": "Geben Sie die URL der externen Konfiguration ein",
-    "editRemoteModel": "Bearbeiten Sie das Remote-Modell"
-  },
-  "family": {
-    "downloadedcountDownloadedDownloadedgbGb": "{downloadedCount} heruntergeladen · {downloadedGB} GB",
-    "noneDownloaded": "Nichts heruntergeladen",
-    "noVariantsAvailable": "Keine Varianten sind verfügbar.",
-    "variantsLength": "Varianten · {length}",
-    "variantsLength_zero": "Varianten · {length}",
-    "variantsLength_one": "Varianten · {length}",
-    "variantsLength_two": "Varianten · {length}",
-    "variantsLength_few": "Varianten · {length}",
-    "variantsLength_many": "Varianten · {length}",
-    "variantsLength_other": "Varianten · {length}"
-  },
-  "select-starting-model": {
-    "modelsCannotBeDownloadedWithout": "Modelle können nicht ohne Internetverbindung heruntergeladen werden.",
-    "downloadingDownloadpercent": "Ich lasse... {downloadPercent}",
-    "startingDownload": "Beginn des Downloads",
-    "startChatting": "Beginnen Sie mit dem Gespräch",
-    "chooseAStartingModel": "Wählen Sie ein Startmodell",
-    "downloadYourFirstModelTo": "Laden Sie Ihr erstes Modell herunter, um mit Private Mind zu beginnen.",
-    "chatModels": "Chat-Modelle",
-    "noSuggestedModelFitsThis": "Kein vorgeschlagenes Modell passt zum Gedächtnis dieses Geräts.",
-    "optionalYouCanStillGet": "Das ist optional. Sie können diese noch später bekommen."
-  },
-  "app-toast": {
-    "openSettings": "Offene Einstellungen",
-    "retry": "Wiederholen",
-    "dismiss": "Ablehnen"
-  },
-  "no-model-welcome": {
-    "chooseAModelToGet": "Wählen Sie ein Modell, um mit Private Mind zu beginnen"
-  },
-  "upload-input": {
-    "selectAFile": "Wählen Sie eine Datei"
-  },
-  "whats-new-badge": {
-    "whatsNewInVersionInstalledversion": "Was ist neu in der Version {installedVersion}: {title}?",
-    "new": "Neu"
-  },
-  "benchmark-history": {
-    "thereAreNoBenchmarksTo": "Es gibt noch keine Benchmarks zu zeigen"
-  },
-  "benchmark-item": {
-    "modelnameTokenspersecondTokensPerSecond": "{modelName}, {tokensPerSecond} Token pro Sekunde",
-    "tokensS": "Token/s"
-  },
-  "benchmark-modal": {
-    "runningABenchmark": "Durchführen eines Benchmarks",
-    "itMayTakeAround13": "Es dauert etwa drei Minuten",
-    "yourBenchmarkIsReady": "Ihr Maßstab ist bereit!"
-  },
-  "benchmark-stats-card": {
-    "speed": "Geschwindigkeit",
-    "firstToken": "Das erste Token",
-    "totalTime": "Gesamtzeit",
-    "peakMemory": "Höchstes Gedächtnis"
-  },
-  "model-selector": {
-    "changeModelCurrentModelname": "Veränderungsmodell, aktuell {modelName}",
-    "selectAModel": "Wählen Sie ein Modell",
-    "selectAModel_2": "Wählen Sie ein Modell",
-    "change": "Veränderung",
-    "choose": "Wählen Sie"
-  },
-  "add-model-sheet": {
-    "addModel": "Hinzufügen des Modells"
-  },
-  "benchmark-result-sheet": {
-    "var0Gb": "{var0} GB",
-    "benchmarkResults": "Benchmark-Ergebnisse",
-    "deleteResult": "Löschen Sie das Ergebnis"
-  },
-  "model-management-sheet": {
-    "startAChat": "Beginnen Sie mit dem Chat",
-    "runBenchmark": "Benchmark ausführen",
-    "editModel": "Bearbeiten Sie das Modell",
-    "deleteDownloadedFiles": "Löschen Sie heruntergeladenen Dateien",
-    "removeFromTheApp": "Entfernen Sie die App",
-    "removeModelFromTheApp": "Entfernen Sie das Modell aus der App?",
-    "modelnameWillBeRemovedFrom": "{modelName} wird von der App entfernt. Die Originaldateien auf Ihrem Gerät werden nicht berührt.",
-    "modelnameAndItsStoredExternal": "{modelName} und seine gespeicherten externen URLs werden entfernt. Sie können es manuell wieder hinzufügen.",
-    "remove": "Entfernen",
-    "modelnameHasBeenSuccessfullyDeleted": "{modelName} wurde erfolgreich gelöscht"
-  },
-  "model-select-sheet": {
-    "selectAModel": "Wählen Sie ein Modell",
-    "searchModels": "Suchmodelle",
-    "manageModels": "Verwalten Sie Modelle",
-    "youHaveNoAvailableModels": "Sie haben noch keine verfügbaren Modelle",
-    "toUsePrivateMindYou": "Um Private Mind zu verwenden, müssen Sie mindestens ein Modell herunterladen haben"
-  },
-  "model-update-sheet": {
-    "var0Gb": "{var0} GB"
-  },
-  "web-scrape-sheet": {
-    "privateMindIsBrowsingFor": "Private Mind sucht nach dir",
-    "confirmYouReHumanToContinue": "Bestätigen Sie, dass Sie menschlich sind, um weiterzumachen",
-    "skipSearch": "Überspringen Sie die Suche",
-    "done": "Fertig"
-  },
-  "whats-new-sheet": {
-    "whatsNew": "Was ist neu?"
-  },
-  "chat-menu-popover": {
-    "chatOptions": "Chat-Optionen",
-    "chat": "Chatten Sie mit",
-    "renameChat": "Umbenennen Sie den Namen",
-    "chatName": "Chat-Name",
-    "save": "Speichern",
-    "share": "Teilen",
-    "deleteChat": "Löschen Sie den Chat"
-  },
-  "animated-chat-loading": {
-    "generating": "Erzeugen Sie"
-  },
-  "attachment-thumbnail": {
-    "document": "Dokument"
-  },
-  "branch-marker": {
-    "openSourceConversationSourcechattitle": "Open-Source-Gespräch: {sourceChatTitle}",
-    "sourceConversation": "Quelle Gespräch"
-  },
-  "chat-bar": {
-    "thisModelDoesNotSupport": "Dieses Modell unterstützt keine Bilder",
-    "canceled": "Storniert",
-    "waitForTheResponseTo": "Warten Sie auf die Antwort, um es zu beenden oder zu stoppen.",
-    "thisModelDoesNotSupport_2": "Dieses Modell unterstützt keine Bilder",
-    "unsupportedClipboardContent": "Ununterstütztes Clipboard-Inhalt",
-    "errorProcessingPastedContent": "Fehlerbearbeitung geklebter Inhalte",
-    "waitForTheAttachmentTo": "Warten Sie, bis die Anhänge fertig sind.",
-    "index": "in der Region",
-    "askAnything": "Fragen Sie mich was auch immer"
-  },
-  "chat-bar-actions": {
-    "waitForTheDocumentTo": "Warten Sie, bis das Dokument fertig ist.",
-    "think": "Denken Sie nach",
-    "webSearch": "Websuche"
-  },
-  "chat-title": {
-    "showntitleChatOptions": "{shownTitle} Uhr. Chat-Optionen"
-  },
-  "composer-model-badge": {
-    "modelModelnameLoading": "Modell: {modelName}. Verladung",
-    "modelModelname": "Modell: {modelName}",
-    "modelModelnameChangeModel": "Modell: {modelName}. Veränderungsmodell"
-  },
-  "dominant-source-badge": {
-    "source": "Quelle: {sourceName}"
-  },
-  "markdown-component": {
-    "menlo": "in der Region"
-  },
-  "memory-stall-card": {
-    "thisIsTakingLongerThan": "Das dauert länger als üblich"
-  },
-  "message-item": {
-    "copy": "Kopieren",
-    "fork": "Fork",
-    "sources": "Quellen",
-    "sources_2": "Quellen",
-    "generating": "Erzeugen Sie",
-    "refining": "Die Raffinierung"
-  },
-  "messages": {
-    "retryResponseGeneration": "Wiederholung der Reaktionsgeneration",
-    "retry": "Wiederholen"
-  },
-  "model-unavailable-card": {
-    "messageChooseAModel": "{message} Uhr. Wählen Sie ein Modell"
-  },
-  "scroll-to-latest-button": {
-    "scrollToLatestMessage": "Scrollen Sie auf neueste Nachricht"
-  },
-  "sources-sheet": {
-    "sources": "Quellen"
-  },
-  "stopped-marker": {
-    "retryThisResponse": "Versuchen Sie diese Antwort erneut",
-    "retry": "Wiederholen"
-  },
-  "thinking-block": {
-    "thinking": "Ich denke."
-  },
-  "user-message-action-menu": {
-    "copy": "Kopieren"
-  },
-  "web-search-trace-row": {
-    "tapToConfirmYouReNot": "Tippen Sie, um zu bestätigen, dass Sie kein Roboter sind",
-    "theSiteWantsToCheck": "Die Website möchte überprüfen, ob Sie kein Roboter sind"
-  },
-  "attachment-menu": {
-    "camera": "Kamera in der Nähe",
-    "photos": "Fotografien",
-    "files": "Dateien"
-  },
-  "attachment-overlay": {
-    "front": "Vorwärts",
-    "back": "Zurück",
-    "off": "Abgeschaltet",
-    "closeAttachmentMenu": "Schließendes Befestigungsmenü"
-  },
-  "camera-bar": {
-    "takePhoto": "Nehmen Sie ein Foto",
-    "turnFlashOn": "Schalten Sie den Blitz ein",
-    "turnFlashOff": "Schalten Sie den Blitz aus",
-    "flipCamera": "Flip-Kamera",
-    "hideCameraOptions": "Versteckkameraoptionen",
-    "cameraOptions": "Kameraoptionen"
-  },
-  "camera-sheet": {
-    "cameraAccessIsOffTurn": "Der Zugang zur Kamera ist abgeschaltet. Schalten Sie es in Einstellungen ein, um hier ein Foto zu machen.",
-    "waitingForCameraAccess": "Ich warte auf den Zugang der Kamera"
-  },
-  "photo-grid": {
-    "loadingPhotos": "Die Fotos laden",
-    "noPhotosOnThisDevice": "Keine Fotos auf diesem Gerät.",
-    "photoAccessIsOffTurn": "Der Fotozugriff ist abgeschaltet. Schalten Sie es in Einstellungen ein, um hier Fotos zu machen."
-  },
-  "photo-grid-bar": {
-    "add1Photo": "Fügen Sie 1 Foto hinzu",
-    "addCountPhotos": "Fügen Sie {count} Fotos hinzu",
-    "addCountPhotos_zero": "Fügen Sie {count} Fotos hinzu",
-    "addCountPhotos_one": "Fügen Sie {count} Fotos hinzu",
-    "addCountPhotos_two": "Fügen Sie {count} Fotos hinzu",
-    "addCountPhotos_few": "Fügen Sie {count} Fotos hinzu",
-    "addCountPhotos_many": "Fügen Sie {count} Fotos hinzu",
-    "addCountPhotos_other": "Fügen Sie {count} Fotos hinzu",
-    "allPhotos": "Alle Fotos",
-    "allPhotos_2": "Alle Fotos",
-    "allPhotos_3": "Alle Fotos"
-  },
-  "sheet-bar": {
-    "backToMenu": "Zurück zum Menü"
-  },
-  "sheet-placeholder": {
-    "openSettings": "Offene Einstellungen"
-  },
-  "use-chat-screen-actions": {
-    "thinkingCannotBeEnabledFor": "Für dieses Modell ist das Denken nicht möglich.",
-    "thisModelCannotUseWeb": "Dieses Modell kann Webergebnisse nicht zuverlässig nutzen wählen Sie eine größere."
-  },
-  "use-send-chat-message": {
-    "failedToSaveImageAttachment": "Es ist nicht gelungen, die Bildbindung zu retten.",
-    "couldnTFindAnythingUsefulOnline": "Ich konnte nichts Nützliches online finden, ohne das Web zu beantworten."
-  },
-  "web-search-trace": {
-    "noInternetAnsweredWithout": "Kein Internet Antwort ohne das Web",
-    "searchTookTooLong": "Die Suche dauerte zu lange",
-    "noSearchNeededAnswered": "Keine Suche nötig Beantworten sofort",
-    "aLargeModelTakesLonger": "Ein großes Modell dauert länger auf diesem Handy",
-    "done": "Fertig",
-    "didnTFindMuchThe": "Ich habe nicht viel gefunden. Die Antwort ist vielleicht unvollständig",
-    "readingThePages": "Lesen Sie die Seiten",
-    "nothingFound": "Nichts gefunden",
-    "decidingWhatToSearchFor": "Ich entscheide, was ich suchen soll",
-    "nothingFound_2": "Nichts gefunden"
-  },
-  "drawer-empty-state": {
-    "noChatsMatch": "Kein Chat passt zu \"{query}\"",
-    "startNewChat": "Starten Sie einen neuen Chat"
-  },
-  "drawer-footer": {
-    "settings": "Einstellungen",
-    "newChat": "Neuer Chat",
-    "newChat_2": "Neuer Chat"
-  },
-  "drawer-nav-section": {
-    "manageModels": "Verwalten Sie Modelle"
-  },
-  "drawer-top-bar": {
-    "searchChats": "Suchgespräche",
-    "searchChats_2": "Suchgespräche",
-    "closeSearch": "Eine genaue Suche"
-  },
-  "download-percent": {
-    "startingDownload": "Download beginnt"
-  },
-  "download-progress-details": {
-    "ofGb": "{modelSize} von {modelSize2} GB"
-  },
-  "downloaded-badge": {
-    "downloaded": "Heruntergeladen"
-  },
-  "downloads-header-button": {
-    "downloadsCountInProgress": "{count} Downloads im Vorfeld",
-    "downloadsCountInProgress_zero": "{count} Downloads im Vorfeld",
-    "downloadsCountInProgress_one": "{count} Downloads im Vorfeld",
-    "downloadsCountInProgress_two": "{count} Downloads im Vorfeld",
-    "downloadsCountInProgress_few": "{count} Downloads im Vorfeld",
-    "downloadsCountInProgress_many": "{count} Downloads im Vorfeld",
-    "downloadsCountInProgress_other": "{count} Downloads im Vorfeld",
-    "downloads": "Herunterladen"
-  },
-  "family-provider-row": {
-    "madeByProvider": "Hergestellt von {provider}",
-    "madeBy": "Hergestellt von"
-  },
-  "model-capability-badges": {
-    "custom": "Benutzerdefiniert"
-  },
-  "model-download-row": {
-    "download": "Herunterladen",
-    "cancelDownload": "Entfernen Sie den Download",
-    "deleteModelFiles": "Löschen Sie Modelldateien",
-    "updateModelname": "Aktualisierung {modelName}",
-    "modelnameDownloadProgress": "{modelName} Download Fortschritt"
-  },
-  "model-hub-tabs": {
-    "recommended": "empfohlen",
-    "experimental": "Experimental",
-    "mine": "Die meiner",
-    "modelLists": "Modelllisten"
-  },
-  "swm-attribution-card": {
-    "originalModelByProvider": "Originalmodell von {provider}"
-  },
-  "app-notices": {
-    "dismiss": "Ablehnen"
-  },
-  "onboarding-carousel": {
-    "skipOnboarding": "Überspringen Sie die Einfahrt",
-    "skip": "Überspringen"
-  },
-  "onboarding-intro-panel": {
-    "yourPrivateAiMind": "Ihr privater KI-Geist.",
-    "inYourPocket": "In deiner Tasche."
-  },
-  "onboarding-pagination": {
-    "goToSlideVar0Of": "Gehen Sie zum {var0} von {count}",
-    "goToSlideVar0Of_zero": "Gehen Sie zum {var0} von {count}",
-    "goToSlideVar0Of_one": "Gehen Sie zum {var0} von {count}",
-    "goToSlideVar0Of_two": "Gehen Sie zum {var0} von {count}"
-  },
-  "use-attachment": {
-    "failedToDownloadTheDocument": "Das Dokumentenmodell konnte nicht heruntergeladen werden.",
-    "onlyImagesCanBePasted": "Es können nur Bilder eingefügt werden. Verwenden Sie die +-Schaltfläche für Dokumente."
-  },
   "use-chat-branching": {
     "sendAMessageBeforeBranching": "Senden Sie eine Nachricht, bevor Sie diesen Chat verzweigen.",
     "failedToForkConversation": "Unterhaltung konnte nicht verzweigt werden.",
@@ -543,33 +724,10 @@
     "chatWithFilesSearchThe": "Mit Dateien chatten, im Web suchen",
     "speakInsteadOfTyping": "Sprechen statt tippen"
   },
-  "llm-store": {
-    "replyInOneWord": "Antworte in einem Wort.",
-    "iCouldNotAnswerThis": "Ich konnte diese Frage anhand der gefundenen Quellen nicht beantworten.",
-    "modelCannotBeLoadedWithout": "Das Modell kann nicht ohne Internetverbindung geladen werden.",
-    "danglingListAnswerContinuationNudge": "Unvollständige Listenantwort, Fortsetzung anfordern"
-  },
   "copied-toast": {
     "messageCopied": "Nachricht kopiert"
   },
   "model-catalog-schema": {
     "mustBeAnHttpsUrl": "muss eine https://-URL sein"
-  },
-  "build-search-query": {
-    "eReaderRecommendation": "E-Reader-Empfehlung",
-    "mostStreamedSongThisYear": "meistgestreamter Song dieses Jahr",
-    "currentKrakowWeather": "aktuelles Wetter in Krakau",
-    "currentDelhiWeather": "aktuelles Wetter in Delhi",
-    "cenaWędki": "Angelrute Preis",
-    "youTurnTheUsersLatest_17": "Sie verwandeln die letzte Nachricht des Benutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines aus price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (eine Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false für Begrüßungen, Smalltalk, Meinungen, Ratschläge, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitloses Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer derzeit eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, bestimmte Personen, Orte oder Organisationen. Sind Sie sich bei einer bestimmten, überprüfbaren Frage unsicher? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN mit weniger als 12 Wörtern, keinem Satz, in derselben Sprache und Schrift wie die Nachricht des Benutzers – niemals übersetzt; nur dann auf Englisch, wenn der Benutzer auf Englisch geschrieben hat. Behalten Sie die vom Benutzer angegebenen Namen, Orte und Zahlen genau so bei; tauschen Sie niemals gegen ähnliche aus.",
-    "youTurnTheUsersLatest_18": "Sie verwandeln die letzte Nachricht des Benutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines aus price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (eine Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false für Begrüßungen, Smalltalk, Meinungen, Ratschläge, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitloses Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer derzeit eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, bestimmte Personen, Orte oder Organisationen. Sind Sie sich bei einer bestimmten, überprüfbaren Frage unsicher? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN mit weniger als 12 Wörtern, keinem Satz, in derselben Sprache und Schrift wie die Nachricht des Benutzers – niemals übersetzt; nur dann auf Englisch, wenn der Benutzer auf Englisch geschrieben hat. Behalten Sie die Namen, Orte und",
-    "youTurnTheUsersLatest_19": "Sie verwandeln die letzte Nachricht des Benutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines aus price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (eine Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false für Begrüßungen, Smalltalk, Meinungen, Ratschläge, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitloses Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer derzeit eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, bestimmte Personen, Orte oder Organisationen. Sind Sie sich bei einer bestimmten, überprüfbaren Frage unsicher? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN mit weniger als 12 Wörtern, keinem Satz, in derselben Sprache und Schrift wie die Nachricht des Benutzers – niemals übersetzt;",
-    "youTurnTheUsersLatest_20": "Sie verwandeln die letzte Nachricht des Benutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines aus price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (eine Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false für Begrüßungen, Smalltalk, Meinungen, Ratschläge, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitloses Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer derzeit eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, bestimmte Personen, Orte oder Organisationen. Sind Sie sich bei einer bestimmten, überprüfbaren Frage unsicher? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste veraltete Antwort nicht.\nJede Abfrage besteht aus Such-SCHLÜSSELWÖRTERN mit weniger als 12 Wörtern, keinem Satz, in der",
-    "youTurnTheUsersLatest_21": "Sie verwandeln die letzte Nachricht des Benutzers in einen Websuchplan. Geben Sie NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": die 1 bis 4 Dinge, die eine vollständige Antwort enthalten muss (ein Wert mit Einheit, ein Datum, ein Name), in der Sprache des Benutzers; [] wenn needs_search false ist.\n\"kind\": eines aus price (ein Geldbetrag), specs (technische Daten), comparison (genannte Dinge im Vergleich), recommendation (welches man wählen soll), news (aktuelle Ereignisse), date (wann etwas passiert ist oder passiert), event (eine geplante Veranstaltung: wo und wann), place (eine Adresse, Öffnungszeiten, Kontakt), person (wer jemand ist oder eine Position innehat), fact (eine überprüfbare Tatsache), howto (Schritte), chat (keine Suche).\nneeds_search ist false für Begrüßungen, Smalltalk, Meinungen, Ratschläge, Mathematik, Programmierung, Übersetzung, Umschreiben, Fragen zu diesem Gespräch und zeitloses Allgemeinwissen – dann \"queries\": []. Es ist true, wenn die beste Antwort aktuelle, lokale oder überprüfbare Fakten erfordert: Nachrichten, Preise, Wetter, Spielstände, Zeitpläne, Veröffentlichungen, technische Daten, ein Produkt- oder Modellcode, wer derzeit eine Position innehat, die aktuelle Version von etwas, Öffnungszeiten oder eine Adresse, bestimmte Personen, Orte oder Organisationen. Sind Sie sich bei einer bestimmten, überprüfbaren Frage unsicher? Wählen Sie true – eine Suche ist günstig, eine selbstbewusste veraltete Antwort nicht.",
-    "youTurnTheUsersLatest_40": "Du verwandelst die neueste Nachricht des Nutzers in einen Websuchplan. Gib NUR ein einziges JSON-Objekt aus, keinen anderen Text und keine Begründung:"
-  },
-  "_meta": {
-    "dir": "ltr",
-    "language": "de"
   }
 }
