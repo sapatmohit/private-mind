@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useThemedStyles } from '../../hooks/useThemedStyles';
@@ -19,6 +20,7 @@ interface Props {
 }
 
 const DownloadedBadge = ({ size = 'small', testID }: Props) => {
+  const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(createStyles, size);
   const iconSize = BADGE_SIZE[size].icon;
 
@@ -27,7 +29,7 @@ const DownloadedBadge = ({ size = 'small', testID }: Props) => {
       style={styles.badge}
       accessible
       accessibilityRole="image"
-      accessibilityLabel="Downloaded"
+      accessibilityLabel={t('downloaded-badge.downloaded')}
       testID={testID}
     >
       <CheckIcon

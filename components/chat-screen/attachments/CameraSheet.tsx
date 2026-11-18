@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import {
   CameraView,
   useCameraPermissions,
@@ -37,6 +38,7 @@ const CameraSheet = forwardRef<CameraSheetHandle, Props>(
     { width, height, facing, flash, preview, lifting },
     handle
   ) {
+    const { t } = useTranslation();
     const { styles } = useThemedStyles(createStyles);
     const cameraRef = useRef<CameraView>(null);
     const [permission, requestPermission] = useCameraPermissions();
@@ -89,8 +91,8 @@ const CameraSheet = forwardRef<CameraSheetHandle, Props>(
             onOpenSettings={refused ? openAppSettings : undefined}
           >
             {refused
-              ? 'Camera access is off. Turn it on in Settings to take a photo here.'
-              : 'Waiting for camera access…'}
+              ? t('camera-sheet.cameraAccessIsOffTurn')
+              : t('camera-sheet.waitingForCameraAccess')}
           </SheetPlaceholder>
         ) : preview ? (
           <CameraView

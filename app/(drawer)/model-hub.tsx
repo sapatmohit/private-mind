@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, {
   useCallback,
   useLayoutEffect,
@@ -50,6 +51,7 @@ import DownloadsHeaderButton from '../../components/model-hub/DownloadsHeaderBut
 const HEADER_INSET = space.four;
 
 const ModelHubScreen = () => {
+  const { t } = useTranslation();
   const drawerSearchOwnsKeyboard = useKeyboardOwnerStore(
     (state) => state.drawerSearchOwnsKeyboard
   );
@@ -139,13 +141,13 @@ const ModelHubScreen = () => {
   const handleClearAll = async () => {
     if (deletableDownloaded.length === 0) return;
     const confirmed = await confirm({
-      title: 'Clear all downloaded models?',
-      message: `This will delete ${deletableDownloaded.length} model${
-        deletableDownloaded.length === 1 ? '' : 's'
-      } (${totalDownloadedSizeGB.toFixed(
-        2
-      )} GB) from your device. You can redownload them later.`,
-      confirmLabel: 'Clear all',
+      title: t('model-hub.clearAllDownloadedModels'),
+      message: t('model-hub.thisWillDeleteLengthPlural', {
+        length: deletableDownloaded.length,
+
+        totalDownloadedSizeGB: totalDownloadedSizeGB.toFixed(2),
+      }),
+      confirmLabel: t('model-hub.clearAll'),
     });
     if (!confirmed) return;
 
@@ -154,7 +156,7 @@ const ModelHubScreen = () => {
     }
     Toast.show({
       type: 'defaultToast',
-      text1: 'All downloaded model files have been deleted',
+      text1: t('model-hub.allDownloadedModelFilesHave'),
     });
   };
 
@@ -172,12 +174,14 @@ const ModelHubScreen = () => {
       </View>
       <View style={styles.emptyTextContainer}>
         <Text style={styles.emptyTitle}>
-          {tab === 'mine' ? 'No custom models yet' : 'No models found'}
+          {tab === 'mine'
+            ? t('model-hub.noCustomModelsYet')
+            : t('model-hub.noModelsFound')}
         </Text>
         <Text style={styles.emptySubtitle}>
           {tab === 'mine'
-            ? 'Add a remote or local model with the + button.'
-            : 'Adjust your search or switch tabs.'}
+            ? t('model-hub.addARemoteOrLocal')
+            : t('model-hub.adjustYourSearchOrSwitch')}
         </Text>
       </View>
       {search.length > 0 && (
@@ -208,8 +212,8 @@ const ModelHubScreen = () => {
             <SearchField
               value={search}
               onChangeText={setSearch}
-              placeholder="Search models"
-              accessibilityLabel="Search models"
+              placeholder={t('model-hub.searchModels')}
+              accessibilityLabel={t('model-hub.searchModels_2')}
             />
           </View>
 
@@ -251,11 +255,14 @@ const ModelHubScreen = () => {
                 <View style={styles.storageFooter}>
                   <View style={styles.storageInfo}>
                     <Text style={styles.storageTitle}>
-                      {totalDownloadedSizeGB.toFixed(2)} GB downloaded
+                      {t('model-hub.gbDownloaded', {
+                        totalDownloadedSizeGB: totalDownloadedSizeGB.toFixed(2),
+                      })}
                     </Text>
                     <Text style={styles.storageSubtitle}>
-                      Across {deletableDownloaded.length} model
-                      {deletableDownloaded.length === 1 ? '' : 's'}
+                      {t('model-hub.acrossModels', {
+                        deletableDownloadedLength: deletableDownloaded.length,
+                      })}
                     </Text>
                   </View>
                   <SecondaryButton

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { Pressable, ScrollView, StyleSheet, Text } from 'react-native';
 import { useThemedStyles } from '../../hooks/useThemedStyles';
@@ -17,12 +18,13 @@ interface Props {
 const TAB_HEIGHT = 36;
 
 const TABS: { key: ModelHubTab; label: string }[] = [
-  { key: 'featured', label: 'Recommended' },
-  { key: 'experimental', label: 'Experimental' },
-  { key: 'mine', label: 'Mine' },
+  { key: 'featured', label: 'model-hub-tabs.recommended' },
+  { key: 'experimental', label: 'model-hub-tabs.experimental' },
+  { key: 'mine', label: 'model-hub-tabs.mine' },
 ];
 
 const ModelHubTabs = ({ value, onChange, edgeInset = 0 }: Props) => {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles, edgeInset);
 
   return (
@@ -32,7 +34,7 @@ const ModelHubTabs = ({ value, onChange, edgeInset = 0 }: Props) => {
       style={styles.scroll}
       contentContainerStyle={styles.content}
       accessibilityRole="tablist"
-      accessibilityLabel="Model lists"
+      accessibilityLabel={t('model-hub-tabs.modelLists')}
     >
       {TABS.map((tab) => {
         const selected = tab.key === value;
@@ -53,7 +55,7 @@ const ModelHubTabs = ({ value, onChange, edgeInset = 0 }: Props) => {
               style={[styles.label, selected && styles.labelSelected]}
               maxFontSizeMultiplier={CAPPED_TEXT_MAX_SCALE}
             >
-              {tab.label}
+              {t(tab.label)}
             </Text>
           </Pressable>
         );

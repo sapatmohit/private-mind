@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import Animated, {
@@ -93,6 +94,7 @@ const ChatBarActions = ({
   webSearchEnabled = false,
   onWebSearchToggle,
 }: Props) => {
+  const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(createStyles);
   const plusStyle = useAnimatedStyle(() => ({
     opacity: interpolate(plusOut.get(), [0, 0.75], [1, 0], Extrapolation.CLAMP),
@@ -112,7 +114,7 @@ const ChatBarActions = ({
     if (isLoadingAttachment) {
       Toast.show({
         type: 'defaultToast',
-        text1: 'Wait for the document to finish processing.',
+        text1: t('chat-bar-actions.waitForTheDocumentTo'),
       });
       return;
     }
@@ -188,7 +190,7 @@ const ChatBarActions = ({
         )}
         {thinkingEnabled && onThinkingToggle ? (
           <ComposerToolChip
-            label="Think"
+            label={t('chat-bar-actions.think')}
             icon={LightBulbIcon}
             onTurnOff={onThinkingToggle}
             testID="tool-chip-think"
@@ -196,7 +198,7 @@ const ChatBarActions = ({
         ) : null}
         {webSearchEnabled && onWebSearchToggle ? (
           <ComposerToolChip
-            label="Web search"
+            label={t('chat-bar-actions.webSearch')}
             icon={WebIcon}
             onTurnOff={onWebSearchToggle}
             testID="tool-chip-web"

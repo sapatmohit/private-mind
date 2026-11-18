@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { useEffect, useState } from 'react';
 import {
   Keyboard,
@@ -60,6 +61,7 @@ const ChatMenuPopover = ({
   onDelete,
   onClose,
 }: Props) => {
+  const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(createStyles);
   const window = useWindowDimensions();
   const keyboardHeight = useKeyboardState((state) =>
@@ -92,14 +94,14 @@ const ChatMenuPopover = ({
       onClose={onClose}
       closeLabel="Close chat options"
       backdropTestID="chat-menu-backdrop"
-      accessibilityLabel="Chat options"
+      accessibilityLabel={t('chat-menu-popover.chatOptions')}
       testID="chat-menu"
       hostsTextInput
     >
       <View style={styles.titleBlock}>
         {draft === null ? (
           <View style={styles.grow}>
-            <Text style={styles.caption}>Chat</Text>
+            <Text style={styles.caption}>{t('chat-menu-popover.chat')}</Text>
             <View style={styles.nameRow}>
               <Text
                 style={styles.chatTitle}
@@ -115,7 +117,7 @@ const ChatMenuPopover = ({
                   pressed && styles.pressedControl,
                 ]}
                 accessibilityRole="button"
-                accessibilityLabel="Rename chat"
+                accessibilityLabel={t('chat-menu-popover.renameChat')}
                 testID="chat-menu-rename"
               >
                 <EditIcon
@@ -138,7 +140,7 @@ const ChatMenuPopover = ({
               selectTextOnFocus
               maxLength={MAX_CHAT_TITLE_LENGTH}
               returnKeyType="done"
-              accessibilityLabel="Chat name"
+              accessibilityLabel={t('chat-menu-popover.chatName')}
               placeholderTextColor={theme.text.defaultTertiary}
               style={styles.field}
               testID="chat-menu-rename-input"
@@ -156,7 +158,7 @@ const ChatMenuPopover = ({
                 style={styles.saveLabel}
                 maxFontSizeMultiplier={CAPPED_TEXT_MAX_SCALE}
               >
-                Save
+                {t('chat-menu-popover.save')}
               </Text>
             </Pressable>
           </>
@@ -165,13 +167,13 @@ const ChatMenuPopover = ({
       <View style={styles.divider} />
       <View style={styles.actions}>
         <ActionRow
-          label="Share"
+          label={t('chat-menu-popover.share')}
           icon={ShareIcon}
           onPress={onShare}
           testID="chat-menu-share"
         />
         <ActionRow
-          label="Delete chat"
+          label={t('chat-menu-popover.deleteChat')}
           icon={TrashIcon}
           onPress={onDelete}
           destructive

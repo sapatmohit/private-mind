@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { useEffect, useRef, useState } from 'react';
 import { StyleSheet, View, type LayoutChangeEvent } from 'react-native';
 import { useRouter, usePathname } from 'expo-router';
@@ -35,6 +36,7 @@ export const DrawerNavSection = ({
   onMeasured,
   onNavigate,
 }: Props) => {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
 
   const router = useRouter();
@@ -104,7 +106,7 @@ export const DrawerNavSection = ({
       <View onLayout={handleSectionLayout}>
         <DrawerItem
           icon={<CubeIcon width={20} height={20} style={styles.icon} />}
-          label="Manage models"
+          label={t('drawer-nav-section.manageModels')}
           active={pathname === '/model-hub'}
           onPress={goToModelHub}
         />

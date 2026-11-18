@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { useRef, useState } from 'react';
 import { Text, StyleSheet, Alert, Platform, View } from 'react-native';
 import { useRouter } from 'expo-router';
@@ -22,6 +23,7 @@ export interface RemoteModelFormState {
 }
 
 export default function AddRemoteModelScreen() {
+  const { t } = useTranslation();
   const router = useRouter();
   const headerHeight = useGlassScreenHeaderHeight(true);
   const { styles } = useThemedStyles(createStyles, headerHeight);
@@ -53,7 +55,10 @@ export default function AddRemoteModelScreen() {
       !remoteTokenizerPath ||
       !remoteTokenizerConfigPath
     ) {
-      Alert.alert('Missing Fields', 'Please provide all necessary URLs.');
+      Alert.alert(
+        t('add-remote-model.missingFields'),
+        t('add-remote-model.pleaseProvideAllNecessaryUrls')
+      );
       return;
     }
 
@@ -71,7 +76,9 @@ export default function AddRemoteModelScreen() {
 
     Toast.show({
       type: 'defaultToast',
-      text1: `${modelName} has been successfully added`,
+      text1: t('add-remote-model.modelnameHasBeenSuccessfullyAdded', {
+        modelName,
+      }),
     });
 
     router.back();
@@ -96,40 +103,43 @@ export default function AddRemoteModelScreen() {
           ref={scrollViewRef}
         >
           <Text style={styles.description}>
-            Add a model from HuggingFace or other external sources. You'll need
-            the model and tokenizer URLs.
+            {t('add-remote-model.addAModelFromHuggingface')}
           </Text>
 
           <View style={styles.textFieldSection}>
-            <Text style={styles.label}>Model URL</Text>
+            <Text style={styles.label}>{t('add-remote-model.modelUrl')}</Text>
             <TextFieldInput
               value={remoteModelPath}
               multiline={true}
               onChangeText={(text) => setFormField('remoteModelPath', text)}
-              placeholder="Enter external model URL"
+              placeholder={t('add-remote-model.enterExternalModelUrl')}
             />
           </View>
 
           <View style={styles.textFieldSection}>
-            <Text style={styles.label}>Tokenizer URL</Text>
+            <Text style={styles.label}>
+              {t('add-remote-model.tokenizerUrl')}
+            </Text>
             <TextFieldInput
               value={remoteTokenizerPath}
               multiline={true}
               onChangeText={(text) => setFormField('remoteTokenizerPath', text)}
-              placeholder="Enter external tokenizer URL"
+              placeholder={t('add-remote-model.enterExternalTokenizerUrl')}
               onFocus={scrollToBottom}
             />
           </View>
 
           <View style={styles.textFieldSection}>
-            <Text style={styles.label}>Tokenizer Config URL</Text>
+            <Text style={styles.label}>
+              {t('add-remote-model.tokenizerConfigUrl')}
+            </Text>
             <TextFieldInput
               value={remoteTokenizerConfigPath}
               multiline={true}
               onChangeText={(text) =>
                 setFormField('remoteTokenizerConfigPath', text)
               }
-              placeholder="Enter external config URL"
+              placeholder={t('add-remote-model.enterExternalConfigUrl')}
               onFocus={scrollToBottom}
             />
           </View>
@@ -137,7 +147,7 @@ export default function AddRemoteModelScreen() {
         <PrimaryButton text="Add model" onPress={handleSave} />
       </View>
       <GlassScreenHeader
-        title="Add External Model"
+        title={t('add-remote-model.addExternalModel')}
         onBack={() => router.back()}
         icon="close"
         sheet

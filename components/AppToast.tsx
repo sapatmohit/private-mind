@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import { FullWindowOverlay } from 'react-native-screens';
@@ -48,6 +49,7 @@ const ToastAction = ({ label, testID, onPress }: ToastActionProps) => {
 };
 
 const AppToast: React.FC = () => {
+  const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(createStyles);
   const insets = useSafeAreaInsets();
 
@@ -63,14 +65,14 @@ const AppToast: React.FC = () => {
           <Text style={styles.toastText}>{text1}</Text>
           {props?.settings && (
             <ToastAction
-              label="Open Settings"
+              label={t('app-toast.openSettings')}
               testID="toast-open-settings"
               onPress={openAppSettings}
             />
           )}
           {props?.onRetry && (
             <ToastAction
-              label="Retry"
+              label={t('app-toast.retry')}
               testID="toast-retry"
               onPress={props.onRetry}
             />
@@ -81,7 +83,7 @@ const AppToast: React.FC = () => {
           cancelable={false}
           hitSlop={CLOSE_HIT_SLOP}
           accessibilityRole="button"
-          accessibilityLabel="Dismiss"
+          accessibilityLabel={t('app-toast.dismiss')}
           style={({ pressed }) => [
             styles.toastCloseButton,
             pressed && pressedOpacity,

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { RefObject, useEffect, useState } from 'react';
 import { BottomSheetModal, BottomSheetView } from '@gorhom/bottom-sheet';
 import BackDismissibleSheetModal from './BackDismissibleSheetModal';
@@ -40,6 +41,7 @@ interface DeviceDetails {
 }
 
 const BenchmarkResultSheet = ({ bottomSheetModalRef, handleDelete }: Props) => {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
 
   const [deviceInfo, setDeviceInfo] = useState<DeviceDetails>({
@@ -59,11 +61,13 @@ const BenchmarkResultSheet = ({ bottomSheetModalRef, handleDelete }: Props) => {
         model,
         systemName: DeviceInfo.getSystemName(),
         systemVersion: DeviceInfo.getSystemVersion(),
-        memory: `${(totalMemory / BYTES_PER_GB).toFixed(1)} GB`,
+        memory: t('benchmark-result-sheet.var0Gb', {
+          var0: (totalMemory / BYTES_PER_GB).toFixed(1),
+        }),
       });
     };
     fetchDeviceInfo();
-  }, []);
+  }, [t]);
 
   const deviceLine = [
     deviceInfo.model,
@@ -90,7 +94,9 @@ const BenchmarkResultSheet = ({ bottomSheetModalRef, handleDelete }: Props) => {
 
         return (
           <BottomSheetView style={styles.container}>
-            <Text style={styles.title}>Benchmark results</Text>
+            <Text style={styles.title}>
+              {t('benchmark-result-sheet.benchmarkResults')}
+            </Text>
             <ModelRow>
               <ModelFamilyTile
                 family={getModelFamily(
@@ -124,7 +130,9 @@ const BenchmarkResultSheet = ({ bottomSheetModalRef, handleDelete }: Props) => {
               ]}
               testID="benchmark-result-delete"
             >
-              <Text style={styles.deleteText}>Delete result</Text>
+              <Text style={styles.deleteText}>
+                {t('benchmark-result-sheet.deleteResult')}
+              </Text>
             </Pressable>
           </BottomSheetView>
         );

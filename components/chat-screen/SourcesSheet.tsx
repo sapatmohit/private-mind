@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, {
   forwardRef,
   memo,
@@ -68,6 +69,7 @@ interface SourcesSheetPayload {
 }
 
 const SourcesSheet = forwardRef<SourcesSheetHandle>((_props, ref) => {
+  const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(createStyles);
   const { height: screenHeight } = useWindowDimensions();
 
@@ -229,7 +231,9 @@ const SourcesSheet = forwardRef<SourcesSheetHandle>((_props, ref) => {
         onContentSizeChange={onContentSizeChange}
         showsVerticalScrollIndicator={false}
       >
-        <Text style={styles.sourcesSheetTitle}>Sources</Text>
+        <Text style={styles.sourcesSheetTitle}>
+          {t('sources-sheet.sources')}
+        </Text>
         <View
           style={styles.sourcesList}
           onLayout={(e) => {

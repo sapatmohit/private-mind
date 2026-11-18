@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import {
   ActivityIndicator,
@@ -38,6 +39,7 @@ const ComposerModelBadge = ({
   locked = false,
   loading = false,
 }: Props) => {
+  const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(createStyles);
 
   return (
@@ -49,10 +51,16 @@ const ComposerModelBadge = ({
       accessibilityState={{ disabled: locked || loading, busy: loading }}
       accessibilityLabel={
         loading
-          ? `Model: ${model.modelName}. Loading`
+          ? t('composer-model-badge.modelModelnameLoading', {
+              modelName: model.modelName,
+            })
           : locked
-            ? `Model: ${model.modelName}`
-            : `Model: ${model.modelName}. Change model`
+            ? t('composer-model-badge.modelModelname', {
+                modelName: model.modelName,
+              })
+            : t('composer-model-badge.modelModelnameChangeModel', {
+                modelName: model.modelName,
+              })
       }
       testID="composer-model-badge"
     >

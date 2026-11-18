@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { useCallback } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import { FlatList } from 'react-native-gesture-handler';
@@ -24,6 +25,7 @@ const RowSeparator = () => {
 };
 
 const BenchmarkHistory = ({ modalRef, benchmarkList }: Props) => {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
   const getModelById = useModelStore((state) => state.getModelById);
   const lastIndex = benchmarkList.length - 1;
@@ -62,7 +64,7 @@ const BenchmarkHistory = ({ modalRef, benchmarkList }: Props) => {
         <View style={styles.noDataContainer}>
           <BenchmarkIcon width={18} height={18} style={styles.noDataIcon} />
           <Text style={styles.noDataText}>
-            There are no benchmarks to display yet
+            {t('benchmark-history.thereAreNoBenchmarksTo')}
           </Text>
         </View>
       }

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { AppState, StyleSheet, Text, View } from 'react-native';
 import { Theme } from '../../styles/colors';
@@ -54,6 +55,7 @@ const ChatSpeechInput: React.FC<Props> = ({
   onCancel: onCancelProp,
   onInterrupted: onInterruptedProp,
 }) => {
+  const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(createStyles);
 
   const recordingAttemptedRef = useRef(false);
@@ -128,7 +130,10 @@ const ChatSpeechInput: React.FC<Props> = ({
           if (shown) {
             onSubmit(shown);
           } else {
-            Toast.show({ type: 'defaultToast', text1: 'No speech was heard.' });
+            Toast.show({
+              type: 'defaultToast',
+              text1: t('chat-speech-input.noSpeechWasHeard'),
+            });
             onCancel();
           }
         } else if (exitStateRef.current === null) {
@@ -144,7 +149,7 @@ const ChatSpeechInput: React.FC<Props> = ({
         } else {
           Toast.show({
             type: 'defaultToast',
-            text1: 'Could not start live transcript',
+            text1: t('chat-speech-input.couldNotStartLiveTranscript'),
           });
         }
         onCancel();
@@ -163,7 +168,7 @@ const ChatSpeechInput: React.FC<Props> = ({
       abandonRef.current();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [t]);
 
   const onInterrupted = useStableCallback((heard: string) => {
     if (onInterruptedProp) onInterruptedProp(heard);
@@ -230,7 +235,7 @@ const ChatSpeechInput: React.FC<Props> = ({
     if (isPreparing) {
       Toast.show({
         type: 'defaultToast',
-        text1: 'Still loading speech recognition, one moment.',
+        text1: t('chat-speech-input.stillLoadingSpeechRecognitionOne'),
       });
       return;
     }
@@ -258,13 +263,17 @@ const ChatSpeechInput: React.FC<Props> = ({
     if (status === 'listening') {
       return (
         <Text style={styles.secondaryNote}>
-          Start talking to see the live transcript...
+          {t('chat-speech-input.startTalkingToSeeThe')}
         </Text>
       );
     }
 
     if (status === 'processing') {
-      return <Text style={styles.secondaryNote}>Processing...</Text>;
+      return (
+        <Text style={styles.secondaryNote}>
+          {t('chat-speech-input.processing')}
+        </Text>
+      );
     }
 
     if (phase === 'ended') return null;
@@ -273,13 +282,20 @@ const ChatSpeechInput: React.FC<Props> = ({
     if (status === 'loading' && isDownloading) {
       return (
         <Text style={styles.secondaryNote}>
-          Downloading the dictation model ({progressPercentage}%)
+          {t('chat-speech-input.downloadingTheDictationModel', {
+            progressPercentage,
+          })}
         </Text>
       );
     }
     return (
       <Text style={styles.secondaryNote}>
-        Loading...{status === 'loading' ? ` (${progressPercentage}%)` : ''}
+        {t('chat-speech-input.loading', {
+          value:
+            status === 'loading'
+              ? ` ${t('chat-speech-input.progresspercentage', { progressPercentage })}`
+              : '',
+        })}
       </Text>
     );
   };

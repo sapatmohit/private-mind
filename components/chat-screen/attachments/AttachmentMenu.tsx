@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useThemedStyles } from '../../../hooks/useThemedStyles';
@@ -42,6 +43,12 @@ const ITEMS: Item[] = [
     testID: 'attachment-document',
   },
 ];
+
+const ITEMS_LABEL_KEYS: Record<string, string> = {
+  Camera: 'attachment-menu.camera',
+  Photos: 'attachment-menu.photos',
+  Files: 'attachment-menu.files',
+};
 
 export interface MenuTools {
   thinkingEnabled?: boolean;
@@ -133,6 +140,7 @@ const AttachmentMenu = ({
   busy = null,
   ...menuTools
 }: Props) => {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
   const tools = toolsOf(menuTools);
 
@@ -144,7 +152,7 @@ const AttachmentMenu = ({
         return (
           <MenuRow
             key={item.action}
-            label={item.label}
+            label={t(ITEMS_LABEL_KEYS[item.label] ?? item.label)}
             icon={item.icon}
             testID={item.testID}
             dimmed={dimmed}

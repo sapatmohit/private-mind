@@ -1,0 +1,478 @@
+{
+  "layout": {
+    "benchmark": "Benchmark",
+    "manageModels": "Modelle verwalten",
+    "settings": "Einstellungen"
+  },
+  "custom-system-prompt": {
+    "howWouldYouLikePrivate": "Wie soll Private Mind antworten?",
+    "preferencesSaved": "Einstellungen gespeichert",
+    "thesePreferencesShapeEveryConversation": "Diese Einstellungen prägen jedes Gespräch.",
+    "eGBeConciseAndExplain": "z. B. Fasse dich kurz und erkläre deine Gedankengänge. Vermeide Fachjargon.",
+    "customInstructions": "Benutzerdefinierte Anweisungen"
+  },
+  "downloads": {
+    "noModelsOnThisDevice": "Bisher keine Modelle auf diesem Gerät.",
+    "downloads": "Downloads",
+    "downloadingLength": "Wird heruntergeladen · {length}",
+    "onThisDeviceLength": "Auf diesem Gerät · {length}"
+  },
+  "model-id": {
+    "missingFields": "Fehlende Felder",
+    "pleaseSelectAllNecessaryFiles": "Bitte wählen Sie alle erforderlichen Dateien aus.",
+    "modelFile": "Modelldatei",
+    "tokenizerFile": "Tokenizer-Datei",
+    "tokenizerConfigFile": "Tokenizer-Konfigurationsdatei",
+    "missingFields_2": "Fehlende Felder",
+    "pleaseSelectAllNecessaryFiles_2": "Bitte wählen Sie alle erforderlichen Dateien aus.",
+    "modelUrl": "Modell-URL",
+    "enterExternalModelUrl": "Externe Modell-URL eingeben",
+    "tokenizerUrl": "Tokenizer-URL",
+    "enterExternalTokenizerUrl": "Externe Tokenizer-URL eingeben",
+    "tokenizerConfigUrl": "Tokenizer-Konfigurations-URL",
+    "enterExternalConfigUrl": "Externe Konfigurations-URL eingeben",
+    "modelnameHasBeenSuccessfullyUpdated": "{modelName} wurde erfolgreich aktualisiert",
+    "modelName": "Modellname",
+    "editLocalModel": "Lokales Modell bearbeiten",
+    "modelnameHasBeenSuccessfullyUpdated_2": "{modelName} wurde erfolgreich aktualisiert",
+    "modelName_2": "Modellname",
+    "editRemoteModel": "Remotemodell bearbeiten"
+  },
+  "model-select-sheet": {
+    "searchModels": "Modelle durchsuchen",
+    "manageModels": "Modelle verwalten",
+    "selectAModel": "Modell auswählen",
+    "noModelsMatch": "Keine Modelle stimmen mit „{search}“ überein",
+    "youHaveNoAvailableModels": "Sie haben noch keine verfügbaren Modelle",
+    "toUsePrivateMindYou": "Um Private Mind zu nutzen, müssen Sie mindestens ein Modell heruntergeladen haben"
+  },
+  "chat-menu-popover": {
+    "chat": "Chat",
+    "chatOptions": "Chat-Optionen",
+    "renameChat": "Chat umbenennen",
+    "chatName": "Chat-Name",
+    "save": "Speichern",
+    "share": "Teilen",
+    "deleteChat": "Chat löschen"
+  },
+  "drawer-footer": {
+    "settings": "Einstellungen",
+    "newChat": "Neuer Chat",
+    "newChat_2": "Neuer Chat"
+  },
+  "drawer-nav-section": {
+    "manageModels": "Modelle verwalten"
+  },
+  "app-info": {
+    "privateMind": "Private Mind",
+    "anAppBroughtToYou": "Eine App von Software Mansion zum lokalen Ausführen von KI-Modellen auf Ihrem Gerät.",
+    "wantToLearnMore": "Möchten Sie mehr erfahren?",
+    "checkOurOtherLibrariesRelated": "Entdecken Sie unsere anderen KI-bezogenen Bibliotheken.",
+    "successfullyCopiedVersionToClipboard": "Version erfolgreich in die Zwischenablage kopiert",
+    "appVersion": "App-Version:",
+    "appInfo": "App-Info"
+  },
+  "chat-speech-input": {
+    "progresspercentage": "({progressPercentage}%)",
+    "noSpeechWasHeard": "Es wurde keine Sprache erkannt.",
+    "couldNotStartLiveTranscript": "Live-Transkription konnte nicht gestartet werden",
+    "stillLoadingSpeechRecognitionOne": "Spracherkennung wird noch geladen, einen Moment Geduld.",
+    "startTalkingToSeeThe": "Beginnen Sie zu sprechen, um das Live-Transkript zu sehen...",
+    "processing": "Wird verarbeitet...",
+    "downloadingTheDictationModel": "Diktatmodell wird heruntergeladen ({progressPercentage} %)",
+    "loading": "Wird geladen...{value}"
+  },
+  "model-update-banner": {
+    "math": "{Math}%"
+  },
+  "family-card": {
+    "hiddenlabelcount": "+{hiddenLabelCount}",
+    "variantsDownloadedcountDownloaded": "{variants} · {downloadedCount, plural, one {# heruntergeladen} other {# heruntergeladen}}",
+    "downloadedcountDownloaded": "{downloadedCount, plural, one {# heruntergeladen} other {# heruntergeladen}}",
+    "downloadingcountDownloading": "{downloadingCount, plural, one {# wird heruntergeladen} other {# werden heruntergeladen}}"
+  },
+  "model-picker-row": {
+    "math": "{Math}%",
+    "updateModelname": "{modelName} aktualisieren"
+  },
+  "family": {
+    "downloadedcountDownloadedDownloadedgbGb": "{downloadedCount} heruntergeladen · {downloadedGB} GB",
+    "noneDownloaded": "Keine heruntergeladen",
+    "noVariantsAvailable": "Keine Varianten verfügbar.",
+    "variantsLength": "Varianten · {length}"
+  },
+  "select-starting-model": {
+    "modelsCannotBeDownloadedWithout": "Modelle können nicht ohne Internetverbindung heruntergeladen werden.",
+    "downloadingDownloadpercent": "Wird heruntergeladen… {downloadPercent}",
+    "startingDownload": "Download wird gestartet…",
+    "startChatting": "Chat starten",
+    "chooseAStartingModel": "Wählen Sie ein Startmodell",
+    "downloadYourFirstModelTo": "Laden Sie Ihr erstes Modell herunter, um mit Private Mind zu beginnen.",
+    "chatModels": "Chat-Modelle",
+    "noSuggestedModelFitsThis": "Keines der vorgeschlagenen Modelle passt in den Speicher dieses Geräts.",
+    "optionalYouCanStillGet": "Optional. Sie können diese später jederzeit herunterladen."
+  },
+  "app-toast": {
+    "openSettings": "Einstellungen öffnen",
+    "retry": "Wiederholen",
+    "dismiss": "Verwerfen"
+  },
+  "no-model-welcome": {
+    "chooseAModelToGet": "Wählen Sie ein Modell aus, um mit Private Mind zu beginnen"
+  },
+  "upload-input": {
+    "selectAFile": "Datei auswählen"
+  },
+  "whats-new-badge": {
+    "whatsNewInVersionInstalledversion": "Neu in Version {installedVersion}: {title}",
+    "new": "Neu"
+  },
+  "benchmark-history": {
+    "thereAreNoBenchmarksTo": "Es sind noch keine Benchmarks vorhanden"
+  },
+  "benchmark-item": {
+    "modelnameTokenspersecondTokensPerSecond": "{modelName}, {tokensPerSecond} Tokens pro Sekunde",
+    "tokensS": "Tokens/s"
+  },
+  "benchmark-modal": {
+    "runningABenchmark": "Benchmark wird ausgeführt",
+    "itMayTakeAround13": "Dies kann etwa 1–3 Minuten dauern…",
+    "yourBenchmarkIsReady": "Dein Benchmark ist bereit!"
+  },
+  "benchmark-stats-card": {
+    "speed": "Geschwindigkeit",
+    "firstToken": "Erstes Token",
+    "totalTime": "Gesamtzeit",
+    "peakMemory": "Speicherspitze"
+  },
+  "model-selector": {
+    "changeModelCurrentModelname": "Modell wechseln, aktuell {modelName}",
+    "selectAModel": "Modell auswählen",
+    "selectAModel_2": "Modell auswählen",
+    "change": "Ändern",
+    "choose": "Auswählen"
+  },
+  "add-model-sheet": {
+    "addModel": "Modell hinzufügen"
+  },
+  "benchmark-result-sheet": {
+    "var0Gb": "{var0} GB",
+    "benchmarkResults": "Benchmark-Ergebnisse",
+    "deleteResult": "Ergebnis löschen"
+  },
+  "model-management-sheet": {
+    "startAChat": "Chat starten",
+    "runBenchmark": "Benchmark ausführen",
+    "editModel": "Modell bearbeiten",
+    "deleteDownloadedFiles": "Heruntergeladene Dateien löschen",
+    "removeFromTheApp": "Aus App entfernen",
+    "removeModelFromTheApp": "Modell aus der App entfernen?",
+    "modelnameWillBeRemovedFrom": "{modelName} wird aus der App entfernt. Die Originaldateien auf Ihrem Gerät bleiben unberührt.",
+    "modelnameAndItsStoredExternal": "{modelName} und die dazugehörigen gespeicherten externen URLs werden entfernt. Sie können das Modell später manuell wieder hinzufügen.",
+    "remove": "Entfernen",
+    "modelnameHasBeenSuccessfullyDeleted": "{modelName} wurde erfolgreich gelöscht"
+  },
+  "model-update-sheet": {
+    "var0Gb": "{var0} GB"
+  },
+  "web-scrape-sheet": {
+    "privateMindIsBrowsingFor": "Private Mind sucht für Sie im Web",
+    "confirmYouReHumanToContinue": "Bestätigen Sie, dass Sie ein Mensch sind, um fortzufahren",
+    "skipSearch": "Suche überspringen",
+    "done": "Fertig"
+  },
+  "whats-new-sheet": {
+    "whatsNew": "Neuigkeiten"
+  },
+  "animated-chat-loading": {
+    "generating": "Wird generiert…"
+  },
+  "attachment-thumbnail": {
+    "document": "Dokument"
+  },
+  "branch-marker": {
+    "openSourceConversationSourcechattitle": "Quellkonversation öffnen: {sourceChatTitle}",
+    "branchedFrom": "Abgezweigt von: <text>{markerSourceChatTitle}</text>"
+  },
+  "chat-bar": {
+    "thisModelDoesNotSupport": "Dieses Modell unterstützt keine Bilder",
+    "waitForTheResponseTo": "Warte, bis die Antwort abgeschlossen ist, oder stoppe sie zuerst.",
+    "thisModelDoesNotSupport_2": "Dieses Modell unterstützt keine Bilder",
+    "unsupportedClipboardContent": "Nicht unterstützter Inhalt in der Zwischenablage",
+    "errorProcessingPastedContent": "Fehler beim Verarbeiten des eingefügten Inhalts",
+    "waitForTheAttachmentTo": "Warten Sie, bis der Anhang vollständig geladen ist.",
+    "index": "Index",
+    "askAnything": "Fragen Sie mich alles"
+  },
+  "chat-bar-actions": {
+    "waitForTheDocumentTo": "Warten Sie, bis das Dokument verarbeitet wurde.",
+    "think": "Nachdenken",
+    "webSearch": "Websuche"
+  },
+  "chat-title": {
+    "showntitleChatOptions": "{shownTitle}. Chat-Optionen"
+  },
+  "composer-model-badge": {
+    "modelModelnameLoading": "Modell: {modelName}. Wird geladen",
+    "modelModelname": "Modell: {modelName}",
+    "modelModelnameChangeModel": "Modell: {modelName}. Modell ändern"
+  },
+  "dominant-source-badge": {
+    "source": "Quelle: {sourceName}"
+  },
+  "memory-stall-card": {
+    "thisIsTakingLongerThan": "Dies dauert länger als gewöhnlich"
+  },
+  "message-item": {
+    "copy": "Kopieren",
+    "fork": "Verzweigen",
+    "sources": "Quellen",
+    "sources_2": "Quellen",
+    "generating": "Generiere…",
+    "refining": "Verfeinere…"
+  },
+  "messages": {
+    "retryResponseGeneration": "Antwortgenerierung wiederholen",
+    "retry": "Wiederholen"
+  },
+  "model-unavailable-card": {
+    "messageChooseAModel": "{message}. Wähle ein Modell"
+  },
+  "scroll-to-latest-button": {
+    "scrollToLatestMessage": "Zum neuesten Nachricht scrollen"
+  },
+  "sources-sheet": {
+    "sources": "Quellen"
+  },
+  "stopped-marker": {
+    "retryThisResponse": "Diese Antwort wiederholen",
+    "retry": "Wiederholen"
+  },
+  "thinking-block": {
+    "thinking": "Denkt nach..."
+  },
+  "user-message-action-menu": {
+    "copy": "Kopieren"
+  },
+  "web-search-trace-row": {
+    "tapToConfirmYouReNot": "Tippe, um zu bestätigen, dass du kein Robot bist",
+    "theSiteWantsToCheck": "Die Website möchte überprüfen, ob du kein Roboter bist – tippe, um fortzufahren"
+  },
+  "attachment-menu": {
+    "camera": "Kamera",
+    "photos": "Fotos",
+    "files": "Dateien"
+  },
+  "attachment-overlay": {
+    "closeAttachmentMenu": "Anhangsmenü schließen"
+  },
+  "camera-bar": {
+    "takePhoto": "Foto aufnehmen",
+    "turnFlashOn": "Blitz einschalten",
+    "turnFlashOff": "Blitz ausschalten",
+    "flipCamera": "Kamera wechseln",
+    "hideCameraOptions": "Kameraoptionen ausblenden",
+    "cameraOptions": "Kameraoptionen"
+  },
+  "camera-sheet": {
+    "cameraAccessIsOffTurn": "Kamerazugriff ist deaktiviert. Aktiviere ihn in den Einstellungen, um hier ein Foto aufzunehmen.",
+    "waitingForCameraAccess": "Warten auf Kamerazugriff…"
+  },
+  "photo-grid": {
+    "loadingPhotos": "Fotos werden geladen…",
+    "noPhotosOnThisDevice": "Keine Fotos auf diesem Gerät.",
+    "photoAccessIsOffTurn": "Fotozugriff ist deaktiviert. Aktiviere ihn in den Einstellungen, um hier Fotos auszuwählen."
+  },
+  "photo-grid-bar": {
+    "add1Photo": "1 Foto hinzufügen",
+    "addCountPhotos": "{count, plural, one {# Foto hinzufügen} other {# Fotos hinzufügen}}",
+    "allPhotos": "Alle Fotos",
+    "allPhotos_2": "Alle Fotos",
+    "allPhotos_3": "Alle Fotos"
+  },
+  "sheet-bar": {
+    "backToMenu": "Zurück zum Menü"
+  },
+  "sheet-placeholder": {
+    "openSettings": "Einstellungen öffnen"
+  },
+  "use-chat-screen-actions": {
+    "thinkingCannotBeEnabledFor": "Für dieses Modell kann der Denkprozess nicht aktiviert werden."
+  },
+  "use-send-chat-message": {
+    "failedToSaveImageAttachment": "Das Bild-Anhängsel konnte nicht gespeichert werden."
+  },
+  "web-search-trace": {
+    "noInternetAnsweredWithout": "Kein Internet – Antwort ohne Web",
+    "searchTookTooLong": "Suche dauerte zu lange – frühzeitig abgebrochen",
+    "noSearchNeededAnswered": "Keine Suche erforderlich — direkt beantwortet",
+    "aLargeModelTakesLonger": "Ein großes Modell benötigt auf diesem Smartphone länger",
+    "done": "Fertig",
+    "didnTFindMuchThe": "Nicht viel gefunden — die Antwort ist möglicherweise unvollständig",
+    "readingThePages": "Seiten werden gelesen",
+    "nothingFound": "Nichts gefunden",
+    "decidingWhatToSearchFor": "Es wird entschieden, wonach gesucht werden soll",
+    "nothingFound_2": "Nichts gefunden"
+  },
+  "drawer-empty-state": {
+    "noChatsMatch": "Keine Chats stimmen mit „{query}“ überein",
+    "startNewChat": "Neuen Chat starten"
+  },
+  "drawer-top-bar": {
+    "searchChats": "Chats durchsuchen",
+    "searchChats_2": "Chats durchsuchen",
+    "closeSearch": "Suche schließen"
+  },
+  "download-percent": {
+    "startingDownload": "Download wird gestartet"
+  },
+  "download-progress-details": {
+    "ofGb": "{modelSize} von {modelSize2} GB"
+  },
+  "downloaded-badge": {
+    "downloaded": "Heruntergeladen"
+  },
+  "downloads-header-button": {
+    "downloadsCountInProgress": "Downloads, {count, plural, one {# wird heruntergeladen} other {# werden heruntergeladen}}",
+    "downloads": "Downloads"
+  },
+  "family-provider-row": {
+    "madeByProvider": "Erstellt von {provider}",
+    "madeBy": "Erstellt von"
+  },
+  "model-capability-badges": {
+    "custom": "Benutzerdefiniert"
+  },
+  "model-download-row": {
+    "download": "Herunterladen",
+    "cancelDownload": "Download abbrechen",
+    "deleteModelFiles": "Modelldateien löschen",
+    "updateModelname": "{modelName} aktualisieren",
+    "modelnameDownloadProgress": "Downloadfortschritt für {modelName}"
+  },
+  "model-hub-tabs": {
+    "recommended": "Empfohlen",
+    "experimental": "Experimentell",
+    "mine": "Meine",
+    "modelLists": "Modelllisten"
+  },
+  "swm-attribution-card": {
+    "originalModelByProvider": "Originalmodell von {provider}"
+  },
+  "app-notices": {
+    "dismiss": "Ausblenden"
+  },
+  "onboarding-carousel": {
+    "skipOnboarding": "Einführung überspringen",
+    "skip": "Überspringen"
+  },
+  "onboarding-intro-panel": {
+    "yourPrivateAiMind": "Dein privater KI-Verstand.",
+    "inYourPocket": "Immer griffbereit."
+  },
+  "onboarding-pagination": {
+    "goToSlideVar0Of": "Zu Folie {var0} von {count} wechseln"
+  },
+  "starting-feature-list": {
+    "cancelNameDownload": "Download von {name} abbrechen",
+    "nameDownloadProgress": "Download-Fortschritt von {name}",
+    "sectionTitleDownloadProgress": "Download-Fortschritt von {SECTION_TITLE}",
+    "downloadAllSectionTitle": "Alle {SECTION_TITLE} herunterladen"
+  },
+  "use-attachment": {
+    "errorReadingDocument": "Fehler beim Lesen des Dokuments.",
+    "couldNotReadThisPage": "Diese Seite konnte nicht gelesen werden.",
+    "errorReadingLink": "Fehler beim Lesen des Links.",
+    "documentStorageIsStillStarting": "Der Dokumentenspeicher wird noch gestartet. Versuchen Sie es gleich noch einmal.",
+    "failedToDownloadTheDocument": "Das Dokumentenmodell konnte nicht heruntergeladen werden.",
+    "onlyImagesCanBePasted": "Es können nur Bilder eingefügt werden. Verwenden Sie die +-Schaltfläche für Dokumente."
+  },
+  "llm-store": {
+    "modelCannotBeLoadedWithout": "Das Modell kann nicht ohne Internetverbindung geladen werden."
+  },
+  "_meta": {
+    "dir": "ltr",
+    "language": "de"
+  },
+  "benchmark": {
+    "model": "Modell",
+    "history": "Verlauf"
+  },
+  "model-hub": {
+    "clearAllDownloadedModels": "Alle heruntergeladenen Modelle löschen?",
+    "thisWillDeleteLengthPlural": "Dadurch wird {length, plural, one {# Modell} other {# Modelle}} ({totalDownloadedSizeGB} GB) von Ihrem Gerät gelöscht. Sie können sie später erneut herunterladen.",
+    "clearAll": "Alle löschen",
+    "allDownloadedModelFilesHave": "Alle heruntergeladenen Modellateien wurden gelöscht",
+    "noCustomModelsYet": "Noch keine benutzerdefinierten Modelle",
+    "noModelsFound": "Keine Modelle gefunden",
+    "addARemoteOrLocal": "Fügen Sie über die Schaltfläche + ein Remote- oder lokales Modell hinzu.",
+    "adjustYourSearchOrSwitch": "Passen Sie Ihre Suche an oder wechseln Sie die Registerkarte.",
+    "searchModels": "Modelle suchen",
+    "searchModels_2": "Modelle durchsuchen",
+    "gbDownloaded": "{totalDownloadedSizeGB} GB heruntergeladen",
+    "acrossModels": "Über {deletableDownloadedLength, plural, one {# Modell} other {# Modelle}}"
+  },
+  "settings": {
+    "deleteAllChats": "Alle Chats löschen?",
+    "thisPermanentlyRemovesEveryChat": "Dadurch werden alle Chats und deren Nachrichten unwiderruflich gelöscht.",
+    "delete": "Löschen",
+    "allChatsDeleted": "Alle Chats gelöscht",
+    "error": "Fehler",
+    "failedToDeleteChatsPlease": "Chats konnten nicht gelöscht werden. Bitte versuche es erneut.",
+    "personalization": "Personalisierung",
+    "customInstructions": "Benutzerdefinierte Anweisungen",
+    "appearance": "Erscheinungsbild",
+    "theme": "Design",
+    "chat": "Chat",
+    "responseSpeedStats": "Statistiken zur Antwortgeschwindigkeit",
+    "showWhatEachAnswerCost": "Kosten je Antwort anzeigen: Dokumenten- und Web-Abruf, Zeit bis zum ersten Token, Token pro Sekunde.",
+    "dataControls": "Datenschutz",
+    "importChat": "Chat importieren",
+    "deleteAllChats_2": "Alle Chats löschen",
+    "about": "Über",
+    "appInfo": "App-Info"
+  },
+  "add-local-model": {
+    "missingFields": "Fehlende Felder",
+    "pleaseSelectAllNecessaryFiles": "Bitte wählen Sie alle erforderlichen Dateien aus.",
+    "modelnameHasBeenSuccessfullyAdded": "{modelName} wurde erfolgreich hinzugefügt",
+    "addAModelUsingAn": "Fügen Sie ein Modell mithilfe vorhandener Dateien in Ihrem Telefonspeicher hinzu.",
+    "modelFile": "Modelldatei",
+    "tokenizerFile": "Tokenizer-Datei",
+    "tokenizerConfigFile": "Tokenizer-Konfigurationsdatei",
+    "addLocalModel": "Lokales Modell hinzufügen"
+  },
+  "add-remote-model": {
+    "missingFields": "Fehlende Felder",
+    "pleaseProvideAllNecessaryUrls": "Bitte geben Sie alle erforderlichen URLs an.",
+    "modelnameHasBeenSuccessfullyAdded": "{modelName} wurde erfolgreich hinzugefügt",
+    "addAModelFromHuggingface": "Fügen Sie ein Modell von HuggingFace oder anderen externen Quellen hinzu. Sie benötigen die Modell- und Tokenizer-URLs.",
+    "modelUrl": "Modell-URL",
+    "enterExternalModelUrl": "Externe Modell-URL eingeben",
+    "tokenizerUrl": "Tokenizer-URL",
+    "enterExternalTokenizerUrl": "Externe Tokenizer-URL eingeben",
+    "tokenizerConfigUrl": "Tokenizer-Konfigurations-URL",
+    "enterExternalConfigUrl": "Externe Konfigurations-URL eingeben",
+    "addExternalModel": "Externes Modell hinzufügen"
+  },
+  "use-chat-branching": {
+    "sendAMessageBeforeBranching": "Senden Sie eine Nachricht, bevor Sie diesen Chat verzweigen.",
+    "failedToForkConversation": "Unterhaltung konnte nicht verzweigt werden.",
+    "sourceConversationIsNoLonger": "Die Quellunterhaltung ist nicht mehr verfügbar."
+  },
+  "use-confirm": {
+    "cancel": "Abbrechen"
+  },
+  "use-model-download": {
+    "modelCannotBeDownloadedWithout": "Das Modell kann ohne Internetverbindung nicht heruntergeladen werden.",
+    "noWifiConnectionDetected": "Keine WLAN-Verbindung erkannt.",
+    "downloadAnyway": "Trotzdem herunterladen"
+  },
+  "use-starting-features": {
+    "chatWithFilesSearchThe": "Mit Dateien chatten, im Web suchen",
+    "speakInsteadOfTyping": "Sprechen statt tippen"
+  },
+  "copied-toast": {
+    "messageCopied": "Nachricht kopiert"
+  }
+}

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { useCallback } from 'react';
 import { Alert, StyleSheet, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
@@ -36,6 +37,7 @@ const THEME_OPTIONS: { value: ThemePreference; label: string }[] = [
 ];
 
 const SettingsScreen = () => {
+  const { t } = useTranslation();
   useDefaultHeader({ glass: true });
   const navigation = useRouter();
   const headerHeight = useHeaderHeight();
@@ -57,9 +59,9 @@ const SettingsScreen = () => {
 
   const handleDeleteAllChats = useCallback(async () => {
     const confirmed = await confirm({
-      title: 'Delete all chats?',
-      message: 'This permanently removes every chat and its messages.',
-      confirmLabel: 'Delete',
+      title: t('settings.deleteAllChats'),
+      message: t('settings.thisPermanentlyRemovesEveryChat'),
+      confirmLabel: t('settings.delete'),
     });
     if (!confirmed) return;
 
@@ -69,13 +71,16 @@ const SettingsScreen = () => {
       await llm.setActiveChatId(null);
       await deleteAllChats(vectorStore ?? undefined);
       Feedback.destructive();
-      Toast.show({ type: 'defaultToast', text1: 'All chats deleted' });
+      Toast.show({
+        type: 'defaultToast',
+        text1: t('settings.allChatsDeleted'),
+      });
       router.replace('/');
     } catch (error) {
       console.error('Error deleting all chats:', error);
-      Alert.alert('Error', 'Failed to delete chats. Please try again.');
+      Alert.alert(t('settings.error'), t('settings.failedToDeleteChatsPlease'));
     }
-  }, [confirm, deleteAllChats, vectorStore]);
+  }, [confirm, deleteAllChats, vectorStore, t]);
 
   return (
     <View style={styles.container}>
@@ -83,25 +88,25 @@ const SettingsScreen = () => {
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
       >
-        <SettingsSection title="Personalization">
+        <SettingsSection title={t('settings.personalization')}>
           <SettingsRow
-            label="Custom instructions"
+            label={t('settings.customInstructions')}
             icon={<EditIcon width={20} height={20} style={styles.rowIcon} />}
             onPress={() => navigation.push('/custom-system-prompt')}
           />
         </SettingsSection>
-        <SettingsSection title="Appearance">
+        <SettingsSection title={t('settings.appearance')}>
           <SettingsChoiceRow
-            label="Theme"
+            label={t('settings.theme')}
             options={THEME_OPTIONS}
             value={themePreference}
             onValueChange={setThemePreference}
           />
         </SettingsSection>
-        <SettingsSection title="Chat">
+        <SettingsSection title={t('settings.chat')}>
           <SettingsToggleRow
-            label="Response speed stats"
-            description="Show what each answer cost: document and web retrieval, time to first token, tokens per second."
+            label={t('settings.responseSpeedStats')}
+            description={t('settings.showWhatEachAnswerCost')}
             icon={
               <BenchmarkIcon width={20} height={20} style={styles.rowIcon} />
             }
@@ -109,16 +114,16 @@ const SettingsScreen = () => {
             onValueChange={setShowPerformanceMetrics}
           />
         </SettingsSection>
-        <SettingsSection title="Data controls">
+        <SettingsSection title={t('settings.dataControls')}>
           <SettingsRow
-            label="Import chat"
+            label={t('settings.importChat')}
             icon={
               <DownloadIcon width={20} height={20} style={styles.rowIcon} />
             }
             onPress={importChat}
           />
           <SettingsRow
-            label="Delete all chats"
+            label={t('settings.deleteAllChats_2')}
             icon={
               <TrashIcon
                 width={20}
@@ -130,9 +135,9 @@ const SettingsScreen = () => {
             destructive
           />
         </SettingsSection>
-        <SettingsSection title="About">
+        <SettingsSection title={t('settings.about')}>
           <SettingsRow
-            label="App info"
+            label={t('settings.appInfo')}
             icon={
               <InfoCircleIcon width={20} height={20} style={styles.rowIcon} />
             }

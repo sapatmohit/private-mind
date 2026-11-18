@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Svg, { Circle } from 'react-native-svg';
@@ -33,6 +34,7 @@ interface Props {
 }
 
 const DownloadsHeaderButton = ({ onPress }: Props) => {
+  const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(createStyles);
   const downloads = useActiveDownloads();
   const count = downloads.length;
@@ -56,7 +58,9 @@ const DownloadsHeaderButton = ({ onPress }: Props) => {
           hitSlop={15}
           accessibilityRole="button"
           accessibilityLabel={
-            count > 0 ? `Downloads, ${count} in progress` : 'Downloads'
+            count > 0
+              ? t('downloads-header-button.downloadsCountInProgress', { count })
+              : t('downloads-header-button.downloads')
           }
           testID="downloads-header-button"
         >

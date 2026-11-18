@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { useCallback } from 'react';
 import { View, Text, Pressable, StyleSheet } from 'react-native';
 import { openExternalUrl } from '../../utils/web/openExternalUrl';
@@ -14,6 +15,7 @@ interface Props {
 }
 
 const DominantSourceBadge = ({ source }: Props) => {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
 
   const handlePress = useCallback(() => {
@@ -37,7 +39,7 @@ const DominantSourceBadge = ({ source }: Props) => {
         <View style={styles.dot} />
       )}
       <Text style={styles.text} numberOfLines={1}>
-        Source: {source.name}
+        {t('dominant-source-badge.source', { sourceName: source.name })}
       </Text>
     </Pressable>
   );

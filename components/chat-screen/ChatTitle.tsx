@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import {
   Text,
@@ -40,6 +41,7 @@ const ChatTitle = ({
   onBottomMeasured,
   maxWidth,
 }: Props) => {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
   const containerRef = useRef<View>(null);
   const handleLayout = useCallback(() => {
@@ -94,7 +96,9 @@ const ChatTitle = ({
         hitSlop={8}
         accessibilityRole="button"
         accessibilityLabel={
-          onPress ? `${shownTitle}. Chat options` : shownTitle
+          onPress
+            ? t('chat-title.showntitleChatOptions', { shownTitle })
+            : shownTitle
         }
         accessibilityState={{ expanded: open }}
         style={({ pressed }) => [

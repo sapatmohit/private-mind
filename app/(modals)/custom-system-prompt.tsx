@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { useEffect, useState } from 'react';
 import { Text, StyleSheet, View } from 'react-native';
 import { useRouter } from 'expo-router';
@@ -18,6 +19,7 @@ import { MAX_CUSTOM_SYSTEM_PROMPT_LENGTH } from '../../constants/settings';
 import { space } from '../../constants/design-system';
 
 export default function CustomSystemPromptScreen() {
+  const { t } = useTranslation();
   const router = useRouter();
   const headerHeight = useGlassScreenHeaderHeight();
   const { styles } = useThemedStyles(createStyles, headerHeight);
@@ -49,7 +51,7 @@ export default function CustomSystemPromptScreen() {
     Feedback.editSave();
     Toast.show({
       type: 'defaultToast',
-      text1: 'Preferences saved',
+      text1: t('custom-system-prompt.preferencesSaved'),
     });
     router.back();
   };
@@ -69,10 +71,12 @@ export default function CustomSystemPromptScreen() {
           <View style={styles.section}>
             <View style={styles.labelGroup}>
               <Text style={styles.label}>
-                How would you like Private Mind to respond?
+                {t('custom-system-prompt.howWouldYouLikePrivate')}
               </Text>
               <Text style={styles.description}>
-                These preferences shape every conversation.
+                {t(
+                  'custom-system-prompt.thesePreferencesShapeEveryConversation'
+                )}
               </Text>
             </View>
             <TextAreaField
@@ -84,7 +88,7 @@ export default function CustomSystemPromptScreen() {
                   ? "That's a bit too long — please shorten it."
                   : undefined
               }
-              placeholder="e.g. Be concise and explain your reasoning. Avoid jargon."
+              placeholder={t('custom-system-prompt.eGBeConciseAndExplain')}
             />
             <PrimaryButton
               text="Save preferences"
@@ -95,7 +99,7 @@ export default function CustomSystemPromptScreen() {
         </ScrollView>
       </View>
       <GlassScreenHeader
-        title="Custom instructions"
+        title={t('custom-system-prompt.customInstructions')}
         onBack={() => router.back()}
       />
     </CustomKeyboardAvoidingView>

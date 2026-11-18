@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { useEffect } from 'react';
 import { View, StyleSheet, Text, Pressable } from 'react-native';
 import Animated, {
@@ -77,6 +78,7 @@ const WebSearchTraceRow = ({
   onOpen,
   onOpenChallenge,
 }: Props) => {
+  const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(createStyles);
 
   const markerVisible =
@@ -147,7 +149,7 @@ const WebSearchTraceRow = ({
       case 'challenge':
         return (
           <Text style={styles.challengeLabel} numberOfLines={1}>
-            Tap to confirm you’re not a robot
+            {t('web-search-trace-row.tapToConfirmYouReNot')}
           </Text>
         );
       case 'note':
@@ -190,8 +192,7 @@ const WebSearchTraceRow = ({
         return {
           onPress: onOpenChallenge,
           accessibilityRole: 'button',
-          accessibilityLabel:
-            'The site wants to check you are not a robot — tap to continue',
+          accessibilityLabel: t('web-search-trace-row.theSiteWantsToCheck'),
           testID: 'web-search-challenge',
         };
       case 'page':

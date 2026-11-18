@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { useThemedStyles } from '../../hooks/useThemedStyles';
@@ -18,6 +19,7 @@ interface Props {
 }
 
 const DownloadPercent = ({ progress }: Props) => {
+  const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(createStyles);
 
   if (!hasDownloadStarted(progress)) {
@@ -25,7 +27,7 @@ const DownloadPercent = ({ progress }: Props) => {
       <View
         style={styles.spinnerSlot}
         accessible
-        accessibilityLabel="Starting download"
+        accessibilityLabel={t('download-percent.startingDownload')}
       >
         <SpinningCircle
           size={SPINNER_SIZE}

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { useRef, useState } from 'react';
 import Animated, {
   useAnimatedStyle,
@@ -32,6 +33,7 @@ interface Props {
 }
 
 const NoModelWelcome = ({ onChooseModel, onImportChat, playSwarm }: Props) => {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
   const [screenHeight, setScreenHeight] = useState(0);
   const containerRef = useRef<View>(null);
@@ -91,7 +93,7 @@ const NoModelWelcome = ({ onChooseModel, onImportChat, playSwarm }: Props) => {
             ]}
             maxFontSizeMultiplier={CAPPED_TEXT_MAX_SCALE}
           >
-            Choose a model to get started with Private Mind
+            {t('no-model-welcome.chooseAModelToGet')}
           </Animated.Text>
         </>
       )}

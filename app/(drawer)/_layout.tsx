@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { ComponentProps, useCallback, useState } from 'react';
 import Drawer, { DrawerContentComponentProps } from 'expo-router/drawer';
 import { StyleSheet, useWindowDimensions, View, ViewStyle } from 'react-native';
@@ -40,6 +41,7 @@ const renderHeaderTitle = (props: ComponentProps<typeof HeaderTitle>) => (
 );
 
 const DrawerLayout = () => {
+  const { t } = useTranslation();
   const { width } = useWindowDimensions();
   const { styles, theme } = useThemedStyles(createStyles);
   const turnInFlight = useTurnInFlight();
@@ -140,7 +142,7 @@ const DrawerLayout = () => {
         <Drawer.Screen
           name="model-hub"
           options={{
-            title: 'Manage models',
+            title: t('layout.manageModels'),
             headerTransparent: true,
             headerStyle: { backgroundColor: 'transparent' },
           }}
@@ -148,7 +150,7 @@ const DrawerLayout = () => {
         <Drawer.Screen
           name="settings"
           options={{
-            title: 'Settings',
+            title: t('layout.settings'),
             headerTransparent: true,
             headerStyle: { backgroundColor: 'transparent' },
           }}
@@ -156,7 +158,7 @@ const DrawerLayout = () => {
         <Drawer.Screen
           name="benchmark"
           options={{
-            title: 'Benchmark',
+            title: t('layout.benchmark'),
             headerTransparent: true,
             headerStyle: { backgroundColor: 'transparent' },
           }}

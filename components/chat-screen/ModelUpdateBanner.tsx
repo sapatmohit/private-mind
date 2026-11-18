@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useThemedStyles } from '../../hooks/useThemedStyles';
@@ -26,6 +27,7 @@ const ModelUpdateBanner = ({
   floating = false,
   onChooseModel,
 }: Props) => {
+  const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(createStyles);
   const download = useModelStore((state) => state.downloadStates[model.id]);
   const updating = download?.status === ModelState.Downloading;
@@ -43,7 +45,10 @@ const ModelUpdateBanner = ({
   };
 
   const actionLabel = () => {
-    if (updating) return `${Math.round(download.progress * 100)}%`;
+    if (updating)
+      return t('model-update-banner.math', {
+        Math: Math.round(download.progress * 100),
+      });
     if (replaces) return MODEL_UPDATE_TEXT.replacementBannerAction;
     return MODEL_UPDATE_TEXT.chatBannerAction;
   };

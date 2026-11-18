@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { RefObject } from 'react';
 import { BottomSheetModal, BottomSheetView } from '@gorhom/bottom-sheet';
 import BackDismissibleSheetModal from './BackDismissibleSheetModal';
@@ -16,12 +17,13 @@ interface Props {
 }
 
 const AddModelSheet = ({ bottomSheetModalRef }: Props) => {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
 
   return (
     <BackDismissibleSheetModal ref={bottomSheetModalRef} enableDynamicSizing>
       <BottomSheetView style={styles.sheetContent}>
-        <Text style={styles.title}>Add model</Text>
+        <Text style={styles.title}>{t('add-model-sheet.addModel')}</Text>
         <View style={styles.buttonGroup}>
           <EntryButton
             icon={<LinkAltIcon width={22} height={22} style={styles.icon} />}

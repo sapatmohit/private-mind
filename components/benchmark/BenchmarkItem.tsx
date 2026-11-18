@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { BenchmarkResult } from '../../database/benchmarkRepository';
@@ -24,6 +25,7 @@ interface Props {
 }
 
 const BenchmarkItem = ({ entry, model, onPress }: Props) => {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
   const family = getModelFamily(model ?? { modelName: entry.modelName });
 
@@ -32,7 +34,13 @@ const BenchmarkItem = ({ entry, model, onPress }: Props) => {
       style={styles.row}
       onPress={onPress}
       accessibilityRole="button"
-      accessibilityLabel={`${entry.modelName}, ${entry.tokensPerSecond.toFixed(1)} tokens per second`}
+      accessibilityLabel={t(
+        'benchmark-item.modelnameTokenspersecondTokensPerSecond',
+        {
+          modelName: entry.modelName,
+          tokensPerSecond: entry.tokensPerSecond.toFixed(1),
+        }
+      )}
       testID="benchmark-history-row"
     >
       <ModelFamilyTile family={family} size="list" />
@@ -49,7 +57,7 @@ const BenchmarkItem = ({ entry, model, onPress }: Props) => {
           style={styles.speedUnit}
           maxFontSizeMultiplier={CAPPED_TEXT_MAX_SCALE}
         >
-          tokens/s
+          {t('benchmark-item.tokensS')}
         </Text>
       </View>
       <ChevronRightIcon

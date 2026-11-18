@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import {
   BackHandler,
@@ -46,6 +47,7 @@ interface Props {
 const lastIndex = ONBOARDING_SLIDES.length - 1;
 
 function OnboardingCarousel({ onSkip, onComplete, onExitToIntro }: Props) {
+  const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(createStyles);
   const { width: screenWidth, height: windowHeight } = useWindowDimensions();
   const { isSplit, panelWidth, columnLeft, columnRight } =
@@ -248,10 +250,10 @@ function OnboardingCarousel({ onSkip, onComplete, onExitToIntro }: Props) {
         onPress={onSkip}
         hitSlop={12}
         accessibilityRole="button"
-        accessibilityLabel="Skip onboarding"
+        accessibilityLabel={t('onboarding-carousel.skipOnboarding')}
       >
         <Text style={[styles.skipText, isSplit && styles.skipTextOnPanel]}>
-          Skip
+          {t('onboarding-carousel.skip')}
         </Text>
       </Pressable>
     </Animated.View>

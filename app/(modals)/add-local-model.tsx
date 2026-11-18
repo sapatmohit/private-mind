@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React, { useState } from 'react';
 import { Text, StyleSheet, Alert, View } from 'react-native';
 import { useRouter } from 'expo-router';
@@ -28,6 +29,7 @@ export interface LocalModelFormState {
 }
 
 export default function AddLocalModelScreen() {
+  const { t } = useTranslation();
   const router = useRouter();
   const headerHeight = useGlassScreenHeaderHeight(true);
   const { styles } = useThemedStyles(createStyles, headerHeight);
@@ -54,7 +56,10 @@ export default function AddLocalModelScreen() {
 
   const handleSave = async () => {
     if (!localModelPath || !localTokenizerPath || !localTokenizerConfigPath) {
-      Alert.alert('Missing Fields', 'Please select all necessary files.');
+      Alert.alert(
+        t('add-local-model.missingFields'),
+        t('add-local-model.pleaseSelectAllNecessaryFiles')
+      );
       return;
     }
     const modelName = localModelPath.name.split('.')[0];
@@ -69,7 +74,9 @@ export default function AddLocalModelScreen() {
     });
     Toast.show({
       type: 'defaultToast',
-      text1: `${modelName} has been successfully added`,
+      text1: t('add-local-model.modelnameHasBeenSuccessfullyAdded', {
+        modelName,
+      }),
     });
     router.back();
   };
@@ -85,24 +92,28 @@ export default function AddLocalModelScreen() {
           showsVerticalScrollIndicator={false}
         >
           <Text style={styles.description}>
-            Add a model using an existing files in your phone storage.
+            {t('add-local-model.addAModelUsingAn')}
           </Text>
           <View style={styles.textFieldSection}>
-            <Text style={styles.label}>Model File</Text>
+            <Text style={styles.label}>{t('add-local-model.modelFile')}</Text>
             <UploadInput
               fileInfo={localModelPath}
               onChange={(file) => setFormField('localModelPath', file)}
             />
           </View>
           <View style={styles.textFieldSection}>
-            <Text style={styles.label}>Tokenizer File</Text>
+            <Text style={styles.label}>
+              {t('add-local-model.tokenizerFile')}
+            </Text>
             <UploadInput
               fileInfo={localTokenizerPath}
               onChange={(file) => setFormField('localTokenizerPath', file)}
             />
           </View>
           <View style={styles.textFieldSection}>
-            <Text style={styles.label}>Tokenizer Config File</Text>
+            <Text style={styles.label}>
+              {t('add-local-model.tokenizerConfigFile')}
+            </Text>
             <UploadInput
               fileInfo={localTokenizerConfigPath}
               onChange={(file) =>
@@ -114,7 +125,7 @@ export default function AddLocalModelScreen() {
         <PrimaryButton text="Add model" onPress={handleSave} />
       </View>
       <GlassScreenHeader
-        title="Add Local Model"
+        title={t('add-local-model.addLocalModel')}
         onBack={() => router.back()}
         icon="close"
         sheet

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { useThemedStyles } from '../../hooks/useThemedStyles';
@@ -23,11 +24,14 @@ export default function MemoryStallCard({
   onStartNewChat,
   onTryAgain,
 }: MemoryStallCardProps) {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
 
   return (
     <View style={styles.card} testID="memory-stall-card">
-      <Text style={styles.title}>This is taking longer than usual</Text>
+      <Text style={styles.title}>
+        {t('memory-stall-card.thisIsTakingLongerThan')}
+      </Text>
       <Text style={styles.body}>{stallExplanation(stalledModelName)}</Text>
       <View style={styles.actions}>
         <PrimaryButton

@@ -1,3 +1,4 @@
+import { t } from '../i18n';
 import { estimatePromptTokens } from '../constants/context-window';
 import {
   dropStrayThinkClose,
@@ -1175,7 +1176,7 @@ export const useLLMStore = create<LLMStore>((set, get) => ({
       if (network?.isConnected === false) {
         Toast.show({
           type: 'defaultToast',
-          text1: 'Model cannot be loaded without internet connection.',
+          text1: t('llm-store.modelCannotBeLoadedWithout'),
         });
         return;
       }
