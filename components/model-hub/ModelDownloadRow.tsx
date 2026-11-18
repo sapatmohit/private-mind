@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React from 'react';
 import {
   type AccessibilityActionEvent,
@@ -76,6 +77,7 @@ const ModelDownloadRow = ({
   onCancelled,
   onDeleted,
 }: Props) => {
+  const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(
     createStyles,
     selection?.selected ?? false
@@ -109,15 +111,15 @@ const ModelDownloadRow = ({
 
   const accessibilityActions: AccessibilityActionInfo[] = [
     ...(canDownload && !selection
-      ? [{ name: 'download', label: 'Download' }]
+      ? [{ name: 'download', label: t("model-download-row.download") }]
       : []),
     ...(isDownloading
-      ? [{ name: 'cancelDownload', label: 'Cancel download' }]
+      ? [{ name: 'cancelDownload', label: t("model-download-row.cancelDownload") }]
       : []),
     ...(canUpdate
       ? [{ name: 'update', label: MODEL_UPDATE_TEXT.chatBannerAction }]
       : []),
-    ...(canDelete ? [{ name: 'delete', label: 'Delete model files' }] : []),
+    ...(canDelete ? [{ name: 'delete', label: t("model-download-row.deleteModelFiles") }] : []),
   ];
 
   const handleAccessibilityAction = ({
@@ -171,7 +173,7 @@ const ModelDownloadRow = ({
       hitSlop={UPDATE_HIT_SLOP}
       style={({ pressed }) => [styles.updateButton, pressed && pressedOpacity]}
       accessibilityRole="button"
-      accessibilityLabel={`Update ${model.modelName}`}
+      accessibilityLabel={t("model-download-row.updateModelname", { modelName: model.modelName })}
       testID="model-download-row-update"
     >
       <Text
@@ -238,7 +240,7 @@ const ModelDownloadRow = ({
             <View style={styles.progress}>
               <DownloadProgressBar
                 progress={progress}
-                accessibilityLabel={`${model.modelName} download progress`}
+                accessibilityLabel={t("model-download-row.modelnameDownloadProgress", { modelName: model.modelName })}
               />
               <DownloadProgressDetails
                 modelSize={model.modelSize}

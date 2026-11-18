@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React, { useEffect, useState, useCallback, useRef } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { useSQLiteContext } from 'expo-sqlite';
@@ -27,6 +28,7 @@ import useDefaultHeader from '../../hooks/useDefaultHeader';
 import { space } from '../../constants/design-system';
 
 const BenchmarkScreen = () => {
+  const { t } = useTranslation();
   useDefaultHeader({ glass: true });
   const headerHeight = useHeaderHeight();
   const bottomSheetModalRef =
@@ -78,7 +80,7 @@ const BenchmarkScreen = () => {
   return (
     <>
       <View style={styles.container}>
-        <SettingsSection title="Model">
+        <SettingsSection title={t("benchmark.model")}>
           <ModelSelector model={selectedModel} onSelect={selectModel} />
           <PrimaryButton
             disabled={!selectedModel || isRunning}
@@ -87,7 +89,7 @@ const BenchmarkScreen = () => {
             onPress={() => startBenchmark(selectedModel)}
           />
         </SettingsSection>
-        <SettingsSection title="History" fill>
+        <SettingsSection title={t("benchmark.history")} fill>
           <BenchmarkHistory
             modalRef={bottomSheetModalRef}
             benchmarkList={benchmarkList}

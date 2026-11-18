@@ -1,3 +1,4 @@
+import { t } from "../i18n";
 import { useEffect, useRef, useState } from 'react';
 import { OPSQLiteVectorStore } from '@react-native-rag/op-sqlite';
 import { useVectorStore } from '../context/VectorStoreContext';
@@ -73,7 +74,7 @@ export const useStartingFeatures = () => {
     {
       key: 'documents',
       name: 'Documents & web search',
-      description: 'Chat with files, search the web',
+      description: t("use-starting-features.chatWithFilesSearchThe"),
       sizeGb: LFM_2_5_EMBEDDING_DOWNLOAD_SIZE_BYTES / BYTES_PER_GB,
       status:
         embeddingStatus === 'ready'
@@ -86,7 +87,7 @@ export const useStartingFeatures = () => {
     {
       key: 'dictation',
       name: 'Voice dictation',
-      description: 'Speak instead of typing',
+      description: t("use-starting-features.speakInsteadOfTyping"),
       sizeGb: WHISPER_DOWNLOAD_SIZE_BYTES / BYTES_PER_GB,
       status: speechDownloaded
         ? 'downloaded'

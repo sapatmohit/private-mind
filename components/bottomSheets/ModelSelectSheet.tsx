@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React, { RefObject, useMemo, useState } from 'react';
 import {
   BottomSheetModal,
@@ -61,6 +62,7 @@ const ModelSelectSheet = ({
   onSheetStateChange,
   currentModelId,
 }: Props) => {
+  const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(createStyles);
   const downloadedModels = useModelStore((state) => state.downloadedModels);
   const { updateModel, ConfirmElement } = useModelUpdate();
@@ -105,11 +107,11 @@ const ModelSelectSheet = ({
       {hasModels ? (
         <View style={styles.content}>
           <View style={styles.header}>
-            <Text style={styles.title}>Select a model</Text>
+            <Text style={styles.title}>{t("model-select-sheet.selectAModel")}</Text>
             <BottomSheetSearchInput
               value={search}
               onChangeText={setSearch}
-              placeholder="Search models"
+              placeholder={t("model-select-sheet.searchModels")}
             />
           </View>
 
@@ -132,8 +134,8 @@ const ModelSelectSheet = ({
                   />
                 </View>
                 <Text style={styles.searchEmptyTitle}>
-                  No models match "{search}"
-                </Text>
+                                  {t("model-select-sheet.noModelsMatch", { search })}
+                                </Text>
                 <View style={styles.searchEmptyAction}>
                   <DrawerItem
                     icon={
@@ -143,7 +145,7 @@ const ModelSelectSheet = ({
                         style={styles.actionIcon}
                       />
                     }
-                    label="Manage models"
+                    label={t("model-select-sheet.manageModels")}
                     testID="model-select-empty-manage-models"
                     active={false}
                     hugContent
@@ -180,9 +182,9 @@ const ModelSelectSheet = ({
         </View>
       ) : (
         <BottomSheetView style={styles.emptyContent}>
-          <Text style={styles.title}>You have no available models yet</Text>
+          <Text style={styles.title}>{t("model-select-sheet.youHaveNoAvailableModels")}</Text>
           <Text style={styles.subText}>
-            To use Private Mind you need to have at least one model downloaded
+            {t("model-select-sheet.toUsePrivateMindYou")}
           </Text>
           <PrimaryButton text="Download a Model" onPress={goToModelHub} />
         </BottomSheetView>

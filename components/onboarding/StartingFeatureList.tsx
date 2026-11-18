@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React, { useState } from 'react';
 import {
   type AccessibilityActionEvent,
@@ -132,6 +133,7 @@ const StartingFeatureRow = ({
   onToggle,
   onCancel,
 }: RowProps) => {
+  const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(createStyles);
   const { key, name, description, sizeGb, status, progress } = feature;
   const rate = useProgressRate(status === 'downloading' ? progress : 0);
@@ -142,7 +144,7 @@ const StartingFeatureRow = ({
   const disabled = locked || status !== 'available';
 
   const accessibilityActions: AccessibilityActionInfo[] = downloading
-    ? [{ name: 'cancelDownload', label: `Cancel ${name} download` }]
+    ? [{ name: 'cancelDownload', label: t("starting-feature-list.cancelNameDownload", { name }) }]
     : [];
 
   const handleAccessibilityAction = ({
@@ -202,7 +204,7 @@ const StartingFeatureRow = ({
           <View style={styles.progress}>
             <DownloadProgressBar
               progress={progress}
-              accessibilityLabel={`${name} download progress`}
+              accessibilityLabel={t("starting-feature-list.nameDownloadProgress", { name })}
             />
             <DownloadProgressDetails
               modelSize={sizeGb}
@@ -236,6 +238,7 @@ const SectionHeaderRow = ({
   onToggleExpanded,
   onSelectAll,
 }: HeaderProps) => {
+  const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(createStyles);
   const selectable = features.filter(
     (feature) => feature.status === 'available'
@@ -263,7 +266,7 @@ const SectionHeaderRow = ({
         <View style={styles.progress}>
           <DownloadProgressBar
             progress={progress}
-            accessibilityLabel={`${SECTION_TITLE} download progress`}
+            accessibilityLabel={t("starting-feature-list.sectionTitleDownloadProgress", { SECTION_TITLE })}
           />
         </View>
       );
@@ -293,7 +296,7 @@ const SectionHeaderRow = ({
           pressed && pressedOpacity,
         ]}
         accessibilityRole="checkbox"
-        accessibilityLabel={`Download all ${SECTION_TITLE.toLowerCase()}`}
+        accessibilityLabel={t("starting-feature-list.downloadAllSectionTitle", { SECTION_TITLE: SECTION_TITLE.toLowerCase() })}
         accessibilityState={{
           checked: CHECKED_ACCESSIBILITY[checkState],
           disabled: locked,

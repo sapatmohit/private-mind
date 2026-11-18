@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useThemedStyles } from '../../hooks/useThemedStyles';
@@ -24,6 +25,7 @@ export default function StoppedMarker({
   onRetry,
   reason = 'user',
 }: StoppedMarkerProps) {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
 
   return (
@@ -37,11 +39,11 @@ export default function StoppedMarker({
           <Pressable
             onPress={onRetry}
             accessibilityRole="button"
-            accessibilityLabel="Retry this response"
+            accessibilityLabel={t("stopped-marker.retryThisResponse")}
             style={({ pressed }) => [styles.retry, pressed && pressedOpacity]}
           >
             <RotateLeftIcon width={14} height={14} style={styles.icon} />
-            <Text style={styles.retryText}>Retry</Text>
+            <Text style={styles.retryText}>{t("stopped-marker.retry")}</Text>
           </Pressable>
         )}
       </View>

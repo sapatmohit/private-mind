@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React, { useRef, useState } from 'react';
 import { Text, StyleSheet, Alert, Platform, View } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
@@ -23,6 +24,7 @@ interface EditModelFormState extends RemoteModelFormState {
 }
 
 export default function EditRemoteModelScreen() {
+  const { t } = useTranslation();
   const { modelId: rawModelId } = useLocalSearchParams<{ modelId: string }>();
   const modelId = parseInt(rawModelId);
   const scrollViewRef = useRef<ScrollView>(null);
@@ -65,7 +67,7 @@ export default function EditRemoteModelScreen() {
       !remoteTokenizerPath ||
       !remoteTokenizerConfigPath
     ) {
-      Alert.alert('Missing Fields', 'Please select all necessary files.');
+      Alert.alert(t("model-id.missingFields_2"), t("model-id.pleaseSelectAllNecessaryFiles_2"));
       return;
     }
     await editModel(
@@ -77,7 +79,7 @@ export default function EditRemoteModelScreen() {
     Feedback.editSave();
     Toast.show({
       type: 'defaultToast',
-      text1: `${modelName} has been successfully updated`,
+      text1: t("model-id.modelnameHasBeenSuccessfullyUpdated_2", { modelName }),
     });
     router.back();
   };
@@ -101,42 +103,42 @@ export default function EditRemoteModelScreen() {
           ref={scrollViewRef}
         >
           <View style={styles.textFieldSection}>
-            <Text style={styles.label}>Model Name</Text>
+            <Text style={styles.label}>{t("model-id.modelName_2")}</Text>
             <TextFieldInput
               value={modelName}
               onChangeText={(text) => setFormField('modelName', text)}
             />
           </View>
           <View style={styles.textFieldSection}>
-            <Text style={styles.label}>Model URL</Text>
+            <Text style={styles.label}>{t("model-id.modelUrl")}</Text>
             <TextFieldInput
               editable={false}
               value={remoteModelPath}
               multiline={true}
               onChangeText={(text) => setFormField('remoteModelPath', text)}
-              placeholder="Enter external model URL"
+              placeholder={t("model-id.enterExternalModelUrl")}
             />
             <InfoAlert text="Model file is permanently linked to this model and cannot be changed" />
           </View>
           <View style={styles.textFieldSection}>
-            <Text style={styles.label}>Tokenizer URL</Text>
+            <Text style={styles.label}>{t("model-id.tokenizerUrl")}</Text>
             <TextFieldInput
               value={remoteTokenizerPath}
               multiline={true}
               onChangeText={(text) => setFormField('remoteTokenizerPath', text)}
-              placeholder="Enter external tokenizer URL"
+              placeholder={t("model-id.enterExternalTokenizerUrl")}
               onFocus={scrollToBottom}
             />
           </View>
           <View style={styles.textFieldSection}>
-            <Text style={styles.label}>Tokenizer Config URL</Text>
+            <Text style={styles.label}>{t("model-id.tokenizerConfigUrl")}</Text>
             <TextFieldInput
               value={remoteTokenizerConfigPath}
               multiline={true}
               onChangeText={(text) =>
                 setFormField('remoteTokenizerConfigPath', text)
               }
-              placeholder="Enter external config URL"
+              placeholder={t("model-id.enterExternalConfigUrl")}
               onFocus={scrollToBottom}
             />
           </View>
@@ -144,7 +146,7 @@ export default function EditRemoteModelScreen() {
         <PrimaryButton text="Save changes" onPress={handleSave} />
       </View>
       <GlassScreenHeader
-        title="Edit Remote Model"
+        title={t("model-id.editRemoteModel")}
         onBack={() => router.back()}
         icon="close"
         sheet

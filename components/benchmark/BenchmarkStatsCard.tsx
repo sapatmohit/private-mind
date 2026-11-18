@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { fontFamily, fontSizes, lineHeights } from '../../styles/fontStyles';
@@ -61,20 +62,21 @@ interface Props {
 }
 
 const BenchmarkStatsCard = ({ data, deviceMemory }: Props) => {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
 
   return (
     <View style={styles.grid}>
       <View style={styles.row}>
         <Stat
-          label="Speed"
+          label={t("benchmark-stats-card.speed")}
           value={data.tokensPerSecond.toFixed(2)}
           caption="tokens per second"
           size="hero"
           highlighted
         />
         <Stat
-          label="First token"
+          label={t("benchmark-stats-card.firstToken")}
           value={`${data.timeToFirstToken.toFixed(2)} ms`}
           caption="time until it starts"
           size="hero"
@@ -82,13 +84,13 @@ const BenchmarkStatsCard = ({ data, deviceMemory }: Props) => {
       </View>
       <View style={styles.row}>
         <Stat
-          label="Total time"
+          label={t("benchmark-stats-card.totalTime")}
           value={`${(data.totalTime / MS_PER_SECOND).toFixed(2)} s`}
           caption={`${data.tokensGenerated.toFixed()} tokens generated`}
           size="regular"
         />
         <Stat
-          label="Peak memory"
+          label={t("benchmark-stats-card.peakMemory")}
           value={
             data.peakMemory > 0 ? `${data.peakMemory.toFixed(2)} GB` : 'N/A'
           }

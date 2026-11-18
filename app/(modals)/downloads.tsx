@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React, { useMemo, useRef } from 'react';
 import {
   BottomSheetModal,
@@ -27,6 +28,7 @@ import {
 } from '../../constants/design-system';
 
 const DownloadsScreen = () => {
+  const { t } = useTranslation();
   const router = useRouter();
   const headerHeight = useGlassScreenHeaderHeight(true);
   const { styles } = useThemedStyles(createStyles, headerHeight);
@@ -53,7 +55,7 @@ const DownloadsScreen = () => {
         >
           {downloading.length > 0 && (
             <View style={styles.section}>
-              <SectionHeader title={`Downloading · ${downloading.length}`} />
+              <SectionHeader title={t("downloads.downloadingLength", { length: downloading.length })} />
               <RowGroup separatorInset={0}>
                 {downloading.map(({ model }) => (
                   <ModelDownloadRow
@@ -68,7 +70,7 @@ const DownloadsScreen = () => {
           )}
           <View style={styles.section}>
             <SectionHeader
-              title={`On this device · ${onDevice.length}`}
+              title={t("downloads.onThisDeviceLength", { length: onDevice.length })}
               summary={`${usedGB.toFixed(2)} GB used`}
             />
             {onDevice.length > 0 ? (
@@ -83,12 +85,12 @@ const DownloadsScreen = () => {
                 ))}
               </RowGroup>
             ) : (
-              <Text style={styles.empty}>No models on this device yet.</Text>
+              <Text style={styles.empty}>{t("downloads.noModelsOnThisDevice")}</Text>
             )}
           </View>
         </ScrollView>
         <GlassScreenHeader
-          title="Downloads"
+          title={t("downloads.downloads")}
           onBack={() => router.back()}
           sheet
         />

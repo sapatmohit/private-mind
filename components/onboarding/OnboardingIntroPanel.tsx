@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React, { useCallback, useState } from 'react';
 import { LayoutChangeEvent, StyleSheet, View } from 'react-native';
 import Animated, { FadeInDown, FadeInUp } from 'react-native-reanimated';
@@ -29,6 +30,7 @@ const enterAt = (step: number) =>
   FadeInDown.duration(INTRO_FADE_MS).delay(step * INTRO_STAGGER_MS);
 
 function OnboardingIntroPanel({ onPressStart }: Props) {
+  const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(createStyles);
   const {
     screenWidth: width,
@@ -111,7 +113,7 @@ function OnboardingIntroPanel({ onPressStart }: Props) {
               isSplit && styles.lineLeading,
             ]}
           >
-            Your private AI mind.
+            {t("onboarding-intro-panel.yourPrivateAiMind")}
           </Animated.Text>
           <Animated.Text
             entering={enterAt(1)}
@@ -121,7 +123,7 @@ function OnboardingIntroPanel({ onPressStart }: Props) {
               isSplit && styles.lineLeading,
             ]}
           >
-            In your pocket.
+            {t("onboarding-intro-panel.inYourPocket")}
           </Animated.Text>
         </View>
         <Animated.View

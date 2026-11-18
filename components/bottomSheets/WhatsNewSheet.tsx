@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React, { type Ref, useRef } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { BottomSheetModal, BottomSheetScrollView } from '@gorhom/bottom-sheet';
@@ -16,6 +17,7 @@ interface Props {
 }
 
 const WhatsNewSheet = ({ ref, version, onOpenChange }: Props) => {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
   const ownRef = useRef<BottomSheetModal | null>(null);
 
@@ -35,7 +37,7 @@ const WhatsNewSheet = ({ ref, version, onOpenChange }: Props) => {
         testID="whats-new-sheet"
       >
         <View style={styles.header}>
-          <Text style={styles.eyebrow}>What's new</Text>
+          <Text style={styles.eyebrow}>{t("whats-new-sheet.whatsNew")}</Text>
           <Text style={styles.version}>v{version}</Text>
         </View>
         <Text style={styles.title} accessibilityRole="header">

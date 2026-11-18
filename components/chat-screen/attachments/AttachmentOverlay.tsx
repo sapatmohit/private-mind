@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import type { CameraType, FlashMode } from 'expo-camera';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { AppState, Platform, Pressable, StyleSheet, View } from 'react-native';
@@ -72,6 +73,7 @@ const AttachmentOverlay = ({
   attachmentsBlocked = false,
   tools = {},
 }: Props) => {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
   const barTop = sheetBottom - BOTTOM_BAR.inset - BOTTOM_BAR.controlSize;
   const gridRef = useRef<PhotoGridHandle>(null);
@@ -175,13 +177,13 @@ const AttachmentOverlay = ({
 
   const flipCamera = useCallback(() => {
     Feedback.toggleOn();
-    setFacing((was) => (was === 'back' ? 'front' : 'back'));
-  }, []);
+    setFacing((was) => (was === 'back' ? t("attachment-overlay.front") : t("attachment-overlay.back")));
+  }, [t]);
 
   const toggleFlash = useCallback(() => {
     Feedback.toggleOn();
-    setFlash((was) => (was === 'off' ? 'on' : 'off'));
-  }, []);
+    setFlash((was) => (was === 'off' ? 'on' : t("attachment-overlay.off")));
+  }, [t]);
 
   const clearSelection = useCallback(() => setSelected([]), []);
   const barLeftAt = useRef(0);
@@ -232,7 +234,7 @@ const AttachmentOverlay = ({
             style={[StyleSheet.absoluteFill, styles.backdrop, backdropStyle]}
           />
           <Pressable
-            accessibilityLabel="Close attachment menu"
+            accessibilityLabel={t("attachment-overlay.closeAttachmentMenu")}
             testID="attachment-backdrop"
             onPress={dismissFromBackdrop}
             style={StyleSheet.absoluteFill}

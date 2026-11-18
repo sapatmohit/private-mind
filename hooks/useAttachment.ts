@@ -1,3 +1,4 @@
+import { t } from "../i18n";
 import { useState, useRef, useCallback, useEffect } from 'react';
 import { Keyboard } from 'react-native';
 import * as DocumentPicker from 'expo-document-picker';
@@ -367,7 +368,7 @@ export const useAttachment = () => {
       setAttachments((prev) => prev.filter((a) => a.id !== attachmentId));
       Toast.show({
         type: 'defaultToast',
-        text1: 'Error reading document.',
+        text1: t("use-attachment.errorReadingDocument"),
       });
     }
   }, [vectorStore, embeddings]);
@@ -406,7 +407,7 @@ export const useAttachment = () => {
           setAttachments((prev) => prev.filter((a) => a.id !== attachmentId));
           Toast.show({
             type: 'defaultToast',
-            text1: 'Could not read this page.',
+            text1: t("use-attachment.couldNotReadThisPage"),
           });
           return;
         }
@@ -485,7 +486,7 @@ export const useAttachment = () => {
         setAttachments((prev) => prev.filter((a) => a.id !== attachmentId));
         Toast.show({
           type: 'defaultToast',
-          text1: 'Error reading link.',
+          text1: t("use-attachment.errorReadingLink"),
         });
       }
     },
@@ -575,7 +576,7 @@ export const useAttachment = () => {
     if (!store) {
       Toast.show({
         type: 'defaultToast',
-        text1: 'Document storage is still starting up. Try again in a moment.',
+        text1: t("use-attachment.documentStorageIsStillStarting"),
       });
       return;
     }
@@ -590,7 +591,7 @@ export const useAttachment = () => {
       }
       Toast.show({
         type: 'defaultToast',
-        text1: 'Failed to download the document model.',
+        text1: t("use-attachment.failedToDownloadTheDocument"),
       });
       return;
     }
@@ -643,7 +644,7 @@ export const useAttachment = () => {
       if (!isImageUri(uri)) {
         Toast.show({
           type: 'defaultToast',
-          text1: 'Only images can be pasted. Use the + button for documents.',
+          text1: t("use-attachment.onlyImagesCanBePasted"),
         });
         return;
       }

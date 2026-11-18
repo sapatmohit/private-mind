@@ -1,3 +1,4 @@
+import { t } from "../../i18n";
 import { useCallback, useMemo } from 'react';
 import { useStableCallback } from '../../hooks/useStableCallback';
 import type { SQLiteDatabase } from 'expo-sqlite';
@@ -54,7 +55,7 @@ export const useChatScreenActions = ({
     if (!thinkingEnabled && !thinkingUsable) {
       Toast.show({
         type: 'defaultToast',
-        text1: 'Thinking cannot be enabled for this model.',
+        text1: t("use-chat-screen-actions.thinkingCannotBeEnabledFor"),
       });
       return;
     }

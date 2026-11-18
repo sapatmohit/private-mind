@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React, { memo, useMemo, useState } from 'react';
 import {
   EnrichedMarkdownText,
@@ -28,10 +29,11 @@ const MarkdownComponent = memo(
     streaming = false,
     onLinkPress,
   }: Props) => {
+    const { t } = useTranslation();
     const { theme } = useTheme();
     const baseColor = theme.text.primary;
     const baseFontSize = isThinking ? fontSizes.sm : fontSizes.md;
-    const monoFont = Platform.select({ ios: 'Menlo', default: 'monospace' });
+    const monoFont = Platform.select({ ios: t("markdown-component.menlo"), default: 'monospace' });
 
     const markdownStyle: MarkdownStyle = useMemo(
       () => ({

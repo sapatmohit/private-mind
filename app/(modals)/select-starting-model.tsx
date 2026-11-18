@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { StyleSheet, View, Text, ScrollView, Image } from 'react-native';
 import { useRouter } from 'expo-router';
@@ -81,6 +82,7 @@ const isModelDownloaded = (modelId: number) =>
   isDownloadedIn(useModelStore.getState(), modelId);
 
 function SelectStartingModelScreen() {
+  const { t } = useTranslation();
   const router = useRouter();
   const db = useSQLiteContext();
   const { styles } = useThemedStyles(createStyles);
@@ -197,7 +199,7 @@ function SelectStartingModelScreen() {
     if (!networkState.isConnected) {
       Toast.show({
         type: 'defaultToast',
-        text1: 'Models cannot be downloaded without internet connection.',
+        text1: t("select-starting-model.modelsCannotBeDownloadedWithout"),
       });
       return;
     }
@@ -278,13 +280,13 @@ function SelectStartingModelScreen() {
     },
     downloading: {
       text: hasDownloadStarted(overallProgress)
-        ? `Downloading… ${formatDownloadPercent(overallProgress)}`
-        : 'Starting download…',
+        ? t("select-starting-model.downloadingDownloadpercent", { downloadPercent: formatDownloadPercent(overallProgress) })
+        : t("select-starting-model.startingDownload"),
       onPress: () => {},
       disabled: true,
     },
     ready: {
-      text: 'Start chatting',
+      text: t("select-starting-model.startChatting"),
       onPress: handleStartChatting,
       disabled: false,
     },
@@ -303,9 +305,9 @@ function SelectStartingModelScreen() {
             style={styles.appIcon}
             testID="starting-model-app-icon"
           />
-          <Text style={styles.title}>Choose a starting model</Text>
+          <Text style={styles.title}>{t("select-starting-model.chooseAStartingModel")}</Text>
           <Text style={styles.description}>
-            Download your first model to get started with Private Mind.
+            {t("select-starting-model.downloadYourFirstModelTo")}
           </Text>
         </View>
 
@@ -317,10 +319,10 @@ function SelectStartingModelScreen() {
         >
           <View style={styles.sections}>
             <View style={styles.section}>
-              <SectionHeader title="Chat models" />
+              <SectionHeader title={t("select-starting-model.chatModels")} />
               {startingModels?.length === 0 && (
                 <Text style={styles.noModelsFit}>
-                  No suggested model fits this device's memory.
+                  {t("select-starting-model.noSuggestedModelFitsThis")}
                 </Text>
               )}
               {startingModels?.map((model) => (
@@ -351,7 +353,7 @@ function SelectStartingModelScreen() {
                   onExpand={revealFeatures}
                 />
                 <Text style={styles.caption}>
-                  Optional. You can still get these later.
+                  {t("select-starting-model.optionalYouCanStillGet")}
                 </Text>
               </View>
             )}

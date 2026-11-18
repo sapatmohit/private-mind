@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { FlashList, type FlashListRef } from '@shopify/flash-list';
 import React, { forwardRef, useImperativeHandle, useRef } from 'react';
 import { StyleSheet, View } from 'react-native';
@@ -34,6 +35,7 @@ const PhotoGrid = forwardRef<PhotoGridHandle, Props>(
     { width, height, photos, status, selected, lifting, onTogglePhoto },
     handle
   ) {
+    const { t } = useTranslation();
     const { styles } = useThemedStyles(createStyles);
     // A gap wider and taller than the sheet, clipped by the root: the trailing
     // gap of the last column and row falls outside instead of showing ground.
@@ -92,10 +94,10 @@ const PhotoGrid = forwardRef<PhotoGridHandle, Props>(
             onOpenSettings={status === 'denied' ? openAppSettings : undefined}
           >
             {status === 'loading'
-              ? 'Loading photos…'
+              ? t("photo-grid.loadingPhotos")
               : status === 'empty'
-                ? 'No photos on this device.'
-                : 'Photo access is off. Turn it on in Settings to pick photos here.'}
+                ? t("photo-grid.noPhotosOnThisDevice")
+                : t("photo-grid.photoAccessIsOffTurn")}
           </SheetPlaceholder>
         )}
       </View>

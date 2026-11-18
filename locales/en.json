@@ -1,0 +1,743 @@
+{
+  "layout": {
+    "manageModels": "Manage models",
+    "settings": "Settings",
+    "benchmark": "Benchmark"
+  },
+  "benchmark": {
+    "model": "Model",
+    "history": "History"
+  },
+  "id": {
+    "default": "default"
+  },
+  "model-hub": {
+    "clearAllDownloadedModels": "Clear all downloaded models?",
+    "thisWillDeleteLengthPlural": "This will delete {length, plural, one {# model} other {# models}} ({totalDownloadedSizeGB} GB) from your device. You can redownload them later.",
+    "clearAll": "Clear all",
+    "allDownloadedModelFilesHave": "All downloaded model files have been deleted",
+    "noCustomModelsYet": "No custom models yet",
+    "noModelsFound": "No models found",
+    "addARemoteOrLocal": "Add a remote or local model with the + button.",
+    "adjustYourSearchOrSwitch": "Adjust your search or switch tabs.",
+    "searchModels": "Search models",
+    "searchModels_2": "Search models",
+    "gbDownloaded": "{totalDownloadedSizeGB} GB downloaded",
+    "acrossModels": "Across {deletableDownloadedLength, plural, one {# model} other {# models}}"
+  },
+  "settings": {
+    "deleteAllChats": "Delete all chats?",
+    "thisPermanentlyRemovesEveryChat": "This permanently removes every chat and its messages.",
+    "delete": "Delete",
+    "allChatsDeleted": "All chats deleted",
+    "error": "Error",
+    "failedToDeleteChatsPlease": "Failed to delete chats. Please try again.",
+    "personalization": "Personalization",
+    "customInstructions": "Custom instructions",
+    "appearance": "Appearance",
+    "theme": "Theme",
+    "chat": "Chat",
+    "responseSpeedStats": "Response speed stats",
+    "showWhatEachAnswerCost": "Show what each answer cost: document and web retrieval, time to first token, tokens per second.",
+    "dataControls": "Data controls",
+    "importChat": "Import chat",
+    "deleteAllChats_2": "Delete all chats",
+    "about": "About",
+    "appInfo": "App info"
+  },
+  "add-local-model": {
+    "missingFields": "Missing Fields",
+    "pleaseSelectAllNecessaryFiles": "Please select all necessary files.",
+    "modelnameHasBeenSuccessfullyAdded": "{modelName} has been successfully added",
+    "addAModelUsingAn": "Add a model using an existing files in your phone storage.",
+    "modelFile": "Model File",
+    "tokenizerFile": "Tokenizer File",
+    "tokenizerConfigFile": "Tokenizer Config File",
+    "addLocalModel": "Add Local Model"
+  },
+  "add-remote-model": {
+    "missingFields": "Missing Fields",
+    "pleaseProvideAllNecessaryUrls": "Please provide all necessary URLs.",
+    "modelnameHasBeenSuccessfullyAdded": "{modelName} has been successfully added",
+    "addAModelFromHuggingface": "Add a model from HuggingFace or other external sources. You'll need the model and tokenizer URLs.",
+    "modelUrl": "Model URL",
+    "enterExternalModelUrl": "Enter external model URL",
+    "tokenizerUrl": "Tokenizer URL",
+    "enterExternalTokenizerUrl": "Enter external tokenizer URL",
+    "tokenizerConfigUrl": "Tokenizer Config URL",
+    "enterExternalConfigUrl": "Enter external config URL",
+    "addExternalModel": "Add External Model"
+  },
+  "app-info": {
+    "privateMind": "Private Mind",
+    "anAppBroughtToYou": "An app brought to you by Software Mansion to run AI models, locally on your device.",
+    "wantToLearnMore": "Want to learn more?",
+    "checkOurOtherLibrariesRelated": "Check our other libraries related to AI.",
+    "successfullyCopiedVersionToClipboard": "Successfully copied version to clipboard",
+    "appVersion": "App version:",
+    "appInfo": "App info"
+  },
+  "custom-system-prompt": {
+    "preferencesSaved": "Preferences saved",
+    "howWouldYouLikePrivate": "How would you like Private Mind to respond?",
+    "thesePreferencesShapeEveryConversation": "These preferences shape every conversation.",
+    "eGBeConciseAndExplain": "e.g. Be concise and explain your reasoning. Avoid jargon.",
+    "customInstructions": "Custom instructions"
+  },
+  "downloads": {
+    "downloadingLength": "Downloading · {length}",
+    "downloadingLength_zero": "Downloading · {length}",
+    "downloadingLength_one": "Downloading · {length}",
+    "downloadingLength_two": "Downloading · {length}",
+    "downloadingLength_few": "Downloading · {length}",
+    "downloadingLength_many": "Downloading · {length}",
+    "downloadingLength_other": "Downloading · {length}",
+    "onThisDeviceLength": "On this device · {length}",
+    "onThisDeviceLength_zero": "On this device · {length}",
+    "onThisDeviceLength_one": "On this device · {length}",
+    "onThisDeviceLength_two": "On this device · {length}",
+    "onThisDeviceLength_few": "On this device · {length}",
+    "onThisDeviceLength_many": "On this device · {length}",
+    "onThisDeviceLength_other": "On this device · {length}",
+    "noModelsOnThisDevice": "No models on this device yet.",
+    "downloads": "Downloads"
+  },
+  "model-id": {
+    "missingFields": "Missing Fields",
+    "pleaseSelectAllNecessaryFiles": "Please select all necessary files.",
+    "modelnameHasBeenSuccessfullyUpdated": "{modelName} has been successfully updated",
+    "modelName": "Model Name",
+    "modelFile": "Model File",
+    "tokenizerFile": "Tokenizer File",
+    "tokenizerConfigFile": "Tokenizer Config File",
+    "editLocalModel": "Edit Local Model",
+    "missingFields_2": "Missing Fields",
+    "pleaseSelectAllNecessaryFiles_2": "Please select all necessary files.",
+    "modelnameHasBeenSuccessfullyUpdated_2": "{modelName} has been successfully updated",
+    "modelName_2": "Model Name",
+    "modelUrl": "Model URL",
+    "enterExternalModelUrl": "Enter external model URL",
+    "tokenizerUrl": "Tokenizer URL",
+    "enterExternalTokenizerUrl": "Enter external tokenizer URL",
+    "tokenizerConfigUrl": "Tokenizer Config URL",
+    "enterExternalConfigUrl": "Enter external config URL",
+    "editRemoteModel": "Edit Remote Model"
+  },
+  "family": {
+    "downloadedcountDownloadedDownloadedgbGb": "{downloadedCount} downloaded · {downloadedGB} GB",
+    "noneDownloaded": "None downloaded",
+    "noVariantsAvailable": "No variants available.",
+    "variantsLength": "Variants · {length}",
+    "variantsLength_zero": "Variants · {length}",
+    "variantsLength_one": "Variants · {length}",
+    "variantsLength_two": "Variants · {length}",
+    "variantsLength_few": "Variants · {length}",
+    "variantsLength_many": "Variants · {length}",
+    "variantsLength_other": "Variants · {length}"
+  },
+  "select-starting-model": {
+    "modelsCannotBeDownloadedWithout": "Models cannot be downloaded without internet connection.",
+    "downloadingDownloadpercent": "Downloading… {downloadPercent}",
+    "startingDownload": "Starting download…",
+    "startChatting": "Start chatting",
+    "chooseAStartingModel": "Choose a starting model",
+    "downloadYourFirstModelTo": "Download your first model to get started with Private Mind.",
+    "chatModels": "Chat models",
+    "noSuggestedModelFitsThis": "No suggested model fits this device's memory.",
+    "optionalYouCanStillGet": "Optional. You can still get these later."
+  },
+  "app-toast": {
+    "openSettings": "Open Settings",
+    "retry": "Retry",
+    "dismiss": "Dismiss"
+  },
+  "no-model-welcome": {
+    "chooseAModelToGet": "Choose a model to get started with Private Mind"
+  },
+  "upload-input": {
+    "selectAFile": "Select a file"
+  },
+  "whats-new-badge": {
+    "whatsNewInVersionInstalledversion": "What's new in version {installedVersion}: {title}",
+    "new": "New"
+  },
+  "benchmark-history": {
+    "thereAreNoBenchmarksTo": "There are no benchmarks to display yet"
+  },
+  "benchmark-item": {
+    "modelnameTokenspersecondTokensPerSecond": "{modelName}, {tokensPerSecond} tokens per second",
+    "tokensS": "tokens/s"
+  },
+  "benchmark-modal": {
+    "runningABenchmark": "Running a benchmark",
+    "itMayTakeAround13": "It may take around 1–3 minutes…",
+    "yourBenchmarkIsReady": "Your benchmark is ready!"
+  },
+  "benchmark-stats-card": {
+    "speed": "Speed",
+    "firstToken": "First token",
+    "totalTime": "Total time",
+    "peakMemory": "Peak memory"
+  },
+  "model-selector": {
+    "changeModelCurrentModelname": "Change model, current {modelName}",
+    "selectAModel": "Select a model",
+    "selectAModel_2": "Select a model",
+    "change": "Change",
+    "choose": "Choose"
+  },
+  "add-model-sheet": {
+    "addModel": "Add model"
+  },
+  "benchmark-result-sheet": {
+    "var0Gb": "{var0} GB",
+    "benchmarkResults": "Benchmark results",
+    "deleteResult": "Delete result"
+  },
+  "model-management-sheet": {
+    "startAChat": "Start a chat",
+    "runBenchmark": "Run benchmark",
+    "editModel": "Edit model",
+    "deleteDownloadedFiles": "Delete downloaded files",
+    "removeFromTheApp": "Remove from the app",
+    "removeModelFromTheApp": "Remove model from the app?",
+    "modelnameWillBeRemovedFrom": "{modelName} will be removed from the app. The original files on your device will not be touched.",
+    "modelnameAndItsStoredExternal": "{modelName} and its stored external URLs will be removed. You can add it again manually.",
+    "remove": "Remove",
+    "modelnameHasBeenSuccessfullyDeleted": "{modelName} has been successfully deleted"
+  },
+  "model-select-sheet": {
+    "selectAModel": "Select a model",
+    "searchModels": "Search models",
+    "noModelsMatch": "No models match \"{search}\"",
+    "manageModels": "Manage models",
+    "youHaveNoAvailableModels": "You have no available models yet",
+    "toUsePrivateMindYou": "To use Private Mind you need to have at least one model downloaded"
+  },
+  "model-update-sheet": {
+    "var0Gb": "{var0} GB"
+  },
+  "web-scrape-sheet": {
+    "privateMindIsBrowsingFor": "Private Mind is browsing for you",
+    "confirmYouReHumanToContinue": "Confirm you’re human to continue",
+    "skipSearch": "Skip search",
+    "done": "Done"
+  },
+  "whats-new-sheet": {
+    "whatsNew": "What's new"
+  },
+  "chat-menu-popover": {
+    "chatOptions": "Chat options",
+    "chat": "Chat",
+    "renameChat": "Rename chat",
+    "chatName": "Chat name",
+    "save": "Save",
+    "share": "Share",
+    "deleteChat": "Delete chat"
+  },
+  "animated-chat-loading": {
+    "generating": "Generating…"
+  },
+  "attachment-thumbnail": {
+    "document": "Document"
+  },
+  "branch-marker": {
+    "openSourceConversationSourcechattitle": "Open source conversation: {sourceChatTitle}",
+    "branchedFrom": "Branched from: <text>{markerSourceChatTitle}</text>",
+    "sourceConversation": "source conversation"
+  },
+  "chat-bar": {
+    "thisModelDoesNotSupport": "This model does not support images",
+    "canceled": "canceled",
+    "waitForTheResponseTo": "Wait for the response to finish or stop it first.",
+    "thisModelDoesNotSupport_2": "This model does not support images",
+    "unsupportedClipboardContent": "Unsupported clipboard content",
+    "errorProcessingPastedContent": "Error processing pasted content",
+    "waitForTheAttachmentTo": "Wait for the attachment to finish loading.",
+    "index": "Index",
+    "askAnything": "Ask anything"
+  },
+  "chat-bar-actions": {
+    "waitForTheDocumentTo": "Wait for the document to finish processing.",
+    "think": "Think",
+    "webSearch": "Web search"
+  },
+  "chat-speech-input": {
+    "noSpeechWasHeard": "No speech was heard.",
+    "couldNotStartLiveTranscript": "Could not start live transcript",
+    "stillLoadingSpeechRecognitionOne": "Still loading speech recognition, one moment.",
+    "startTalkingToSeeThe": "Start talking to see the live transcript...",
+    "processing": "Processing...",
+    "downloadingTheDictationModel": "Downloading the dictation model ({progressPercentage}%)",
+    "loading": "Loading...{value}",
+    "progresspercentage": "({progressPercentage}%)"
+  },
+  "chat-title": {
+    "showntitleChatOptions": "{shownTitle}. Chat options"
+  },
+  "composer-model-badge": {
+    "modelModelnameLoading": "Model: {modelName}. Loading",
+    "modelModelname": "Model: {modelName}",
+    "modelModelnameChangeModel": "Model: {modelName}. Change model"
+  },
+  "dominant-source-badge": {
+    "source": "Source: {sourceName}"
+  },
+  "markdown-component": {
+    "menlo": "Menlo"
+  },
+  "memory-stall-card": {
+    "thisIsTakingLongerThan": "This is taking longer than usual"
+  },
+  "message-item": {
+    "copy": "Copy",
+    "fork": "Fork",
+    "sources": "Sources",
+    "sources_2": "Sources",
+    "generating": "Generating…",
+    "refining": "Refining…",
+    "ttftMsTpsTokS": "ttft: {timeToFirstToken} ms, tps: {tokensPerSecond} tok/s"
+  },
+  "messages": {
+    "retryResponseGeneration": "Retry response generation",
+    "retry": "Retry"
+  },
+  "model-unavailable-card": {
+    "messageChooseAModel": "{message}. Choose a model"
+  },
+  "model-update-banner": {
+    "math": "{Math}%"
+  },
+  "scroll-to-latest-button": {
+    "scrollToLatestMessage": "Scroll to latest message"
+  },
+  "sources-sheet": {
+    "sources": "Sources"
+  },
+  "stopped-marker": {
+    "retryThisResponse": "Retry this response",
+    "retry": "Retry"
+  },
+  "thinking-block": {
+    "thinking": "Thinking..."
+  },
+  "user-message-action-menu": {
+    "copy": "Copy"
+  },
+  "web-search-trace-row": {
+    "tapToConfirmYouReNot": "Tap to confirm you’re not a robot",
+    "theSiteWantsToCheck": "The site wants to check you are not a robot — tap to continue"
+  },
+  "attachment-menu": {
+    "camera": "Camera",
+    "photos": "Photos",
+    "files": "Files"
+  },
+  "attachment-overlay": {
+    "front": "front",
+    "back": "back",
+    "off": "off",
+    "closeAttachmentMenu": "Close attachment menu"
+  },
+  "camera-bar": {
+    "takePhoto": "Take photo",
+    "turnFlashOn": "Turn flash on",
+    "turnFlashOff": "Turn flash off",
+    "flipCamera": "Flip camera",
+    "hideCameraOptions": "Hide camera options",
+    "cameraOptions": "Camera options"
+  },
+  "camera-sheet": {
+    "cameraAccessIsOffTurn": "Camera access is off. Turn it on in Settings to take a photo here.",
+    "waitingForCameraAccess": "Waiting for camera access…"
+  },
+  "photo-grid": {
+    "loadingPhotos": "Loading photos…",
+    "noPhotosOnThisDevice": "No photos on this device.",
+    "photoAccessIsOffTurn": "Photo access is off. Turn it on in Settings to pick photos here."
+  },
+  "photo-grid-bar": {
+    "add1Photo": "Add 1 photo",
+    "addCountPhotos": "Add {count} photos",
+    "addCountPhotos_zero": "Add {count} photos",
+    "addCountPhotos_one": "Add {count} photos",
+    "addCountPhotos_two": "Add {count} photos",
+    "addCountPhotos_few": "Add {count} photos",
+    "addCountPhotos_many": "Add {count} photos",
+    "addCountPhotos_other": "Add {count} photos",
+    "allPhotos": "All Photos",
+    "allPhotos_2": "All photos",
+    "allPhotos_3": "All Photos"
+  },
+  "sheet-bar": {
+    "backToMenu": "Back to menu"
+  },
+  "sheet-placeholder": {
+    "openSettings": "Open Settings"
+  },
+  "use-chat-screen-actions": {
+    "thinkingCannotBeEnabledFor": "Thinking cannot be enabled for this model.",
+    "thisModelCannotUseWeb": "This model cannot use web results reliably — pick a larger one."
+  },
+  "use-send-chat-message": {
+    "failedToSaveImageAttachment": "Failed to save image attachment.",
+    "couldnTFindAnythingUsefulOnline": "Couldn’t find anything useful online — answering without the web."
+  },
+  "web-search-trace": {
+    "noInternetAnsweredWithout": "No internet — answered without the web",
+    "searchTookTooLong": "Search took too long — stopped early",
+    "noSearchNeededAnswered": "No search needed — answered right away",
+    "aLargeModelTakesLonger": "A large model takes longer on this phone",
+    "done": "Done",
+    "didnTFindMuchThe": "Didn’t find much — the answer may be incomplete",
+    "readingThePages": "Reading the pages",
+    "nothingFound": "Nothing found",
+    "decidingWhatToSearchFor": "Deciding what to search for",
+    "nothingFound_2": "Nothing found"
+  },
+  "drawer-empty-state": {
+    "noChatsMatch": "No chats match \"{query}\"",
+    "startNewChat": "Start new chat"
+  },
+  "drawer-footer": {
+    "settings": "Settings",
+    "newChat": "New chat",
+    "newChat_2": "New chat"
+  },
+  "drawer-nav-section": {
+    "manageModels": "Manage models"
+  },
+  "drawer-top-bar": {
+    "searchChats": "Search chats",
+    "searchChats_2": "Search chats",
+    "closeSearch": "Close search"
+  },
+  "download-percent": {
+    "startingDownload": "Starting download"
+  },
+  "download-progress-details": {
+    "ofGb": "{modelSize} of {modelSize2} GB"
+  },
+  "downloaded-badge": {
+    "downloaded": "Downloaded"
+  },
+  "downloads-header-button": {
+    "downloadsCountInProgress": "Downloads, {count} in progress",
+    "downloadsCountInProgress_zero": "Downloads, {count} in progress",
+    "downloadsCountInProgress_one": "Downloads, {count} in progress",
+    "downloadsCountInProgress_two": "Downloads, {count} in progress",
+    "downloadsCountInProgress_few": "Downloads, {count} in progress",
+    "downloadsCountInProgress_many": "Downloads, {count} in progress",
+    "downloadsCountInProgress_other": "Downloads, {count} in progress",
+    "downloads": "Downloads"
+  },
+  "family-card": {
+    "variantsDownloadedcountDownloaded": "{variants} · {downloadedCount} downloaded",
+    "downloadedcountDownloaded": "{downloadedCount} downloaded",
+    "downloadingcountDownloading": "{downloadingCount} downloading",
+    "hiddenlabelcount": "+{hiddenLabelCount}"
+  },
+  "family-provider-row": {
+    "madeByProvider": "Made by {provider}",
+    "madeBy": "Made by"
+  },
+  "model-capability-badges": {
+    "custom": "Custom"
+  },
+  "model-download-row": {
+    "download": "Download",
+    "cancelDownload": "Cancel download",
+    "deleteModelFiles": "Delete model files",
+    "updateModelname": "Update {modelName}",
+    "modelnameDownloadProgress": "{modelName} download progress"
+  },
+  "model-hub-tabs": {
+    "recommended": "Recommended",
+    "experimental": "Experimental",
+    "mine": "Mine",
+    "modelLists": "Model lists"
+  },
+  "model-picker-row": {
+    "updateModelname": "Update {modelName}",
+    "math": "{Math}%"
+  },
+  "swm-attribution-card": {
+    "originalModelByProvider": "Original model by {provider}"
+  },
+  "app-notices": {
+    "dismiss": "Dismiss"
+  },
+  "onboarding-carousel": {
+    "skipOnboarding": "Skip onboarding",
+    "skip": "Skip"
+  },
+  "onboarding-intro-panel": {
+    "yourPrivateAiMind": "Your private AI mind.",
+    "inYourPocket": "In your pocket."
+  },
+  "onboarding-pagination": {
+    "goToSlideVar0Of": "Go to slide {var0} of {count}",
+    "goToSlideVar0Of_zero": "Go to slide {var0} of {count}",
+    "goToSlideVar0Of_one": "Go to slide {var0} of {count}",
+    "goToSlideVar0Of_two": "Go to slide {var0} of {count}",
+    "goToSlideVar0Of_few": "Go to slide {var0} of {count}",
+    "goToSlideVar0Of_many": "Go to slide {var0} of {count}",
+    "goToSlideVar0Of_other": "Go to slide {var0} of {count}"
+  },
+  "starting-feature-list": {
+    "cancelNameDownload": "Cancel {name} download",
+    "nameDownloadProgress": "{name} download progress",
+    "sectionTitleDownloadProgress": "{SECTION_TITLE} download progress",
+    "downloadAllSectionTitle": "Download all {SECTION_TITLE}"
+  },
+  "particle-swarm": {
+    "webgpu": "webgpu"
+  },
+  "db": {
+    "youAreAKnowledgeableAnd": "You are a knowledgeable and helpful assistant. Provide clear, accurate, and well-structured responses. When given context from documents, use that information to give comprehensive answers while being concise and relevant."
+  },
+  "use-attachment": {
+    "thisDocumentIsLarge": "This document is large — only the first part was indexed for search.",
+    "errorReadingDocument": "Error reading document.",
+    "couldNotReadThisPage": "Could not read this page.",
+    "thisPageIsLarge": "This page is large — only the first part was indexed for search.",
+    "errorReadingLink": "Error reading link.",
+    "documentStorageIsStillStarting": "Document storage is still starting up. Try again in a moment.",
+    "failedToDownloadTheDocument": "Failed to download the document model.",
+    "onlyImagesCanBePasted": "Only images can be pasted. Use the + button for documents."
+  },
+  "use-chat-branching": {
+    "sendAMessageBeforeBranching": "Send a message before branching this chat.",
+    "failedToForkConversation": "Failed to fork conversation.",
+    "sourceConversationIsNoLonger": "Source conversation is no longer available."
+  },
+  "use-confirm": {
+    "cancel": "Cancel"
+  },
+  "use-legacy-chat-notice": {
+    "noteThisConversationPredatesDocument": "Note: this conversation predates document linking, so its attached document is no longer available here. Attach it again in a new chat to use it as a source."
+  },
+  "use-model-download": {
+    "modelCannotBeDownloadedWithout": "Model cannot be downloaded without internet connection.",
+    "noWifiConnectionDetected": "No WiFi Connection Detected.",
+    "downloadingModelsWillUseYour": "Downloading models will use your mobile data, which may incur additional charges from your carrier. We recommend connecting to WiFi for the best experience.",
+    "downloadAnyway": "Download anyway"
+  },
+  "use-starting-features": {
+    "chatWithFilesSearchThe": "Chat with files, search the web",
+    "speakInsteadOfTyping": "Speak instead of typing"
+  },
+  "llm-store": {
+    "replyInOneWord": "Reply in one word.",
+    "nieUdałoMiSięOdpowiedzieć": "Nie udało mi się odpowiedzieć na to pytanie na podstawie znalezionych źródeł.",
+    "iCouldNotAnswerThis": "I could not answer this question from the sources I found.",
+    "modelCannotBeLoadedWithout": "Model cannot be loaded without internet connection.",
+    "danglingListAnswerContinuationNudge": "Dangling list answer, continuation nudge"
+  },
+  "copied-toast": {
+    "messageCopied": "Message copied"
+  },
+  "model-catalog-schema": {
+    "mustBeAnHttpsUrl": "must be an https:// URL"
+  },
+  "question-language": {
+    "polish": "Polish",
+    "english": "English",
+    "german": "German",
+    "dutch": "Dutch",
+    "french": "French",
+    "spanish": "Spanish",
+    "italian": "Italian",
+    "portuguese": "Portuguese",
+    "romanian": "Romanian",
+    "czech": "Czech",
+    "turkish": "Turkish",
+    "vietnamese": "Vietnamese",
+    "russian": "Russian",
+    "ukrainian": "Ukrainian",
+    "hindi": "Hindi",
+    "bengali": "Bengali",
+    "urdu": "Urdu",
+    "arabic": "Arabic",
+    "persian": "Persian",
+    "hebrew": "Hebrew",
+    "greek": "Greek",
+    "thai": "Thai",
+    "chinese": "Chinese",
+    "japanese": "Japanese",
+    "korean": "Korean",
+    "cyrillicScript": "Cyrillic script",
+    "cyrillicScript_2": "Cyrillic script",
+    "devanagariScript": "Devanagari script",
+    "bengaliScript": "Bengali script",
+    "arabicScript": "Arabic script",
+    "arabicScript_2": "Arabic script",
+    "arabicScript_3": "Arabic script",
+    "hebrewScript": "Hebrew script",
+    "greekScript": "Greek script",
+    "thaiScript": "Thai script",
+    "chineseCharacters": "Chinese characters",
+    "japaneseScript": "Japanese script",
+    "hangul": "Hangul",
+    "whoWhatWhichIsAre": "who what which is are the how where when why today tomorrow now will latest current news weather price cost of and in for to my me it can do does much many time year best near open per about write story tell explain describe summarize this that these those you your we they have has would could should with from",
+    "ktoKimKomuKogoCo": "kto kim komu kogo co czego czemu jest są czy jak jaka jaki jakie gdzie kiedy ile dlaczego jutro dzisiaj dziś teraz aktualny obecny aktualna najnowsze wiadomości pogoda cena kurs koszt się masz hej cześć siema oraz dla mnie moje jak długo ile kosztuje na od do po za nie to który która które był była było byli były dokonał dokonała znajdź szukaj pokaż sprawdź podaj napisz wyjaśnij kup kupić zrobić działa najlepszy najlepsza najlepsze najtańszy najtańsza najdroższy najdroższa najdroższe największy największa najszybszy najnowszy sklep sklepie polsce polski wynosi",
+    "kdoCoJeJsouJak": "kdo co je jsou jak kde kdy proč dnes zítra teď zprávy počasí cena kolik stojí jaký jaká jaké nejnovější aktuální mi moje na od do po za to",
+    "werWasIstSindWie": "wer was ist sind wie wo wann warum heute morgen jetzt aktuelle aktueller aktuelles nachrichten wetter preis kosten kostet der die das und für ich mein wieviel viel beantrage bekomme gibt pro",
+    "wieWatWelkeIsZijn": "wie wat welke is zijn hoe waar wanneer waarom vandaag morgen nu actuele nieuws weer prijs kosten kost het de een en voor ik mijn hoeveel krijg aanvragen per",
+    "quiQueQuoiQuelQuelle": "qui que quoi quel quelle est sont comment quand pourquoi aujourd hui demain maintenant actualités météo prix coût combien le les des du pour mon ma je faire montant",
+    "quiénQuienQuéCuálCual": "quién quien qué cuál cual es son cómo como dónde donde cuándo cuando hoy mañana ahora noticias tiempo precio cuánto cuanto el los las del para mi yo hacer sacar",
+    "chiCheCosaQualeÈ": "chi che cosa quale è sono come dove quando perché oggi domani adesso notizie meteo prezzo quanto costa il gli della per mio io prossima campionato richiedere",
+    "quemQueQualÉSão": "quem que qual é são como onde quando por hoje amanhã agora notícias tempo preço quanto custa custo os das para meu eu fazer tirar próximo salário mínimo imposto do da dos em no na uma tem",
+    "cineCeCareEsteSunt": "cine ce care este sunt cum unde când de ce astăzi azi mâine acum știri vreme preț cât costă pentru meu eu face cum se obține",
+    "kimNeHangiNedirNasıl": "kim ne hangi nedir nasıl nerede ne zaman neden bugün yarın şimdi haberler hava durumu fiyat kaç kadar için benim ben nasıl alınır kuru ücreti",
+    "nàoThếĐâuKhiTại": "nào thế đâu khi tại sao hôm nay bây giờ tin tức thời tiết bao nhiêu tôi làm mới nhất không được"
+  },
+  "build-search-query": {
+    "casualGreeting": "casual greeting",
+    "recapOfThisConversation": "recap of this conversation",
+    "aboutAPreviousAnswer": "about a previous answer",
+    "currentTokyoWeather": "current Tokyo weather",
+    "currentBitcoinPrice": "current bitcoin price",
+    "compareBitcoinAndEthereumPrices": "compare Bitcoin and Ethereum prices",
+    "eReaderRecommendation": "e-reader recommendation",
+    "mostStreamedSongThisYear": "most streamed song this year",
+    "currentKrakowWeather": "current Krakow weather",
+    "currentDelhiWeather": "current Delhi weather",
+    "cenaWędki": "cena wędki",
+    "youTurnTheUsersLatest": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated; English only when the user wrote in English. Keep the names, places and numbers the user gave, exactly as given; never swap in a related one. Use only the latest message and what it refers to; resolve it/that/they from the conversation. Turn relative time words (today, latest, now, current, this year, this season, so far) into a concrete date, year or season — today is {today}; for a \"most/best/top X\" question about a recent period put that year or season in the query itself, so results are about that period and not an all-time ranking. Give 1 query normally, one per item ONLY for a clear comparison of 2 or 3 named things (max 3 queries).\nA casually worded message wraps the thing it is about in circumstance — who it is for, why it is wanted, how it will be used, \"such things\", \"something like that\". Keep the concrete thing and what is asked about it; drop the circumstance. Searching the occasion instead of the object returns the wrong shops and the wrong pages.\n{PLANNER_EXAMPLES_TEXT}Those are only format examples — plan for the actual user message below and never copy their words or topics.",
+    "youTurnTheUsersLatest_2": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated; English only when the user wrote in English. Keep the names, places and numbers the user gave, exactly as given; never swap in a related one. Use only the latest message and what it refers to; resolve it/that/they from the conversation. Turn relative time words (today, latest, now, current, this year, this season, so far) into a concrete date, year or season — today is {today}; for a \"most/best/top X\" question about a recent period put that year or season in the query itself, so results are about that period and not an all-time ranking. Give 1 query normally, one per item ONLY for a clear comparison of 2 or 3 named things (max 3 queries).\nA casually worded message wraps the thing it is about in circumstance — who it is for, why it is wanted, how it will be used, \"such things\", \"something like that\". Keep the concrete thing and what is asked about it; drop the circumstance. Searching the occasion instead of the object returns the wrong shops and the wrong pages.\n{PLANNER_EXAMPLES_TEXT}Those are only format examples — plan for the actual user message below",
+    "youTurnTheUsersLatest_3": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated; English only when the user wrote in English. Keep the names, places and numbers the user gave, exactly as given; never swap in a related one. Use only the latest message and what it refers to; resolve it/that/they from the conversation. Turn relative time words (today, latest, now, current, this year, this season, so far) into a concrete date, year or season — today is {today}; for a \"most/best/top X\" question about a recent period put that year or season in the query itself, so results are about that period and not an all-time ranking. Give 1 query normally, one per item ONLY for a clear comparison of 2 or 3 named things (max 3 queries).\nA casually worded message wraps the thing it is about in circumstance — who it is for, why it is wanted, how it will be used, \"such things\", \"something like that\". Keep the concrete thing and what is asked about it; drop the circumstance. Searching the occasion instead of the object returns the wrong shops and the wrong pages.\n{PLANNER_EXAMPLES_TEXT}",
+    "youTurnTheUsersLatest_4": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated; English only when the user wrote in English. Keep the names, places and numbers the user gave, exactly as given; never swap in a related one. Use only the latest message and what it refers to; resolve it/that/they from the conversation. Turn relative time words (today, latest, now, current, this year, this season, so far) into a concrete date, year or season — today is {today}; for a \"most/best/top X\" question about a recent period put that year or season in the query itself, so results are about that period and not an all-time ranking. Give 1 query normally, one per item ONLY for a clear comparison of 2 or 3 named things (max 3 queries).\nA casually worded message wraps the thing it is about in circumstance — who it is for, why it is wanted, how it will be used, \"such things\", \"something like that\". Keep the concrete thing and what is asked about it; drop the circumstance. Searching the occasion instead of the object returns the wrong shops and the wrong pages.",
+    "youTurnTheUsersLatest_5": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated; English only when the user wrote in English. Keep the names, places and numbers the user gave, exactly as given; never swap in a related one. Use only the latest message and what it refers to; resolve it/that/they from the conversation. Turn relative time words (today, latest, now, current, this year, this season, so far) into a concrete date, year or season — today is {today}; for a \"most/best/top X\" question about a recent period put that year or season in the query itself, so results are about that period and not an all-time ranking. Give 1 query normally, one per item ONLY for a clear comparison of 2 or 3 named things (max 3 queries).\nA casually worded message wraps the thing it is about in circumstance — who it is for, why it is wanted, how it will be used, \"such things\", \"something like that\". Keep the concrete thing and what is asked about it; drop the circumstance. Searching the occasion instead of the object",
+    "youTurnTheUsersLatest_6": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated; English only when the user wrote in English. Keep the names, places and numbers the user gave, exactly as given; never swap in a related one. Use only the latest message and what it refers to; resolve it/that/they from the conversation. Turn relative time words (today, latest, now, current, this year, this season, so far) into a concrete date, year or season — today is {today}; for a \"most/best/top X\" question about a recent period put that year or season in the query itself, so results are about that period and not an all-time ranking. Give 1 query normally, one per item ONLY for a clear comparison of 2 or 3 named things (max 3 queries).\nA casually worded message wraps the thing it is about in circumstance — who it is for, why it is wanted, how it will be used, \"such things\", \"something like that\". Keep the concrete thing and what is asked about",
+    "youTurnTheUsersLatest_7": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated; English only when the user wrote in English. Keep the names, places and numbers the user gave, exactly as given; never swap in a related one. Use only the latest message and what it refers to; resolve it/that/they from the conversation. Turn relative time words (today, latest, now, current, this year, this season, so far) into a concrete date, year or season — today is {today}; for a \"most/best/top X\" question about a recent period put that year or season in the query itself, so results are about that period and not an all-time ranking. Give 1 query normally, one per item ONLY for a clear comparison of 2 or 3 named things (max 3 queries).\nA casually worded message wraps the thing it is about in circumstance — who it is for, why it is wanted, how it will be used, \"such things\",",
+    "youTurnTheUsersLatest_8": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated; English only when the user wrote in English. Keep the names, places and numbers the user gave, exactly as given; never swap in a related one. Use only the latest message and what it refers to; resolve it/that/they from the conversation. Turn relative time words (today, latest, now, current, this year, this season, so far) into a concrete date, year or season — today is {today}; for a \"most/best/top X\" question about a recent period put that year or season in the query itself, so results are about that period and not an all-time ranking. Give 1 query normally, one per item ONLY for a clear comparison of 2 or 3 named things (max 3 queries).\nA casually worded message wraps the thing it is about in circumstance —",
+    "youTurnTheUsersLatest_9": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated; English only when the user wrote in English. Keep the names, places and numbers the user gave, exactly as given; never swap in a related one. Use only the latest message and what it refers to; resolve it/that/they from the conversation. Turn relative time words (today, latest, now, current, this year, this season, so far) into a concrete date, year or season — today is {today}; for a \"most/best/top X\" question about a recent period put that year or season in the query itself, so results are about that period and not an all-time ranking. Give 1 query normally, one per item ONLY for a clear comparison of 2 or 3 named things (max 3 queries).",
+    "youTurnTheUsersLatest_10": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated; English only when the user wrote in English. Keep the names, places and numbers the user gave, exactly as given; never swap in a related one. Use only the latest message and what it refers to; resolve it/that/they from the conversation. Turn relative time words (today, latest, now, current, this year, this season, so far) into a concrete date, year or season — today is {today}; for a \"most/best/top X\" question about a recent period put that year or season in the query itself, so results are about that period and not an all-time ranking. Give 1 query normally, one per item ONLY for a clear comparison of 2 or",
+    "youTurnTheUsersLatest_11": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated; English only when the user wrote in English. Keep the names, places and numbers the user gave, exactly as given; never swap in a related one. Use only the latest message and what it refers to; resolve it/that/they from the conversation. Turn relative time words (today, latest, now, current, this year, this season, so far) into a concrete date, year or season — today is {today}; for a \"most/best/top X\" question about a recent period put that year or season in the query itself, so results are about that period and not an all-time ranking.",
+    "youTurnTheUsersLatest_12": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated; English only when the user wrote in English. Keep the names, places and numbers the user gave, exactly as given; never swap in a related one. Use only the latest message and what it refers to; resolve it/that/they from the conversation. Turn relative time words (today, latest, now, current, this year, this season, so far) into a concrete date, year or season — today is {today}; for a \"most/best/top X\" question about a recent period put that year or season in the query itself, so results",
+    "youTurnTheUsersLatest_13": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated; English only when the user wrote in English. Keep the names, places and numbers the user gave, exactly as given; never swap in a related one. Use only the latest message and what it refers to; resolve it/that/they from the conversation. Turn relative time words (today, latest, now, current, this year, this season, so far) into a concrete date, year or season — today is {today}; for a \"most/best/top X\" question about a",
+    "youTurnTheUsersLatest_14": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated; English only when the user wrote in English. Keep the names, places and numbers the user gave, exactly as given; never swap in a related one. Use only the latest message and what it refers to; resolve it/that/they from the conversation. Turn relative time words (today, latest, now, current, this year, this season, so far) into a concrete date, year or",
+    "youTurnTheUsersLatest_15": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated; English only when the user wrote in English. Keep the names, places and numbers the user gave, exactly as given; never swap in a related one. Use only the latest message and what it refers to; resolve it/that/they from the conversation. Turn relative time words (today, latest, now,",
+    "youTurnTheUsersLatest_16": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated; English only when the user wrote in English. Keep the names, places and numbers the user gave, exactly as given; never swap in a related one. Use only the latest message and what it refers to; resolve it/that/they",
+    "youTurnTheUsersLatest_17": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated; English only when the user wrote in English. Keep the names, places and numbers the user gave, exactly as given; never swap in a related one.",
+    "youTurnTheUsersLatest_18": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated; English only when the user wrote in English. Keep the names, places and",
+    "youTurnTheUsersLatest_19": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the SAME language and script as the user's message — never translated;",
+    "youTurnTheUsersLatest_20": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.\nEach query is search KEYWORDS under 12 words, not a sentence, in the",
+    "youTurnTheUsersLatest_21": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is cheap, a confident stale answer is not.",
+    "youTurnTheUsersLatest_22": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations. Unsure about a specific, checkable question? Choose true — a search is",
+    "youTurnTheUsersLatest_23": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something, opening hours or an address, specific people, places or organisations.",
+    "youTurnTheUsersLatest_24": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code, who currently holds a position, the current version of something,",
+    "youTurnTheUsersLatest_25": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices, weather, scores, schedules, releases, specs, a product or model code,",
+    "youTurnTheUsersLatest_26": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the best answer needs fresh, local or verifiable facts: news, prices,",
+    "youTurnTheUsersLatest_27": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and timeless general knowledge — then \"queries\": []. It is true when the",
+    "youTurnTheUsersLatest_28": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math, coding, translation, rewriting, questions about this conversation, and",
+    "youTurnTheUsersLatest_29": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).\nneeds_search is false for greetings, chit-chat, opinions, advice, math,",
+    "youTurnTheUsersLatest_30": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a position), fact (one checkable fact), howto (steps), chat (no search).",
+    "youTurnTheUsersLatest_31": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an address, opening hours, contact), person (who someone is or who holds a",
+    "youTurnTheUsersLatest_32": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or happened), event (a scheduled happening: where and when), place (an",
+    "youTurnTheUsersLatest_33": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to choose), news (recent events), date (when something happens or",
+    "youTurnTheUsersLatest_34": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures), comparison (named things side by side), recommendation (which one to",
+    "youTurnTheUsersLatest_35": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.\n\"kind\": one of price (an amount of money), specs (technical figures),",
+    "youTurnTheUsersLatest_36": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search is false.",
+    "youTurnTheUsersLatest_37": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with its unit, a date, a name), in the user's language; [] when needs_search",
+    "youTurnTheUsersLatest_38": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": the 1-4 things a complete answer must contain (a value with",
+    "youTurnTheUsersLatest_39": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}",
+    "youTurnTheUsersLatest_40": "You turn the user's latest message into a web-search plan. Output ONLY one JSON object, no other text and no reasoning:",
+    "youTurnTheUsersLatest_41": "You turn the user's latest message into a web-search plan.",
+    "outputOnlyOneJsonObject": "Output ONLY one JSON object, no other text and no reasoning:",
+    "expectsThe14ThingsA": "\"expects\": the 1-4 things a complete answer must contain (a value with",
+    "itsUnitADateA": "its unit, a date, a name), in the user's language; [] when needs_search",
+    "isFalse": "is false.",
+    "kindOneOfPriceAn": "\"kind\": one of price (an amount of money), specs (technical figures),",
+    "comparisonNamedThingsSideBy": "comparison (named things side by side), recommendation (which one to",
+    "chooseNewsRecentEventsDate": "choose), news (recent events), date (when something happens or",
+    "happenedEventAScheduledHappening": "happened), event (a scheduled happening: where and when), place (an",
+    "addressOpeningHoursContactPerson": "address, opening hours, contact), person (who someone is or who holds a",
+    "positionFactOneCheckableFact": "position), fact (one checkable fact), howto (steps), chat (no search).",
+    "needsSearchIsFalseForGreetings": "needs_search is false for greetings, chit-chat, opinions, advice, math,",
+    "codingTranslationRewritingQuestionsAbout": "coding, translation, rewriting, questions about this conversation, and",
+    "timelessGeneralKnowledgeThen": "timeless general knowledge — then \"queries\": []. It is true when the",
+    "bestAnswerNeedsFreshLocal": "best answer needs fresh, local or verifiable facts: news, prices,",
+    "weatherScoresSchedulesReleasesSpecs": "weather, scores, schedules, releases, specs, a product or model code,",
+    "whoCurrentlyHoldsAPosition": "who currently holds a position, the current version of something,",
+    "openingHoursOrAnAddress": "opening hours or an address, specific people, places or organisations.",
+    "unsureAboutASpecificCheckable": "Unsure about a specific, checkable question? Choose true — a search is",
+    "cheapAConfidentStaleAnswer": "cheap, a confident stale answer is not.",
+    "eachQueryIsSearchKeywords": "Each query is search KEYWORDS under 12 words, not a sentence, in the",
+    "sameLanguageAndScriptAs": "SAME language and script as the user's message — never translated;",
+    "englishOnlyWhenTheUser": "English only when the user wrote in English. Keep the names, places and",
+    "numbersTheUserGaveExactly": "numbers the user gave, exactly as given; never swap in a related one.",
+    "useOnlyTheLatestMessage": "Use only the latest message and what it refers to; resolve it/that/they",
+    "fromTheConversationTurnRelative": "from the conversation. Turn relative time words (today, latest, now,",
+    "currentThisYearThisSeason": "current, this year, this season, so far) into a concrete date, year or",
+    "seasonTodayIsToday": "season — today is {today}; for a \"most/best/top X\" question about a",
+    "recentPeriodPutThatYear": "recent period put that year or season in the query itself, so results",
+    "areAboutThatPeriodAnd": "are about that period and not an all-time ranking.",
+    "give1QueryNormallyOne": "Give 1 query normally, one per item ONLY for a clear comparison of 2 or",
+    "3NamedThingsMax3": "3 named things (max 3 queries).",
+    "aCasuallyWordedMessageWraps": "A casually worded message wraps the thing it is about in circumstance —",
+    "whoItIsForWhy": "who it is for, why it is wanted, how it will be used, \"such things\",",
+    "somethingLikeThatKeepThe": "\"something like that\". Keep the concrete thing and what is asked about",
+    "itDropTheCircumstanceSearching": "it; drop the circumstance. Searching the occasion instead of the object",
+    "returnsTheWrongShopsAnd": "returns the wrong shops and the wrong pages.",
+    "thoseAreOnlyFormatExamples": "Those are only format examples — plan for the actual user message below",
+    "andNeverCopyTheirWords": "and never copy their words or topics.",
+    "recapOfThisConversation_2": "recap of this conversation"
+  },
+  "fetch-failure": {
+    "blockedTheReader": "blocked the reader",
+    "pageIsGone": "page is gone",
+    "siteIsDown": "site is down",
+    "tookTooLong": "took too long",
+    "notReadableText": "not readable text",
+    "pageTooBig": "page too big",
+    "noReadableText": "no readable text",
+    "couldNotBeReached": "could not be reached"
+  },
+  "currency-quote": {
+    "frankfurterEuropeanCentralBank": "Frankfurter — European Central Bank reference rates"
+  },
+  "run-web-search": {
+    "incorrect": "incorrect",
+    "correct": "correct"
+  },
+  "charset": {
+    "untitled": "€�‚ƒ„…†‡ˆ‰Š‹Œ�Ž��‘’“”•–—˜™š›œ�žŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ",
+    "untitled_2": "€�‚�„…†‡�‰Š‹ŚŤŽŹ�‘’“”•–—�™š›śťžź ˇ˘Ł¤Ą¦§¨©Ş«¬­®Ż°±˛ł´µ¶·¸ąş»Ľ˝ľżŔÁÂĂÄĹĆÇČÉĘËĚÍÎĎĐŃŇÓÔŐÖ×ŘŮÚŰÜÝŢßŕáâăäĺćçčéęëěíîďđńňóôőö÷řůúűüýţ˙"
+  },
+  "topic-language": {
+    "italian": "Italian",
+    "german": "German",
+    "french": "French",
+    "spanish": "Spanish",
+    "portuguese": "Portuguese",
+    "dutch": "Dutch",
+    "polish": "Polish",
+    "czech": "Czech",
+    "swedish": "Swedish",
+    "norwegian": "Norwegian",
+    "danish": "Danish",
+    "finnish": "Finnish",
+    "greek": "Greek",
+    "turkish": "Turkish",
+    "russian": "Russian",
+    "ukrainian": "Ukrainian",
+    "japanese": "Japanese",
+    "chinese": "Chinese",
+    "korean": "Korean"
+  },
+  "extract-article": {
+    "inStock": "in stock",
+    "outOfStock": "out of stock",
+    "limitedAvailability": "limited availability",
+    "soldOut": "sold out",
+    "backOrder": "back order",
+    "onlineOnly": "online only",
+    "availableInStore": "available in store"
+  },
+  "_meta": {
+    "dir": "ltr",
+    "language": "en"
+  }
+}

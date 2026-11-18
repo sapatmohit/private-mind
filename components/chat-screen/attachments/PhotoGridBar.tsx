@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React, { useEffect, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
@@ -32,9 +33,10 @@ interface ConfirmPillProps {
 }
 
 const ConfirmPill = ({ count, active, fade, onPress }: ConfirmPillProps) => {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
   const hasSelection = count > 0;
-  const label = count === 1 ? 'Add 1 photo' : `Add ${count} photos`;
+  const label = count === 1 ? t("photo-grid-bar.add1Photo") : t("photo-grid-bar.addCountPhotos", { count });
 
   const swap = useDerivedValue(() =>
     withTiming(hasSelection ? 1 : 0, {
@@ -68,12 +70,12 @@ const ConfirmPill = ({ count, active, fade, onPress }: ConfirmPillProps) => {
         onLayout={(event) => setLabelWidth(event.nativeEvent.layout.width)}
         style={[styles.pillLabel, styles.pillSizer]}
       >
-        {hasSelection ? label : 'All Photos'}
+        {hasSelection ? label : t("photo-grid-bar.allPhotos")}
       </Text>
 
       <AnimatedPressable
         accessibilityRole="button"
-        accessibilityLabel={hasSelection ? label : 'All photos'}
+        accessibilityLabel={hasSelection ? label : t("photo-grid-bar.allPhotos_2")}
         testID="attachment-confirm"
         disabled={!hasSelection}
         onPress={onPress}
@@ -96,7 +98,7 @@ const ConfirmPill = ({ count, active, fade, onPress }: ConfirmPillProps) => {
             numberOfLines={1}
             style={[styles.pillLabel, styles.pillText, plain]}
           >
-            All Photos
+            {t("photo-grid-bar.allPhotos_3")}
           </Animated.Text>
           <Animated.Text
             numberOfLines={1}

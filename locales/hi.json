@@ -1,0 +1,595 @@
+{
+  "benchmark": {
+    "history": "इतिहास",
+    "model": "मॉडल"
+  },
+  "settings": {
+    "about": "हमारे बारे में",
+    "deleteAllChats": "सभी चैट हटाएं?",
+    "thisPermanentlyRemovesEveryChat": "यह हर चैट और उसके संदेशों को हमेशा के लिए हटा देता है।",
+    "delete": "हटाएं",
+    "allChatsDeleted": "सभी चैट हटा दी गईं",
+    "error": "त्रुटि",
+    "failedToDeleteChatsPlease": "चैट हटाने में विफल। कृपया पुनः प्रयास करें।",
+    "personalization": "वैयक्तिकरण",
+    "customInstructions": "कस्टम निर्देश",
+    "appearance": "रूप-रंग",
+    "theme": "थीम",
+    "chat": "चैट",
+    "responseSpeedStats": "प्रतिक्रिया गति आँकड़े",
+    "showWhatEachAnswerCost": "दिखाएं कि प्रत्येक उत्तर की लागत क्या थी: दस्तावेज़ और वेब पुनर्प्राप्ति, पहले टोकन का समय, प्रति सेकंड टोकन।",
+    "dataControls": "डेटा नियंत्रण",
+    "importChat": "चैट आयात करें",
+    "deleteAllChats_2": "सभी चैट हटाएं",
+    "appInfo": "ऐप्लिकेशन जानकारी"
+  },
+  "web-scrape-sheet": {
+    "done": "हो गया",
+    "privateMindIsBrowsingFor": "Private Mind आपके लिए ब्राउज़ कर रहा है",
+    "confirmYouReHumanToContinue": "पुष्टि करें कि आप मानव हैं जारी रखने के लिए",
+    "skipSearch": "खोज से चूकें"
+  },
+  "message-item": {
+    "copy": "कॉपी करें",
+    "fork": "कांटा",
+    "sources": "स्रोत",
+    "sources_2": "स्रोत",
+    "generating": "उत्पन्न करना",
+    "refining": "रिफाइनिंग"
+  },
+  "user-message-action-menu": {
+    "copy": "कॉपी करें"
+  },
+  "web-search-trace": {
+    "done": "हो गया",
+    "noInternetAnsweredWithout": "वेब के बिना कोई इंटरनेट नहीं",
+    "searchTookTooLong": "खोज में बहुत समय लगा जल्दी रुक गया",
+    "noSearchNeededAnswered": "कोई खोज की जरूरत नहीं है तुरंत जवाब दिया",
+    "aLargeModelTakesLonger": "इस फोन पर एक बड़ा मॉडल अधिक समय लेता है",
+    "didnTFindMuchThe": "बहुत कुछ नहीं मिला जवाब अधूरा हो सकता है",
+    "readingThePages": "पृष्ठों को पढ़ना",
+    "nothingFound": "कुछ भी नहीं मिला",
+    "decidingWhatToSearchFor": "यह तय करना कि क्या खोजें",
+    "nothingFound_2": "कुछ भी नहीं मिला"
+  },
+  "model-hub-tabs": {
+    "recommended": "अनुशंसित",
+    "experimental": "प्रयोगात्मक",
+    "mine": "मेरा",
+    "modelLists": "मॉडल सूचियाँ"
+  },
+  "use-confirm": {
+    "cancel": "रद्द करें"
+  },
+  "app-info": {
+    "privateMind": "Private Mind",
+    "anAppBroughtToYou": "Software Mansion द्वारा प्रस्तुत एक ऐप जो आपके डिवाइस पर स्थानीय रूप से AI मॉडल चलाता है।",
+    "wantToLearnMore": "और अधिक जानना चाहते हैं?",
+    "checkOurOtherLibrariesRelated": "AI से संबंधित हमारी अन्य लाइब्रेरी देखें।",
+    "successfullyCopiedVersionToClipboard": "वर्जन सफलतापूर्वक क्लिपबोर्ड पर कॉपी हो गया",
+    "appVersion": "ऐप वर्ज़न:",
+    "appInfo": "ऐप जानकारी"
+  },
+  "chat-speech-input": {
+    "progresspercentage": "({progressPercentage}%)",
+    "noSpeechWasHeard": "कोई भाषण नहीं सुना गया।",
+    "couldNotStartLiveTranscript": "लाइव ट्रांसक्रिप्शन शुरू नहीं किया जा सका",
+    "stillLoadingSpeechRecognitionOne": "अभी भी भाषण पहचान लोड, एक पल के लिए.",
+    "startTalkingToSeeThe": "लाइव ट्रांसक्रिप्ट देखने के लिए बात शुरू करें .",
+    "processing": "प्रोसेस हो रहा है...",
+    "downloadingTheDictationModel": "डिक्टेशन मॉडल ({progressPercentage}%) डाउनलोड करना",
+    "loading": "लोड...{value}"
+  },
+  "model-update-banner": {
+    "math": "{Math}%"
+  },
+  "family-card": {
+    "hiddenlabelcount": "+{hiddenLabelCount}",
+    "variantsDownloadedcountDownloaded": "{variants} · {downloadedCount} डाउनलोड किए गए",
+    "downloadedcountDownloaded": "{downloadedCount} डाउनलोड किया गया",
+    "downloadingcountDownloading": "{downloadingCount} डाउनलोड करें"
+  },
+  "model-picker-row": {
+    "math": "{Math}%",
+    "updateModelname": "अद्यतन {modelName}"
+  },
+  "question-language": {
+    "english": "English",
+    "polish": "पोलिश",
+    "german": "जर्मन",
+    "dutch": "डच",
+    "french": "फ़्रेंच",
+    "spanish": "स्पैनिश",
+    "italian": "इतालवी",
+    "portuguese": "पुर्तगाली",
+    "romanian": "रोमानियाई",
+    "czech": "चेक",
+    "turkish": "तुर्की",
+    "vietnamese": "वियतनामी",
+    "russian": "रूसी",
+    "ukrainian": "यूक्रेनी",
+    "hindi": "हिन्दी",
+    "bengali": "बंगाली",
+    "urdu": "उर्दू",
+    "arabic": "अरबी",
+    "persian": "फ़ारसी",
+    "hebrew": "हिब्रू",
+    "greek": "ग्रीक",
+    "thai": "थाई",
+    "chinese": "चीनी",
+    "japanese": "जापानी",
+    "korean": "कोरियाई",
+    "cyrillicScript": "सिरिलिक लिपि",
+    "cyrillicScript_2": "सिरिलिक लिपि",
+    "devanagariScript": "देवनागरी लिपि",
+    "bengaliScript": "बंगाली लिपि",
+    "arabicScript": "अरबी लिपि",
+    "arabicScript_2": "अरबी लिपि",
+    "arabicScript_3": "अरबी लिपि",
+    "hebrewScript": "हिब्रू लिपि",
+    "greekScript": "ग्रीक लिपि",
+    "thaiScript": "थाई लिपि",
+    "chineseCharacters": "चीनी अक्षर",
+    "japaneseScript": "जापानी लिपि",
+    "hangul": "हांगुल",
+    "quiénQuienQuéCuálCual": "quién quien qué cuál cual es son cómo como dónde donde cuándo cuanto hoy mañana ahora noticias tiempo precio cuánto cuanto el los las del para mi yo hacer sacar",
+    "nàoThếĐâuKhiTại": "nào thế đâu khi tại sao hôm nay bây giờ tin tức thời tiết bao nhiêu tôi làm नहीं हो सकता"
+  },
+  "layout": {
+    "manageModels": "मॉडल प्रबंधित करें",
+    "settings": "सेटिंग्स",
+    "benchmark": "बेंचमार्क"
+  },
+  "id": {
+    "default": "डिफ़ॉल्ट"
+  },
+  "model-hub": {
+    "clearAllDownloadedModels": "सभी डाउनलोड किए गए मॉडल साफ़ करें?",
+    "thisWillDeleteLengthPlural": "यह आपके डिवाइस से {length, plural, one {# मॉडल} other {# मॉडल}} ({totalDownloadedSizeGB} GB) हटा देगा। आप इन्हें बाद में फिर से डाउनलोड कर सकते हैं।",
+    "clearAll": "सभी साफ़ करें",
+    "allDownloadedModelFilesHave": "डाउनलोड की गई सभी मॉडल फ़ाइलें हटा दी गई हैं",
+    "noCustomModelsYet": "अभी तक कोई कस्टम मॉडल नहीं है",
+    "noModelsFound": "कोई मॉडल नहीं मिला",
+    "addARemoteOrLocal": "+ बटन के साथ एक रिमोट या स्थानीय मॉडल जोड़ें।",
+    "adjustYourSearchOrSwitch": "अपनी खोज को समायोजित करें या टैब बदलें।",
+    "searchModels": "मॉडल खोजें",
+    "searchModels_2": "मॉडल खोजें",
+    "gbDownloaded": "{totalDownloadedSizeGB} GB डाउनलोड किया गया",
+    "acrossModels": "{deletableDownloadedLength, plural, one {# मॉडल} other {# मॉडल}} में"
+  },
+  "add-local-model": {
+    "missingFields": "गायब फ़ील्ड",
+    "pleaseSelectAllNecessaryFiles": "कृपया सभी आवश्यक फ़ाइलें चुनें।",
+    "modelnameHasBeenSuccessfullyAdded": "{modelName} को सफलतापूर्वक जोड़ दिया गया है",
+    "addAModelUsingAn": "अपने फ़ोन स्टोरेज में मौजूद फ़ाइलों का उपयोग करके एक मॉडल जोड़ें।",
+    "modelFile": "मॉडल फ़ाइल",
+    "tokenizerFile": "टोकेनाइज़र फ़ाइल",
+    "tokenizerConfigFile": "टोकेनाइज़र कॉन्फ़िगरेशन फ़ाइल",
+    "addLocalModel": "स्थानीय मॉडल जोड़ें"
+  },
+  "add-remote-model": {
+    "missingFields": "गायब फ़ील्ड",
+    "pleaseProvideAllNecessaryUrls": "कृपया सभी आवश्यक यूआरएल (URLs) प्रदान करें।",
+    "modelnameHasBeenSuccessfullyAdded": "{modelName} को सफलतापूर्वक जोड़ दिया गया है",
+    "addAModelFromHuggingface": "HuggingFace या अन्य बाहरी स्रोतों से मॉडल जोड़ें। आपको मॉडल और टोकनाइज़र URL की आवश्यकता होगी।",
+    "modelUrl": "मॉडल URL",
+    "enterExternalModelUrl": "बाहरी मॉडल URL दर्ज करें",
+    "tokenizerUrl": "टोकनाइज़र URL",
+    "enterExternalTokenizerUrl": "बाहरी टोकनाइज़र URL दर्ज करें",
+    "tokenizerConfigUrl": "टोकनाइज़र कॉन्फ़िगरेशन URL",
+    "enterExternalConfigUrl": "बाहरी कॉन्फ़िगरेशन URL दर्ज करें",
+    "addExternalModel": "बाहरी मॉडल जोड़ें"
+  },
+  "custom-system-prompt": {
+    "preferencesSaved": "प्राथमिकताएँ सहेज ली गईं",
+    "howWouldYouLikePrivate": "आप Private Mind कैसे जवाब देना चाहते हैं?",
+    "thesePreferencesShapeEveryConversation": "ये प्राथमिकताएं हर बातचीत को आकार देती हैं।",
+    "eGBeConciseAndExplain": "उदाहरण के लिए, संक्षिप्त रहें और अपने तर्क को समझाएं। जारगोन से बचें।",
+    "customInstructions": "कस्टम निर्देश"
+  },
+  "downloads": {
+    "downloadingLength": "डाउनलोड · {length}",
+    "downloadingLength_zero": "डाउनलोड · {length}",
+    "downloadingLength_one": "डाउनलोड · {length}",
+    "downloadingLength_two": "डाउनलोड · {length}",
+    "downloadingLength_few": "डाउनलोड · {length}",
+    "downloadingLength_many": "डाउनलोड · {length}",
+    "downloadingLength_other": "डाउनलोड · {length}",
+    "onThisDeviceLength": "इस उपकरण पर · {length}",
+    "onThisDeviceLength_zero": "इस उपकरण पर · {length}",
+    "onThisDeviceLength_one": "इस उपकरण पर · {length}",
+    "onThisDeviceLength_two": "इस उपकरण पर · {length}",
+    "onThisDeviceLength_few": "इस उपकरण पर · {length}",
+    "onThisDeviceLength_many": "इस उपकरण पर · {length}",
+    "onThisDeviceLength_other": "इस उपकरण पर · {length}",
+    "noModelsOnThisDevice": "अभी तक इस डिवाइस पर कोई मॉडल नहीं है।",
+    "downloads": "डाउनलोड करें"
+  },
+  "model-id": {
+    "missingFields": "मिसिंग फील्ड्स",
+    "pleaseSelectAllNecessaryFiles": "कृपया सभी आवश्यक फ़ाइलों का चयन करें।",
+    "modelnameHasBeenSuccessfullyUpdated": "{modelName} को सफलतापूर्वक अद्यतन किया गया है",
+    "modelName": "मॉडल नाम",
+    "modelFile": "मॉडल फ़ाइल",
+    "tokenizerFile": "Tokenizer फ़ाइल",
+    "tokenizerConfigFile": "Tokenizer कॉन्फ़िगर करें",
+    "editLocalModel": "स्थानीय मॉडल संपादित करें",
+    "missingFields_2": "मिसिंग फील्ड्स",
+    "pleaseSelectAllNecessaryFiles_2": "कृपया सभी आवश्यक फ़ाइलों का चयन करें।",
+    "modelnameHasBeenSuccessfullyUpdated_2": "{modelName} को सफलतापूर्वक अद्यतन किया गया है",
+    "modelName_2": "मॉडल नाम",
+    "modelUrl": "मॉडल यूआरएल",
+    "enterExternalModelUrl": "बाहरी मॉडल URL दर्ज करें",
+    "tokenizerUrl": "टोकन यूआरएल",
+    "enterExternalTokenizerUrl": "बाहरी टोकन यूआरएल दर्ज करें",
+    "tokenizerConfigUrl": "Tokenizer URL को कॉन्फ़िगर करें",
+    "enterExternalConfigUrl": "बाहरी कॉन्फ़िग URL दर्ज करें",
+    "editRemoteModel": "रिमोट मॉडल को संपादित करें"
+  },
+  "family": {
+    "downloadedcountDownloadedDownloadedgbGb": "{downloadedCount} डाउनलोड · {downloadedGB} जीबी",
+    "noneDownloaded": "कोई डाउनलोड नहीं किया गया",
+    "noVariantsAvailable": "कोई संस्करण उपलब्ध नहीं है।",
+    "variantsLength": "वेरिएंट · {length}",
+    "variantsLength_zero": "वेरिएंट · {length}",
+    "variantsLength_one": "वेरिएंट · {length}",
+    "variantsLength_two": "वेरिएंट · {length}",
+    "variantsLength_few": "वेरिएंट · {length}",
+    "variantsLength_many": "वेरिएंट · {length}",
+    "variantsLength_other": "वेरिएंट · {length}"
+  },
+  "select-starting-model": {
+    "modelsCannotBeDownloadedWithout": "इंटरनेट कनेक्शन के बिना मॉडल डाउनलोड नहीं किए जा सकते हैं।",
+    "downloadingDownloadpercent": "डाउनलोड ... {downloadPercent}",
+    "startingDownload": "डाउनलोड शुरू",
+    "startChatting": "चैट शुरू करें",
+    "chooseAStartingModel": "एक प्रारंभिक मॉडल चुनें",
+    "downloadYourFirstModelTo": "Private Mind से शुरू करने के लिए अपना पहला मॉडल डाउनलोड करें।",
+    "chatModels": "चैट मॉडल",
+    "noSuggestedModelFitsThis": "कोई प्रस्तावित मॉडल इस डिवाइस की स्मृति में फिट बैठता है.",
+    "optionalYouCanStillGet": "वैकल्पिक। आप अभी भी बाद में इन को प्राप्त कर सकते हैं."
+  },
+  "app-toast": {
+    "openSettings": "खुली सेटिंग्स",
+    "retry": "फिर से कोशिश करें",
+    "dismiss": "खारिज करें"
+  },
+  "no-model-welcome": {
+    "chooseAModelToGet": "Private Mind से शुरू करने के लिए एक मॉडल चुनें"
+  },
+  "upload-input": {
+    "selectAFile": "फ़ाइल का चयन करें"
+  },
+  "whats-new-badge": {
+    "whatsNewInVersionInstalledversion": "संस्करण {installedVersion}: {title} में नया क्या है",
+    "new": "नया"
+  },
+  "benchmark-history": {
+    "thereAreNoBenchmarksTo": "अभी तक प्रदर्शन करने के लिए कोई बेंचमार्क नहीं है"
+  },
+  "benchmark-item": {
+    "modelnameTokenspersecondTokensPerSecond": "{modelName}, {tokensPerSecond} टोकन प्रति सेकंड",
+    "tokensS": "टोकन/सेक"
+  },
+  "benchmark-modal": {
+    "runningABenchmark": "बेंचमार्क चलाना",
+    "itMayTakeAround13": "इसमें लगभग 1~3 मिनट लग सकते हैं",
+    "yourBenchmarkIsReady": "आपका बेंचमार्क तैयार है!"
+  },
+  "benchmark-stats-card": {
+    "speed": "गति",
+    "firstToken": "पहला टोकन",
+    "totalTime": "कुल समय",
+    "peakMemory": "पीक मेमोरी"
+  },
+  "model-selector": {
+    "changeModelCurrentModelname": "परिवर्तन मॉडल, वर्तमान {modelName}",
+    "selectAModel": "एक मॉडल चुनें",
+    "selectAModel_2": "एक मॉडल चुनें",
+    "change": "परिवर्तन",
+    "choose": "चुनें"
+  },
+  "add-model-sheet": {
+    "addModel": "मॉडल जोड़ें"
+  },
+  "benchmark-result-sheet": {
+    "var0Gb": "{var0} जीबी",
+    "benchmarkResults": "बेंचमार्क परिणाम",
+    "deleteResult": "निकालें परिणाम"
+  },
+  "model-management-sheet": {
+    "startAChat": "चैट शुरू करें",
+    "runBenchmark": "बेंचमार्क चलाएं",
+    "editModel": "संपादित करें मॉडल",
+    "deleteDownloadedFiles": "डाउनलोड की गई फ़ाइलों को हटाएं",
+    "removeFromTheApp": "ऐप से हटाने के लिए",
+    "removeModelFromTheApp": "ऐप से मॉडल निकालें?",
+    "modelnameWillBeRemovedFrom": "{modelName} को ऐप से हटा दिया जाएगा। आपके डिवाइस पर मूल फ़ाइलों को छुआ नहीं जाएगा.",
+    "modelnameAndItsStoredExternal": "{modelName} और उसके संग्रहीत बाहरी URL को हटा दिया जाएगा। आप इसे मैन्युअल रूप से जोड़ सकते हैं।",
+    "remove": "निकालें",
+    "modelnameHasBeenSuccessfullyDeleted": "{modelName} को सफलतापूर्वक हटा दिया गया है"
+  },
+  "model-select-sheet": {
+    "selectAModel": "एक मॉडल चुनें",
+    "searchModels": "खोज मॉडल",
+    "noModelsMatch": "\"{search}\" से कोई मॉडल मेल नहीं खाता है",
+    "manageModels": "मॉडल प्रबंधित करें",
+    "youHaveNoAvailableModels": "आपके पास अभी तक कोई उपलब्ध मॉडल नहीं है",
+    "toUsePrivateMindYou": "Private Mind का उपयोग करने के लिए आपको कम से कम एक मॉडल डाउनलोड करने की आवश्यकता है"
+  },
+  "model-update-sheet": {
+    "var0Gb": "{var0} जीबी"
+  },
+  "whats-new-sheet": {
+    "whatsNew": "क्या नया है"
+  },
+  "chat-menu-popover": {
+    "chatOptions": "चैट विकल्प",
+    "chat": "चैट करें",
+    "renameChat": "चैट का नाम बदलें",
+    "chatName": "चैट नाम",
+    "save": "सहेजें",
+    "share": "शेयर करें",
+    "deleteChat": "चैट हटाएँ"
+  },
+  "animated-chat-loading": {
+    "generating": "उत्पन्न करना"
+  },
+  "attachment-thumbnail": {
+    "document": "दस्तावेज़"
+  },
+  "branch-marker": {
+    "openSourceConversationSourcechattitle": "ओपन सोर्स वार्ताः {sourceChatTitle}",
+    "sourceConversation": "स्रोत वार्ता"
+  },
+  "chat-bar": {
+    "thisModelDoesNotSupport": "यह मॉडल चित्रों का समर्थन नहीं करता है",
+    "canceled": "रद्द किया गया",
+    "waitForTheResponseTo": "पहले प्रतिक्रिया का इंतजार करें या इसे रोकें।",
+    "thisModelDoesNotSupport_2": "यह मॉडल चित्रों का समर्थन नहीं करता है",
+    "unsupportedClipboardContent": "असमर्थित क्लिपबोर्ड सामग्री",
+    "errorProcessingPastedContent": "पेस्ट की गई सामग्री पर त्रुटि प्रसंस्करण",
+    "waitForTheAttachmentTo": "लोड करने के लिए संलग्नक का इंतजार करें।",
+    "index": "सूचकांक",
+    "askAnything": "कुछ भी पूछें"
+  },
+  "chat-bar-actions": {
+    "waitForTheDocumentTo": "दस्तावेज़ को संसाधित करने के लिए प्रतीक्षा करें।",
+    "think": "सोचो",
+    "webSearch": "वेब खोज"
+  },
+  "chat-title": {
+    "showntitleChatOptions": "{shownTitle} में। चैट विकल्प"
+  },
+  "composer-model-badge": {
+    "modelModelnameLoading": "मॉडलः {modelName} लोड करना",
+    "modelModelname": "मॉडलः {modelName}",
+    "modelModelnameChangeModel": "मॉडलः {modelName} परिवर्तन मॉडल"
+  },
+  "dominant-source-badge": {
+    "source": "स्रोत: {sourceName}"
+  },
+  "markdown-component": {
+    "menlo": "मेन्लो"
+  },
+  "memory-stall-card": {
+    "thisIsTakingLongerThan": "यह सामान्य से अधिक समय ले रहा है"
+  },
+  "messages": {
+    "retryResponseGeneration": "प्रतिक्रिया पीढ़ी को पुनः प्रयास करें",
+    "retry": "फिर से कोशिश करें"
+  },
+  "model-unavailable-card": {
+    "messageChooseAModel": "{message} में। एक मॉडल चुनें"
+  },
+  "scroll-to-latest-button": {
+    "scrollToLatestMessage": "नवीनतम संदेश पर स्क्रॉल करें"
+  },
+  "sources-sheet": {
+    "sources": "स्रोत"
+  },
+  "stopped-marker": {
+    "retryThisResponse": "इस प्रतिक्रिया को फिर से प्रयास करें",
+    "retry": "फिर से कोशिश करें"
+  },
+  "thinking-block": {
+    "thinking": "सोच रहा हूँ."
+  },
+  "web-search-trace-row": {
+    "tapToConfirmYouReNot": "पुष्टि करने के लिए टैप करें कि आप एक रोबोट नहीं हैं",
+    "theSiteWantsToCheck": "साइट यह जांचना चाहता है कि आप एक रोबोट नहीं हैं"
+  },
+  "attachment-menu": {
+    "camera": "कैमरा",
+    "photos": "तस्वीरें",
+    "files": "फ़ाइलें"
+  },
+  "attachment-overlay": {
+    "front": "सामने की ओर",
+    "back": "वापस",
+    "off": "बंद करें",
+    "closeAttachmentMenu": "संलग्न मेनू को बंद करें"
+  },
+  "camera-bar": {
+    "takePhoto": "तस्वीरें लें",
+    "turnFlashOn": "फ्लैश चालू करें",
+    "turnFlashOff": "फ्लैश को बंद करें",
+    "flipCamera": "फ्लिप कैमरा",
+    "hideCameraOptions": "छिपा कैमरा विकल्प",
+    "cameraOptions": "कैमरा विकल्प"
+  },
+  "camera-sheet": {
+    "cameraAccessIsOffTurn": "कैमरा पहुंच बंद है. यहाँ एक तस्वीर लेने के लिए सेटिंग्स में इसे चालू करें।",
+    "waitingForCameraAccess": "कैमरे के उपयोग का इंतजार कर रहे हैं"
+  },
+  "photo-grid": {
+    "loadingPhotos": "तस्वीरें लोड",
+    "noPhotosOnThisDevice": "इस डिवाइस पर कोई तस्वीरें नहीं हैं।",
+    "photoAccessIsOffTurn": "फोटो एक्सेस बंद है। यहाँ तस्वीरें लेने के लिए सेटिंग्स में इसे चालू करें।"
+  },
+  "photo-grid-bar": {
+    "add1Photo": "1 फोटो जोड़ें",
+    "addCountPhotos": "{count} फ़ोटो जोड़ें",
+    "addCountPhotos_zero": "{count} फ़ोटो जोड़ें",
+    "addCountPhotos_one": "{count} फ़ोटो जोड़ें",
+    "addCountPhotos_two": "{count} फ़ोटो जोड़ें",
+    "addCountPhotos_few": "{count} फ़ोटो जोड़ें",
+    "addCountPhotos_many": "{count} फ़ोटो जोड़ें",
+    "addCountPhotos_other": "{count} फ़ोटो जोड़ें",
+    "allPhotos": "सभी तस्वीरें",
+    "allPhotos_2": "सभी तस्वीरें",
+    "allPhotos_3": "सभी तस्वीरें"
+  },
+  "sheet-bar": {
+    "backToMenu": "मेनू पर वापस जाएं"
+  },
+  "sheet-placeholder": {
+    "openSettings": "खुली सेटिंग्स"
+  },
+  "use-chat-screen-actions": {
+    "thinkingCannotBeEnabledFor": "इस मॉडल के लिए सोच को सक्षम नहीं किया जा सकता है।",
+    "thisModelCannotUseWeb": "यह मॉडल वेब परिणामों का विश्वसनीय रूप से उपयोग नहीं कर सकता है एक बड़ा चुनें।"
+  },
+  "use-send-chat-message": {
+    "failedToSaveImageAttachment": "छवि संलग्नक को बचाने में विफल रहा।",
+    "couldnTFindAnythingUsefulOnline": "वेब के बिना कुछ भी उपयोगी नहीं मिला।"
+  },
+  "drawer-empty-state": {
+    "noChatsMatch": "कोई चैट मेल नहीं खाता \"{query}\"",
+    "startNewChat": "नई चैट शुरू करें"
+  },
+  "drawer-footer": {
+    "settings": "सेटिंग",
+    "newChat": "नई चैट",
+    "newChat_2": "नई चैट"
+  },
+  "drawer-nav-section": {
+    "manageModels": "मॉडल प्रबंधित करें"
+  },
+  "drawer-top-bar": {
+    "searchChats": "खोज चैट",
+    "searchChats_2": "खोज चैट",
+    "closeSearch": "घनिष्ठ खोज"
+  },
+  "download-percent": {
+    "startingDownload": "डाउनलोड शुरू करें"
+  },
+  "download-progress-details": {
+    "ofGb": "{modelSize2} जीबी के {modelSize}"
+  },
+  "downloaded-badge": {
+    "downloaded": "डाउनलोड किया गया"
+  },
+  "downloads-header-button": {
+    "downloadsCountInProgress": "डाउनलोड, {count} चल रहा है",
+    "downloadsCountInProgress_zero": "डाउनलोड, {count} चल रहा है",
+    "downloadsCountInProgress_one": "डाउनलोड, {count} चल रहा है",
+    "downloadsCountInProgress_two": "डाउनलोड, {count} चल रहा है",
+    "downloadsCountInProgress_few": "डाउनलोड, {count} चल रहा है",
+    "downloadsCountInProgress_many": "डाउनलोड, {count} चल रहा है",
+    "downloadsCountInProgress_other": "डाउनलोड, {count} चल रहा है",
+    "downloads": "डाउनलोड करें"
+  },
+  "family-provider-row": {
+    "madeByProvider": "{provider} के द्वारा निर्मित",
+    "madeBy": "द्वारा बनाया गया"
+  },
+  "model-capability-badges": {
+    "custom": "कस्टम"
+  },
+  "model-download-row": {
+    "download": "डाउनलोड करें",
+    "cancelDownload": "डाउनलोड रद्द करें",
+    "deleteModelFiles": "मॉडल फ़ाइलों को हटाएं",
+    "updateModelname": "अद्यतन {modelName}",
+    "modelnameDownloadProgress": "{modelName} डाउनलोड प्रगति"
+  },
+  "swm-attribution-card": {
+    "originalModelByProvider": "{provider} के मूल मॉडल"
+  },
+  "app-notices": {
+    "dismiss": "खारिज करें"
+  },
+  "onboarding-carousel": {
+    "skipOnboarding": "ऑनबोर्डिंग छोड़ें",
+    "skip": "स्किप करें"
+  },
+  "onboarding-intro-panel": {
+    "yourPrivateAiMind": "अपने निजी एआई दिमाग में उपयोग करें।",
+    "inYourPocket": "अपनी जेब में."
+  },
+  "onboarding-pagination": {
+    "goToSlideVar0Of": "{count} की स्लाइड {var0} पर जाएं",
+    "goToSlideVar0Of_zero": "{count} की स्लाइड {var0} पर जाएं",
+    "goToSlideVar0Of_one": "{count} की स्लाइड {var0} पर जाएं",
+    "goToSlideVar0Of_two": "{count} की स्लाइड {var0} पर जाएं",
+    "goToSlideVar0Of_few": "{count} की स्लाइड {var0} पर जाएं",
+    "goToSlideVar0Of_many": "{count} की स्लाइड {var0} पर जाएं",
+    "goToSlideVar0Of_other": "{count} की स्लाइड {var0} पर जाएं"
+  },
+  "starting-feature-list": {
+    "cancelNameDownload": "रद्द {name} डाउनलोड करें",
+    "nameDownloadProgress": "{name} डाउनलोड प्रगति",
+    "sectionTitleDownloadProgress": "{SECTION_TITLE} डाउनलोड प्रगति",
+    "downloadAllSectionTitle": "सभी {SECTION_TITLE} को डाउनलोड करें"
+  },
+  "db": {
+    "youAreAKnowledgeableAnd": "आप एक जानकार और उपयोगी सहायक हैं। स्पष्ट, सटीक और अच्छी तरह से संरचित उत्तर दें। जब दस्तावेजों से संदर्भ दिया जाता है, तो संक्षिप्त और प्रासंगिक होने के साथ-साथ व्यापक उत्तर देने के लिए उस जानकारी का उपयोग करें।"
+  },
+  "use-attachment": {
+    "thisDocumentIsLarge": "यह दस्तावेज बड़ा है केवल पहला भाग खोज के लिए अनुक्रमित किया गया था।",
+    "errorReadingDocument": "त्रुटि पढ़ने का दस्तावेज.",
+    "couldNotReadThisPage": "यह पृष्ठ नहीं पढ़ सका।",
+    "thisPageIsLarge": "यह पृष्ठ बड़ा है केवल पहला भाग खोज के लिए अनुक्रमित किया गया था।",
+    "errorReadingLink": "त्रुटि रीडिंग लिंक.",
+    "documentStorageIsStillStarting": "दस्तावेज़ भंडारण अभी भी शुरू हो रहा है। एक पल में फिर से कोशिश करें।",
+    "failedToDownloadTheDocument": "दस्तावेज़ मॉडल डाउनलोड करने में विफल रहा।",
+    "onlyImagesCanBePasted": "केवल चित्रों को चिपकाया जा सकता है। दस्तावेजों के लिए + बटन का उपयोग करें।"
+  },
+  "use-chat-branching": {
+    "sendAMessageBeforeBranching": "इस चैट शाखा से पहले एक संदेश भेजें.",
+    "failedToForkConversation": "बातचीत करने में विफल रहा।",
+    "sourceConversationIsNoLonger": "स्रोत वार्ता अब उपलब्ध नहीं है।"
+  },
+  "use-legacy-chat-notice": {
+    "noteThisConversationPredatesDocument": "नोटः यह वार्तालाप दस्तावेज़ लिंक करने से पहले है, इसलिए इसका संलग्न दस्तावेज़ अब यहां उपलब्ध नहीं है। इसे एक नए चैट में स्रोत के रूप में उपयोग करने के लिए फिर से संलग्न करें।"
+  },
+  "use-model-download": {
+    "modelCannotBeDownloadedWithout": "इंटरनेट कनेक्शन के बिना मॉडल डाउनलोड नहीं किया जा सकता है।",
+    "noWifiConnectionDetected": "कोई वाई-फाई कनेक्शन नहीं मिला।",
+    "downloadingModelsWillUseYour": "मॉडल डाउनलोड करने के लिए आपके मोबाइल डेटा का उपयोग किया जाएगा, जिससे आपके ऑपरेटर द्वारा अतिरिक्त शुल्क लिया जा सकता है। बेहतरीन अनुभव के लिए हम वाई-फाई से कनेक्ट करने की सलाह देते हैं।",
+    "downloadAnyway": "फिर भी डाउनलोड करें"
+  },
+  "use-starting-features": {
+    "chatWithFilesSearchThe": "फ़ाइलों के साथ चैट करें, वेब पर खोजें",
+    "speakInsteadOfTyping": "टाइप करने के बजाय बोलें"
+  },
+  "llm-store": {
+    "replyInOneWord": "एक शब्द में उत्तर दें।",
+    "iCouldNotAnswerThis": "मैं मिले स्रोतों के आधार पर इस प्रश्न का उत्तर नहीं दे सका।",
+    "modelCannotBeLoadedWithout": "बिना इंटरनेट कनेक्शन के मॉडल लोड नहीं किया जा सकता।",
+    "danglingListAnswerContinuationNudge": "अधूरी सूची का उत्तर, निरंतरता का सुझाव"
+  },
+  "copied-toast": {
+    "messageCopied": "संदेश कॉपी किया गया"
+  },
+  "model-catalog-schema": {
+    "mustBeAnHttpsUrl": "https:// यूआरएल होना चाहिए"
+  },
+  "build-search-query": {
+    "casualGreeting": "आमतौर पर अभिवादन करना",
+    "recapOfThisConversation": "इस बातचीत का सारांश",
+    "aboutAPreviousAnswer": "पिछले उत्तर के बारे में",
+    "currentTokyoWeather": "वर्तमान टोक्यो मौसम",
+    "currentBitcoinPrice": "वर्तमान बिटकॉइन मूल्य",
+    "compareBitcoinAndEthereumPrices": "बिटकॉइन और एथेरियम की कीमतों की तुलना करें",
+    "eReaderRecommendation": "ई-रीडर की सिफ़ारिश",
+    "mostStreamedSongThisYear": "इस वर्ष सबसे अधिक स्ट्रीम किया गया गाना",
+    "currentKrakowWeather": "वर्तमान क्राकोव मौसम",
+    "currentDelhiWeather": "वर्तमान दिल्ली मौसम"
+  },
+  "_meta": {
+    "dir": "ltr",
+    "language": "hi"
+  }
+}

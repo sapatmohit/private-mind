@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React from 'react';
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
 import { Model } from '../../database/modelRepository';
@@ -28,6 +29,7 @@ const ModelCapabilityBadges = ({
   showCustom = false,
   style,
 }: Props) => {
+  const { t } = useTranslation();
   const isCompatible = isModelCompatible(model);
   const isOutdated = needsUpdate(model);
   const isCustom = showCustom && model.source !== 'built-in';
@@ -57,7 +59,7 @@ const ModelCapabilityBadges = ({
         ) : (
           <ModelBadge label={MODEL_UPDATE_TEXT.optionalBadge} color="neutral" />
         ))}
-      {isCustom && <ModelBadge label="Custom" color="neutral" />}
+      {isCustom && <ModelBadge label={t("model-capability-badges.custom")} color="neutral" />}
       {model.thinking && <ModelBadge label={THINKING_LABEL} />}
       {model.vision && <ModelBadge label={VISION_LABEL} />}
       {labels.map((label) => (

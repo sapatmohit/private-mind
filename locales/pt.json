@@ -1,0 +1,675 @@
+{
+  "app-info": {
+    "privateMind": "Private Mind",
+    "anAppBroughtToYou": "Um aplicativo trazido a você pela Software Mansion para executar modelos de IA localmente no seu dispositivo.",
+    "wantToLearnMore": "Quer saber mais?",
+    "checkOurOtherLibrariesRelated": "Confira nossas outras bibliotecas relacionadas a IA.",
+    "successfullyCopiedVersionToClipboard": "Versão copiada para a área de transferência com sucesso",
+    "appVersion": "Versão do aplicativo:",
+    "appInfo": "Informações do aplicativo"
+  },
+  "chat-speech-input": {
+    "progresspercentage": "({progressPercentage}%)",
+    "noSpeechWasHeard": "Nenhum discurso foi ouvido.",
+    "couldNotStartLiveTranscript": "Não conseguiu iniciar a transcrição ao vivo",
+    "stillLoadingSpeechRecognitionOne": "Ainda carregando reconhecimento de voz, um momento.",
+    "startTalkingToSeeThe": "Comece a falar para ver a transcrição ao vivo.",
+    "processing": "Processando...",
+    "downloadingTheDictationModel": "Descarga do modelo de ditadura ({progressPercentage}%)",
+    "loading": "Carregando... {value}"
+  },
+  "model-update-banner": {
+    "math": "{Math}%"
+  },
+  "family-card": {
+    "hiddenlabelcount": "+{hiddenLabelCount}",
+    "variantsDownloadedcountDownloaded": "{variants} · {downloadedCount} baixado",
+    "downloadedcountDownloaded": "{downloadedCount} baixado",
+    "downloadingcountDownloading": "{downloadingCount} descarregando"
+  },
+  "model-picker-row": {
+    "math": "{Math}%",
+    "updateModelname": "Atualização {modelName}"
+  },
+  "question-language": {
+    "english": "English",
+    "polish": "Polonês",
+    "german": "Alemão",
+    "dutch": "Holandês",
+    "french": "Francês",
+    "spanish": "Espanhol",
+    "italian": "Italiano",
+    "portuguese": "Português",
+    "romanian": "Romênia",
+    "czech": "Checoslováquia",
+    "turkish": "Turco-turco",
+    "vietnamese": "Vietnãês",
+    "russian": "O russo",
+    "ukrainian": "Ucraniano",
+    "hindi": "Indígenas",
+    "bengali": "Bengala",
+    "urdu": "Língua",
+    "arabic": "Língua árabe",
+    "persian": "Persa",
+    "hebrew": "Em hebraico",
+    "greek": "Grego:",
+    "thai": "Tailandês",
+    "chinese": "Chineses",
+    "japanese": "O japonês",
+    "korean": "Coreano",
+    "cyrillicScript": "A escrita cirílica",
+    "cyrillicScript_2": "A escrita cirílica",
+    "devanagariScript": "A escrita de Devanagari",
+    "bengaliScript": "Escrito em bengali",
+    "arabicScript": "A escrita árabe",
+    "arabicScript_2": "A escrita árabe",
+    "arabicScript_3": "A escrita árabe",
+    "hebrewScript": "A escrita hebraica",
+    "greekScript": "A escrita grega",
+    "thaiScript": "Escrito tailandês",
+    "chineseCharacters": "Características chinesas",
+    "japaneseScript": "Escrito japonês",
+    "hangul": "Hangul",
+    "whoWhatWhichIsAre": "Quem o que o que é o como quando hoje porquê amanhã agora vai atualizar notícias preço do tempo e para o meu ele pode fazer muito tempo melhor perto de aberta por sobre escrever história explicar descrever resumir isso que aqueles que você seu nós temos eles poderia com",
+    "ktoKimKomuKogoCo": "quem é quem quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é",
+    "kdoCoJeJsouJak": "Quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem",
+    "werWasIstSindWie": "Quem é que é que é que é que é que é que é que é que é que é?",
+    "wieWatWelkeIsZijn": "Quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem é quem",
+    "quiQueQuoiQuelQuelle": "que é que é comentário quando porque hoje hoje amanhã agora atualidades preço do tempo quanto é o preço do meu trabalho",
+    "quiénQuienQuéCuálCual": "Quem cuál é o filho como onde cuándo quando hoje amanhã agora notícias tempo preço quanto el los del para me fazer sacar",
+    "chiCheCosaQualeÈ": "Chi che cosa quale è sono come dove quando perché oggi domani ora notizie meteo prezzo quanto costa il gli della per mio il prossimo campionato richiedere",
+    "quemQueQualÉSão": "Quem que é como onde quando por hoje amanhã agora notícias tempo preço quanto custa usar o meu eu tirar o próximo salário mínimo imposto do dos em não tem",
+    "cineCeCareEsteSunt": "Cine ce care este sunt unde de ce azi mâine acum știri vreme preț cât costă pentru eu fața cum se obține",
+    "kimNeHangiNedirNasıl": "Kim ne hangi nedir nasıl ne zaman neden bugün yarın şimdi haberler hava durumu fiyat kaç nasıl için benim ben nasıl alınır kuru ücreti",
+    "nàoThếĐâuKhiTại": "Como é que está o tempo hoje? Como é que eu faço o melhor?"
+  },
+  "layout": {
+    "manageModels": "Gerir modelos",
+    "settings": "Definições",
+    "benchmark": "Benchmark"
+  },
+  "benchmark": {
+    "model": "Modelo",
+    "history": "Histórico"
+  },
+  "id": {
+    "default": "predefinição"
+  },
+  "model-hub": {
+    "clearAllDownloadedModels": "Eliminar todos os modelos descarregados?",
+    "thisWillDeleteLengthPlural": "Isto irá eliminar {length, plural, one {# modelo} other {# modelos}} ({totalDownloadedSizeGB} GB) do seu dispositivo. Pode voltar a descarregá-los mais tarde.",
+    "clearAll": "Eliminar tudo",
+    "allDownloadedModelFilesHave": "Todos os ficheiros de modelos descarregados foram eliminados",
+    "noCustomModelsYet": "Ainda não existem modelos personalizados",
+    "noModelsFound": "Nenhum modelo encontrado",
+    "addARemoteOrLocal": "Adicione um modelo remoto ou local com o botão +.",
+    "adjustYourSearchOrSwitch": "Ajuste a sua pesquisa ou mude de separador.",
+    "searchModels": "Pesquisar modelos",
+    "searchModels_2": "Pesquisar modelos",
+    "gbDownloaded": "{totalDownloadedSizeGB} GB transferidos",
+    "acrossModels": "Em {deletableDownloadedLength, plural, one {# modelo} other {# modelos}}"
+  },
+  "settings": {
+    "deleteAllChats": "Eliminar todas as conversas?",
+    "thisPermanentlyRemovesEveryChat": "Esta ação remove permanentemente todas as conversas e respetivas mensagens.",
+    "delete": "Eliminar",
+    "allChatsDeleted": "Todas as conversas foram eliminadas",
+    "error": "Erro",
+    "failedToDeleteChatsPlease": "Não foi possível eliminar as conversas. Tente novamente.",
+    "personalization": "Personalização",
+    "customInstructions": "Instruções personalizadas",
+    "appearance": "Aspeto",
+    "theme": "Tema",
+    "chat": "Conversa",
+    "responseSpeedStats": "Estatísticas de velocidade de resposta",
+    "showWhatEachAnswerCost": "Mostrar o custo de cada resposta: recuperação de documentos e da web, tempo até o primeiro token, tokens por segundo.",
+    "dataControls": "Controles de dados",
+    "importChat": "Importar chat",
+    "deleteAllChats_2": "Excluir todos os chats",
+    "about": "Sobre",
+    "appInfo": "Informações do aplicativo"
+  },
+  "add-local-model": {
+    "missingFields": "Campos em falta",
+    "pleaseSelectAllNecessaryFiles": "Selecione todos os ficheiros necessários.",
+    "modelnameHasBeenSuccessfullyAdded": "{modelName} foi adicionado com sucesso",
+    "addAModelUsingAn": "Adicionar um modelo utilizando ficheiros existentes no armazenamento do seu telemóvel.",
+    "modelFile": "Ficheiro do modelo",
+    "tokenizerFile": "Ficheiro do tokenizador",
+    "tokenizerConfigFile": "Ficheiro de configuração do tokenizador",
+    "addLocalModel": "Adicionar modelo local"
+  },
+  "add-remote-model": {
+    "missingFields": "Campos em falta",
+    "pleaseProvideAllNecessaryUrls": "Por favor, forneça todos os URLs necessários.",
+    "modelnameHasBeenSuccessfullyAdded": "{modelName} foi adicionado com sucesso",
+    "addAModelFromHuggingface": "Adicione um modelo do HuggingFace ou de outras fontes externas. Você precisará dos URLs do modelo e do tokenizador.",
+    "modelUrl": "URL do modelo",
+    "enterExternalModelUrl": "Insira o URL do modelo externo",
+    "tokenizerUrl": "URL do tokenizador",
+    "enterExternalTokenizerUrl": "Insira o URL do tokenizador externo",
+    "tokenizerConfigUrl": "URL de configuração do tokenizador",
+    "enterExternalConfigUrl": "Insira o URL de configuração externo",
+    "addExternalModel": "Adicionar modelo externo"
+  },
+  "custom-system-prompt": {
+    "preferencesSaved": "Preferências salvas",
+    "howWouldYouLikePrivate": "Como você gostaria que Private Mind respondesses?",
+    "thesePreferencesShapeEveryConversation": "Estas preferências moldam todas as conversas.",
+    "eGBeConciseAndExplain": "ex.: Seja conciso e explique seu raciocínio. Evite jargões.",
+    "customInstructions": "Instruções personalizadas"
+  },
+  "downloads": {
+    "downloadingLength": "A transferir · {length}",
+    "downloadingLength_zero": "A transferir · {length}",
+    "downloadingLength_one": "A transferir · {length}",
+    "downloadingLength_two": "A transferir · {length}",
+    "downloadingLength_few": "A transferir · {length}",
+    "downloadingLength_many": "A transferir · {length}",
+    "downloadingLength_other": "A transferir · {length}",
+    "onThisDeviceLength": "Neste dispositivo · {length}",
+    "onThisDeviceLength_zero": "Neste dispositivo · {length}",
+    "onThisDeviceLength_one": "Neste dispositivo · {length}",
+    "onThisDeviceLength_two": "Neste dispositivo · {length}",
+    "onThisDeviceLength_few": "Neste dispositivo · {length}",
+    "onThisDeviceLength_many": "Neste dispositivo · {length}",
+    "onThisDeviceLength_other": "Neste dispositivo · {length}",
+    "noModelsOnThisDevice": "Ainda não há modelos neste dispositivo.",
+    "downloads": "Transferências"
+  },
+  "model-id": {
+    "missingFields": "Campos em falta",
+    "pleaseSelectAllNecessaryFiles": "Selecione todos os ficheiros necessários.",
+    "modelnameHasBeenSuccessfullyUpdated": "{modelName} foi atualizado com sucesso",
+    "modelName": "Nome do Modelo",
+    "modelFile": "Ficheiro do Modelo",
+    "tokenizerFile": "Ficheiro do Tokenizer",
+    "tokenizerConfigFile": "Ficheiro de Configuração do Tokenizer",
+    "editLocalModel": "Editar Modelo Local",
+    "missingFields_2": "Campos em falta",
+    "pleaseSelectAllNecessaryFiles_2": "Selecione todos os ficheiros necessários.",
+    "modelnameHasBeenSuccessfullyUpdated_2": "{modelName} foi atualizado com sucesso",
+    "modelName_2": "Nome do modelo",
+    "modelUrl": "URL do modelo",
+    "enterExternalModelUrl": "Introduzir o URL do modelo externo",
+    "tokenizerUrl": "URL do tokenizador",
+    "enterExternalTokenizerUrl": "Introduzir o URL do tokenizador externo",
+    "tokenizerConfigUrl": "URL de configuração do tokenizador",
+    "enterExternalConfigUrl": "Introduzir o URL de configuração externo",
+    "editRemoteModel": "Editar modelo remoto"
+  },
+  "family": {
+    "downloadedcountDownloadedDownloadedgbGb": "{downloadedCount, plural, one {# transferido} other {# transferidos}} · {downloadedGB} GB",
+    "noneDownloaded": "Nenhum transferido",
+    "noVariantsAvailable": "Nenhuma variante disponível.",
+    "variantsLength": "Variantes · {length}",
+    "variantsLength_zero": "Variantes · {length}",
+    "variantsLength_one": "Variantes · {length}",
+    "variantsLength_two": "Variantes · {length}",
+    "variantsLength_few": "Variantes · {length}",
+    "variantsLength_many": "Variantes · {length}",
+    "variantsLength_other": "Variantes · {length}"
+  },
+  "select-starting-model": {
+    "modelsCannotBeDownloadedWithout": "Não é possível transferir modelos sem ligação à Internet.",
+    "downloadingDownloadpercent": "A transferir… {downloadPercent}",
+    "startingDownload": "A iniciar a transferência…",
+    "startChatting": "Começar a conversar",
+    "chooseAStartingModel": "Escolha um modelo inicial",
+    "downloadYourFirstModelTo": "Transfira o seu primeiro modelo para começar a usar o Private Mind.",
+    "chatModels": "Modelos de chat",
+    "noSuggestedModelFitsThis": "Nenhum modelo sugerido cabe na memória deste dispositivo.",
+    "optionalYouCanStillGet": "Opcional. Pode obtê-los mais tarde."
+  },
+  "app-toast": {
+    "openSettings": "Configurações abertas",
+    "retry": "Tentar novamente",
+    "dismiss": "Dispensação"
+  },
+  "no-model-welcome": {
+    "chooseAModelToGet": "Escolha um modelo para começar com Private Mind"
+  },
+  "upload-input": {
+    "selectAFile": "Selecione um arquivo"
+  },
+  "whats-new-badge": {
+    "whatsNewInVersionInstalledversion": "O que é novo na versão {installedVersion}: {title}",
+    "new": "Novo"
+  },
+  "benchmark-history": {
+    "thereAreNoBenchmarksTo": "Não há referências para exibir ainda"
+  },
+  "benchmark-item": {
+    "modelnameTokenspersecondTokensPerSecond": "{modelName}, {tokensPerSecond} tokens por segundo",
+    "tokensS": "Tokens/s"
+  },
+  "benchmark-modal": {
+    "runningABenchmark": "Execução de um índice de referência",
+    "itMayTakeAround13": "Pode levar cerca de 1 a 3 minutos",
+    "yourBenchmarkIsReady": "O seu ponto de referência está pronto!"
+  },
+  "benchmark-stats-card": {
+    "speed": "Velocidade",
+    "firstToken": "Primeiro símbolo",
+    "totalTime": "Tempo total",
+    "peakMemory": "Pico de memória"
+  },
+  "model-selector": {
+    "changeModelCurrentModelname": "Modelo de mudança, atual {modelName}",
+    "selectAModel": "Selecione um modelo",
+    "selectAModel_2": "Selecione um modelo",
+    "change": "Mudança",
+    "choose": "Escolher"
+  },
+  "add-model-sheet": {
+    "addModel": "Adicionar modelo"
+  },
+  "benchmark-result-sheet": {
+    "var0Gb": "{var0} GB",
+    "benchmarkResults": "Resultados de referência",
+    "deleteResult": "Eliminar o resultado"
+  },
+  "model-management-sheet": {
+    "startAChat": "Comece uma conversa",
+    "runBenchmark": "Execução de referência",
+    "editModel": "Modelo de edição",
+    "deleteDownloadedFiles": "Eliminar arquivos baixados",
+    "removeFromTheApp": "Remover do aplicativo",
+    "removeModelFromTheApp": "Remover o modelo do aplicativo?",
+    "modelnameWillBeRemovedFrom": "{modelName} será removido do aplicativo. Os arquivos originais no seu dispositivo não serão alterados.",
+    "modelnameAndItsStoredExternal": "{modelName} e seus URLs externos armazenados serão removidos. Você poderá adicioná-lo novamente de forma manual.",
+    "remove": "Remover",
+    "modelnameHasBeenSuccessfullyDeleted": "{modelName} foi excluído com sucesso"
+  },
+  "model-select-sheet": {
+    "selectAModel": "Selecionar um modelo",
+    "searchModels": "Pesquisar modelos",
+    "noModelsMatch": "Nenhum modelo corresponde a \"{search}\"",
+    "manageModels": "Gerenciar modelos",
+    "youHaveNoAvailableModels": "Você ainda não tem modelos disponíveis",
+    "toUsePrivateMindYou": "Para usar o Private Mind, você precisa ter pelo menos um modelo baixado"
+  },
+  "model-update-sheet": {
+    "var0Gb": "{var0} GB"
+  },
+  "web-scrape-sheet": {
+    "privateMindIsBrowsingFor": "O Private Mind está navegando para você",
+    "confirmYouReHumanToContinue": "Confirme que você é humano para continuar",
+    "skipSearch": "Escapar a busca",
+    "done": "Concluído"
+  },
+  "whats-new-sheet": {
+    "whatsNew": "O que é novo?"
+  },
+  "chat-menu-popover": {
+    "chatOptions": "Opções de bate-papo",
+    "chat": "Chatar com",
+    "renameChat": "Renomear chat",
+    "chatName": "Nome de chat",
+    "save": "Salvar",
+    "share": "Compartilhar",
+    "deleteChat": "Excluir o chat"
+  },
+  "animated-chat-loading": {
+    "generating": "Gerenciando"
+  },
+  "attachment-thumbnail": {
+    "document": "Documento"
+  },
+  "branch-marker": {
+    "openSourceConversationSourcechattitle": "Conversa de código aberto: {sourceChatTitle}",
+    "sourceConversation": "Fonte conversação"
+  },
+  "chat-bar": {
+    "thisModelDoesNotSupport": "Este modelo não suporta imagens",
+    "canceled": "cancelado",
+    "waitForTheResponseTo": "Espera a resposta para terminar ou parar primeiro.",
+    "thisModelDoesNotSupport_2": "Este modelo não suporta imagens",
+    "unsupportedClipboardContent": "Conteúdo não suportado do clipboard",
+    "errorProcessingPastedContent": "Processamento de erro do conteúdo colado",
+    "waitForTheAttachmentTo": "Esperem que o apêndice termine a carga.",
+    "index": "Índice",
+    "askAnything": "Pergunte qualquer coisa"
+  },
+  "chat-bar-actions": {
+    "waitForTheDocumentTo": "Esperem que o documento termine de ser processado.",
+    "think": "Pensem nisso",
+    "webSearch": "Pesquisa na Web"
+  },
+  "chat-title": {
+    "showntitleChatOptions": "{shownTitle}. Opções de bate-papo"
+  },
+  "composer-model-badge": {
+    "modelModelnameLoading": "Modelo: {modelName}. Carregamento",
+    "modelModelname": "Modelo: {modelName}",
+    "modelModelnameChangeModel": "Modelo: {modelName}. Modelo de mudança"
+  },
+  "dominant-source-badge": {
+    "source": "Fonte: {sourceName}"
+  },
+  "markdown-component": {
+    "menlo": "Menlo"
+  },
+  "memory-stall-card": {
+    "thisIsTakingLongerThan": "Isto está a demorar mais do que o habitual"
+  },
+  "message-item": {
+    "copy": "Copiar",
+    "fork": "Forca",
+    "sources": "Fontes",
+    "sources_2": "Fontes",
+    "generating": "Gerenciando",
+    "refining": "Refinando"
+  },
+  "messages": {
+    "retryResponseGeneration": "Reprova a geração de resposta",
+    "retry": "Tentar novamente"
+  },
+  "model-unavailable-card": {
+    "messageChooseAModel": "{message}. Escolha um modelo"
+  },
+  "scroll-to-latest-button": {
+    "scrollToLatestMessage": "Desligue para a última mensagem"
+  },
+  "sources-sheet": {
+    "sources": "Fontes"
+  },
+  "stopped-marker": {
+    "retryThisResponse": "Tente novamente esta resposta",
+    "retry": "Tentar novamente"
+  },
+  "thinking-block": {
+    "thinking": "Pensando."
+  },
+  "user-message-action-menu": {
+    "copy": "Copiar"
+  },
+  "web-search-trace-row": {
+    "tapToConfirmYouReNot": "Toque para confirmar que não és um robô",
+    "theSiteWantsToCheck": "O site quer verificar se você não é um robô"
+  },
+  "attachment-menu": {
+    "camera": "A câmara",
+    "photos": "Fotografias",
+    "files": "Arquivos"
+  },
+  "attachment-overlay": {
+    "front": "dianteira",
+    "back": "voltar",
+    "off": "Desligado",
+    "closeAttachmentMenu": "Menu de adesão fechado"
+  },
+  "camera-bar": {
+    "takePhoto": "Faça uma foto",
+    "turnFlashOn": "Ligue o flash",
+    "turnFlashOff": "Desligue o flash",
+    "flipCamera": "Flip-camera",
+    "hideCameraOptions": "Opções de câmera oculta",
+    "cameraOptions": "Opções de câmera"
+  },
+  "camera-sheet": {
+    "cameraAccessIsOffTurn": "O acesso à câmera está desligado. Ligue-o em Configurações para tirar uma foto aqui.",
+    "waitingForCameraAccess": "À espera do acesso da câmara"
+  },
+  "photo-grid": {
+    "loadingPhotos": "Carregar fotos",
+    "noPhotosOnThisDevice": "Não há fotos neste dispositivo.",
+    "photoAccessIsOffTurn": "O acesso às fotos está desligado. Ligue-o em Configurações para escolher fotos aqui."
+  },
+  "photo-grid-bar": {
+    "add1Photo": "Adicionar 1 foto",
+    "addCountPhotos": "Adicionar {count} fotos",
+    "addCountPhotos_zero": "Adicionar {count} fotos",
+    "addCountPhotos_one": "Adicionar {count} fotos",
+    "addCountPhotos_two": "Adicionar {count} fotos",
+    "addCountPhotos_few": "Adicionar {count} fotos",
+    "addCountPhotos_many": "Adicionar {count} fotos",
+    "addCountPhotos_other": "Adicionar {count} fotos",
+    "allPhotos": "Todas as fotos",
+    "allPhotos_2": "Todas as fotos",
+    "allPhotos_3": "Todas as fotos"
+  },
+  "sheet-bar": {
+    "backToMenu": "Voltar ao menu"
+  },
+  "sheet-placeholder": {
+    "openSettings": "Configurações abertas"
+  },
+  "use-chat-screen-actions": {
+    "thinkingCannotBeEnabledFor": "O pensamento não pode ser habilitado para este modelo.",
+    "thisModelCannotUseWeb": "Este modelo não pode usar os resultados da web de forma confiável."
+  },
+  "use-send-chat-message": {
+    "failedToSaveImageAttachment": "Não conseguiu salvar o apego à imagem.",
+    "couldnTFindAnythingUsefulOnline": "Não encontrei nada útil na internet respondendo sem a web."
+  },
+  "web-search-trace": {
+    "noInternetAnsweredWithout": "Não há internet respondido sem a web",
+    "searchTookTooLong": "A busca demorou muito",
+    "noSearchNeededAnswered": "Não há necessidade de pesquisa responder imediatamente",
+    "aLargeModelTakesLonger": "Um modelo grande leva mais tempo neste telefone",
+    "done": "Concluído",
+    "didnTFindMuchThe": "Não encontrei muita coisa. A resposta pode ser incompleta",
+    "readingThePages": "Lendo as páginas",
+    "nothingFound": "Não encontramos nada",
+    "decidingWhatToSearchFor": "Decidir o que procurar",
+    "nothingFound_2": "Não encontramos nada"
+  },
+  "drawer-empty-state": {
+    "noChatsMatch": "Nenhum chat coincide com \"{query}\"",
+    "startNewChat": "Comece um novo chat"
+  },
+  "drawer-footer": {
+    "settings": "Configurações",
+    "newChat": "Um novo bate-papo",
+    "newChat_2": "Um novo bate-papo"
+  },
+  "drawer-nav-section": {
+    "manageModels": "Gerenciamento de modelos"
+  },
+  "drawer-top-bar": {
+    "searchChats": "Buscar chats",
+    "searchChats_2": "Buscar chats",
+    "closeSearch": "Pesquisa de perto"
+  },
+  "download-percent": {
+    "startingDownload": "Começando a baixar"
+  },
+  "download-progress-details": {
+    "ofGb": "{modelSize} de {modelSize2} GB"
+  },
+  "downloaded-badge": {
+    "downloaded": "Descarregado"
+  },
+  "downloads-header-button": {
+    "downloadsCountInProgress": "Downloads, {count} em andamento",
+    "downloadsCountInProgress_zero": "Downloads, {count} em andamento",
+    "downloadsCountInProgress_one": "Downloads, {count} em andamento",
+    "downloadsCountInProgress_two": "Downloads, {count} em andamento",
+    "downloadsCountInProgress_few": "Downloads, {count} em andamento",
+    "downloadsCountInProgress_many": "Downloads, {count} em andamento",
+    "downloadsCountInProgress_other": "Downloads, {count} em andamento",
+    "downloads": "Descargas"
+  },
+  "family-provider-row": {
+    "madeByProvider": "Fabricado por {provider}",
+    "madeBy": "Fabricado por"
+  },
+  "model-capability-badges": {
+    "custom": "Personalizado"
+  },
+  "model-download-row": {
+    "download": "Baixar",
+    "cancelDownload": "Cancelar o download",
+    "deleteModelFiles": "Eliminar arquivos de modelo",
+    "updateModelname": "Atualização {modelName}",
+    "modelnameDownloadProgress": "{modelName} download progressão"
+  },
+  "model-hub-tabs": {
+    "recommended": "Recomendado",
+    "experimental": "Experimental",
+    "mine": "Minha",
+    "modelLists": "Lista de modelos"
+  },
+  "swm-attribution-card": {
+    "originalModelByProvider": "Modelo original de {provider}"
+  },
+  "app-notices": {
+    "dismiss": "Dispensação"
+  },
+  "onboarding-carousel": {
+    "skipOnboarding": "Escapar de embarque",
+    "skip": "Pular"
+  },
+  "onboarding-intro-panel": {
+    "yourPrivateAiMind": "A tua inteligência artificial privada.",
+    "inYourPocket": "No teu bolso."
+  },
+  "onboarding-pagination": {
+    "goToSlideVar0Of": "Vai deslizar {var0} de {count}",
+    "goToSlideVar0Of_zero": "Vai deslizar {var0} de {count}",
+    "goToSlideVar0Of_one": "Vai deslizar {var0} de {count}",
+    "goToSlideVar0Of_two": "Vai deslizar {var0} de {count}",
+    "goToSlideVar0Of_few": "Vai deslizar {var0} de {count}",
+    "goToSlideVar0Of_many": "Vai deslizar {var0} de {count}",
+    "goToSlideVar0Of_other": "Vai deslizar {var0} de {count}"
+  },
+  "starting-feature-list": {
+    "cancelNameDownload": "Cancelar {name} download",
+    "nameDownloadProgress": "{name} download progressão",
+    "sectionTitleDownloadProgress": "{SECTION_TITLE} download progressão",
+    "downloadAllSectionTitle": "Descarregar todos os {SECTION_TITLE}"
+  },
+  "particle-swarm": {
+    "webgpu": "webgpu"
+  },
+  "db": {
+    "youAreAKnowledgeableAnd": "Você é um assistente experiente e útil. Forneça respostas claras, precisas e bem estruturadas. Quando dado contexto a partir de documentos, use essas informações para dar respostas abrangentes, sendo conciso e relevante."
+  },
+  "use-attachment": {
+    "thisDocumentIsLarge": "Este documento é grande apenas a primeira parte foi indexada para pesquisa.",
+    "errorReadingDocument": "Erro de leitura do documento.",
+    "couldNotReadThisPage": "Não consegui ler esta página.",
+    "thisPageIsLarge": "Esta página é grande apenas a primeira parte foi indexada para pesquisa.",
+    "errorReadingLink": "Linha de leitura de erro.",
+    "documentStorageIsStillStarting": "O armazenamento de documentos ainda está a começar. Tente de novo daqui a um momento.",
+    "failedToDownloadTheDocument": "Não conseguiu baixar o modelo de documento.",
+    "onlyImagesCanBePasted": "Só as imagens podem ser coladas. Use o botão + para obter documentos."
+  },
+  "use-chat-branching": {
+    "sendAMessageBeforeBranching": "Envie uma mensagem antes de começar a conversar.",
+    "failedToForkConversation": "Não conseguiu conversar.",
+    "sourceConversationIsNoLonger": "A conversa da fonte já não está disponível."
+  },
+  "use-confirm": {
+    "cancel": "Cancelar"
+  },
+  "use-legacy-chat-notice": {
+    "noteThisConversationPredatesDocument": "Observação: esta conversa precede a ligação do documento, por isso o documento anexo já não está disponível aqui. Anexe-o novamente em um novo bate-papo para usá-lo como fonte."
+  },
+  "use-model-download": {
+    "modelCannotBeDownloadedWithout": "O modelo não pode ser baixado sem conexão com a internet.",
+    "noWifiConnectionDetected": "Nenhuma conexão WiFi detectada.",
+    "downloadingModelsWillUseYour": "A descarga de modelos utilizará os seus dados móveis, o que poderá resultar em encargos adicionais da sua operadora. Recomendamos conectar-se ao WiFi para a melhor experiência.",
+    "downloadAnyway": "Descarregar de qualquer maneira"
+  },
+  "use-starting-features": {
+    "chatWithFilesSearchThe": "Chatear com arquivos, pesquisar na web",
+    "speakInsteadOfTyping": "Fale em vez de escrever"
+  },
+  "llm-store": {
+    "replyInOneWord": "Responda em uma palavra.",
+    "nieUdałoMiSięOdpowiedzieć": "Não consegui responder a essa pergunta.",
+    "iCouldNotAnswerThis": "Não pude responder a esta pergunta a partir das fontes que encontrei.",
+    "modelCannotBeLoadedWithout": "O modelo não pode ser carregado sem conexão com a Internet.",
+    "danglingListAnswerContinuationNudge": "Resposta de lista de perseguição, continuação"
+  },
+  "copied-toast": {
+    "messageCopied": "Mensagem copiada"
+  },
+  "model-catalog-schema": {
+    "mustBeAnHttpsUrl": "Deve ser uma URL https://"
+  },
+  "build-search-query": {
+    "casualGreeting": "Saudação casual",
+    "recapOfThisConversation": "Resumo desta conversa",
+    "aboutAPreviousAnswer": "Sobre uma resposta anterior",
+    "currentTokyoWeather": "atual clima de Tóquio",
+    "currentBitcoinPrice": "preço atual do bitcoin",
+    "compareBitcoinAndEthereumPrices": "Comparar os preços do Bitcoin e do Ethereum",
+    "youTurnTheUsersLatest_11": "Você transforma a última mensagem do utilizador num plano de pesquisa na Web. Emita APENAS um objeto JSON, sem nenhum outro texto e sem raciocínio:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": as 1 a 4 coisas que uma resposta completa deve conter (um valor com a respetiva unidade, uma data, um nome), no idioma do utilizador; [] quando needs_search for false.\n\"kind\": um de price (um montante de dinheiro), specs (dados técnicos), comparison (itens comparados lado a lado), recommendation (qual escolher), news (eventos recentes), date (quando algo acontece ou aconteceu), event (um acontecimento agendado: onde e quando), place (uma morada, horário de funcionamento, contacto), person (quem alguém é ou quem ocupa um cargo), fact (um facto verificável), howto (passos), chat (sem pesquisa).\nneeds_search é false para cumprimentos, conversa fiada, opiniões, conselhos, matemática, programação, tradução, reescrita, perguntas sobre esta conversa e conhecimento geral intemporal — logo, \"queries\": []. É true quando a melhor resposta necessita de factos recentes, locais ou verificáveis: notícias, preços, meteorologia, pontuações, horários, lançamentos, especificações, um código de produto ou modelo, quem ocupa atualmente um cargo, a versão atual de algo, horários de funcionamento ou uma morada, pessoas, locais ou organizações específicos. Tem dúvidas sobre uma pergunta específica e verificável? Escolha true — uma pesquisa é barata, uma resposta desatualizada com confiança não o é.\nCada consulta (query) consiste em PALAVRAS-CHAVE de pesquisa com menos de 12 palavras, e não uma frase, no MESMO idioma e alfabeto da mensagem do utilizador — nunca traduzido; inglês apenas se o utilizador escreveu em inglês. Mantenha os nomes, locais e números fornecidos pelo utilizador exatamente como foram dados; nunca os substitua por um relacionado. Utilize apenas a última mensagem e a que se refere; resolva it/that/they a partir da conversa. Transforme palavras de tempo relativo (today, latest, now, current, this year, this season, so far) numa data, ano ou estação concretos — hoje é {today}; para uma pergunta \"most/best/top X\" sobre um período recente, inclua esse ano ou estação na própria consulta, para que os resultados sejam sobre esse período e não uma classificação geral.",
+    "youTurnTheUsersLatest_12": "Você transforma a última mensagem do utilizador num plano de pesquisa na Web. Emita APENAS um objeto JSON, sem nenhum outro texto e sem raciocínio:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": as 1 a 4 coisas que uma resposta completa deve conter (um valor com a respetiva unidade, uma data, um nome), no idioma do utilizador; [] quando needs_search for false.\n\"kind\": um de price (um montante de dinheiro), specs (dados técnicos), comparison (itens comparados lado a lado), recommendation (qual escolher), news (eventos recentes), date (quando algo acontece ou aconteceu), event (um acontecimento agendado: onde e quando), place (uma morada, horário de funcionamento, contacto), person (quem alguém é ou quem ocupa um cargo), fact (um facto verificável), howto (passos), chat (sem pesquisa).\nneeds_search é false para cumprimentos, conversa fiada, opiniões, conselhos, matemática, programação, tradução, reescrita, perguntas sobre esta conversa e conhecimento geral intemporal — logo, \"queries\": []. É true quando a melhor resposta necessita de factos recentes, locais ou verificáveis: notícias, preços, meteorologia, pontuações, horários, lançamentos, especificações, um código de produto ou modelo, quem ocupa atualmente um cargo, a versão atual de algo, horários de funcionamento ou uma morada, pessoas, locais ou organizações específicos. Tem dúvidas sobre uma pergunta específica e verificável? Escolha true — uma pesquisa é barata, uma resposta desatualizada com confiança não o é.\nCada consulta (query) consiste em PALAVRAS-CHAVE de pesquisa com menos de 12 palavras, e não uma frase, no MESMO idioma e alfabeto da mensagem do utilizador — nunca traduzido; inglês apenas se o utilizador escreveu em inglês. Mantenha os nomes, locais e números fornecidos pelo utilizador exatamente como foram dados; nunca os substitua por um relacionado. Utilize apenas a última mensagem e a que se refere; resolva it/that/they a partir da conversa. Transforme palavras de tempo relativo (today, latest, now, current, this year, this season, so far) numa data, ano ou estação concretos — hoje é {today}; para uma pergunta \"most/best/top X\" sobre um período recente, inclua esse ano ou estação na própria consulta, para que os resultados",
+    "youTurnTheUsersLatest_13": "Você transforma a última mensagem do utilizador num plano de pesquisa na Web. Emita APENAS um objeto JSON, sem nenhum outro texto e sem raciocínio:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": as 1 a 4 coisas que uma resposta completa deve conter (um valor com a respetiva unidade, uma data, um nome), no idioma do utilizador; [] quando needs_search for false.\n\"kind\": um de price (um montante de dinheiro), specs (dados técnicos), comparison (itens comparados lado a lado), recommendation (qual escolher), news (eventos recentes), date (quando algo acontece ou aconteceu), event (um acontecimento agendado: onde e quando), place (uma morada, horário de funcionamento, contacto), person (quem alguém é ou quem ocupa um cargo), fact (um facto verificável), howto (passos), chat (sem pesquisa).\nneeds_search é false para cumprimentos, conversa fiada, opiniões, conselhos, matemática, programação, tradução, reescrita, perguntas sobre esta conversa e conhecimento geral intemporal — logo, \"queries\": []. É true quando a melhor resposta necessita de factos recentes, locais ou verificáveis: notícias, preços, meteorologia, pontuações, horários, lançamentos, especificações, um código de produto ou modelo, quem ocupa atualmente um cargo, a versão atual de algo, horários de funcionamento ou uma morada, pessoas, locais ou organizações específicos. Tem dúvidas sobre uma pergunta específica e verificável? Escolha true — uma pesquisa é barata, uma resposta desatualizada com confiança não o é.\nCada consulta (query) consiste em PALAVRAS-CHAVE de pesquisa com menos de 12 palavras, e não uma frase, no MESMO idioma e alfabeto da mensagem do utilizador — nunca traduzido; inglês apenas se o utilizador escreveu em inglês. Mantenha os nomes, locais e números fornecidos pelo utilizador exatamente como foram dados; nunca os substitua por um relacionado. Utilize apenas a última mensagem e a que se refere; resolva it/that/they a partir da conversa. Transforme palavras de tempo relativo (today, latest, now, current, this year, this season, so far) numa data, ano ou estação concretos — hoje é {today}; para uma",
+    "youTurnTheUsersLatest_14": "Você transforma a última mensagem do utilizador num plano de pesquisa na Web. Emita APENAS um objeto JSON, sem nenhum outro texto e sem raciocínio:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": as 1 a 4 coisas que uma resposta completa deve conter (um valor com a respetiva unidade, uma data, um nome), no idioma do utilizador; [] quando needs_search for false.\n\"kind\": um de price (um montante de dinheiro), specs (dados técnicos), comparison (itens comparados lado a lado), recommendation (qual escolher), news (eventos recentes), date (quando algo acontece ou aconteceu), event (um acontecimento agendado: onde e quando), place (uma morada, horário de funcionamento, contacto), person (quem alguém é ou quem ocupa um cargo), fact (um facto verificável), howto (passos), chat (sem pesquisa).\nneeds_search é false para cumprimentos, conversa fiada, opiniões, conselhos, matemática, programação, tradução, reescrita, perguntas sobre esta conversa e conhecimento geral intemporal — logo, \"queries\": []. É true quando a melhor resposta necessita de factos recentes, locais ou verificáveis: notícias, preços, meteorologia, pontuações, horários, lançamentos, especificações, um código de produto ou modelo, quem ocupa atualmente um cargo, a versão atual de algo, horários de funcionamento ou uma morada, pessoas, locais ou organizações específicos. Tem dúvidas sobre uma pergunta específica e verificável? Escolha true — uma pesquisa é barata, uma resposta desatualizada com confiança não o é.\nCada consulta (query) consiste em PALAVRAS-CHAVE de pesquisa com menos de 12 palavras, e não uma frase, no MESMO idioma e alfabeto da mensagem do utilizador — nunca traduzido; inglês apenas se o utilizador escreveu em inglês. Mantenha os nomes, locais e números fornecidos pelo utilizador exatamente como foram dados; nunca os substitua por um relacionado. Utilize apenas a última mensagem e a que se refere; resolva it/that/they a partir da conversa. Transforme palavras de tempo relativo (today, latest, now, current, this year, this season, so far) numa data, ano",
+    "youTurnTheUsersLatest_15": "Você transforma a última mensagem do utilizador num plano de pesquisa na Web. Emita APENAS um objeto JSON, sem nenhum outro texto e sem raciocínio:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": as 1 a 4 coisas que uma resposta completa deve conter (um valor com a respetiva unidade, uma data, um nome), no idioma do utilizador; [] quando needs_search for false.\n\"kind\": um de price (um montante de dinheiro), specs (dados técnicos), comparison (itens comparados lado a lado), recommendation (qual escolher), news (eventos recentes), date (quando algo acontece ou aconteceu), event (um acontecimento agendado: onde e quando), place (uma morada, horário de funcionamento, contacto), person (quem alguém é ou quem ocupa um cargo), fact (um facto verificável), howto (passos), chat (sem pesquisa).\nneeds_search é false para cumprimentos, conversa fiada, opiniões, conselhos, matemática, programação, tradução, reescrita, perguntas sobre esta conversa e conhecimento geral intemporal — logo, \"queries\": []. É true quando a melhor resposta necessita de factos recentes, locais ou verificáveis: notícias, preços, meteorologia, pontuações, horários, lançamentos, especificações, um código de produto ou modelo, quem ocupa atualmente um cargo, a versão atual de algo, horários de funcionamento ou uma morada, pessoas, locais ou organizações específicos. Tem dúvidas sobre uma pergunta específica e verificável? Escolha true — uma pesquisa é barata, uma resposta desatualizada com confiança não o é.\nCada consulta (query) consiste em PALAVRAS-CHAVE de pesquisa com menos de 12 palavras, e não uma frase, no MESMO idioma e alfabeto da mensagem do utilizador — nunca traduzido; inglês apenas se o utilizador escreveu em inglês. Mantenha os nomes, locais e números fornecidos pelo utilizador exatamente como foram dados; nunca os substitua por um relacionado. Utilize apenas a última mensagem e a que se refere; resolva it/that/they a partir da conversa. Transforme palavras de tempo relativo (today, latest, now,",
+    "youTurnTheUsersLatest_16": "Você transforma a última mensagem do utilizador num plano de pesquisa na Web. Emita APENAS um objeto JSON, sem nenhum outro texto e sem raciocínio:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": as 1 a 4 coisas que uma resposta completa deve conter (um valor com a respetiva unidade, uma data, um nome), no idioma do utilizador; [] quando needs_search for false.\n\"kind\": um de price (um montante de dinheiro), specs (dados técnicos), comparison (itens comparados lado a lado), recommendation (qual escolher), news (eventos recentes), date (quando algo acontece ou aconteceu), event (um acontecimento agendado: onde e quando), place (uma morada, horário de funcionamento, contacto), person (quem alguém é ou quem ocupa um cargo), fact (um facto verificável), howto (passos), chat (sem pesquisa).\nneeds_search é false para cumprimentos, conversa fiada, opiniões, conselhos, matemática, programação, tradução, reescrita, perguntas sobre esta conversa e conhecimento geral intemporal — logo, \"queries\": []. É true quando a melhor resposta necessita de factos recentes, locais ou verificáveis: notícias, preços, meteorologia, pontuações, horários, lançamentos, especificações, um código de produto ou modelo, quem ocupa atualmente um cargo, a versão atual de algo, horários de funcionamento ou uma morada, pessoas, locais ou organizações específicos. Tem dúvidas sobre uma pergunta específica e verificável? Escolha true — uma pesquisa é barata, uma resposta desatualizada com confiança não o é.\nCada consulta (query) consiste em PALAVRAS-CHAVE de pesquisa com menos de 12 palavras, e não uma frase, no MESMO idioma e alfabeto da mensagem do utilizador — nunca traduzido; inglês apenas se o utilizador escreveu em inglês. Mantenha os nomes, locais e números fornecidos pelo utilizador exatamente como foram dados; nunca os substitua por um relacionado. Utilize apenas a última mensagem e a que se refere; resolva it/that/they",
+    "youTurnTheUsersLatest_17": "Você transforma a última mensagem do utilizador num plano de pesquisa na Web. Emita APENAS um objeto JSON, sem nenhum outro texto e sem raciocínio:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": as 1 a 4 coisas que uma resposta completa deve conter (um valor com a respetiva unidade, uma data, um nome), no idioma do utilizador; [] quando needs_search for false.\n\"kind\": um de price (um montante de dinheiro), specs (dados técnicos), comparison (itens comparados lado a lado), recommendation (qual escolher), news (eventos recentes), date (quando algo acontece ou aconteceu), event (um acontecimento agendado: onde e quando), place (uma morada, horário de funcionamento, contacto), person (quem alguém é ou quem ocupa um cargo), fact (um facto verificável), howto (passos), chat (sem pesquisa).\nneeds_search é false para cumprimentos, conversa fiada, opiniões, conselhos, matemática, programação, tradução, reescrita, perguntas sobre esta conversa e conhecimento geral intemporal — logo, \"queries\": []. É true quando a melhor resposta necessita de factos recentes, locais ou verificáveis: notícias, preços, meteorologia, pontuações, horários, lançamentos, especificações, um código de produto ou modelo, quem ocupa atualmente um cargo, a versão atual de algo, horários de funcionamento ou uma morada, pessoas, locais ou organizações específicos. Tem dúvidas sobre uma pergunta específica e verificável? Escolha true — uma pesquisa é barata, uma resposta desatualizada com confiança não o é.\nCada consulta (query) consiste em PALAVRAS-CHAVE de pesquisa com menos de 12 palavras, e não uma frase, no MESMO idioma e alfabeto da mensagem do utilizador — nunca traduzido; inglês apenas se o utilizador escreveu em inglês. Mantenha os nomes, locais e números fornecidos pelo utilizador exatamente como foram dados; nunca os substitua por um relacionado.",
+    "youTurnTheUsersLatest_18": "Você transforma a última mensagem do utilizador num plano de pesquisa na Web. Emita APENAS um objeto JSON, sem nenhum outro texto e sem raciocínio:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": as 1 a 4 coisas que uma resposta completa deve conter (um valor com a respetiva unidade, uma data, um nome), no idioma do utilizador; [] quando needs_search for false.\n\"kind\": um de price (um montante de dinheiro), specs (dados técnicos), comparison (itens comparados lado a lado), recommendation (qual escolher), news (eventos recentes), date (quando algo acontece ou aconteceu), event (um acontecimento agendado: onde e quando), place (uma morada, horário de funcionamento, contacto), person (quem alguém é ou quem ocupa um cargo), fact (um facto verificável), howto (passos), chat (sem pesquisa).\nneeds_search é false para cumprimentos, conversa fiada, opiniões, conselhos, matemática, programação, tradução, reescrita, perguntas sobre esta conversa e conhecimento geral intemporal — logo, \"queries\": []. É true quando a melhor resposta necessita de factos recentes, locais ou verificáveis: notícias, preços, meteorologia, pontuações, horários, lançamentos, especificações, um código de produto ou modelo, quem ocupa atualmente um cargo, a versão atual de algo, horários de funcionamento ou uma morada, pessoas, locais ou organizações específicos. Tem dúvidas sobre uma pergunta específica e verificável? Escolha true — uma pesquisa é barata, uma resposta desatualizada com confiança não o é.\nCada consulta (query) consiste em PALAVRAS-CHAVE de pesquisa com menos de 12 palavras, e não uma frase, no MESMO idioma e alfabeto da mensagem do utilizador — nunca traduzido; inglês apenas se o utilizador escreveu em inglês. Mantenha os nomes, locais e",
+    "youTurnTheUsersLatest_19": "Você transforma a última mensagem do utilizador num plano de pesquisa na Web. Emita APENAS um objeto JSON, sem nenhum outro texto e sem raciocínio:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": as 1 a 4 coisas que uma resposta completa deve conter (um valor com a respetiva unidade, uma data, um nome), no idioma do utilizador; [] quando needs_search for false.\n\"kind\": um de price (um montante de dinheiro), specs (dados técnicos), comparison (itens comparados lado a lado), recommendation (qual escolher), news (eventos recentes), date (quando algo acontece ou aconteceu), event (um acontecimento agendado: onde e quando), place (uma morada, horário de funcionamento, contacto), person (quem alguém é ou quem ocupa um cargo), fact (um facto verificável), howto (passos), chat (sem pesquisa).\nneeds_search é false para cumprimentos, conversa fiada, opiniões, conselhos, matemática, programação, tradução, reescrita, perguntas sobre esta conversa e conhecimento geral intemporal — logo, \"queries\": []. É true quando a melhor resposta necessita de factos recentes, locais ou verificáveis: notícias, preços, meteorologia, pontuações, horários, lançamentos, especificações, um código de produto ou modelo, quem ocupa atualmente um cargo, a versão atual de algo, horários de funcionamento ou uma morada, pessoas, locais ou organizações específicos. Tem dúvidas sobre uma pergunta específica e verificável? Escolha true — uma pesquisa é barata, uma resposta desatualizada com confiança não o é.\nCada consulta (query) consiste em PALAVRAS-CHAVE de pesquisa com menos de 12 palavras, e não uma frase, no MESMO idioma e alfabeto da mensagem do utilizador — nunca traduzido;",
+    "youTurnTheUsersLatest_20": "Você transforma a última mensagem do utilizador num plano de pesquisa na Web. Emita APENAS um objeto JSON, sem nenhum outro texto e sem raciocínio:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": as 1 a 4 coisas que uma resposta completa deve conter (um valor com a respetiva unidade, uma data, um nome), no idioma do utilizador; [] quando needs_search for false.\n\"kind\": um de price (um montante de dinheiro), specs (dados técnicos), comparison (itens comparados lado a lado), recommendation (qual escolher), news (eventos recentes), date (quando algo acontece ou aconteceu), event (um acontecimento agendado: onde e quando), place (uma morada, horário de funcionamento, contacto), person (quem alguém é ou quem ocupa um cargo), fact (um facto verificável), howto (passos), chat (sem pesquisa).\nneeds_search é false para cumprimentos, conversa fiada, opiniões, conselhos, matemática, programação, tradução, reescrita, perguntas sobre esta conversa e conhecimento geral intemporal — logo, \"queries\": []. É true quando a melhor resposta necessita de factos recentes, locais ou verificáveis: notícias, preços, meteorologia, pontuações, horários, lançamentos, especificações, um código de produto ou modelo, quem ocupa atualmente um cargo, a versão atual de algo, horários de funcionamento ou uma morada, pessoas, locais ou organizações específicos. Tem dúvidas sobre uma pergunta específica e verificável? Escolha true — uma pesquisa é barata, uma resposta desatualizada com confiança não o é.\nCada consulta (query) consiste em PALAVRAS-CHAVE de pesquisa com menos de 12 palavras, e não uma frase, no",
+    "youTurnTheUsersLatest_21": "Você transforma a última mensagem do utilizador num plano de pesquisa na Web. Emita APENAS um objeto JSON, sem nenhum outro texto e sem raciocínio:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": as 1 a 4 coisas que uma resposta completa deve conter (um valor com a respetiva unidade, uma data, um nome), no idioma do utilizador; [] quando needs_search for false.\n\"kind\": um de price (um montante de dinheiro), specs (dados técnicos), comparison (itens comparados lado a lado), recommendation (qual escolher), news (eventos recentes), date (quando algo acontece ou aconteceu), event (um acontecimento agendado: onde e quando), place (uma morada, horário de funcionamento, contacto), person (quem alguém é ou quem ocupa um cargo), fact (um facto verificável), howto (passos), chat (sem pesquisa).\nneeds_search é false para cumprimentos, conversa fiada, opiniões, conselhos, matemática, programação, tradução, reescrita, perguntas sobre esta conversa e conhecimento geral intemporal — logo, \"queries\": []. É true quando a melhor resposta necessita de factos recentes, locais ou verificáveis: notícias, preços, meteorologia, pontuações, horários, lançamentos, especificações, um código de produto ou modelo, quem ocupa atualmente um cargo, a versão atual de algo, horários de funcionamento ou uma morada, pessoas, locais ou organizações específicos. Tem dúvidas sobre uma pergunta específica e verificável? Escolha true — uma pesquisa é barata, uma resposta desatualizada com confiança não o é.",
+    "youTurnTheUsersLatest_22": "Você transforma a última mensagem do utilizador num plano de pesquisa na Web. Emita APENAS um objeto JSON, sem nenhum outro texto e sem raciocínio:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": as 1 a 4 coisas que uma resposta completa deve conter (um valor com a respetiva unidade, uma data, um nome), no idioma do utilizador; [] quando needs_search for false.\n\"kind\": um de price (um montante de dinheiro), specs (dados técnicos), comparison (itens comparados lado a lado), recommendation (qual escolher), news (eventos recentes), date (quando algo acontece ou aconteceu), event (um acontecimento agendado: onde e quando), place (uma morada, horário de funcionamento, contacto), person (quem alguém é ou quem ocupa um cargo), fact (um facto verificável), howto (passos), chat (sem pesquisa).\nneeds_search é false para cumprimentos, conversa fiada, opiniões, conselhos, matemática, programação, tradução, reescrita, perguntas sobre esta conversa e conhecimento geral intemporal — logo, \"queries\": []. É true quando a melhor resposta necessita de factos recentes, locais ou verificáveis: notícias, preços, meteorologia, pontuações, horários, lançamentos, especificações, um código de produto ou modelo, quem ocupa atualmente um cargo, a versão atual de algo, horários de funcionamento ou uma morada, pessoas, locais ou organizações específicos. Tem dúvidas sobre uma pergunta específica e verificável? Escolha true — uma pesquisa",
+    "youTurnTheUsersLatest_23": "Você transforma a última mensagem do utilizador num plano de pesquisa na Web. Emita APENAS um objeto JSON, sem nenhum outro texto e sem raciocínio:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": as 1 a 4 coisas que uma resposta completa deve conter (um valor com a respetiva unidade, uma data, um nome), no idioma do utilizador; [] quando needs_search for false.\n\"kind\": um de price (um montante de dinheiro), specs (dados técnicos), comparison (itens comparados lado a lado), recommendation (qual escolher), news (eventos recentes), date (quando algo acontece ou aconteceu), event (um acontecimento agendado: onde e quando), place (uma morada, horário de funcionamento, contacto), person (quem alguém é ou quem ocupa um cargo), fact (um facto verificável), howto (passos), chat (sem pesquisa).\nneeds_search é false para cumprimentos, conversa fiada, opiniões, conselhos, matemática, programação, tradução, reescrita, perguntas sobre esta conversa e conhecimento geral intemporal — logo, \"queries\": []. É true quando a melhor resposta necessita de factos recentes, locais ou verificáveis: notícias, preços, meteorologia, pontuações, horários, lançamentos, especificações, um código de produto ou modelo, quem ocupa atualmente um cargo, a versão atual de algo, horários de funcionamento ou uma morada, pessoas, locais ou organizações específicos.",
+    "youTurnTheUsersLatest_24": "Você transforma a última mensagem do utilizador num plano de pesquisa na Web. Emita APENAS um objeto JSON, sem nenhum outro texto e sem raciocínio:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": as 1 a 4 coisas que uma resposta completa deve conter (um valor com a respetiva unidade, uma data, um nome), no idioma do utilizador; [] quando needs_search for false.\n\"kind\": um de price (um montante de dinheiro), specs (dados técnicos), comparison (itens comparados lado a lado), recommendation (qual escolher), news (eventos recentes), date (quando algo acontece ou aconteceu), event (um acontecimento agendado: onde e quando), place (uma morada, horário de funcionamento, contacto), person (quem alguém é ou quem ocupa um cargo), fact (um facto verificável), howto (passos), chat (sem pesquisa).\nneeds_search é false para cumprimentos, conversa fiada, opiniões, conselhos, matemática, programação, tradução, reescrita, perguntas sobre esta conversa e conhecimento geral intemporal — logo, \"queries\": []. É true quando a melhor resposta necessita de factos recentes, locais ou verificáveis: notícias, preços, meteorologia, pontuações, horários, lançamentos, especificações, um código de produto ou modelo, quem ocupa atualmente um cargo, a versão atual de algo,",
+    "youTurnTheUsersLatest_25": "Você transforma a última mensagem do utilizador num plano de pesquisa na Web. Emita APENAS um objeto JSON, sem nenhum outro texto e sem raciocínio:\n{\"needs_search\": true|false, \"intent\": \"<goal, max 8 words>\", \"kind\": \"<kind>\", \"queries\": [\"<q1>\", \"<optional q2>\"], \"expects\": [\"<what a complete answer must contain>\"]}\n\"expects\": as 1 a 4 coisas que uma resposta completa deve conter (um valor com a respetiva unidade, uma data, um nome), no idioma do utilizador; [] quando needs_search for false.\n\"kind\": um de price (um montante de dinheiro), specs (dados técnicos), comparison (itens comparados lado a lado), recommendation (qual escolher), news (eventos recentes), date (quando algo acontece ou aconteceu), event (um acontecimento agendado: onde e quando), place (uma morada, horário de funcionamento, contacto), person (quem alguém é ou quem ocupa um cargo), fact (um facto verificável), howto (passos), chat (sem pesquisa).\nneeds_search é false para cumprimentos, conversa fiada, opiniões, conselhos, matemática, programação, tradução, reescrita, perguntas sobre esta conversa e conhecimento geral intemporal — logo, \"queries\": []. É true quando a melhor resposta necessita de factos recentes, locais ou verificáveis: notícias, preços, meteorologia, pontuações, horários, lançamentos, especificações, um código de produto ou modelo,",
+    "youTurnTheUsersLatest_41": "Transformas a última mensagem do utilizador num plano de pesquisa na web.",
+    "outputOnlyOneJsonObject": "Produz APENAS um objeto JSON, sem nenhum outro texto nem raciocínio:",
+    "expectsThe14ThingsA": "\"expects\": de 1 a 4 coisas que uma resposta completa deve conter (um valor com",
+    "itsUnitADateA": "a respetiva unidade, uma data, um nome), no idioma do utilizador; [] quando needs_search",
+    "isFalse": "for falso.",
+    "kindOneOfPriceAn": "\"kind\": um de price (uma quantia em dinheiro), specs (dados técnicos),",
+    "comparisonNamedThingsSideBy": "comparison (coisas nomeadas lado a lado), recommendation (qual escolher),",
+    "chooseNewsRecentEventsDate": "news (eventos recentes), date (quando algo acontece ou",
+    "happenedEventAScheduledHappening": "aconteceu), event (um acontecimento agendado: onde e quando), place (um",
+    "addressOpeningHoursContactPerson": "endereço, horário de funcionamento, contacto), person (quem é alguém ou quem ocupa um",
+    "positionFactOneCheckableFact": "cargo), fact (um facto verificável), howto (passos), chat (sem pesquisa).",
+    "needsSearchIsFalseForGreetings": "needs_search é falso para saudações, conversa fiada, opiniões, conselhos, matemática,",
+    "codingTranslationRewritingQuestionsAbout": "programação, tradução, reescrita, perguntas sobre esta conversa e",
+    "timelessGeneralKnowledgeThen": "conhecimento geral intemporal — nesse caso, \"queries\": []. É verdadeiro quando a",
+    "bestAnswerNeedsFreshLocal": "melhor resposta precisa de factos recentes, locais ou verificáveis: notícias, preços,",
+    "weatherScoresSchedulesReleasesSpecs": "clima, resultados, programação, lançamentos, especificações, um produto ou código de modelo,",
+    "whoCurrentlyHoldsAPosition": "quem ocupa atualmente um cargo, a versão atual de algo,",
+    "openingHoursOrAnAddress": "horário de funcionamento ou um endereço, pessoas, locais ou organizações específicos.",
+    "unsureAboutASpecificCheckable": "Com dúvida sobre uma pergunta específica e verificável? Escolha verdadeiro — uma pesquisa é",
+    "cheapAConfidentStaleAnswer": "barata, uma resposta desatualizada mas confiante não é.",
+    "eachQueryIsSearchKeywords": "Cada consulta consiste em PALAVRAS-CHAVE de pesquisa com menos de 12 palavras, e não em uma frase, no",
+    "sameLanguageAndScriptAs": "MESMO idioma e sistema de escrita da mensagem do utilizador — nunca traduzidos;",
+    "englishOnlyWhenTheUser": "Inglês apenas quando o utilizador escreveu em inglês. Mantenha os nomes, locais e",
+    "numbersTheUserGaveExactly": "números fornecidos pelo utilizador, exatamente como foram dados; nunca os substitua por equivalentes.",
+    "useOnlyTheLatestMessage": "Utilize apenas a mensagem mais recente e o que ela refere; resolva termos como isto/aquilo/eles",
+    "fromTheConversationTurnRelative": "da conversa. Converta palavras de tempo relativas (hoje, mais recente, agora,",
+    "currentThisYearThisSeason": "atual, este ano, esta época, até agora) numa data, ano ou",
+    "seasonTodayIsToday": "época concreta — hoje é {today}; para uma pergunta do tipo \"o/a mais/melhor/topo X\" sobre um",
+    "recentPeriodPutThatYear": "período recente, inclua esse ano ou época na própria consulta para que os resultados",
+    "areAboutThatPeriodAnd": "sejam sobre esse período e não um ranking geral."
+  },
+  "fetch-failure": {
+    "pageTooBig": "página demasiado grande",
+    "noReadableText": "nenhum texto legível",
+    "couldNotBeReached": "não pôde ser alcançado"
+  },
+  "currency-quote": {
+    "frankfurterEuropeanCentralBank": "Frankfurter — taxas de referência do Banco Central Europeu"
+  },
+  "run-web-search": {
+    "incorrect": "incorreto",
+    "correct": "correto"
+  },
+  "charset": {
+    "untitled": "€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ",
+    "untitled_2": "€‚„…†‡‰Š‹ŚŤŽŹ‘’“”•–—™š›śťžź ˇ˘Ł¤Ą¦§¨©Ş«¬­®Ż°±˛ł´µ¶·¸ąş»Ľ˝ľżŔÁÂĂÄĹĆÇČÉĘËĚÍÎĎĐŃŇÓÔŐÖ×ŘŮÚŰÜÝŢßŕáâăäĺćçčéęëěíîďđńňóôőö÷řůúűüýţ˙"
+  },
+  "topic-language": {
+    "italian": "Italiano",
+    "german": "Alemão",
+    "french": "Francês",
+    "spanish": "Espanhol",
+    "portuguese": "Português",
+    "dutch": "Neerlandês",
+    "polish": "Polaco"
+  },
+  "_meta": {
+    "dir": "ltr",
+    "language": "pt"
+  }
+}

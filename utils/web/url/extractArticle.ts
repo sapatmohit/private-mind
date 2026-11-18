@@ -1,3 +1,4 @@
+import { t } from "../../../i18n";
 import type { ExtractedArticle, StructuredProduct } from '../types';
 import {
   URL_FETCH_ACCEPTED_CONTENT_TYPE,
@@ -565,15 +566,15 @@ const collectJsonLdText = (html: string): string => {
 };
 
 const AVAILABILITY_LABELS: Record<string, string> = {
-  instock: 'in stock',
-  outofstock: 'out of stock',
+  instock: t("extract-article.inStock"),
+  outofstock: t("extract-article.outOfStock"),
   preorder: 'pre-order',
   discontinued: 'discontinued',
-  limitedavailability: 'limited availability',
-  soldout: 'sold out',
-  backorder: 'back order',
-  onlineonly: 'online only',
-  instorenow: 'available in store',
+  limitedavailability: t("extract-article.limitedAvailability"),
+  soldout: t("extract-article.soldOut"),
+  backorder: t("extract-article.backOrder"),
+  onlineonly: t("extract-article.onlineOnly"),
+  instorenow: t("extract-article.availableInStore"),
 };
 
 const normalizeAvailability = (raw: unknown): string | undefined => {

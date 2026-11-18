@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React from 'react';
 import { LayoutChangeEvent, StyleSheet, Text, View } from 'react-native';
 import { Pressable } from 'react-native-gesture-handler';
@@ -42,6 +43,7 @@ interface Props {
 }
 
 export const DrawerFooter = ({ onNavigate, newChatCollapse }: Props) => {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
 
   const fallbackCollapse = useSharedValue(0);
@@ -89,7 +91,7 @@ export const DrawerFooter = ({ onNavigate, newChatCollapse }: Props) => {
           onPress={goToSettings}
           testID="drawer-settings"
           accessibilityRole="button"
-          accessibilityLabel="Settings"
+          accessibilityLabel={t("drawer-footer.settings")}
           hitSlop={15}
           style={({ pressed }) => [
             headerGlassButtonFill,
@@ -105,7 +107,7 @@ export const DrawerFooter = ({ onNavigate, newChatCollapse }: Props) => {
         onPress={startNewChat}
         testID="drawer-new-chat"
         accessibilityRole="button"
-        accessibilityLabel="New chat"
+        accessibilityLabel={t("drawer-footer.newChat")}
         style={({ pressed }) => [
           styles.newChat,
           pressed && pressedOpacity,
@@ -126,7 +128,7 @@ export const DrawerFooter = ({ onNavigate, newChatCollapse }: Props) => {
                 maxFontSizeMultiplier={CAPPED_TEXT_MAX_SCALE}
                 onLayout={handleLabelLayout}
               >
-                New chat
+                {t("drawer-footer.newChat_2")}
               </Text>
             </View>
           </Animated.View>

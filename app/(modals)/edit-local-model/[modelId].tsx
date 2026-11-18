@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React, { useState } from 'react';
 import { Text, StyleSheet, View, Alert } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
@@ -39,6 +40,7 @@ const parsePathToLocalFile = (path?: string): LocalFile | null => {
 };
 
 export default function EditLocalModelScreen() {
+  const { t } = useTranslation();
   const { modelId: rawModelId } = useLocalSearchParams<{ modelId: string }>();
   const modelId = parseInt(rawModelId);
 
@@ -71,7 +73,7 @@ export default function EditLocalModelScreen() {
 
   const handleSave = async () => {
     if (!localModelPath || !localTokenizerPath || !localTokenizerConfigPath) {
-      Alert.alert('Missing Fields', 'Please select all necessary files.');
+      Alert.alert(t("model-id.missingFields"), t("model-id.pleaseSelectAllNecessaryFiles"));
       return;
     }
     await editModel(
@@ -83,7 +85,7 @@ export default function EditLocalModelScreen() {
     Feedback.editSave();
     Toast.show({
       type: 'defaultToast',
-      text1: `${modelName} has been successfully updated`,
+      text1: t("model-id.modelnameHasBeenSuccessfullyUpdated", { modelName }),
     });
     router.back();
   };
@@ -99,14 +101,14 @@ export default function EditLocalModelScreen() {
           showsVerticalScrollIndicator={false}
         >
           <View style={styles.textFieldSection}>
-            <Text style={styles.label}>Model Name</Text>
+            <Text style={styles.label}>{t("model-id.modelName")}</Text>
             <TextFieldInput
               value={modelName}
               onChangeText={(text) => setFormField('modelName', text)}
             />
           </View>
           <View style={styles.textFieldSection}>
-            <Text style={styles.label}>Model File</Text>
+            <Text style={styles.label}>{t("model-id.modelFile")}</Text>
             <UploadInput
               fileInfo={localModelPath}
               onChange={(file) => setFormField('localModelPath', file)}
@@ -115,14 +117,14 @@ export default function EditLocalModelScreen() {
             <InfoAlert text="Model file is permanently linked to this model and cannot be changed" />
           </View>
           <View style={styles.textFieldSection}>
-            <Text style={styles.label}>Tokenizer File</Text>
+            <Text style={styles.label}>{t("model-id.tokenizerFile")}</Text>
             <UploadInput
               fileInfo={localTokenizerPath}
               onChange={(file) => setFormField('localTokenizerPath', file)}
             />
           </View>
           <View style={styles.textFieldSection}>
-            <Text style={styles.label}>Tokenizer Config File</Text>
+            <Text style={styles.label}>{t("model-id.tokenizerConfigFile")}</Text>
             <UploadInput
               fileInfo={localTokenizerConfigPath}
               onChange={(file) =>
@@ -134,7 +136,7 @@ export default function EditLocalModelScreen() {
         <PrimaryButton text="Save changes" onPress={handleSave} />
       </View>
       <GlassScreenHeader
-        title="Edit Local Model"
+        title={t("model-id.editLocalModel")}
         onBack={() => router.back()}
         icon="close"
         sheet

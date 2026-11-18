@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React, { useCallback, useRef } from 'react';
 import { Alert, Platform } from 'react-native';
 import { BottomSheetModal } from '@gorhom/bottom-sheet';
@@ -12,6 +13,7 @@ export interface ConfirmOptions {
 }
 
 export const useConfirm = () => {
+  const { t } = useTranslation();
   const sheetRef = useRef<BottomSheetModal<WarningSheetData>>(null);
   const resolveRef = useRef<((confirmed: boolean) => void) | null>(null);
 
@@ -26,7 +28,7 @@ export const useConfirm = () => {
       new Promise<boolean>((resolve) => {
         if (Platform.OS === 'ios') {
           Alert.alert(title, message, [
-            { text: 'Cancel', style: 'cancel', onPress: () => resolve(false) },
+            { text: t("use-confirm.cancel"), style: 'cancel', onPress: () => resolve(false) },
             {
               text: confirmLabel,
               style: 'destructive',
@@ -51,7 +53,7 @@ export const useConfirm = () => {
           onConfirm: () => settle(true),
         });
       }),
-    [settle]
+    [settle, t]
   );
 
   const ConfirmElement =

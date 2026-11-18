@@ -1,3 +1,4 @@
+import { useTranslation, Trans } from "react-i18next";
 import React from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import type { ChatBranchMarker } from '../../database/chatRepository';
@@ -14,6 +15,7 @@ type BranchMarkerProps = {
 };
 
 export default function BranchMarker({ marker, onPress }: BranchMarkerProps) {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
 
   return (
@@ -23,14 +25,17 @@ export default function BranchMarker({ marker, onPress }: BranchMarkerProps) {
         style={({ pressed }) => [styles.link, pressed && pressedOpacity]}
         onPress={() => onPress?.(marker)}
         accessibilityRole="button"
-        accessibilityLabel={`Open source conversation: ${marker.sourceChatTitle}`}
+        accessibilityLabel={t("branch-marker.openSourceConversationSourcechattitle", { sourceChatTitle: marker.sourceChatTitle })}
       >
         <ForkIcon width={14} height={14} style={styles.icon} />
         <Text style={styles.text} numberOfLines={1}>
-          Branched from:{' '}
-          <Text style={styles.sourceTitle}>
-            {marker.sourceChatTitle || 'source conversation'}
-          </Text>
+          <Trans
+            i18nKey="branch-marker.branchedFrom"
+            t={t}
+            values={{ markerSourceChatTitle: marker.sourceChatTitle || 'source conversation' }}
+            components={{
+              text: <Text style={styles.sourceTitle} />
+            }} />
         </Text>
       </Pressable>
       <View style={styles.line} />

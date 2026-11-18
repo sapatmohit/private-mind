@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React from 'react';
 import { View, StyleSheet, Text, Pressable } from 'react-native';
 import { WebView } from 'react-native-webview';
@@ -13,6 +14,7 @@ import { useScrapeHost } from '../../hooks/useScrapeHost';
 import { isAllowedScrapeNavigation } from '../../utils/web/security/scrapeNavigation';
 
 const WebScrapeSheet = () => {
+  const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(createStyles);
   const {
     webRef,
@@ -41,10 +43,10 @@ const WebScrapeSheet = () => {
       {revealed && (
         <View style={styles.header}>
           <Text style={styles.headerTitle}>
-            Private Mind is browsing for you
+            {t("web-scrape-sheet.privateMindIsBrowsingFor")}
           </Text>
           <Text style={styles.headerHint}>
-            Confirm you’re human to continue
+            {t("web-scrape-sheet.confirmYouReHumanToContinue")}
           </Text>
         </View>
       )}
@@ -80,7 +82,7 @@ const WebScrapeSheet = () => {
             accessibilityRole="button"
             testID="web-challenge-cancel"
           >
-            <Text style={styles.secondaryLabel}>Skip search</Text>
+            <Text style={styles.secondaryLabel}>{t("web-scrape-sheet.skipSearch")}</Text>
           </Pressable>
           <Pressable
             onPress={recheck}
@@ -88,7 +90,7 @@ const WebScrapeSheet = () => {
             accessibilityRole="button"
             testID="web-challenge-done"
           >
-            <Text style={styles.primaryLabel}>Done</Text>
+            <Text style={styles.primaryLabel}>{t("web-scrape-sheet.done")}</Text>
           </Pressable>
         </View>
       )}

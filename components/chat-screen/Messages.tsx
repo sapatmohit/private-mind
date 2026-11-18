@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React, {
   memo,
   ReactNode,
@@ -225,6 +226,7 @@ const Messages = ({
   onUserActionMenuChange,
   ref,
 }: Props) => {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
   const scrollRef = useRef<Reanimated.ScrollView>(null);
   const isAtBottomRef = useRef(true);
@@ -1277,7 +1279,7 @@ const Messages = ({
                 <Pressable
                   onPress={onRetryGeneration}
                   accessibilityRole="button"
-                  accessibilityLabel="Retry response generation"
+                  accessibilityLabel={t("messages.retryResponseGeneration")}
                   style={({ pressed }) => [
                     styles.retryButton,
                     pressed && pressedOpacity,
@@ -1288,7 +1290,7 @@ const Messages = ({
                     height={16}
                     style={styles.retryButtonIcon}
                   />
-                  <Text style={styles.retryButtonText}>Retry</Text>
+                  <Text style={styles.retryButtonText}>{t("messages.retry")}</Text>
                 </Pressable>
               </View>
             </View>

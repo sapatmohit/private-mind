@@ -1,3 +1,4 @@
+import { t } from "../i18n";
 import { estimatePromptTokens } from '../constants/context-window';
 import {
   dropStrayThinkClose,
@@ -475,7 +476,7 @@ const modelIsInUse = (get: () => LLMStore) =>
 export const MODEL_WARMUP_TIMEOUT_MS = 3_000;
 
 const WARMUP_MESSAGES: ExecutorchMessage[] = [
-  { role: 'system', content: 'Reply in one word.' },
+  { role: 'system', content: t("llm-store.replyInOneWord") },
   { role: 'user', content: 'hi' },
 ];
 
@@ -819,8 +820,8 @@ const QUESTION_ECHO_RETRY_PROMPT =
   'restate or rephrase the question.';
 
 const NO_ANSWER_FALLBACK: Record<string, string> = {
-  pl: 'Nie udało mi się odpowiedzieć na to pytanie na podstawie znalezionych źródeł.',
-  en: 'I could not answer this question from the sources I found.',
+  pl: t("llm-store.nieUdałoMiSięOdpowiedzieć"),
+  en: t("llm-store.iCouldNotAnswerThis"),
 };
 
 const noAnswerFallback = (question: string | undefined): string => {
@@ -1175,7 +1176,7 @@ export const useLLMStore = create<LLMStore>((set, get) => ({
       if (network?.isConnected === false) {
         Toast.show({
           type: 'defaultToast',
-          text1: 'Model cannot be loaded without internet connection.',
+          text1: t("llm-store.modelCannotBeLoadedWithout"),
         });
         return;
       }
@@ -2004,7 +2005,7 @@ export const useLLMStore = create<LLMStore>((set, get) => ({
             )
           : continuationGeneration.response;
         answerRetries.push({
-          reason: 'Dangling list answer, continuation nudge',
+          reason: t("llm-store.danglingListAnswerContinuationNudge"),
           raw: continuationGeneration.response ?? null,
           accepted: !!continuationResponse?.trim(),
         });

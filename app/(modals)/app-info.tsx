@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React from 'react';
 import { StyleSheet, View, Text, Pressable, Linking } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
@@ -44,6 +45,7 @@ const GITHUB_LINKS: { text: string; url: string }[] = [
 ];
 
 const AppHeader = () => {
+  const { t } = useTranslation();
   const { theme } = useTheme();
 
   return (
@@ -51,24 +53,24 @@ const AppHeader = () => {
       <View style={styles.logoContainer}>
         <Logo width={28} height={28} />
         <Text style={[styles.appName, { color: theme.text.primary }]}>
-          Private Mind
+          {t("app-info.privateMind")}
         </Text>
       </View>
       <Text style={[styles.appDescription, { color: theme.text.primary }]}>
-        An app brought to you by Software Mansion to run AI models, locally on
-        your device.
+        {t("app-info.anAppBroughtToYou")}
       </Text>
     </View>
   );
 };
 
 const LearnMoreSection = () => {
+  const { t } = useTranslation();
   const { theme } = useTheme();
 
   return (
     <View style={[styles.card, { borderColor: theme.border.soft }]}>
       <Text style={[styles.learnMoreTitle, { color: theme.text.primary }]}>
-        Want to learn more?
+        {t("app-info.wantToLearnMore")}
       </Text>
       <Text
         style={[
@@ -76,7 +78,7 @@ const LearnMoreSection = () => {
           { color: theme.text.defaultSecondary },
         ]}
       >
-        Check our other libraries related to AI.
+        {t("app-info.checkOurOtherLibrariesRelated")}
       </Text>
       {GITHUB_LINKS.map(({ text, url }) => (
         <SecondaryButton
@@ -98,20 +100,21 @@ const LearnMoreSection = () => {
 };
 
 const VersionInfo = () => {
+  const { t } = useTranslation();
   const { theme } = useTheme();
 
   const handleCopyVersion = async () => {
     await Clipboard.setStringAsync(APP_VERSION);
     Toast.show({
       type: 'defaultToast',
-      text1: 'Successfully copied version to clipboard',
+      text1: t("app-info.successfullyCopiedVersionToClipboard"),
     });
   };
 
   return (
     <View style={[styles.versionCard, { borderColor: theme.border.soft }]}>
       <Text style={[styles.versionText, { color: theme.text.primary }]}>
-        App version:
+        {t("app-info.appVersion")}
       </Text>
       <View style={styles.versionInfoContainer}>
         <Text style={[styles.versionText, { color: theme.text.primary }]}>
@@ -133,6 +136,7 @@ const VersionInfo = () => {
 };
 
 export default function AppInfoScreen() {
+  const { t } = useTranslation();
   const router = useRouter();
   const { theme } = useTheme();
   const insets = useSafeAreaInsets();
@@ -161,7 +165,7 @@ export default function AppInfoScreen() {
           </View>
         </View>
       </ScrollView>
-      <GlassScreenHeader title="App info" onBack={() => router.back()} />
+      <GlassScreenHeader title={t("app-info.appInfo")} onBack={() => router.back()} />
     </View>
   );
 }

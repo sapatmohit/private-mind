@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import CopyIcon from '../../assets/icons/copy.svg';
@@ -13,6 +14,7 @@ type UserMessageActionMenuProps = {
 export default function UserMessageActionMenu({
   onCopy,
 }: UserMessageActionMenuProps) {
+  const { t } = useTranslation();
   const { styles } = useThemedStyles(createStyles);
 
   return (
@@ -24,7 +26,7 @@ export default function UserMessageActionMenu({
       >
         <MenuRow
           variant="compact"
-          label="Copy"
+          label={t("user-message-action-menu.copy")}
           icon={CopyIcon}
           onPress={onCopy}
         />

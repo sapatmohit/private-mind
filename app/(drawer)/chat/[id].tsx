@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React, { useCallback } from 'react';
 import { useFocusEffect, useLocalSearchParams } from 'expo-router';
 import ChatScreen from '../../../components/chat-screen/ChatScreen';
@@ -16,12 +17,13 @@ import {
 } from '../../../constants/chat-route-params';
 
 export default function ChatScreenWrapper() {
+  const { t } = useTranslation();
   const { id, modelId } = useLocalSearchParams<{
     id: string;
     modelId?: string;
   }>();
 
-  const key = `${id}-${modelId || 'default'}`;
+  const key = `${id}-${modelId || t("id.default")}`;
 
   return <ChatScreenInner key={key} />;
 }

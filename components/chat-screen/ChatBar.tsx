@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import React, {
   memo,
   Ref,
@@ -151,6 +152,7 @@ const ChatBar = ({
   modelSwitching = false,
   onAttachmentSheetStateChange,
 }: Props) => {
+  const { t } = useTranslation();
   const retiredBy = useModelStore(
     (state) =>
       state.retiredModels.find(
@@ -227,9 +229,9 @@ const ChatBar = ({
   const showImagesUnsupported = useCallback(() => {
     Toast.show({
       type: 'defaultToast',
-      text1: 'This model does not support images',
+      text1: t("chat-bar.thisModelDoesNotSupport"),
     });
-  }, []);
+  }, [t]);
 
   const handleSelectPhotos = useCallback(
     () =>
@@ -251,9 +253,9 @@ const ChatBar = ({
   const showAttachmentsBlocked = useCallback(() => {
     Toast.show({
       type: 'defaultToast',
-      text1: 'Wait for the response to finish or stop it first.',
+      text1: t("chat-bar.waitForTheResponseTo"),
     });
-  }, []);
+  }, [t]);
 
   const panel = useAttachmentPanel({
     onSelectFiles: handleSelectFiles,
@@ -553,7 +555,7 @@ const ChatBar = ({
           if (!isVisionModel) {
             Toast.show({
               type: 'defaultToast',
-              text1: 'This model does not support images',
+              text1: t("chat-bar.thisModelDoesNotSupport_2"),
             });
             return;
           }
@@ -564,17 +566,17 @@ const ChatBar = ({
         if (payload.type === 'unsupported') {
           Toast.show({
             type: 'defaultToast',
-            text1: 'Unsupported clipboard content',
+            text1: t("chat-bar.unsupportedClipboardContent"),
           });
         }
       } catch {
         Toast.show({
           type: 'defaultToast',
-          text1: 'Error processing pasted content',
+          text1: t("chat-bar.errorProcessingPastedContent"),
         });
       }
     },
-    [addPastedAttachment, isVisionModel]
+    [addPastedAttachment, isVisionModel, t]
   );
 
   const [showSpeechInput, setShowSpeechInput] = useState(false);
@@ -587,7 +589,7 @@ const ChatBar = ({
     if (hasLoadingAttachment) {
       Toast.show({
         type: 'defaultToast',
-        text1: 'Wait for the attachment to finish loading.',
+        text1: t("chat-bar.waitForTheAttachmentTo"),
       });
       return;
     }
@@ -751,7 +753,7 @@ const ChatBar = ({
                     style={{ color: theme.text.onChatBar }}
                   />
                   <Text style={styles.indexUrlChipText} numberOfLines={1}>
-                    Index {hostname(detectedUrl!)}
+                    {t("chat-bar.index")} {hostname(detectedUrl!)}
                   </Text>
                 </Pressable>
               )}
@@ -768,7 +770,7 @@ const ChatBar = ({
                     multiline
                     numberOfLines={3}
                     onFocus={() => loadSelectedModel()}
-                    placeholder="Ask anything"
+                    placeholder={t("chat-bar.askAnything")}
                     placeholderTextColor={theme.text.onChatBarMuted}
                     value={userInput}
                     editable={!isHoldingInput}
