@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { RefObject } from 'react';
 import { BottomSheetModal, BottomSheetView } from '@gorhom/bottom-sheet';
 import BackDismissibleSheetModal from './BackDismissibleSheetModal';
@@ -138,7 +138,7 @@ const ModelManagementSheet = ({ bottomSheetModalRef }: Props) => {
     if (usable) {
       actions.push({
         key: 'start-chat',
-        label: t("model-management-sheet.startAChat"),
+        label: t('model-management-sheet.startAChat'),
         icon: ChatIcon,
         tone: 'accent',
         onPress: () =>
@@ -146,7 +146,7 @@ const ModelManagementSheet = ({ bottomSheetModalRef }: Props) => {
       });
       actions.push({
         key: 'benchmark',
-        label: t("model-management-sheet.runBenchmark"),
+        label: t('model-management-sheet.runBenchmark'),
         icon: BenchmarkIcon,
         tone: 'neutral',
         onPress: () =>
@@ -156,7 +156,7 @@ const ModelManagementSheet = ({ bottomSheetModalRef }: Props) => {
     if (model.source !== 'built-in') {
       actions.push({
         key: 'edit',
-        label: t("model-management-sheet.editModel"),
+        label: t('model-management-sheet.editModel'),
         icon: EditIcon,
         tone: 'neutral',
         onPress: () => {
@@ -172,7 +172,7 @@ const ModelManagementSheet = ({ bottomSheetModalRef }: Props) => {
     if (model.source !== 'local' && model.isDownloaded) {
       actions.push({
         key: 'delete-files',
-        label: t("model-management-sheet.deleteDownloadedFiles"),
+        label: t('model-management-sheet.deleteDownloadedFiles'),
         icon: TrashIcon,
         tone: 'destructive',
         onPress: () => {
@@ -184,7 +184,7 @@ const ModelManagementSheet = ({ bottomSheetModalRef }: Props) => {
     if (model.source !== 'built-in') {
       actions.push({
         key: 'remove',
-        label: t("model-management-sheet.removeFromTheApp"),
+        label: t('model-management-sheet.removeFromTheApp'),
         icon: CrossCircleIcon,
         tone: 'destructive',
         onPress: () => {
@@ -198,19 +198,25 @@ const ModelManagementSheet = ({ bottomSheetModalRef }: Props) => {
 
   const removeFromApp = async (model: Model) => {
     const confirmed = await confirm({
-      title: t("model-management-sheet.removeModelFromTheApp"),
+      title: t('model-management-sheet.removeModelFromTheApp'),
       message:
         model.source === 'local'
-          ? t("model-management-sheet.modelnameWillBeRemovedFrom", { modelName: model.modelName })
-          : t("model-management-sheet.modelnameAndItsStoredExternal", { modelName: model.modelName }),
-      confirmLabel: t("model-management-sheet.remove"),
+          ? t('model-management-sheet.modelnameWillBeRemovedFrom', {
+              modelName: model.modelName,
+            })
+          : t('model-management-sheet.modelnameAndItsStoredExternal', {
+              modelName: model.modelName,
+            }),
+      confirmLabel: t('model-management-sheet.remove'),
     });
     if (!confirmed) return;
 
     await removeModel(model.id);
     Toast.show({
       type: 'defaultToast',
-      text1: t("model-management-sheet.modelnameHasBeenSuccessfullyDeleted", { modelName: model.modelName }),
+      text1: t('model-management-sheet.modelnameHasBeenSuccessfullyDeleted', {
+        modelName: model.modelName,
+      }),
     });
   };
 

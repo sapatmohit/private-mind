@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, {
   memo,
   useCallback,
@@ -223,14 +223,14 @@ const MessageItem = memo(
         <View style={styles.actionRow} testID="message-actions">
           {showActions && (
             <MessageActionButton
-              label={t("message-item.copy")}
+              label={t('message-item.copy')}
               icon={CopyIcon}
               onPress={() => onCopy?.(message)}
             />
           )}
           {showActions && showForkAction && (
             <MessageActionButton
-              label={t("message-item.fork")}
+              label={t('message-item.fork')}
               icon={ForkIcon}
               onPress={() => onFork?.(message)}
             />
@@ -244,7 +244,7 @@ const MessageItem = memo(
               onPress={() => onShowSources?.(displayedSources, userQuestion)}
               hitSlop={8}
               accessibilityRole="button"
-              accessibilityLabel={t("message-item.sources")}
+              accessibilityLabel={t('message-item.sources')}
               testID="source-action-button"
             >
               <BookIcon
@@ -252,7 +252,9 @@ const MessageItem = memo(
                 height={16}
                 style={styles.sourcesButtonIcon}
               />
-              <Text style={styles.sourcesButtonLabel}>{t("message-item.sources_2")}</Text>
+              <Text style={styles.sourcesButtonLabel}>
+                {t('message-item.sources_2')}
+              </Text>
             </Pressable>
           )}
         </View>
@@ -347,7 +349,11 @@ const MessageItem = memo(
               )}
               {isAwaitingFirstToken ? (
                 <AnimatedChatLoading
-                  label={isModelStarting ? MODEL_STARTING_LABEL : t("message-item.generating")}
+                  label={
+                    isModelStarting
+                      ? MODEL_STARTING_LABEL
+                      : t('message-item.generating')
+                  }
                 />
               ) : null}
               <Animated.View
@@ -394,7 +400,7 @@ const MessageItem = memo(
                   entering={FadeIn.duration(REFINED_SWAP_MS)}
                   exiting={FadeOut.duration(REFINED_SWAP_MS / 2)}
                 >
-                  <AnimatedChatLoading label={t("message-item.refining")} />
+                  <AnimatedChatLoading label={t('message-item.refining')} />
                 </Animated.View>
               ) : null}
               {attributionShown ? null : (
@@ -411,7 +417,10 @@ const MessageItem = memo(
                 tokensPerSecond !== undefined &&
                 tokensPerSecond !== 0 && (
                   <Text style={styles.metadata}>
-                    {t("message-item.ttftMsTpsTokS", { timeToFirstToken: timeToFirstToken?.toFixed(), tokensPerSecond: tokensPerSecond?.toFixed(2) })}
+                    {t('message-item.ttftMsTpsTokS', {
+                      timeToFirstToken: timeToFirstToken?.toFixed(),
+                      tokensPerSecond: tokensPerSecond?.toFixed(2),
+                    })}
                   </Text>
                 )}
               {actions}

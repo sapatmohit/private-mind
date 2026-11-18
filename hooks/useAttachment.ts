@@ -1,4 +1,4 @@
-import { t } from "../i18n";
+import { t } from '../i18n';
 import { useState, useRef, useCallback, useEffect } from 'react';
 import { Keyboard } from 'react-native';
 import * as DocumentPicker from 'expo-document-picker';
@@ -368,7 +368,7 @@ export const useAttachment = () => {
       setAttachments((prev) => prev.filter((a) => a.id !== attachmentId));
       Toast.show({
         type: 'defaultToast',
-        text1: t("use-attachment.errorReadingDocument"),
+        text1: t('use-attachment.errorReadingDocument'),
       });
     }
   }, [vectorStore, embeddings]);
@@ -407,7 +407,7 @@ export const useAttachment = () => {
           setAttachments((prev) => prev.filter((a) => a.id !== attachmentId));
           Toast.show({
             type: 'defaultToast',
-            text1: t("use-attachment.couldNotReadThisPage"),
+            text1: t('use-attachment.couldNotReadThisPage'),
           });
           return;
         }
@@ -486,7 +486,7 @@ export const useAttachment = () => {
         setAttachments((prev) => prev.filter((a) => a.id !== attachmentId));
         Toast.show({
           type: 'defaultToast',
-          text1: t("use-attachment.errorReadingLink"),
+          text1: t('use-attachment.errorReadingLink'),
         });
       }
     },
@@ -576,7 +576,7 @@ export const useAttachment = () => {
     if (!store) {
       Toast.show({
         type: 'defaultToast',
-        text1: t("use-attachment.documentStorageIsStillStarting"),
+        text1: t('use-attachment.documentStorageIsStillStarting'),
       });
       return;
     }
@@ -591,7 +591,7 @@ export const useAttachment = () => {
       }
       Toast.show({
         type: 'defaultToast',
-        text1: t("use-attachment.failedToDownloadTheDocument"),
+        text1: t('use-attachment.failedToDownloadTheDocument'),
       });
       return;
     }
@@ -644,7 +644,7 @@ export const useAttachment = () => {
       if (!isImageUri(uri)) {
         Toast.show({
           type: 'defaultToast',
-          text1: t("use-attachment.onlyImagesCanBePasted"),
+          text1: t('use-attachment.onlyImagesCanBePasted'),
         });
         return;
       }

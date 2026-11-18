@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, {
   memo,
   ReactNode,
@@ -1279,7 +1279,7 @@ const Messages = ({
                 <Pressable
                   onPress={onRetryGeneration}
                   accessibilityRole="button"
-                  accessibilityLabel={t("messages.retryResponseGeneration")}
+                  accessibilityLabel={t('messages.retryResponseGeneration')}
                   style={({ pressed }) => [
                     styles.retryButton,
                     pressed && pressedOpacity,
@@ -1290,7 +1290,9 @@ const Messages = ({
                     height={16}
                     style={styles.retryButtonIcon}
                   />
-                  <Text style={styles.retryButtonText}>{t("messages.retry")}</Text>
+                  <Text style={styles.retryButtonText}>
+                    {t('messages.retry')}
+                  </Text>
                 </Pressable>
               </View>
             </View>

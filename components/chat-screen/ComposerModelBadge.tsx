@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import {
   ActivityIndicator,
@@ -51,10 +51,16 @@ const ComposerModelBadge = ({
       accessibilityState={{ disabled: locked || loading, busy: loading }}
       accessibilityLabel={
         loading
-          ? t("composer-model-badge.modelModelnameLoading", { modelName: model.modelName })
+          ? t('composer-model-badge.modelModelnameLoading', {
+              modelName: model.modelName,
+            })
           : locked
-            ? t("composer-model-badge.modelModelname", { modelName: model.modelName })
-            : t("composer-model-badge.modelModelnameChangeModel", { modelName: model.modelName })
+            ? t('composer-model-badge.modelModelname', {
+                modelName: model.modelName,
+              })
+            : t('composer-model-badge.modelModelnameChangeModel', {
+                modelName: model.modelName,
+              })
       }
       testID="composer-model-badge"
     >

@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useMemo, useRef } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
@@ -78,8 +78,11 @@ const FamilyScreen = () => {
     .reduce((sum, m) => sum + (m.modelSize ?? 0), 0);
   const downloadedSummary =
     downloadedCount > 0
-      ? t("family.downloadedcountDownloadedDownloadedgbGb", { downloadedCount, downloadedGB: downloadedGB.toFixed(2) })
-      : t("family.noneDownloaded");
+      ? t('family.downloadedcountDownloadedDownloadedgbGb', {
+          downloadedCount,
+          downloadedGB: downloadedGB.toFixed(2),
+        })
+      : t('family.noneDownloaded');
 
   const handleOpenAttribution = () => {
     if (!provider || !swmRole) return;
@@ -108,7 +111,9 @@ const FamilyScreen = () => {
       <View style={styles.container}>
         {familyModels.length === 0 ? (
           <View style={styles.emptyContainer}>
-            <Text style={styles.emptyText}>{t("family.noVariantsAvailable")}</Text>
+            <Text style={styles.emptyText}>
+              {t('family.noVariantsAvailable')}
+            </Text>
           </View>
         ) : (
           <ScrollView
@@ -122,7 +127,9 @@ const FamilyScreen = () => {
             )}
             <View style={styles.section}>
               <SectionHeader
-                title={t("family.variantsLength", { length: familyModels.length })}
+                title={t('family.variantsLength', {
+                  length: familyModels.length,
+                })}
                 summary={downloadedSummary}
               />
               <RowGroup separatorInset={0}>

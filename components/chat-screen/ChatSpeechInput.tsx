@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { AppState, StyleSheet, Text, View } from 'react-native';
 import { Theme } from '../../styles/colors';
@@ -130,7 +130,10 @@ const ChatSpeechInput: React.FC<Props> = ({
           if (shown) {
             onSubmit(shown);
           } else {
-            Toast.show({ type: 'defaultToast', text1: t("chat-speech-input.noSpeechWasHeard") });
+            Toast.show({
+              type: 'defaultToast',
+              text1: t('chat-speech-input.noSpeechWasHeard'),
+            });
             onCancel();
           }
         } else if (exitStateRef.current === null) {
@@ -146,7 +149,7 @@ const ChatSpeechInput: React.FC<Props> = ({
         } else {
           Toast.show({
             type: 'defaultToast',
-            text1: t("chat-speech-input.couldNotStartLiveTranscript"),
+            text1: t('chat-speech-input.couldNotStartLiveTranscript'),
           });
         }
         onCancel();
@@ -232,7 +235,7 @@ const ChatSpeechInput: React.FC<Props> = ({
     if (isPreparing) {
       Toast.show({
         type: 'defaultToast',
-        text1: t("chat-speech-input.stillLoadingSpeechRecognitionOne"),
+        text1: t('chat-speech-input.stillLoadingSpeechRecognitionOne'),
       });
       return;
     }
@@ -260,13 +263,17 @@ const ChatSpeechInput: React.FC<Props> = ({
     if (status === 'listening') {
       return (
         <Text style={styles.secondaryNote}>
-          {t("chat-speech-input.startTalkingToSeeThe")}
+          {t('chat-speech-input.startTalkingToSeeThe')}
         </Text>
       );
     }
 
     if (status === 'processing') {
-      return <Text style={styles.secondaryNote}>{t("chat-speech-input.processing")}</Text>;
+      return (
+        <Text style={styles.secondaryNote}>
+          {t('chat-speech-input.processing')}
+        </Text>
+      );
     }
 
     if (phase === 'ended') return null;
@@ -275,13 +282,20 @@ const ChatSpeechInput: React.FC<Props> = ({
     if (status === 'loading' && isDownloading) {
       return (
         <Text style={styles.secondaryNote}>
-          {t("chat-speech-input.downloadingTheDictationModel", { progressPercentage })}
+          {t('chat-speech-input.downloadingTheDictationModel', {
+            progressPercentage,
+          })}
         </Text>
       );
     }
     return (
       <Text style={styles.secondaryNote}>
-        {t("chat-speech-input.loading", { value: status === 'loading' ? ` ${t("chat-speech-input.progresspercentage", { progressPercentage })}` : '' })}
+        {t('chat-speech-input.loading', {
+          value:
+            status === 'loading'
+              ? ` ${t('chat-speech-input.progresspercentage', { progressPercentage })}`
+              : '',
+        })}
       </Text>
     );
   };

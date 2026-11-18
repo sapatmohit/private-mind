@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useThemedStyles } from '../../../hooks/useThemedStyles';
@@ -45,9 +45,9 @@ const ITEMS: Item[] = [
 ];
 
 const ITEMS_LABEL_KEYS: Record<string, string> = {
-  "Camera": "attachment-menu.camera",
-  "Photos": "attachment-menu.photos",
-  "Files": "attachment-menu.files"
+  Camera: 'attachment-menu.camera',
+  Photos: 'attachment-menu.photos',
+  Files: 'attachment-menu.files',
 };
 
 export interface MenuTools {

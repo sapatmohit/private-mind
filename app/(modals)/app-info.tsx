@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { StyleSheet, View, Text, Pressable, Linking } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
@@ -53,11 +53,11 @@ const AppHeader = () => {
       <View style={styles.logoContainer}>
         <Logo width={28} height={28} />
         <Text style={[styles.appName, { color: theme.text.primary }]}>
-          {t("app-info.privateMind")}
+          {t('app-info.privateMind')}
         </Text>
       </View>
       <Text style={[styles.appDescription, { color: theme.text.primary }]}>
-        {t("app-info.anAppBroughtToYou")}
+        {t('app-info.anAppBroughtToYou')}
       </Text>
     </View>
   );
@@ -70,7 +70,7 @@ const LearnMoreSection = () => {
   return (
     <View style={[styles.card, { borderColor: theme.border.soft }]}>
       <Text style={[styles.learnMoreTitle, { color: theme.text.primary }]}>
-        {t("app-info.wantToLearnMore")}
+        {t('app-info.wantToLearnMore')}
       </Text>
       <Text
         style={[
@@ -78,7 +78,7 @@ const LearnMoreSection = () => {
           { color: theme.text.defaultSecondary },
         ]}
       >
-        {t("app-info.checkOurOtherLibrariesRelated")}
+        {t('app-info.checkOurOtherLibrariesRelated')}
       </Text>
       {GITHUB_LINKS.map(({ text, url }) => (
         <SecondaryButton
@@ -107,14 +107,14 @@ const VersionInfo = () => {
     await Clipboard.setStringAsync(APP_VERSION);
     Toast.show({
       type: 'defaultToast',
-      text1: t("app-info.successfullyCopiedVersionToClipboard"),
+      text1: t('app-info.successfullyCopiedVersionToClipboard'),
     });
   };
 
   return (
     <View style={[styles.versionCard, { borderColor: theme.border.soft }]}>
       <Text style={[styles.versionText, { color: theme.text.primary }]}>
-        {t("app-info.appVersion")}
+        {t('app-info.appVersion')}
       </Text>
       <View style={styles.versionInfoContainer}>
         <Text style={[styles.versionText, { color: theme.text.primary }]}>
@@ -165,7 +165,10 @@ export default function AppInfoScreen() {
           </View>
         </View>
       </ScrollView>
-      <GlassScreenHeader title={t("app-info.appInfo")} onBack={() => router.back()} />
+      <GlassScreenHeader
+        title={t('app-info.appInfo')}
+        onBack={() => router.back()}
+      />
     </View>
   );
 }

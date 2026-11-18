@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useEffect, useState, useCallback, useRef } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { useSQLiteContext } from 'expo-sqlite';
@@ -80,7 +80,7 @@ const BenchmarkScreen = () => {
   return (
     <>
       <View style={styles.container}>
-        <SettingsSection title={t("benchmark.model")}>
+        <SettingsSection title={t('benchmark.model')}>
           <ModelSelector model={selectedModel} onSelect={selectModel} />
           <PrimaryButton
             disabled={!selectedModel || isRunning}
@@ -89,7 +89,7 @@ const BenchmarkScreen = () => {
             onPress={() => startBenchmark(selectedModel)}
           />
         </SettingsSection>
-        <SettingsSection title={t("benchmark.history")} fill>
+        <SettingsSection title={t('benchmark.history')} fill>
           <BenchmarkHistory
             modalRef={bottomSheetModalRef}
             benchmarkList={benchmarkList}

@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { ComponentProps, useCallback, useState } from 'react';
 import Drawer, { DrawerContentComponentProps } from 'expo-router/drawer';
 import { StyleSheet, useWindowDimensions, View, ViewStyle } from 'react-native';
@@ -142,7 +142,7 @@ const DrawerLayout = () => {
         <Drawer.Screen
           name="model-hub"
           options={{
-            title: t("layout.manageModels"),
+            title: t('layout.manageModels'),
             headerTransparent: true,
             headerStyle: { backgroundColor: 'transparent' },
           }}
@@ -150,7 +150,7 @@ const DrawerLayout = () => {
         <Drawer.Screen
           name="settings"
           options={{
-            title: t("layout.settings"),
+            title: t('layout.settings'),
             headerTransparent: true,
             headerStyle: { backgroundColor: 'transparent' },
           }}
@@ -158,7 +158,7 @@ const DrawerLayout = () => {
         <Drawer.Screen
           name="benchmark"
           options={{
-            title: t("layout.benchmark"),
+            title: t('layout.benchmark'),
             headerTransparent: true,
             headerStyle: { backgroundColor: 'transparent' },
           }}

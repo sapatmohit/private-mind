@@ -21,3 +21,9 @@ jest.mock('./components/swarm/ParticleSwarm', () => ({
   __esModule: true,
   default: () => null,
 }));
+
+jest.mock('expo-localization', () => ({
+  getLocales: () => [{ languageTag: 'en-US' }],
+}));
+
+require('./i18n');

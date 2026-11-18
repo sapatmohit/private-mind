@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { fontFamily, fontSizes, lineHeights } from '../../styles/fontStyles';
@@ -69,14 +69,14 @@ const BenchmarkStatsCard = ({ data, deviceMemory }: Props) => {
     <View style={styles.grid}>
       <View style={styles.row}>
         <Stat
-          label={t("benchmark-stats-card.speed")}
+          label={t('benchmark-stats-card.speed')}
           value={data.tokensPerSecond.toFixed(2)}
           caption="tokens per second"
           size="hero"
           highlighted
         />
         <Stat
-          label={t("benchmark-stats-card.firstToken")}
+          label={t('benchmark-stats-card.firstToken')}
           value={`${data.timeToFirstToken.toFixed(2)} ms`}
           caption="time until it starts"
           size="hero"
@@ -84,13 +84,13 @@ const BenchmarkStatsCard = ({ data, deviceMemory }: Props) => {
       </View>
       <View style={styles.row}>
         <Stat
-          label={t("benchmark-stats-card.totalTime")}
+          label={t('benchmark-stats-card.totalTime')}
           value={`${(data.totalTime / MS_PER_SECOND).toFixed(2)} s`}
           caption={`${data.tokensGenerated.toFixed()} tokens generated`}
           size="regular"
         />
         <Stat
-          label={t("benchmark-stats-card.peakMemory")}
+          label={t('benchmark-stats-card.peakMemory')}
           value={
             data.peakMemory > 0 ? `${data.peakMemory.toFixed(2)} GB` : 'N/A'
           }

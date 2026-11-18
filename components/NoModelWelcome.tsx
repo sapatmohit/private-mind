@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useRef, useState } from 'react';
 import Animated, {
   useAnimatedStyle,
@@ -93,7 +93,7 @@ const NoModelWelcome = ({ onChooseModel, onImportChat, playSwarm }: Props) => {
             ]}
             maxFontSizeMultiplier={CAPPED_TEXT_MAX_SCALE}
           >
-            {t("no-model-welcome.chooseAModelToGet")}
+            {t('no-model-welcome.chooseAModelToGet')}
           </Animated.Text>
         </>
       )}

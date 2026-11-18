@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import {
   Text,
@@ -96,7 +96,9 @@ const ChatTitle = ({
         hitSlop={8}
         accessibilityRole="button"
         accessibilityLabel={
-          onPress ? t("chat-title.showntitleChatOptions", { shownTitle }) : shownTitle
+          onPress
+            ? t('chat-title.showntitleChatOptions', { shownTitle })
+            : shownTitle
         }
         accessibilityState={{ expanded: open }}
         style={({ pressed }) => [

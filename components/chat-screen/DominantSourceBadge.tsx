@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useCallback } from 'react';
 import { View, Text, Pressable, StyleSheet } from 'react-native';
 import { openExternalUrl } from '../../utils/web/openExternalUrl';
@@ -39,8 +39,8 @@ const DominantSourceBadge = ({ source }: Props) => {
         <View style={styles.dot} />
       )}
       <Text style={styles.text} numberOfLines={1}>
-              {t("dominant-source-badge.source", { sourceName: source.name })}
-            </Text>
+        {t('dominant-source-badge.source', { sourceName: source.name })}
+      </Text>
     </Pressable>
   );
 };

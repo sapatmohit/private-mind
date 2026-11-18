@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, {
   memo,
   Ref,
@@ -229,7 +229,7 @@ const ChatBar = ({
   const showImagesUnsupported = useCallback(() => {
     Toast.show({
       type: 'defaultToast',
-      text1: t("chat-bar.thisModelDoesNotSupport"),
+      text1: t('chat-bar.thisModelDoesNotSupport'),
     });
   }, [t]);
 
@@ -253,7 +253,7 @@ const ChatBar = ({
   const showAttachmentsBlocked = useCallback(() => {
     Toast.show({
       type: 'defaultToast',
-      text1: t("chat-bar.waitForTheResponseTo"),
+      text1: t('chat-bar.waitForTheResponseTo'),
     });
   }, [t]);
 
@@ -555,7 +555,7 @@ const ChatBar = ({
           if (!isVisionModel) {
             Toast.show({
               type: 'defaultToast',
-              text1: t("chat-bar.thisModelDoesNotSupport_2"),
+              text1: t('chat-bar.thisModelDoesNotSupport_2'),
             });
             return;
           }
@@ -566,13 +566,13 @@ const ChatBar = ({
         if (payload.type === 'unsupported') {
           Toast.show({
             type: 'defaultToast',
-            text1: t("chat-bar.unsupportedClipboardContent"),
+            text1: t('chat-bar.unsupportedClipboardContent'),
           });
         }
       } catch {
         Toast.show({
           type: 'defaultToast',
-          text1: t("chat-bar.errorProcessingPastedContent"),
+          text1: t('chat-bar.errorProcessingPastedContent'),
         });
       }
     },
@@ -589,7 +589,7 @@ const ChatBar = ({
     if (hasLoadingAttachment) {
       Toast.show({
         type: 'defaultToast',
-        text1: t("chat-bar.waitForTheAttachmentTo"),
+        text1: t('chat-bar.waitForTheAttachmentTo'),
       });
       return;
     }
@@ -753,7 +753,7 @@ const ChatBar = ({
                     style={{ color: theme.text.onChatBar }}
                   />
                   <Text style={styles.indexUrlChipText} numberOfLines={1}>
-                    {t("chat-bar.index")} {hostname(detectedUrl!)}
+                    {t('chat-bar.index')} {hostname(detectedUrl!)}
                   </Text>
                 </Pressable>
               )}
@@ -770,7 +770,7 @@ const ChatBar = ({
                     multiline
                     numberOfLines={3}
                     onFocus={() => loadSelectedModel()}
-                    placeholder={t("chat-bar.askAnything")}
+                    placeholder={t('chat-bar.askAnything')}
                     placeholderTextColor={theme.text.onChatBarMuted}
                     value={userInput}
                     editable={!isHoldingInput}

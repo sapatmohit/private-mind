@@ -1,4 +1,4 @@
-import { t } from "../i18n";
+import { t } from '../i18n';
 import { useCallback, useEffect, useState } from 'react';
 import { router } from 'expo-router';
 import { useSQLiteContext } from 'expo-sqlite';
@@ -70,7 +70,7 @@ export default function useChatBranching({
       if (await isUnpersistedPhantomChat()) {
         Toast.show({
           type: 'defaultToast',
-          text1: t("use-chat-branching.sendAMessageBeforeBranching"),
+          text1: t('use-chat-branching.sendAMessageBeforeBranching'),
         });
         return;
       }
@@ -90,7 +90,7 @@ export default function useChatBranching({
         console.error('Failed to fork chat:', error);
         Toast.show({
           type: 'defaultToast',
-          text1: t("use-chat-branching.failedToForkConversation"),
+          text1: t('use-chat-branching.failedToForkConversation'),
         });
       }
     },
@@ -102,7 +102,7 @@ export default function useChatBranching({
       if (!getChatById(marker.sourceChatId)) {
         Toast.show({
           type: 'defaultToast',
-          text1: t("use-chat-branching.sourceConversationIsNoLonger"),
+          text1: t('use-chat-branching.sourceConversationIsNoLonger'),
         });
         return;
       }

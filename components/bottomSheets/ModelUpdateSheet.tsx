@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useEffect, useRef, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { BottomSheetModal, BottomSheetScrollView } from '@gorhom/bottom-sheet';
@@ -91,7 +91,9 @@ const ModelUpdateSheet = () => {
               <View key={model.id} style={styles.row}>
                 <Text style={styles.rowName}>{model.modelName}</Text>
                 <Text style={styles.rowMeta}>
-                  {t("model-update-sheet.var0Gb", { var0: (model.modelSize ?? 0).toFixed(2) })}
+                  {t('model-update-sheet.var0Gb', {
+                    var0: (model.modelSize ?? 0).toFixed(2),
+                  })}
                 </Text>
               </View>
             ))}

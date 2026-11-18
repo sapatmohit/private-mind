@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useThemedStyles } from '../../hooks/useThemedStyles';
@@ -29,7 +29,7 @@ const DownloadedBadge = ({ size = 'small', testID }: Props) => {
       style={styles.badge}
       accessible
       accessibilityRole="image"
-      accessibilityLabel={t("downloaded-badge.downloaded")}
+      accessibilityLabel={t('downloaded-badge.downloaded')}
       testID={testID}
     >
       <CheckIcon

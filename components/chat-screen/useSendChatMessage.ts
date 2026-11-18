@@ -1,4 +1,4 @@
-import { t } from "../../i18n";
+import { t } from '../../i18n';
 import { Keyboard } from 'react-native';
 import { router } from 'expo-router';
 import Toast from 'react-native-toast-message';
@@ -184,7 +184,7 @@ export const useSendChatMessage = ({
         console.error('Failed to persist image attachment:', error);
         Toast.show({
           type: 'defaultToast',
-          text1: t("use-send-chat-message.failedToSaveImageAttachment"),
+          text1: t('use-send-chat-message.failedToSaveImageAttachment'),
         });
         messagesRef.current?.cancelMessageSent();
         return 'image-not-saved';

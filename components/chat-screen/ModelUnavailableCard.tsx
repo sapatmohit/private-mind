@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import {
   ActivityIndicator,
@@ -46,7 +46,7 @@ const ModelUnavailableCard = ({ model, pendingModel, onPress }: Props) => {
         accessibilityLabel={
           pendingModel
             ? `${message}. Loading ${pendingModel.modelName}`
-            : t("model-unavailable-card.messageChooseAModel", { message })
+            : t('model-unavailable-card.messageChooseAModel', { message })
         }
         testID="model-unavailable-card"
       >

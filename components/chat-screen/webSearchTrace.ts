@@ -1,4 +1,4 @@
-import { t } from "../../i18n";
+import { t } from '../../i18n';
 import { type SourceDocument } from '../../database/chatRepository';
 import { type WebSearchTraceEntry } from '../../store/webSearchStore';
 import { hostname } from '../../utils/web/hostname';
@@ -96,13 +96,13 @@ export const buildRows = (
     type: 'note',
     key: 'offline',
     tone: 'warn',
-    label: t("web-search-trace.noInternetAnsweredWithout"),
+    label: t('web-search-trace.noInternetAnsweredWithout'),
   };
   const timeoutNote: NoteRow = {
     type: 'note',
     key: 'timeout',
     tone: 'warn',
-    label: t("web-search-trace.searchTookTooLong"),
+    label: t('web-search-trace.searchTookTooLong'),
   };
   if (has('offline')) return [offlineNote];
   if (has('skipped')) {
@@ -111,7 +111,7 @@ export const buildRows = (
         type: 'note',
         key: 'skipped',
         tone: 'muted',
-        label: t("web-search-trace.noSearchNeededAnswered"),
+        label: t('web-search-trace.noSearchNeededAnswered'),
       },
     ];
   }
@@ -123,14 +123,14 @@ export const buildRows = (
           type: 'note',
           key: 'slow',
           tone: 'muted',
-          label: t("web-search-trace.aLargeModelTakesLonger"),
+          label: t('web-search-trace.aLargeModelTakesLonger'),
         }
       : null;
 
   const doneRow: StepRow = {
     type: 'step',
     key: 'done',
-    label: t("web-search-trace.done"),
+    label: t('web-search-trace.done'),
     done: true,
   };
 
@@ -138,7 +138,7 @@ export const buildRows = (
     type: 'note',
     key: 'weak',
     tone: 'warn',
-    label: t("web-search-trace.didnTFindMuchThe"),
+    label: t('web-search-trace.didnTFindMuchThe'),
   };
   const closingRow: Row = has('weak') ? weakNote : doneRow;
 
@@ -164,7 +164,13 @@ export const buildRows = (
 
   const phaseRows: StepRow[] =
     has('reading') || has('ranking')
-      ? [{ type: 'step', key: 'phase-reading', label: t("web-search-trace.readingThePages") }]
+      ? [
+          {
+            type: 'step',
+            key: 'phase-reading',
+            label: t('web-search-trace.readingThePages'),
+          },
+        ]
       : [];
   const phaseRunning = isSearching && !has('done');
 
@@ -318,7 +324,7 @@ export const buildRows = (
           : {
               type: 'step',
               key: 'no-results',
-              label: t("web-search-trace.nothingFound"),
+              label: t('web-search-trace.nothingFound'),
               done: true,
             }
       );
@@ -349,7 +355,7 @@ export const buildRows = (
       {
         type: 'step',
         key: stepKey('objectives'),
-        label: t("web-search-trace.decidingWhatToSearchFor"),
+        label: t('web-search-trace.decidingWhatToSearchFor'),
       },
       ...queries.map((query) => ({
         type: 'step' as const,
@@ -377,7 +383,12 @@ export const buildRows = (
     if (has('searching')) {
       return finalizeSteps([
         ...steps,
-        { type: 'step', key: 'no-results', label: t("web-search-trace.nothingFound_2"), done: true },
+        {
+          type: 'step',
+          key: 'no-results',
+          label: t('web-search-trace.nothingFound_2'),
+          done: true,
+        },
       ]);
     }
     return [];

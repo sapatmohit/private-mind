@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import Animated, {
@@ -114,7 +114,7 @@ const ChatBarActions = ({
     if (isLoadingAttachment) {
       Toast.show({
         type: 'defaultToast',
-        text1: t("chat-bar-actions.waitForTheDocumentTo"),
+        text1: t('chat-bar-actions.waitForTheDocumentTo'),
       });
       return;
     }
@@ -190,7 +190,7 @@ const ChatBarActions = ({
         )}
         {thinkingEnabled && onThinkingToggle ? (
           <ComposerToolChip
-            label={t("chat-bar-actions.think")}
+            label={t('chat-bar-actions.think')}
             icon={LightBulbIcon}
             onTurnOff={onThinkingToggle}
             testID="tool-chip-think"
@@ -198,7 +198,7 @@ const ChatBarActions = ({
         ) : null}
         {webSearchEnabled && onWebSearchToggle ? (
           <ComposerToolChip
-            label={t("chat-bar-actions.webSearch")}
+            label={t('chat-bar-actions.webSearch')}
             icon={WebIcon}
             onTurnOff={onWebSearchToggle}
             testID="tool-chip-web"

@@ -1,4 +1,4 @@
-import { t } from "../../i18n";
+import { t } from '../../i18n';
 import React, { useEffect } from 'react';
 import { StyleSheet } from 'react-native';
 import Animated, {
@@ -12,7 +12,11 @@ import { useThemedStyles } from '../../hooks/useThemedStyles';
 import { Theme } from '../../styles/colors';
 import { fontFamily, fontSizes } from '../../styles/fontStyles';
 
-const AnimatedChatLoading = ({ label = t("animated-chat-loading.generating") }: { label?: string }) => {
+const AnimatedChatLoading = ({
+  label = t('animated-chat-loading.generating'),
+}: {
+  label?: string;
+}) => {
   const { styles } = useThemedStyles(createStyles);
 
   const opacity = useSharedValue(0.4);

@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { ReactNode } from 'react';
 import { StyleSheet, Text, Pressable, View } from 'react-native';
 import { useThemedStyles } from '../../../hooks/useThemedStyles';
@@ -25,7 +25,9 @@ const SheetPlaceholder = ({ children, onOpenSettings }: Props) => {
           pressRetentionOffset={PRESS_ANYWHERE}
           testID="sheet-open-settings"
         >
-          <Text style={styles.actionLabel}>{t("sheet-placeholder.openSettings")}</Text>
+          <Text style={styles.actionLabel}>
+            {t('sheet-placeholder.openSettings')}
+          </Text>
         </Pressable>
       )}
     </View>

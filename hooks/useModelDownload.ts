@@ -1,4 +1,4 @@
-import { t } from "../i18n";
+import { t } from '../i18n';
 import React from 'react';
 import NetInfo from '@react-native-community/netinfo';
 import Toast from 'react-native-toast-message';
@@ -31,17 +31,17 @@ export const useModelDownload = (
     if (!networkState.isConnected) {
       Toast.show({
         type: 'defaultToast',
-        text1: t("use-model-download.modelCannotBeDownloadedWithout"),
+        text1: t('use-model-download.modelCannotBeDownloadedWithout'),
       });
       return;
     }
 
     if (networkState.type !== 'wifi' && wifiWarningSheetRef?.current) {
       wifiWarningSheetRef.current.present({
-        title: t("use-model-download.noWifiConnectionDetected"),
+        title: t('use-model-download.noWifiConnectionDetected'),
         subtitle:
           'Downloading models will use your mobile data, which may incur additional charges from your carrier. We recommend connecting to WiFi for the best experience.',
-        buttonTitle: t("use-model-download.downloadAnyway"),
+        buttonTitle: t('use-model-download.downloadAnyway'),
         onConfirm: async () => {
           Feedback.downloadStart();
           await downloadModel(model);

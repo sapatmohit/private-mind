@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useEffect } from 'react';
 import {
   View,
@@ -103,7 +103,7 @@ const AttachmentThumbnail = ({ attachment, onRemove }: Props) => {
           style={{ color: theme.text.primary }}
         />
         <Text style={styles.fileName} numberOfLines={1}>
-          {attachment.name || t("attachment-thumbnail.document")}
+          {attachment.name || t('attachment-thumbnail.document')}
         </Text>
       </View>
     );

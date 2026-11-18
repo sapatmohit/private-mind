@@ -982,6 +982,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.29.7":
+  version: 7.29.14
+  resolution: "@babel/runtime@npm:7.29.14"
+  checksum: fe9408d932c8117f398ccfc511367ae1c4fc4ecb08f8c38e6503c138895ccfa43e9b34a871c3303964a0cc585d11756dda58a1227d775da9cc47b32fdfac1905
+  languageName: node
+  linkType: hard
+
 "@babel/template@npm:^7.28.6, @babel/template@npm:^7.29.7, @babel/template@npm:^7.3.3":
   version: 7.29.7
   resolution: "@babel/template@npm:7.29.7"
@@ -1758,6 +1765,57 @@ __metadata:
   bin:
     excpretty: build/cli.js
   checksum: b3380426defa3093b73511810228a3ce83777e3703d73edfd36ae86ffa1fb57eb159d1964e39ab1a28e2150631f5d4367288327c9b3831c64ea86e19d61fccba
+  languageName: node
+  linkType: hard
+
+"@formatjs/ecma402-abstract@npm:2.3.6":
+  version: 2.3.6
+  resolution: "@formatjs/ecma402-abstract@npm:2.3.6"
+  dependencies:
+    "@formatjs/fast-memoize": 2.2.7
+    "@formatjs/intl-localematcher": 0.6.2
+    decimal.js: ^10.4.3
+    tslib: ^2.8.0
+  checksum: ceb2a4b771f63792ed9de1c342da0e27004874c67de963a43b805d21b7a930ccdc62b7aa9ff2ef5da0a750c01b6df02168079218d57a6a37930f927c145c26d2
+  languageName: node
+  linkType: hard
+
+"@formatjs/fast-memoize@npm:2.2.7":
+  version: 2.2.7
+  resolution: "@formatjs/fast-memoize@npm:2.2.7"
+  dependencies:
+    tslib: ^2.8.0
+  checksum: e7e6efc677d63a13d99a854305db471b69f64cbfebdcb6dbe507dab9aa7eaae482ca5de86f343c856ca0a2c8f251672bd1f37c572ce14af602c0287378097d43
+  languageName: node
+  linkType: hard
+
+"@formatjs/icu-messageformat-parser@npm:2.11.4":
+  version: 2.11.4
+  resolution: "@formatjs/icu-messageformat-parser@npm:2.11.4"
+  dependencies:
+    "@formatjs/ecma402-abstract": 2.3.6
+    "@formatjs/icu-skeleton-parser": 1.8.16
+    tslib: ^2.8.0
+  checksum: 5213e61e729d0dca2e89f7774d8ef6a84916a50b8bb6cf42acddd8d8174a22b1a3e8ecec0b7a262921b05d1bf55842dea743c4390de3419168e85e7d250c3baa
+  languageName: node
+  linkType: hard
+
+"@formatjs/icu-skeleton-parser@npm:1.8.16":
+  version: 1.8.16
+  resolution: "@formatjs/icu-skeleton-parser@npm:1.8.16"
+  dependencies:
+    "@formatjs/ecma402-abstract": 2.3.6
+    tslib: ^2.8.0
+  checksum: 05dc404c425c1bf09a03a8ca0f69ec95e4ba3cf8ef15555f8ae39f3a775cfb2904f9c60a3e0b8f1b27b8fc17c7b09ca380964e55b32b89bec8d69f83ddfcbd73
+  languageName: node
+  linkType: hard
+
+"@formatjs/intl-localematcher@npm:0.6.2":
+  version: 0.6.2
+  resolution: "@formatjs/intl-localematcher@npm:0.6.2"
+  dependencies:
+    tslib: ^2.8.0
+  checksum: 8ed56dc9360f1eac79febfc292243f3607006db54552de847880d201dcf5c9758e44fe3d1b05778f484f899da0db315af24db0ba9f7440e66b447f8fe2d46ff7
   languageName: node
   linkType: hard
 
@@ -4925,7 +4983,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"decimal.js@npm:^10.4.2":
+"decimal.js@npm:^10.4.2, decimal.js@npm:^10.4.3":
   version: 10.6.0
   resolution: "decimal.js@npm:10.6.0"
   checksum: 9302b990cd6f4da1c7602200002e40e15d15660374432963421d3cd6d81cc6e27e0a488356b030fee64650947e32e78bdbea245d596dadfeeeb02e146d485999
@@ -6908,6 +6966,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"html-parse-stringify@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "html-parse-stringify@npm:4.0.1"
+  checksum: 190d96883f6849098ca3fcbb76637f3a4f923d0ae902417d86db2ad2279b9ce19e4789945794ae2365a6a9e41da2dcf7c56b3f2dca67142487e51411eb1bf3ec
+  languageName: node
+  linkType: hard
+
 "http-errors@npm:~2.0.1":
   version: 2.0.1
   resolution: "http-errors@npm:2.0.1"
@@ -6972,6 +7037,27 @@ __metadata:
   bin:
     husky: bin.js
   checksum: c2412753f15695db369634ba70f50f5c0b7e5cb13b673d0826c411ec1bd9ddef08c1dad89ea154f57da2521d2605bd64308af748749b27d08c5f563bcd89975f
+  languageName: node
+  linkType: hard
+
+"i18next-icu@npm:^2.5.0":
+  version: 2.7.0
+  resolution: "i18next-icu@npm:2.7.0"
+  peerDependencies:
+    intl-messageformat: ">=10.3.3 <13.0.0"
+  checksum: 9ef06a53c0d8588950ea61be56f21a5ba98740ecc529bc729dca650a5e2507c99f533e9b9464fa5c76406f7929a2e13b62a09134152c58cbd4c3b8c414b472d1
+  languageName: node
+  linkType: hard
+
+"i18next@npm:^26.4.0":
+  version: 26.7.2
+  resolution: "i18next@npm:26.7.2"
+  peerDependencies:
+    typescript: ^5 || ^6 || ^7
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: d97dfcaa1519fd3487736d14e178efc18e76fa429c35c29d27f162e001d78af1abfff284f249dcef0da3c76620d4cbf42bc4cd98403823d774caa9acd6b34969
   languageName: node
   linkType: hard
 
@@ -7066,6 +7152,18 @@ __metadata:
     hasown: ^2.0.2
     side-channel: ^1.1.0
   checksum: 8e0991c2d048cc08dab0a91f573c99f6a4215075887517ea4fa32203ce8aea60fa03f95b177977fa27eb502e5168366d0f3e02c762b799691411d49900611861
+  languageName: node
+  linkType: hard
+
+"intl-messageformat@npm:^10.7.0":
+  version: 10.7.18
+  resolution: "intl-messageformat@npm:10.7.18"
+  dependencies:
+    "@formatjs/ecma402-abstract": 2.3.6
+    "@formatjs/fast-memoize": 2.2.7
+    "@formatjs/icu-messageformat-parser": 2.11.4
+    tslib: ^2.8.0
+  checksum: 007ecdada7942465b347a68bb0a107ece945c52783b2565a016fe8ab8612311edfb27419e4ab6cc0eaa14cddd643a661128b1b5494b692ed9e492740d20f7673
   languageName: node
   linkType: hard
 
@@ -10071,6 +10169,9 @@ __metadata:
     expo-store-review: ~57.0.3
     expo-web-browser: ~57.0.3
     husky: ^9.1.7
+    i18next: ^26.4.0
+    i18next-icu: ^2.5.0
+    intl-messageformat: ^10.7.0
     jest: ~29.7.0
     jest-expo: ~57.0.5
     lint-staged: ^16.4.0
@@ -10078,6 +10179,7 @@ __metadata:
     postinstall-postinstall: ^2.1.0
     prettier: ^3.9.9
     react: 19.2.3
+    react-i18next: ^17.0.0
     react-native: 0.86.3
     react-native-audio-api: ^0.13.6
     react-native-blob-util: ^0.24.0
@@ -10236,6 +10338,28 @@ __metadata:
   peerDependencies:
     react: ">=17.0.0"
   checksum: 6b4d93209dff04a1f25d9f8e0c56a9a8a80e7889e8e8267299f34449c7e41a9ab90cad24569d03dd7173b56b7496576dba68f71f1d4e5c8be72f0633023668bc
+  languageName: node
+  linkType: hard
+
+"react-i18next@npm:^17.0.0":
+  version: 17.1.13
+  resolution: "react-i18next@npm:17.1.13"
+  dependencies:
+    "@babel/runtime": ^7.29.7
+    html-parse-stringify: ^4.0.1
+    use-sync-external-store: ^1.6.0
+  peerDependencies:
+    i18next: ">= 26.2.0"
+    react: ">= 16.8.0"
+    typescript: ^5 || ^6 || ^7
+  peerDependenciesMeta:
+    react-dom:
+      optional: true
+    react-native:
+      optional: true
+    typescript:
+      optional: true
+  checksum: b8c6d7dd643f3128bca1d5345a456a30853585a726e2311f9e96944be824d3545fe3a5c5fa6fc901f4b12f261047448389e0cdb2e33c638511b6f7378c53029c
   languageName: node
   linkType: hard
 
@@ -12016,6 +12140,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tslib@npm:^2.8.0":
+  version: 2.9.1
+  resolution: "tslib@npm:2.9.1"
+  checksum: 40f590cef617a6ad220ac521a0dd8b8c48faf1494468c195c792dc212b293260b7606ffd505aa52328a07954304e5c2631eb8f884034db2286a98efd1aa1686f
+  languageName: node
+  linkType: hard
+
 "tsover-runtime@npm:^0.0.7":
   version: 0.0.7
   resolution: "tsover-runtime@npm:0.0.7"
@@ -12393,6 +12524,15 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 88664c6b2c5b6e53e4d5d987694c9053cea806da43130248c74ca058945c8caa6ccb7b1787205a9eb5b9d124633e42153848904002828acabccdc48cda026622
+  languageName: node
+  linkType: hard
+
+"use-sync-external-store@npm:^1.6.0":
+  version: 1.7.0
+  resolution: "use-sync-external-store@npm:1.7.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  checksum: 55e36d54531a778ec8521123ced6cec974dae28585bf2544429245025e989b3d63822f61a1fadc537d10976c0042f54f66c28de8216c2cde0edcbbe8abdf972f
   languageName: node
   linkType: hard
 

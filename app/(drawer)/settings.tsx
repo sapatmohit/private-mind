@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useCallback } from 'react';
 import { Alert, StyleSheet, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
@@ -59,9 +59,9 @@ const SettingsScreen = () => {
 
   const handleDeleteAllChats = useCallback(async () => {
     const confirmed = await confirm({
-      title: t("settings.deleteAllChats"),
-      message: t("settings.thisPermanentlyRemovesEveryChat"),
-      confirmLabel: t("settings.delete"),
+      title: t('settings.deleteAllChats'),
+      message: t('settings.thisPermanentlyRemovesEveryChat'),
+      confirmLabel: t('settings.delete'),
     });
     if (!confirmed) return;
 
@@ -71,11 +71,14 @@ const SettingsScreen = () => {
       await llm.setActiveChatId(null);
       await deleteAllChats(vectorStore ?? undefined);
       Feedback.destructive();
-      Toast.show({ type: 'defaultToast', text1: t("settings.allChatsDeleted") });
+      Toast.show({
+        type: 'defaultToast',
+        text1: t('settings.allChatsDeleted'),
+      });
       router.replace('/');
     } catch (error) {
       console.error('Error deleting all chats:', error);
-      Alert.alert(t("settings.error"), t("settings.failedToDeleteChatsPlease"));
+      Alert.alert(t('settings.error'), t('settings.failedToDeleteChatsPlease'));
     }
   }, [confirm, deleteAllChats, vectorStore, t]);
 
@@ -85,25 +88,25 @@ const SettingsScreen = () => {
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
       >
-        <SettingsSection title={t("settings.personalization")}>
+        <SettingsSection title={t('settings.personalization')}>
           <SettingsRow
-            label={t("settings.customInstructions")}
+            label={t('settings.customInstructions')}
             icon={<EditIcon width={20} height={20} style={styles.rowIcon} />}
             onPress={() => navigation.push('/custom-system-prompt')}
           />
         </SettingsSection>
-        <SettingsSection title={t("settings.appearance")}>
+        <SettingsSection title={t('settings.appearance')}>
           <SettingsChoiceRow
-            label={t("settings.theme")}
+            label={t('settings.theme')}
             options={THEME_OPTIONS}
             value={themePreference}
             onValueChange={setThemePreference}
           />
         </SettingsSection>
-        <SettingsSection title={t("settings.chat")}>
+        <SettingsSection title={t('settings.chat')}>
           <SettingsToggleRow
-            label={t("settings.responseSpeedStats")}
-            description={t("settings.showWhatEachAnswerCost")}
+            label={t('settings.responseSpeedStats')}
+            description={t('settings.showWhatEachAnswerCost')}
             icon={
               <BenchmarkIcon width={20} height={20} style={styles.rowIcon} />
             }
@@ -111,16 +114,16 @@ const SettingsScreen = () => {
             onValueChange={setShowPerformanceMetrics}
           />
         </SettingsSection>
-        <SettingsSection title={t("settings.dataControls")}>
+        <SettingsSection title={t('settings.dataControls')}>
           <SettingsRow
-            label={t("settings.importChat")}
+            label={t('settings.importChat')}
             icon={
               <DownloadIcon width={20} height={20} style={styles.rowIcon} />
             }
             onPress={importChat}
           />
           <SettingsRow
-            label={t("settings.deleteAllChats_2")}
+            label={t('settings.deleteAllChats_2')}
             icon={
               <TrashIcon
                 width={20}
@@ -132,9 +135,9 @@ const SettingsScreen = () => {
             destructive
           />
         </SettingsSection>
-        <SettingsSection title={t("settings.about")}>
+        <SettingsSection title={t('settings.about')}>
           <SettingsRow
-            label={t("settings.appInfo")}
+            label={t('settings.appInfo')}
             icon={
               <InfoCircleIcon width={20} height={20} style={styles.rowIcon} />
             }

@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useEffect } from 'react';
 import { Pressable, StyleSheet } from 'react-native';
 import Reanimated, {
@@ -83,7 +83,9 @@ const ScrollToLatestButton = ({ visible, onPress }: Props) => {
             onPress();
           }}
           accessibilityRole="button"
-          accessibilityLabel={t("scroll-to-latest-button.scrollToLatestMessage")}
+          accessibilityLabel={t(
+            'scroll-to-latest-button.scrollToLatestMessage'
+          )}
           testID="scroll-to-latest"
         >
           <ChevronDown

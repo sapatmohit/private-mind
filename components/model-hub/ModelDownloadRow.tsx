@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import {
   type AccessibilityActionEvent,
@@ -111,15 +111,22 @@ const ModelDownloadRow = ({
 
   const accessibilityActions: AccessibilityActionInfo[] = [
     ...(canDownload && !selection
-      ? [{ name: 'download', label: t("model-download-row.download") }]
+      ? [{ name: 'download', label: t('model-download-row.download') }]
       : []),
     ...(isDownloading
-      ? [{ name: 'cancelDownload', label: t("model-download-row.cancelDownload") }]
+      ? [
+          {
+            name: 'cancelDownload',
+            label: t('model-download-row.cancelDownload'),
+          },
+        ]
       : []),
     ...(canUpdate
       ? [{ name: 'update', label: MODEL_UPDATE_TEXT.chatBannerAction }]
       : []),
-    ...(canDelete ? [{ name: 'delete', label: t("model-download-row.deleteModelFiles") }] : []),
+    ...(canDelete
+      ? [{ name: 'delete', label: t('model-download-row.deleteModelFiles') }]
+      : []),
   ];
 
   const handleAccessibilityAction = ({
@@ -173,7 +180,9 @@ const ModelDownloadRow = ({
       hitSlop={UPDATE_HIT_SLOP}
       style={({ pressed }) => [styles.updateButton, pressed && pressedOpacity]}
       accessibilityRole="button"
-      accessibilityLabel={t("model-download-row.updateModelname", { modelName: model.modelName })}
+      accessibilityLabel={t('model-download-row.updateModelname', {
+        modelName: model.modelName,
+      })}
       testID="model-download-row-update"
     >
       <Text
@@ -240,7 +249,10 @@ const ModelDownloadRow = ({
             <View style={styles.progress}>
               <DownloadProgressBar
                 progress={progress}
-                accessibilityLabel={t("model-download-row.modelnameDownloadProgress", { modelName: model.modelName })}
+                accessibilityLabel={t(
+                  'model-download-row.modelnameDownloadProgress',
+                  { modelName: model.modelName }
+                )}
               />
               <DownloadProgressDetails
                 modelSize={model.modelSize}

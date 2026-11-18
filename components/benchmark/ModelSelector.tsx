@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useRef } from 'react';
 import { Text, StyleSheet } from 'react-native';
 import { BottomSheetModal } from '@gorhom/bottom-sheet';
@@ -35,7 +35,11 @@ export const ModelSelector = ({ model, onSelect }: Props) => {
       <ModelRow
         accessibilityRole="button"
         accessibilityLabel={
-          model ? t("model-selector.changeModelCurrentModelname", { modelName: model.modelName }) : t("model-selector.selectAModel")
+          model
+            ? t('model-selector.changeModelCurrentModelname', {
+                modelName: model.modelName,
+              })
+            : t('model-selector.selectAModel')
         }
         style={styles.selector}
         onPress={() => bottomSheetModalRef.current?.present()}
@@ -45,14 +49,14 @@ export const ModelSelector = ({ model, onSelect }: Props) => {
           <ModelFamilyTile family={getModelFamily(model)} size="list" />
         )}
         <ModelRowText
-          title={model ? model.modelName : t("model-selector.selectAModel_2")}
+          title={model ? model.modelName : t('model-selector.selectAModel_2')}
           subtitle={meta}
         />
         <Text
           style={styles.action}
           maxFontSizeMultiplier={CAPPED_TEXT_MAX_SCALE}
         >
-          {model ? t("model-selector.change") : t("model-selector.choose")}
+          {model ? t('model-selector.change') : t('model-selector.choose')}
         </Text>
       </ModelRow>
 

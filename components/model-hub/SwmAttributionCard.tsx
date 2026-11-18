@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useThemedStyles } from '../../hooks/useThemedStyles';
@@ -28,7 +28,9 @@ const SwmAttributionCard = ({ role, provider, onPress }: Props) => {
   const { t } = useTranslation();
   const { styles, theme } = useThemedStyles(createStyles);
   const title = SWM_ROLE_TITLES[role];
-  const subtitle = t("swm-attribution-card.originalModelByProvider", { provider });
+  const subtitle = t('swm-attribution-card.originalModelByProvider', {
+    provider,
+  });
 
   return (
     <Pressable

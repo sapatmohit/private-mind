@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useCallback, useEffect, useRef } from 'react';
 import { Keyboard, Pressable, StyleSheet, Text } from 'react-native';
 import type { BottomSheetModal } from '@gorhom/bottom-sheet';
@@ -90,14 +90,17 @@ const WhatsNewBadge = ({ onSheetOpenChange }: Props) => {
             }}
             hitSlop={BADGE_HIT_SLOP}
             accessibilityRole="button"
-            accessibilityLabel={t("whats-new-badge.whatsNewInVersionInstalledversion", { installedVersion, title: LATEST_RELEASE.title })}
+            accessibilityLabel={t(
+              'whats-new-badge.whatsNewInVersionInstalledversion',
+              { installedVersion, title: LATEST_RELEASE.title }
+            )}
             testID="whats-new-badge"
           >
             <Text
               style={styles.label}
               maxFontSizeMultiplier={CAPPED_TEXT_MAX_SCALE}
             >
-              {t("whats-new-badge.new")}
+              {t('whats-new-badge.new')}
             </Text>
             <Text
               style={styles.title}

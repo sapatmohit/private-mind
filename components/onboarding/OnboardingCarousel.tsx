@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import {
   BackHandler,
@@ -250,10 +250,10 @@ function OnboardingCarousel({ onSkip, onComplete, onExitToIntro }: Props) {
         onPress={onSkip}
         hitSlop={12}
         accessibilityRole="button"
-        accessibilityLabel={t("onboarding-carousel.skipOnboarding")}
+        accessibilityLabel={t('onboarding-carousel.skipOnboarding')}
       >
         <Text style={[styles.skipText, isSplit && styles.skipTextOnPanel]}>
-          {t("onboarding-carousel.skip")}
+          {t('onboarding-carousel.skip')}
         </Text>
       </Pressable>
     </Animated.View>

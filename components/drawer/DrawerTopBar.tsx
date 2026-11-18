@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { RefObject } from 'react';
 import {
   View,
@@ -137,7 +137,7 @@ export const DrawerTopBar = ({
               onPress={onOpenSearch}
               testID="drawer-search-open"
               accessibilityRole="button"
-              accessibilityLabel={tr("drawer-top-bar.searchChats")}
+              accessibilityLabel={tr('drawer-top-bar.searchChats')}
               style={({ pressed }) => [styles.grow, pressed && pressedOpacity]}
             >
               <SearchFieldSurface style={styles.clearSurface}>
@@ -169,7 +169,7 @@ export const DrawerTopBar = ({
             onChangeText={onChangeSearch}
             onBlur={onBlur}
             placeholder={PLACEHOLDER}
-            accessibilityLabel={tr("drawer-top-bar.searchChats_2")}
+            accessibilityLabel={tr('drawer-top-bar.searchChats_2')}
             testID="drawer-search-input"
             submitBehavior="submit"
             leading={
@@ -177,7 +177,7 @@ export const DrawerTopBar = ({
                 onPress={() => onCloseSearch()}
                 testID="drawer-search-back"
                 accessibilityRole="button"
-                accessibilityLabel={tr("drawer-top-bar.closeSearch")}
+                accessibilityLabel={tr('drawer-top-bar.closeSearch')}
                 hitSlop={12}
                 style={({ pressed }) => [
                   styles.iconSlot,

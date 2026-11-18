@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useEffect } from 'react';
 import { View, StyleSheet, Text, Pressable } from 'react-native';
 import Animated, {
@@ -149,7 +149,7 @@ const WebSearchTraceRow = ({
       case 'challenge':
         return (
           <Text style={styles.challengeLabel} numberOfLines={1}>
-            {t("web-search-trace-row.tapToConfirmYouReNot")}
+            {t('web-search-trace-row.tapToConfirmYouReNot')}
           </Text>
         );
       case 'note':
@@ -192,8 +192,7 @@ const WebSearchTraceRow = ({
         return {
           onPress: onOpenChallenge,
           accessibilityRole: 'button',
-          accessibilityLabel:
-            t("web-search-trace-row.theSiteWantsToCheck"),
+          accessibilityLabel: t('web-search-trace-row.theSiteWantsToCheck'),
           testID: 'web-search-challenge',
         };
       case 'page':

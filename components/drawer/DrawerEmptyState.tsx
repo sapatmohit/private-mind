@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { useThemedStyles } from '../../hooks/useThemedStyles';
@@ -28,11 +28,13 @@ export const DrawerEmptyState = ({ query, onNavigate }: Props) => {
       <View style={styles.iconCircle}>
         <SearchOffIcon width={24} height={24} style={styles.iconCircleIcon} />
       </View>
-      <Text style={styles.title}>{t("drawer-empty-state.noChatsMatch", { query })}</Text>
+      <Text style={styles.title}>
+        {t('drawer-empty-state.noChatsMatch', { query })}
+      </Text>
       <View style={styles.action}>
         <DrawerItem
           icon={<ChatIcon width={18} height={18} style={styles.icon} />}
-          label={t("drawer-empty-state.startNewChat")}
+          label={t('drawer-empty-state.startNewChat')}
           testID="drawer-empty-new-chat"
           active={false}
           dimmed={turnInFlight}

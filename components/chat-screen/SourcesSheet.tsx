@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, {
   forwardRef,
   memo,
@@ -231,7 +231,9 @@ const SourcesSheet = forwardRef<SourcesSheetHandle>((_props, ref) => {
         onContentSizeChange={onContentSizeChange}
         showsVerticalScrollIndicator={false}
       >
-        <Text style={styles.sourcesSheetTitle}>{t("sources-sheet.sources")}</Text>
+        <Text style={styles.sourcesSheetTitle}>
+          {t('sources-sheet.sources')}
+        </Text>
         <View
           style={styles.sourcesList}
           onLayout={(e) => {

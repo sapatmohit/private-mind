@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { Modal, View, Text, StyleSheet } from 'react-native';
 import ModelFamilyTile from '../model-hub/ModelFamilyTile';
@@ -48,9 +48,11 @@ export const BenchmarkModal = ({
           <View style={styles.benchmarkCard}>
             <SpinningCircleTimer size={100} time={timer} />
             <View style={styles.textWrapper}>
-              <Text style={styles.statusText}>{t("benchmark-modal.runningABenchmark")}</Text>
+              <Text style={styles.statusText}>
+                {t('benchmark-modal.runningABenchmark')}
+              </Text>
               <Text style={styles.subText}>
-                {t("benchmark-modal.itMayTakeAround13")}
+                {t('benchmark-modal.itMayTakeAround13')}
               </Text>
             </View>
             <View style={styles.bottomSection}>
@@ -88,7 +90,9 @@ export const BenchmarkModal = ({
                 />
               </View>
               <View style={styles.textWrapper}>
-                <Text style={styles.statusText}>{t("benchmark-modal.yourBenchmarkIsReady")}</Text>
+                <Text style={styles.statusText}>
+                  {t('benchmark-modal.yourBenchmarkIsReady')}
+                </Text>
               </View>
             </View>
             <View style={styles.successSpacer} />

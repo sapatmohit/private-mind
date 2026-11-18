@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 import Animated, {
@@ -71,7 +71,10 @@ function Dot({
       onPress={() => onSelect(index)}
       accessibilityRole="button"
       accessibilityState={{ selected: isActive }}
-      accessibilityLabel={t("onboarding-pagination.goToSlideVar0Of", { var0: index + 1, count })}
+      accessibilityLabel={t('onboarding-pagination.goToSlideVar0Of', {
+        var0: index + 1,
+        count,
+      })}
     >
       <Animated.View style={[styles.dot, animatedStyle]} />
     </Pressable>

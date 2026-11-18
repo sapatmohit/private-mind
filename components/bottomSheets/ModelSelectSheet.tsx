@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { RefObject, useMemo, useState } from 'react';
 import {
   BottomSheetModal,
@@ -107,11 +107,13 @@ const ModelSelectSheet = ({
       {hasModels ? (
         <View style={styles.content}>
           <View style={styles.header}>
-            <Text style={styles.title}>{t("model-select-sheet.selectAModel")}</Text>
+            <Text style={styles.title}>
+              {t('model-select-sheet.selectAModel')}
+            </Text>
             <BottomSheetSearchInput
               value={search}
               onChangeText={setSearch}
-              placeholder={t("model-select-sheet.searchModels")}
+              placeholder={t('model-select-sheet.searchModels')}
             />
           </View>
 
@@ -134,8 +136,8 @@ const ModelSelectSheet = ({
                   />
                 </View>
                 <Text style={styles.searchEmptyTitle}>
-                                  {t("model-select-sheet.noModelsMatch", { search })}
-                                </Text>
+                  {t('model-select-sheet.noModelsMatch', { search })}
+                </Text>
                 <View style={styles.searchEmptyAction}>
                   <DrawerItem
                     icon={
@@ -145,7 +147,7 @@ const ModelSelectSheet = ({
                         style={styles.actionIcon}
                       />
                     }
-                    label={t("model-select-sheet.manageModels")}
+                    label={t('model-select-sheet.manageModels')}
                     testID="model-select-empty-manage-models"
                     active={false}
                     hugContent
@@ -182,9 +184,11 @@ const ModelSelectSheet = ({
         </View>
       ) : (
         <BottomSheetView style={styles.emptyContent}>
-          <Text style={styles.title}>{t("model-select-sheet.youHaveNoAvailableModels")}</Text>
+          <Text style={styles.title}>
+            {t('model-select-sheet.youHaveNoAvailableModels')}
+          </Text>
           <Text style={styles.subText}>
-            {t("model-select-sheet.toUsePrivateMindYou")}
+            {t('model-select-sheet.toUsePrivateMindYou')}
           </Text>
           <PrimaryButton text="Download a Model" onPress={goToModelHub} />
         </BottomSheetView>

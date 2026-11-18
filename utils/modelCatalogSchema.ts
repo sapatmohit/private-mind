@@ -1,4 +1,3 @@
-import { t } from "../i18n";
 import { z } from 'zod';
 import { type Model } from '../database/modelRepository';
 
@@ -7,7 +6,7 @@ const httpsUrl = () =>
     .string()
     .url()
     .refine((value) => value.startsWith('https://'), {
-      message: t("model-catalog-schema.mustBeAnHttpsUrl"),
+      message: 'must be an https:// URL',
     });
 
 const perPlatform = <T extends z.ZodTypeAny>(value: T) =>

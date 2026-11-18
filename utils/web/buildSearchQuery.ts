@@ -1,5 +1,3 @@
-import { t } from "../../i18n";
-import { useTranslation } from "react-i18next";
 import {
   WEB_QUERY_CONTEXT_TURNS,
   WEB_QUERY_CONTEXT_TURN_MAX_CHARS,
@@ -48,28 +46,28 @@ const PLANNER_EXAMPLES: {
   {
     user: "hey, how's it going?",
     needsSearch: false,
-    intent: t("build-search-query.casualGreeting"),
+    intent: 'casual greeting',
     kind: 'chat',
     queries: [],
   },
   {
     user: 'czego dotyczyła ta rozmowa?',
     needsSearch: false,
-    intent: t("build-search-query.recapOfThisConversation"),
+    intent: 'recap of this conversation',
     kind: 'chat',
     queries: [],
   },
   {
     user: 'was your first answer in polish?',
     needsSearch: false,
-    intent: t("build-search-query.aboutAPreviousAnswer"),
+    intent: 'about a previous answer',
     kind: 'chat',
     queries: [],
   },
   {
     user: 'whats the weather in tokyo right now',
     needsSearch: true,
-    intent: t("build-search-query.currentTokyoWeather"),
+    intent: 'current Tokyo weather',
     kind: 'fact',
     queries: ['Tokyo weather today'],
     expects: ['temperature', 'rain or sun'],
@@ -78,7 +76,7 @@ const PLANNER_EXAMPLES: {
   {
     user: 'how much does bitcoin cost right now',
     needsSearch: true,
-    intent: t("build-search-query.currentBitcoinPrice"),
+    intent: 'current bitcoin price',
     kind: 'price',
     queries: ['bitcoin price today'],
     expects: ['price in USD'],
@@ -86,7 +84,7 @@ const PLANNER_EXAMPLES: {
   {
     user: 'compare the prices of bitcoin and ethereum',
     needsSearch: true,
-    intent: t("build-search-query.compareBitcoinAndEthereumPrices"),
+    intent: 'compare Bitcoin and Ethereum prices',
     kind: 'comparison',
     queries: ['bitcoin price today', 'ethereum price today'],
     expects: ['bitcoin price', 'ethereum price'],
@@ -94,7 +92,7 @@ const PLANNER_EXAMPLES: {
   {
     user: 'which e-reader is best for reading in the sun?',
     needsSearch: true,
-    intent: t("build-search-query.eReaderRecommendation"),
+    intent: 'e-reader recommendation',
     kind: 'recommendation',
     queries: ['best e-reader for reading in sunlight'],
     expects: ['model name', 'why'],
@@ -102,7 +100,7 @@ const PLANNER_EXAMPLES: {
   {
     user: 'which song has been streamed the most on spotify this year',
     needsSearch: true,
-    intent: t("build-search-query.mostStreamedSongThisYear"),
+    intent: 'most streamed song this year',
     kind: 'fact',
     queries: ['most streamed song Spotify 2025'],
     leaks: ['Spotify'],
@@ -110,7 +108,7 @@ const PLANNER_EXAMPLES: {
   {
     user: 'jaka jest pogoda w Krakowie dzisiaj',
     needsSearch: true,
-    intent: t("build-search-query.currentKrakowWeather"),
+    intent: 'current Krakow weather',
     kind: 'fact',
     queries: ['pogoda Kraków dzisiaj'],
     expects: ['temperatura', 'opady'],
@@ -119,7 +117,7 @@ const PLANNER_EXAMPLES: {
   {
     user: 'दिल्ली में आज का मौसम कैसा है',
     needsSearch: true,
-    intent: t("build-search-query.currentDelhiWeather"),
+    intent: 'current Delhi weather',
     kind: 'fact',
     queries: ['दिल्ली मौसम आज'],
     leaks: ['दिल्ली'],
@@ -127,7 +125,7 @@ const PLANNER_EXAMPLES: {
   {
     user: 'chce kupic wedke na prezent koledze ile kosztuja takie rzeczy?',
     needsSearch: true,
-    intent: t("build-search-query.cenaWędki"),
+    intent: 'cena wędki',
     kind: 'price',
     queries: ['wędka cena'],
     expects: ['cena w zł'],
@@ -147,10 +145,48 @@ const EXAMPLE_LEAK_TOKENS: string[] = [
   ...new Set(PLANNER_EXAMPLES.flatMap((ex) => ex.leaks ?? [])),
 ];
 
-const PLANNER_SYSTEM_PROMPT = (today: string): string => {
-  const { t } = useTranslation();
-  return t("build-search-query.youTurnTheUsersLatest", { today, PLANNER_EXAMPLES_TEXT });
-};
+const PLANNER_SYSTEM_PROMPT = (today: string): string =>
+  "You turn the user's latest message into a web-search plan. " +
+  'Output ONLY one JSON object, no other text and no reasoning:\n' +
+  '{"needs_search": true|false, "intent": "<goal, max 8 words>", "kind": "<kind>", "queries": ["<q1>", "<optional q2>"], "expects": ["<what a complete answer must contain>"]}\n' +
+  '"expects": the 1-4 things a complete answer must contain (a value with ' +
+  "its unit, a date, a name), in the user's language; [] when needs_search " +
+  'is false.\n' +
+  '"kind": one of price (an amount of money), specs (technical figures), ' +
+  'comparison (named things side by side), recommendation (which one to ' +
+  'choose), news (recent events), date (when something happens or ' +
+  'happened), event (a scheduled happening: where and when), place (an ' +
+  'address, opening hours, contact), person (who someone is or who holds a ' +
+  'position), fact (one checkable fact), howto (steps), chat (no search).\n' +
+  'needs_search is false for greetings, chit-chat, opinions, advice, math, ' +
+  'coding, translation, rewriting, questions about this conversation, and ' +
+  'timeless general knowledge — then "queries": []. It is true when the ' +
+  'best answer needs fresh, local or verifiable facts: news, prices, ' +
+  'weather, scores, schedules, releases, specs, a product or model code, ' +
+  'who currently holds a position, the current version of something, ' +
+  'opening hours or an address, specific people, places or organisations. ' +
+  'Unsure about a specific, checkable question? Choose true — a search is ' +
+  'cheap, a confident stale answer is not.\n' +
+  'Each query is search KEYWORDS under 12 words, not a sentence, in the ' +
+  "SAME language and script as the user's message — never translated; " +
+  'English only when the user wrote in English. Keep the names, places and ' +
+  'numbers the user gave, exactly as given; never swap in a related one. ' +
+  'Use only the latest message and what it refers to; resolve it/that/they ' +
+  'from the conversation. Turn relative time words (today, latest, now, ' +
+  'current, this year, this season, so far) into a concrete date, year or ' +
+  `season — today is ${today}; for a "most/best/top X" question about a ` +
+  'recent period put that year or season in the query itself, so results ' +
+  'are about that period and not an all-time ranking. ' +
+  'Give 1 query normally, one per item ONLY for a clear comparison of 2 or ' +
+  '3 named things (max 3 queries).\n' +
+  'A casually worded message wraps the thing it is about in circumstance — ' +
+  'who it is for, why it is wanted, how it will be used, "such things", ' +
+  '"something like that". Keep the concrete thing and what is asked about ' +
+  'it; drop the circumstance. Searching the occasion instead of the object ' +
+  'returns the wrong shops and the wrong pages.\n' +
+  PLANNER_EXAMPLES_TEXT +
+  'Those are only format examples — plan for the actual user message below ' +
+  'and never copy their words or topics.';
 
 const isLeakedQuery = (query: string, groundedText: string): boolean =>
   EXAMPLE_LEAK_TOKENS.some(
@@ -646,7 +682,7 @@ export const planWebSearch = async (
   if (isAboutTheConversation(query)) {
     return {
       needsSearch: false,
-      intent: t("build-search-query.recapOfThisConversation_2"),
+      intent: 'recap of this conversation',
       queries: [],
     };
   }

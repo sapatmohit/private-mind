@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { memo, useEffect, useState } from 'react';
 import { View, StyleSheet, Text, Pressable } from 'react-native';
 import { useThemedStyles } from '../../hooks/useThemedStyles';
@@ -36,7 +36,9 @@ const ThinkingBlock = memo(
     return (
       <View style={styles.thinkingBox}>
         <View style={styles.thinkingHeader}>
-          <Text style={styles.thinkingTitle}>{t("thinking-block.thinking")}</Text>
+          <Text style={styles.thinkingTitle}>
+            {t('thinking-block.thinking')}
+          </Text>
           <Pressable
             onPress={toggleExpanded}
             style={({ pressed }) => [

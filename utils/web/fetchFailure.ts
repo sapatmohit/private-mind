@@ -1,4 +1,3 @@
-import { t } from "../../i18n";
 import { FetchStatusError } from './security/outboundFetch';
 
 export type FetchFailureReason =
@@ -71,14 +70,14 @@ export const isRecoverableFailure = (reason: FetchFailureReason): boolean =>
   RETRYABLE_REASONS.has(reason);
 
 const REASON_LABELS: Record<FetchFailureReason, string> = {
-  'blocked': t("fetch-failure.blockedTheReader"),
-  'not-found': t("fetch-failure.pageIsGone"),
-  'server-error': t("fetch-failure.siteIsDown"),
-  'timeout': t("fetch-failure.tookTooLong"),
-  'unsupported': t("fetch-failure.notReadableText"),
-  'too-large': t("fetch-failure.pageTooBig"),
-  'empty': t("fetch-failure.noReadableText"),
-  'network': t("fetch-failure.couldNotBeReached"),
+  'blocked': 'blocked the reader',
+  'not-found': 'page is gone',
+  'server-error': 'site is down',
+  'timeout': 'took too long',
+  'unsupported': 'not readable text',
+  'too-large': 'page too big',
+  'empty': 'no readable text',
+  'network': 'could not be reached',
   'aborted': 'stopped',
 };
 

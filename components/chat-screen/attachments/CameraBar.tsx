@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import type { FlashMode } from 'expo-camera';
 import React, { useCallback, useState } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
@@ -173,7 +173,7 @@ const CameraBar = ({
       <View pointerEvents="box-none" style={styles.shutterSlot}>
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel={t("camera-bar.takePhoto")}
+          accessibilityLabel={t('camera-bar.takePhoto')}
           testID="camera-shutter"
           onPress={onCapture}
           pressRetentionOffset={PRESS_ANYWHERE}
@@ -194,7 +194,11 @@ const CameraBar = ({
       <View style={styles.more}>
         <Option
           index={2}
-          label={flash === 'off' ? t("camera-bar.turnFlashOn") : t("camera-bar.turnFlashOff")}
+          label={
+            flash === 'off'
+              ? t('camera-bar.turnFlashOn')
+              : t('camera-bar.turnFlashOff')
+          }
           icon={flash === 'off' ? FlashOffIcon : FlashIcon}
           unfold={unfold}
           active={active && open}
@@ -204,7 +208,7 @@ const CameraBar = ({
         />
         <Option
           index={1}
-          label={t("camera-bar.flipCamera")}
+          label={t('camera-bar.flipCamera')}
           icon={RotateIcon}
           unfold={unfold}
           active={active && open}
@@ -215,7 +219,11 @@ const CameraBar = ({
 
         <Pressable
           accessibilityRole="button"
-          accessibilityLabel={open ? t("camera-bar.hideCameraOptions") : t("camera-bar.cameraOptions")}
+          accessibilityLabel={
+            open
+              ? t('camera-bar.hideCameraOptions')
+              : t('camera-bar.cameraOptions')
+          }
           accessibilityState={{ expanded: open }}
           testID="camera-options"
           onPress={toggleOptions}

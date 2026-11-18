@@ -5,8 +5,8 @@ import hiMessages from './hi.json';
 import ptMessages from './pt.json';
 
 export const resources = {
-  "en": { translation: enMessages },
-  "de": { translation: deMessages },
-  "hi": { translation: hiMessages },
-  "pt": { translation: ptMessages },
+  en: { translation: enMessages },
+  de: { translation: deMessages },
+  hi: { translation: hiMessages },
+  pt: { translation: ptMessages },
 };

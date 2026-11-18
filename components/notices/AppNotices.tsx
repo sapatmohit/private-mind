@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useState, type ReactNode } from 'react';
 import {
   Pressable,
@@ -88,7 +88,7 @@ const AppNotices = ({ children }: Props) => {
                   onPress={() => dismissNotice(notice)}
                   hitSlop={DISMISS_HIT_SLOP}
                   accessibilityRole="button"
-                  accessibilityLabel={t("app-notices.dismiss")}
+                  accessibilityLabel={t('app-notices.dismiss')}
                   style={({ pressed }) => [
                     styles.dismiss,
                     pressed && pressedOpacity,

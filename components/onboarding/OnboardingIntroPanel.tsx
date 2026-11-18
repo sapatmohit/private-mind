@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useCallback, useState } from 'react';
 import { LayoutChangeEvent, StyleSheet, View } from 'react-native';
 import Animated, { FadeInDown, FadeInUp } from 'react-native-reanimated';
@@ -113,7 +113,7 @@ function OnboardingIntroPanel({ onPressStart }: Props) {
               isSplit && styles.lineLeading,
             ]}
           >
-            {t("onboarding-intro-panel.yourPrivateAiMind")}
+            {t('onboarding-intro-panel.yourPrivateAiMind')}
           </Animated.Text>
           <Animated.Text
             entering={enterAt(1)}
@@ -123,7 +123,7 @@ function OnboardingIntroPanel({ onPressStart }: Props) {
               isSplit && styles.lineLeading,
             ]}
           >
-            {t("onboarding-intro-panel.inYourPocket")}
+            {t('onboarding-intro-panel.inYourPocket')}
           </Animated.Text>
         </View>
         <Animated.View

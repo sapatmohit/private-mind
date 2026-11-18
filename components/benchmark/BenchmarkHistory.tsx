@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useCallback } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import { FlatList } from 'react-native-gesture-handler';
@@ -64,7 +64,7 @@ const BenchmarkHistory = ({ modalRef, benchmarkList }: Props) => {
         <View style={styles.noDataContainer}>
           <BenchmarkIcon width={18} height={18} style={styles.noDataIcon} />
           <Text style={styles.noDataText}>
-            {t("benchmark-history.thereAreNoBenchmarksTo")}
+            {t('benchmark-history.thereAreNoBenchmarksTo')}
           </Text>
         </View>
       }

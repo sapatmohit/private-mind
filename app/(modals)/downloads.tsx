@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useMemo, useRef } from 'react';
 import {
   BottomSheetModal,
@@ -55,7 +55,11 @@ const DownloadsScreen = () => {
         >
           {downloading.length > 0 && (
             <View style={styles.section}>
-              <SectionHeader title={t("downloads.downloadingLength", { length: downloading.length })} />
+              <SectionHeader
+                title={t('downloads.downloadingLength', {
+                  length: downloading.length,
+                })}
+              />
               <RowGroup separatorInset={0}>
                 {downloading.map(({ model }) => (
                   <ModelDownloadRow
@@ -70,7 +74,9 @@ const DownloadsScreen = () => {
           )}
           <View style={styles.section}>
             <SectionHeader
-              title={t("downloads.onThisDeviceLength", { length: onDevice.length })}
+              title={t('downloads.onThisDeviceLength', {
+                length: onDevice.length,
+              })}
               summary={`${usedGB.toFixed(2)} GB used`}
             />
             {onDevice.length > 0 ? (
@@ -85,12 +91,14 @@ const DownloadsScreen = () => {
                 ))}
               </RowGroup>
             ) : (
-              <Text style={styles.empty}>{t("downloads.noModelsOnThisDevice")}</Text>
+              <Text style={styles.empty}>
+                {t('downloads.noModelsOnThisDevice')}
+              </Text>
             )}
           </View>
         </ScrollView>
         <GlassScreenHeader
-          title={t("downloads.downloads")}
+          title={t('downloads.downloads')}
           onBack={() => router.back()}
           sheet
         />

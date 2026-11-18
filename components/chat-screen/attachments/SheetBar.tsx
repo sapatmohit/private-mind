@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { ReactNode } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 import Animated, {
@@ -40,7 +40,7 @@ const SheetBar = ({ width, top, active, fade, onBack, children }: Props) => {
     >
       <Pressable
         accessibilityRole="button"
-        accessibilityLabel={t("sheet-bar.backToMenu")}
+        accessibilityLabel={t('sheet-bar.backToMenu')}
         testID="attachment-sheet-back"
         onPress={onBack}
         pressRetentionOffset={PRESS_ANYWHERE}

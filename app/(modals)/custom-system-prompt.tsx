@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useEffect, useState } from 'react';
 import { Text, StyleSheet, View } from 'react-native';
 import { useRouter } from 'expo-router';
@@ -51,7 +51,7 @@ export default function CustomSystemPromptScreen() {
     Feedback.editSave();
     Toast.show({
       type: 'defaultToast',
-      text1: t("custom-system-prompt.preferencesSaved"),
+      text1: t('custom-system-prompt.preferencesSaved'),
     });
     router.back();
   };
@@ -71,10 +71,12 @@ export default function CustomSystemPromptScreen() {
           <View style={styles.section}>
             <View style={styles.labelGroup}>
               <Text style={styles.label}>
-                {t("custom-system-prompt.howWouldYouLikePrivate")}
+                {t('custom-system-prompt.howWouldYouLikePrivate')}
               </Text>
               <Text style={styles.description}>
-                {t("custom-system-prompt.thesePreferencesShapeEveryConversation")}
+                {t(
+                  'custom-system-prompt.thesePreferencesShapeEveryConversation'
+                )}
               </Text>
             </View>
             <TextAreaField
@@ -86,7 +88,7 @@ export default function CustomSystemPromptScreen() {
                   ? "That's a bit too long — please shorten it."
                   : undefined
               }
-              placeholder={t("custom-system-prompt.eGBeConciseAndExplain")}
+              placeholder={t('custom-system-prompt.eGBeConciseAndExplain')}
             />
             <PrimaryButton
               text="Save preferences"
@@ -97,7 +99,7 @@ export default function CustomSystemPromptScreen() {
         </ScrollView>
       </View>
       <GlassScreenHeader
-        title={t("custom-system-prompt.customInstructions")}
+        title={t('custom-system-prompt.customInstructions')}
         onBack={() => router.back()}
       />
     </CustomKeyboardAvoidingView>

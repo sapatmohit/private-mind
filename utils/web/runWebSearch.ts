@@ -1,4 +1,3 @@
-import { t } from "../../i18n";
 import type { LFMEmbeddings } from '../lfmEmbeddings';
 import { foldForMatching } from '../queryTerms';
 import type {
@@ -241,7 +240,7 @@ const searchWithCleanup = async (
     providerCalls: 0,
     enginesTried: [],
     finalConfidence: 0,
-    finalLabel: t("run-web-search.incorrect"),
+    finalLabel: 'incorrect',
     agreement: NO_AGREEMENT,
     fetchFailures: [],
     recovery: [],
@@ -292,7 +291,7 @@ const searchWithCleanup = async (
         ...telemetry,
         intent: quote.id,
         finalConfidence: 1,
-        finalLabel: t("run-web-search.correct"),
+        finalLabel: 'correct',
       },
     };
   }

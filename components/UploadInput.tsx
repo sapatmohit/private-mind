@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { View, Text, Pressable, StyleSheet, Platform } from 'react-native';
 import * as DocumentPicker from 'expo-document-picker';
@@ -67,7 +67,9 @@ const UploadInput = ({ fileInfo, onChange, disabled = false }: Props) => {
             disabled={disabled}
           >
             <Folder width={16.67} height={14.17} style={styles.iconContrast} />
-            <Text style={styles.selectButtonText}>{t("upload-input.selectAFile")}</Text>
+            <Text style={styles.selectButtonText}>
+              {t('upload-input.selectAFile')}
+            </Text>
           </Pressable>
         </View>
       ) : (

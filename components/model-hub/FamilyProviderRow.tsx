@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { useThemedStyles } from '../../hooks/useThemedStyles';
@@ -22,7 +22,7 @@ const FamilyProviderRow = ({ provider }: Props) => {
     <View
       style={styles.row}
       accessible
-      accessibilityLabel={t("family-provider-row.madeByProvider", { provider })}
+      accessibilityLabel={t('family-provider-row.madeByProvider', { provider })}
       testID="family-provider-row"
     >
       <View style={styles.iconTile}>
@@ -33,7 +33,7 @@ const FamilyProviderRow = ({ provider }: Props) => {
         />
       </View>
       <Text style={styles.text}>
-        <Text style={styles.label}>{t("family-provider-row.madeBy")} </Text>
+        <Text style={styles.label}>{t('family-provider-row.madeBy')} </Text>
         <Text style={styles.value}>{provider}</Text>
       </Text>
     </View>

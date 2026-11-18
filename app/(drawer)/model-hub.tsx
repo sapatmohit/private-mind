@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, {
   useCallback,
   useLayoutEffect,
@@ -141,15 +141,13 @@ const ModelHubScreen = () => {
   const handleClearAll = async () => {
     if (deletableDownloaded.length === 0) return;
     const confirmed = await confirm({
-      title: t("model-hub.clearAllDownloadedModels"),
-      message: t("model-hub.thisWillDeleteLengthPlural", {
+      title: t('model-hub.clearAllDownloadedModels'),
+      message: t('model-hub.thisWillDeleteLengthPlural', {
         length: deletableDownloaded.length,
 
-        totalDownloadedSizeGB: totalDownloadedSizeGB.toFixed(
-          2
-        )
+        totalDownloadedSizeGB: totalDownloadedSizeGB.toFixed(2),
       }),
-      confirmLabel: t("model-hub.clearAll"),
+      confirmLabel: t('model-hub.clearAll'),
     });
     if (!confirmed) return;
 
@@ -158,7 +156,7 @@ const ModelHubScreen = () => {
     }
     Toast.show({
       type: 'defaultToast',
-      text1: t("model-hub.allDownloadedModelFilesHave"),
+      text1: t('model-hub.allDownloadedModelFilesHave'),
     });
   };
 
@@ -176,12 +174,14 @@ const ModelHubScreen = () => {
       </View>
       <View style={styles.emptyTextContainer}>
         <Text style={styles.emptyTitle}>
-          {tab === 'mine' ? t("model-hub.noCustomModelsYet") : t("model-hub.noModelsFound")}
+          {tab === 'mine'
+            ? t('model-hub.noCustomModelsYet')
+            : t('model-hub.noModelsFound')}
         </Text>
         <Text style={styles.emptySubtitle}>
           {tab === 'mine'
-            ? t("model-hub.addARemoteOrLocal")
-            : t("model-hub.adjustYourSearchOrSwitch")}
+            ? t('model-hub.addARemoteOrLocal')
+            : t('model-hub.adjustYourSearchOrSwitch')}
         </Text>
       </View>
       {search.length > 0 && (
@@ -212,8 +212,8 @@ const ModelHubScreen = () => {
             <SearchField
               value={search}
               onChangeText={setSearch}
-              placeholder={t("model-hub.searchModels")}
-              accessibilityLabel={t("model-hub.searchModels_2")}
+              placeholder={t('model-hub.searchModels')}
+              accessibilityLabel={t('model-hub.searchModels_2')}
             />
           </View>
 
@@ -255,10 +255,14 @@ const ModelHubScreen = () => {
                 <View style={styles.storageFooter}>
                   <View style={styles.storageInfo}>
                     <Text style={styles.storageTitle}>
-                                          {t("model-hub.gbDownloaded", { totalDownloadedSizeGB: totalDownloadedSizeGB.toFixed(2) })}
-                                        </Text>
+                      {t('model-hub.gbDownloaded', {
+                        totalDownloadedSizeGB: totalDownloadedSizeGB.toFixed(2),
+                      })}
+                    </Text>
                     <Text style={styles.storageSubtitle}>
-                      {t("model-hub.acrossModels", { deletableDownloadedLength: deletableDownloaded.length })}
+                      {t('model-hub.acrossModels', {
+                        deletableDownloadedLength: deletableDownloaded.length,
+                      })}
                     </Text>
                   </View>
                   <SecondaryButton

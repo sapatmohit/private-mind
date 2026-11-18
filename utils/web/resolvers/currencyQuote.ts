@@ -1,4 +1,3 @@
-import { t } from "../../../i18n";
 import {
   FRANKFURTER_LATEST_URL,
   FRANKFURTER_SITE_URL,
@@ -84,7 +83,7 @@ export const resolveCurrencyQuote = async (
       id: 'currency',
       text: `${amount} ${request.from} = ${converted} ${request.to} at the European Central Bank reference rate published ${asOf} (1 ${request.from} = ${formatMoney(rate)} ${request.to}).`,
       sourceUrl: FRANKFURTER_SITE_URL,
-      sourceTitle: t("currency-quote.frankfurterEuropeanCentralBank"),
+      sourceTitle: 'Frankfurter — European Central Bank reference rates',
       asOf,
     };
   } catch {

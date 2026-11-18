@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { View, StyleSheet, Text, Pressable } from 'react-native';
 import { WebView } from 'react-native-webview';
@@ -43,10 +43,10 @@ const WebScrapeSheet = () => {
       {revealed && (
         <View style={styles.header}>
           <Text style={styles.headerTitle}>
-            {t("web-scrape-sheet.privateMindIsBrowsingFor")}
+            {t('web-scrape-sheet.privateMindIsBrowsingFor')}
           </Text>
           <Text style={styles.headerHint}>
-            {t("web-scrape-sheet.confirmYouReHumanToContinue")}
+            {t('web-scrape-sheet.confirmYouReHumanToContinue')}
           </Text>
         </View>
       )}
@@ -82,7 +82,9 @@ const WebScrapeSheet = () => {
             accessibilityRole="button"
             testID="web-challenge-cancel"
           >
-            <Text style={styles.secondaryLabel}>{t("web-scrape-sheet.skipSearch")}</Text>
+            <Text style={styles.secondaryLabel}>
+              {t('web-scrape-sheet.skipSearch')}
+            </Text>
           </Pressable>
           <Pressable
             onPress={recheck}
@@ -90,7 +92,9 @@ const WebScrapeSheet = () => {
             accessibilityRole="button"
             testID="web-challenge-done"
           >
-            <Text style={styles.primaryLabel}>{t("web-scrape-sheet.done")}</Text>
+            <Text style={styles.primaryLabel}>
+              {t('web-scrape-sheet.done')}
+            </Text>
           </Pressable>
         </View>
       )}

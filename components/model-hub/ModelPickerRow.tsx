@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import {
   AccessibilityRole,
@@ -92,7 +92,9 @@ const ModelPickerRow = ({
             pressed && pressedOpacity,
           ]}
           accessibilityRole="button"
-          accessibilityLabel={t("model-picker-row.updateModelname", { modelName: model.modelName })}
+          accessibilityLabel={t('model-picker-row.updateModelname', {
+            modelName: model.modelName,
+          })}
           accessibilityState={{ busy: updating }}
           testID={`${testIDPrefix}-update-${model.id}`}
         >
@@ -101,7 +103,9 @@ const ModelPickerRow = ({
             maxFontSizeMultiplier={CAPPED_TEXT_MAX_SCALE}
           >
             {updating
-              ? t("model-picker-row.math", { Math: Math.round(download.progress * 100) })
+              ? t('model-picker-row.math', {
+                  Math: Math.round(download.progress * 100),
+                })
               : MODEL_UPDATE_TEXT.chatBannerAction}
           </Text>
         </Pressable>

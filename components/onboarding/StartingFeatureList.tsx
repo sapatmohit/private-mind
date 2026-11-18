@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React, { useState } from 'react';
 import {
   type AccessibilityActionEvent,
@@ -144,7 +144,12 @@ const StartingFeatureRow = ({
   const disabled = locked || status !== 'available';
 
   const accessibilityActions: AccessibilityActionInfo[] = downloading
-    ? [{ name: 'cancelDownload', label: t("starting-feature-list.cancelNameDownload", { name }) }]
+    ? [
+        {
+          name: 'cancelDownload',
+          label: t('starting-feature-list.cancelNameDownload', { name }),
+        },
+      ]
     : [];
 
   const handleAccessibilityAction = ({
@@ -204,7 +209,10 @@ const StartingFeatureRow = ({
           <View style={styles.progress}>
             <DownloadProgressBar
               progress={progress}
-              accessibilityLabel={t("starting-feature-list.nameDownloadProgress", { name })}
+              accessibilityLabel={t(
+                'starting-feature-list.nameDownloadProgress',
+                { name }
+              )}
             />
             <DownloadProgressDetails
               modelSize={sizeGb}
@@ -266,7 +274,10 @@ const SectionHeaderRow = ({
         <View style={styles.progress}>
           <DownloadProgressBar
             progress={progress}
-            accessibilityLabel={t("starting-feature-list.sectionTitleDownloadProgress", { SECTION_TITLE })}
+            accessibilityLabel={t(
+              'starting-feature-list.sectionTitleDownloadProgress',
+              { SECTION_TITLE }
+            )}
           />
         </View>
       );
@@ -296,7 +307,9 @@ const SectionHeaderRow = ({
           pressed && pressedOpacity,
         ]}
         accessibilityRole="checkbox"
-        accessibilityLabel={t("starting-feature-list.downloadAllSectionTitle", { SECTION_TITLE: SECTION_TITLE.toLowerCase() })}
+        accessibilityLabel={t('starting-feature-list.downloadAllSectionTitle', {
+          SECTION_TITLE: SECTION_TITLE.toLowerCase(),
+        })}
         accessibilityState={{
           checked: CHECKED_ACCESSIBILITY[checkState],
           disabled: locked,

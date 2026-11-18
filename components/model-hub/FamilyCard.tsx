@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { useThemedStyles } from '../../hooks/useThemedStyles';
@@ -52,7 +52,10 @@ const FamilyCard = ({ family, onPress, runnable = true }: Props) => {
   );
   const counts =
     downloadedCount > 0
-      ? t("family-card.variantsDownloadedcountDownloaded", { variants, downloadedCount })
+      ? t('family-card.variantsDownloadedcountDownloaded', {
+          variants,
+          downloadedCount,
+        })
       : variants;
   const summary = FAMILY_SUMMARIES[family.name];
   const labels = familyLabels(family);
@@ -66,8 +69,10 @@ const FamilyCard = ({ family, onPress, runnable = true }: Props) => {
       accessibilityRole="button"
       accessibilityLabel={[
         family.name,
-        downloadedCount > 0 && t("family-card.downloadedcountDownloaded", { downloadedCount }),
-        downloadingCount > 0 && t("family-card.downloadingcountDownloading", { downloadingCount }),
+        downloadedCount > 0 &&
+          t('family-card.downloadedcountDownloaded', { downloadedCount }),
+        downloadingCount > 0 &&
+          t('family-card.downloadingcountDownloading', { downloadingCount }),
       ]
         .filter(Boolean)
         .join(', ')}
@@ -89,7 +94,10 @@ const FamilyCard = ({ family, onPress, runnable = true }: Props) => {
               <ModelBadge key={label} label={label} />
             ))}
             {hiddenLabelCount > 0 && (
-              <ModelBadge label={t("family-card.hiddenlabelcount", { hiddenLabelCount })} color="neutral" />
+              <ModelBadge
+                label={t('family-card.hiddenlabelcount', { hiddenLabelCount })}
+                color="neutral"
+              />
             )}
           </View>
         )}

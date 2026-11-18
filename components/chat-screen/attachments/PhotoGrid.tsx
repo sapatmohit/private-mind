@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import { FlashList, type FlashListRef } from '@shopify/flash-list';
 import React, { forwardRef, useImperativeHandle, useRef } from 'react';
 import { StyleSheet, View } from 'react-native';
@@ -94,10 +94,10 @@ const PhotoGrid = forwardRef<PhotoGridHandle, Props>(
             onOpenSettings={status === 'denied' ? openAppSettings : undefined}
           >
             {status === 'loading'
-              ? t("photo-grid.loadingPhotos")
+              ? t('photo-grid.loadingPhotos')
               : status === 'empty'
-                ? t("photo-grid.noPhotosOnThisDevice")
-                : t("photo-grid.photoAccessIsOffTurn")}
+                ? t('photo-grid.noPhotosOnThisDevice')
+                : t('photo-grid.photoAccessIsOffTurn')}
           </SheetPlaceholder>
         )}
       </View>

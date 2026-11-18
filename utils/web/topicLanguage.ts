@@ -1,4 +1,3 @@
-import { t } from "../../i18n";
 import { hostname } from './hostname';
 
 export interface TopicLanguage {
@@ -9,25 +8,25 @@ export interface TopicLanguage {
 type Linked = { url?: string };
 
 const LANGUAGE_NAMES: Record<string, string> = {
-  it: t("topic-language.italian"),
-  de: t("topic-language.german"),
-  fr: t("topic-language.french"),
-  es: t("topic-language.spanish"),
-  pt: t("topic-language.portuguese"),
-  nl: t("topic-language.dutch"),
-  pl: t("topic-language.polish"),
-  cs: t("topic-language.czech"),
-  sv: t("topic-language.swedish"),
-  no: t("topic-language.norwegian"),
-  da: t("topic-language.danish"),
-  fi: t("topic-language.finnish"),
-  el: t("topic-language.greek"),
-  tr: t("topic-language.turkish"),
-  ru: t("topic-language.russian"),
-  uk: t("topic-language.ukrainian"),
-  ja: t("topic-language.japanese"),
-  zh: t("topic-language.chinese"),
-  ko: t("topic-language.korean"),
+  it: 'Italian',
+  de: 'German',
+  fr: 'French',
+  es: 'Spanish',
+  pt: 'Portuguese',
+  nl: 'Dutch',
+  pl: 'Polish',
+  cs: 'Czech',
+  sv: 'Swedish',
+  no: 'Norwegian',
+  da: 'Danish',
+  fi: 'Finnish',
+  el: 'Greek',
+  tr: 'Turkish',
+  ru: 'Russian',
+  uk: 'Ukrainian',
+  ja: 'Japanese',
+  zh: 'Chinese',
+  ko: 'Korean',
 };
 
 const TLD_TO_LANGUAGE: Record<string, string> = {
